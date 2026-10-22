@@ -1,8 +1,8 @@
 # 财管 / Finances
 
-Android 优先、离线存储的个人财务 App。阶段 2 已完成：四种项目、余额快照、独立收支、修改历史、首页排序、资产构成与真实趋势；Android API 36 模拟器验证通过。
+Android 优先、离线存储的个人财务 App。当前版本 0.3.0+3：项目/余额、独立收支、月度账单、分类管理、年度汇总、备忘录、修改历史、首页排序、资产构成和直线趋势。
 
-首页右上角新建项目，点卡片进入详情；点记录编辑金额、时间、备注及查看历史。长按卡片只拖动排序，删除在详情确认。月度账单、备忘录和完整备份属于后续阶段；实际范围见 [阶段 2 交付与验证](docs/08_阶段2交付与验证.md) 和 [开发进度](docs/05_开发进度.md)。
+首页右上角新建项目；卡片进入详情，长按只排序。月度账单和备忘录从首页单独进入，与资产独立。正式备份仍属阶段 4。实际范围见 [阶段 3 交付与验证](docs/09_阶段3交付与验证.md)、[开发进度](docs/05_开发进度.md)。
 
 ## 运行
 
@@ -14,7 +14,7 @@ Android 优先、离线存储的个人财务 App。阶段 2 已完成：四种�
 .\scripts\flutter.ps1 gen-l10n
 .\scripts\start-emulator.ps1
 .\scripts\flutter.ps1 devices
-.\scripts\flutter.ps1 run -d emulator-5560
+.\scripts\flutter.ps1 run --device-id=emulator-5560
 ```
 
 Android 最低版本为 10 / API 29，开发应用 ID 为 `com.example.finance_app`。
@@ -23,13 +23,13 @@ Android 最低版本为 10 / API 29，开发应用 ID 为 `com.example.finance_a
 
 ```powershell
 .\scripts\check.ps1
-.\scripts\flutter.ps1 test integration_test/asset_flow_test.dart -d emulator-5560 --no-pub
+.\scripts\flutter.ps1 test integration_test/ledger_flow_test.dart --device-id=emulator-5560 --no-pub
 .\scripts\flutter.ps1 build apk --debug
 ```
 
-阶段 2 安装包版本为 0.2.0+2，使用调试签名，不作为正式发布包。
+阶段 3 为调试功能测试包。现有 Android Studio 安装优先选择 artifacts/finance-stage3-ide-debug.apk；脚本/旧交付签名选择 artifacts/finance-stage3-debug.apk。两包同代码、不同既有调试签名；不要用卸载绕过更新冲突。
 
-已构建通用安装包：`artifacts/finance-stage2-debug.apk`（ARM32 / ARM64 / x86_64）。37 项主机测试、1 项安卓全流程及正常包原生分段复验通过；命令、日志和截图见文档 08。真机和最低 API 29 尚未实测；T02 完整账单流程留到阶段 3。
+52 项主机测试、1 项安卓业务全流程通过；T02 已覆盖账单增改删独立性。原生与覆盖升级的真实结果见文档 09；[模拟器和手机安装方法](docs/10_模拟器与手机APK验证.md)单独列出。真机和最低 API 29 尚未实测。
 
 本次模拟器以后台模式运行。若需要打开模拟器窗口，先在 PowerShell 执行：
 

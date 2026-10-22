@@ -1,0 +1,13 @@
+**********************
+PowerShell transcript start
+Start time: 20261022170815
+**********************
+Cold restart PID 5453 -> 5948
+PASS: ordinary APK bill amount/note survive force-stop and cold restart.
+Cold restart PID 5948 -> 6418
+PASS: ordinary APK memo title/body/tags survive force-stop and cold restart.
+PASS: memo unsaved guard, deletion, native edge return and dark/light pages; QA records removed.
+**********************
+PowerShell transcript end
+End time: 20261022171127
+**********************

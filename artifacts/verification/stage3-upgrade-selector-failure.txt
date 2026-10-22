@@ -1,0 +1,19 @@
+**********************
+PowerShell transcript start
+Start time: 20261022164815
+**********************
+Performing Streamed Install
+Success
+Starting: Intent { cmp=com.example.finance_app/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.example.finance_app/.MainActivity
+TotalTime: 2152
+WaitTime: 2156
+Complete
+PS>TerminatingError(): "Native control missing: ^Initial balance$"
+>> TerminatingError(): "Native control missing: ^Initial balance$"
+**********************
+PowerShell transcript end
+End time: 20261022164911
+**********************

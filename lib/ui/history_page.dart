@@ -32,7 +32,15 @@ class _HistoryPageState extends State<HistoryPage> {
     'businessDate' => s.businessDate,
     'businessTime' => s.businessTime,
     'customName' || 'nameKey' => s.name,
-    'type' => s.projectType,
+    'type' =>
+      widget.entityType == 'bill' || widget.entityType == 'category'
+          ? '${s.income} / ${s.expense}'
+          : s.projectType,
+    'categoryId' => s.category,
+    'isActive' => s.categoryActive,
+    'title' => s.memoTitle,
+    'body' => s.memoBody,
+    'tags' => s.tags,
     'categoryKey' => s.category,
     'iconKey' => s.icon,
     'colorKey' => s.color,
@@ -43,13 +51,31 @@ class _HistoryPageState extends State<HistoryPage> {
     'note' => s.note,
     _ => '',
   };
-  String value(AppLocalizations s, String field, Object? value) {
+  String value(
+    AppLocalizations s,
+    String field,
+    Object? value,
+    Map<String, dynamic> payload,
+  ) {
     if (value == null || value == '') return '—';
     if (field == 'balanceMinor' || field == 'amountMinor') {
       return '¥${formatMoneyMinor(value as int)}';
     }
-    if (field == 'type') return typeTitle(s, value as String);
-    if (field == 'nameKey') return s.projectName(value as String);
+    if (field == 'type') {
+      return widget.entityType == 'bill' || widget.entityType == 'category'
+          ? directionTitle(s, value as String)
+          : typeTitle(s, value as String);
+    }
+    if (field == 'nameKey') {
+      return widget.entityType == 'category'
+          ? s.billCategoryName(value as String)
+          : s.projectName(value as String);
+    }
+    if (field == 'categoryId') {
+      return payload['categoryCustomName'] as String? ??
+          s.billCategoryName(payload['categoryNameKey'] as String? ?? '');
+    }
+    if (field == 'tags' && value is List) return value.join(', ');
     if (field == 'categoryKey' || field == 'iconKey') {
       return categoryTitle(s, value as String);
     }
@@ -138,10 +164,10 @@ class _HistoryPageState extends State<HistoryPage> {
                       style: Theme.of(context).textTheme.titleMedium,
                     ),
                     SelectableText(
-                      '${s.before}: ${value(s, field, before[field])}',
+                      '${s.before}: ${value(s, field, before[field], before)}',
                     ),
                     SelectableText(
-                      '${s.after}: ${value(s, field, after[field])}',
+                      '${s.after}: ${value(s, field, after[field], after)}',
                     ),
                   ],
                 ),

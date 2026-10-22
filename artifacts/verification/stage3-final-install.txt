@@ -1,0 +1,12 @@
+APK: D:\Finance\artifacts\finance-stage3-ide-debug.apk
+SHA-256: 3D371583E5390CCF3C0D5C4E4BB288411D83F196798A87CAB227A88C42DF9426
+Performing Incremental Install
+Performing Streamed Install
+Success
+Starting: Intent { cmp=com.example.finance_app/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.example.finance_app/.MainActivity
+TotalTime: 3217
+WaitTime: 3219
+Complete

@@ -1,0 +1,1 @@
+PASS: final Chinese memo list is empty; native right edge returns to the zero-data home.

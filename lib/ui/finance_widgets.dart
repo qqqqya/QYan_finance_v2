@@ -9,6 +9,10 @@ import '../l10n/app_localizations.dart';
 
 String projectTitle(AppLocalizations s, ProjectRow p) =>
     p.customName ?? s.projectName(p.nameKey ?? '');
+String billCategoryTitle(AppLocalizations s, CategoryRow c) =>
+    c.customName ?? s.billCategoryName(c.nameKey ?? '');
+String directionTitle(AppLocalizations s, String type) =>
+    type == 'income' ? s.income : s.expense;
 String typeTitle(AppLocalizations s, String type) => switch (type) {
   'asset' => s.typeAsset,
   'liability' => s.typeLiability,
@@ -72,6 +76,10 @@ String validationMessage(AppLocalizations s, Object error) =>
         'text' => s.invalidText,
         'staleOrder' => s.staleOrder,
         'missing' => s.missingProject,
+        'categoryUnavailable' => s.categoryUnavailable,
+        'categoryReferenced' => s.categoryReferenced,
+        'memoText' => s.memoTextError,
+        'tags' => s.tagError,
         _ => s.operationFailed,
       }
     : s.operationFailed;
@@ -257,10 +265,12 @@ class MomentFields extends StatelessWidget {
     required this.time,
     required this.controller,
     required this.changed,
+    this.includeTime = true,
   });
   final TextEditingController date, time;
   final FinanceController controller;
   final VoidCallback changed;
+  final bool includeTime;
   BusinessMoment get moment =>
       BusinessMoment(BusinessDate.parse(date.text.trim()), time.text.trim());
   @override
@@ -319,36 +329,37 @@ class MomentFields extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 16),
-        TextFormField(
-          key: const Key('business-time'),
-          controller: time,
-          onChanged: (_) => changed(),
-          keyboardType: TextInputType.datetime,
-          validator: validate,
-          decoration: InputDecoration(
-            labelText: s.businessTime,
-            border: const OutlineInputBorder(),
-            suffixIcon: IconButton(
-              tooltip: s.businessTime,
-              icon: const Icon(Icons.schedule),
-              onPressed: () async {
-                final now = bookNow(controller).time.split(':');
-                final picked = await showTimePicker(
-                  context: context,
-                  initialTime: TimeOfDay(
-                    hour: int.parse(now[0]),
-                    minute: int.parse(now[1]),
-                  ),
-                );
-                if (picked != null) {
-                  time.text =
-                      '${picked.hour.toString().padLeft(2, '0')}:${picked.minute.toString().padLeft(2, '0')}';
-                  changed();
-                }
-              },
+        if (includeTime)
+          TextFormField(
+            key: const Key('business-time'),
+            controller: time,
+            onChanged: (_) => changed(),
+            keyboardType: TextInputType.datetime,
+            validator: validate,
+            decoration: InputDecoration(
+              labelText: s.businessTime,
+              border: const OutlineInputBorder(),
+              suffixIcon: IconButton(
+                tooltip: s.businessTime,
+                icon: const Icon(Icons.schedule),
+                onPressed: () async {
+                  final now = bookNow(controller).time.split(':');
+                  final picked = await showTimePicker(
+                    context: context,
+                    initialTime: TimeOfDay(
+                      hour: int.parse(now[0]),
+                      minute: int.parse(now[1]),
+                    ),
+                  );
+                  if (picked != null) {
+                    time.text =
+                        '${picked.hour.toString().padLeft(2, '0')}:${picked.minute.toString().padLeft(2, '0')}';
+                    changed();
+                  }
+                },
+              ),
             ),
           ),
-        ),
       ],
     );
   }

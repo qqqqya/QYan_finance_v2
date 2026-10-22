@@ -8,6 +8,9 @@ import '../core/money.dart';
 import '../domain/app_settings.dart';
 import 'app_database.dart';
 import 'workspace.dart';
+import 'ledger_workspace.dart';
+
+part 'ledger_repository.dart';
 
 const defaultProjectSeeds = [
   ('asset', 'cmb', 'bank'),

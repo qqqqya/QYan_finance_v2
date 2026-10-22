@@ -36,7 +36,7 @@ class _BalanceTrendState extends State<BalanceTrend> {
             d.month,
             d.day,
           ).subtract(const Duration(days: 29));
-    final points = buildBalanceTrend(
+    final samples = buildBalanceTrend(
       widget.projectIds,
       widget.snapshots,
       start: BusinessMoment(
@@ -45,7 +45,6 @@ class _BalanceTrendState extends State<BalanceTrend> {
       ),
       end: widget.now,
     );
-    final hasPositive = points.any((p) => p.amountMinor > 0);
     // Distinguish actual events from the extension that holds the last balance.
     final actual = widget.snapshots
         .where(
@@ -55,6 +54,15 @@ class _BalanceTrendState extends State<BalanceTrend> {
         )
         .map((r) => '${r.moment.date} ${r.moment.time}')
         .toSet();
+    // Keep known window-opening value, but never plot the synthetic end hold.
+    final points = samples
+        .where(
+          (p) =>
+              identical(p, samples.first) ||
+              actual.contains('${p.moment.date} ${p.moment.time}'),
+        )
+        .toList();
+    final hasPositive = points.any((p) => p.amountMinor > 0);
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -80,6 +88,7 @@ class _BalanceTrendState extends State<BalanceTrend> {
             ),
             const SizedBox(height: 12),
             Text(s.manualBasis, style: Theme.of(context).textTheme.bodyMedium),
+            Text(s.trendLineHint, style: Theme.of(context).textTheme.bodySmall),
             if (points.isEmpty)
               Padding(padding: const EdgeInsets.all(24), child: Text(s.noTrend))
             else if (!hasPositive)
@@ -122,7 +131,7 @@ class _BalanceTrendState extends State<BalanceTrend> {
                           height: 160,
                           child: CustomPaint(
                             key: const Key('balance-trend-plot'),
-                            painter: _StepPainter(
+                            painter: _LinePainter(
                               points,
                               actual,
                               Theme.of(context).colorScheme.primary,
@@ -155,7 +164,7 @@ class _BalanceTrendState extends State<BalanceTrend> {
               ),
               Center(
                 child: Text(
-                  s.dateAxis,
+                  s.recordAxis,
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
               ),
@@ -185,8 +194,23 @@ class _BalanceTrendState extends State<BalanceTrend> {
   }
 }
 
-class _StepPainter extends CustomPainter {
-  const _StepPainter(this.points, this.actual, this.color, this.grid);
+/// Ordinal spacing makes close observations readable without claiming a
+/// proportional time scale. Amounts and their chronological order stay exact.
+List<Offset> trendLinePositions(List<TrendPoint> points, Size size) {
+  final max = points.fold<int>(1, (v, p) => math.max(v, p.amountMinor));
+  return [
+    for (var i = 0; i < points.length; i++)
+      Offset(
+        points.length == 1
+            ? size.width / 2
+            : 4 + i / (points.length - 1) * (size.width - 8),
+        size.height - 6 - points[i].amountMinor / max * (size.height - 12),
+      ),
+  ];
+}
+
+class _LinePainter extends CustomPainter {
+  const _LinePainter(this.points, this.actual, this.color, this.grid);
   final List<TrendPoint> points;
   final Set<String> actual;
   final Color color, grid;
@@ -202,25 +226,12 @@ class _StepPainter extends CustomPainter {
       final y = 6 + (size.height - 12) * i / 2;
       canvas.drawLine(Offset(0, y), Offset(size.width, y), pen);
     }
-    final max = points.fold<int>(
-      1,
-      (value, p) => math.max(value, p.amountMinor),
-    );
-    final first = stamp(points.first.moment), last = stamp(points.last.moment);
-    Offset position(TrendPoint p) => Offset(
-      last == first
-          ? size.width / 2
-          : 4 + (stamp(p.moment) - first) / (last - first) * (size.width - 8),
-      size.height - 6 - p.amountMinor / max * (size.height - 12),
-    );
+    final positions = trendLinePositions(points, size);
     final path = Path();
-    var previous = position(points.first);
+    final previous = positions.first;
     path.moveTo(previous.dx, previous.dy);
-    for (final point in points.skip(1)) {
-      final next = position(point);
-      path.lineTo(next.dx, previous.dy);
+    for (final next in positions.skip(1)) {
       path.lineTo(next.dx, next.dy);
-      previous = next;
     }
     canvas.drawPath(
       path,
@@ -229,16 +240,17 @@ class _StepPainter extends CustomPainter {
         ..strokeWidth = 2.5
         ..style = PaintingStyle.stroke,
     );
-    for (final point in points) {
+    for (var i = 0; i < points.length; i++) {
+      final point = points[i];
       if (actual.contains('${point.moment.date} ${point.moment.time}') ||
           points.length == 1) {
-        canvas.drawCircle(position(point), 4, Paint()..color = color);
+        canvas.drawCircle(positions[i], 4, Paint()..color = color);
       }
     }
   }
 
   @override
-  bool shouldRepaint(covariant _StepPainter oldDelegate) => true;
+  bool shouldRepaint(covariant _LinePainter oldDelegate) => true;
 }
 
 class CompositionItem {

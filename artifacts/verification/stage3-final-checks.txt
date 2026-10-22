@@ -1,0 +1,73 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Because l10n.yaml exists, the options defined there will be used instead.
+To use the command line arguments, delete the l10n.yaml file in the Flutter project.
+
+
+  0s drift_dev on 180 inputs; integration_test/app_smoke_test.dart
+  3s drift_dev on 180 inputs: 1 same; spent 3s analyzing; integration_test/asset_flow_test.dart
+  3s drift_dev on 180 inputs: 150 skipped, 20 same, 10 no-op; spent 3s analyzing
+  0s source_gen:combining_builder on 90 inputs; integration_test/app_smoke_test.dart
+  0s source_gen:combining_builder on 90 inputs: 90 skipped
+  Built with build_runner/aot in 4s; wrote 20 outputs.
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Analyzing Finance...                                            
+No issues found! (ran in 6.8s)
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/test/asset_widgets_test.dart
+00:00 +0: D:/Finance/test/core/business_date_test.dart: (setUpAll)
+00:00 +0: D:/Finance/test/asset_widgets_test.dart: (setUpAll)
+00:00 +1: D:/Finance/test/asset_widgets_test.dart: (setUpAll)
+00:00 +2: D:/Finance/test/asset_widgets_test.dart: (setUpAll)
+00:00 +3: D:/Finance/test/asset_widgets_test.dart: (setUpAll)
+00:00 +4: D:/Finance/test/asset_widgets_test.dart: (setUpAll)
+00:00 +5: D:/Finance/test/asset_widgets_test.dart: (setUpAll)
+00:00 +6: D:/Finance/test/asset_widgets_test.dart: (setUpAll)
+00:00 +7: D:/Finance/test/asset_widgets_test.dart: (setUpAll)
+00:00 +8: D:/Finance/test/asset_widgets_test.dart: (setUpAll)
+00:00 +9: D:/Finance/test/asset_widgets_test.dart: (setUpAll)
+00:00 +9: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +10: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +11: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +12: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +13: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +14: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +15: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +16: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +17: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +18: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +19: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +20: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +21: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +22: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +23: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +24: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +25: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +26: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +27: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +28: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +29: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +30: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +31: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +32: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +33: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +34: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +35: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +36: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +37: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +38: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +39: D:/Finance/test/ledger_widgets_test.dart: T07/T09 historical month UI defaults Sep 30, saves once and syncs filters
+00:02 +40: D:/Finance/test/ledger_widgets_test.dart: T07/T09 historical month UI defaults Sep 30, saves once and syncs filters
+00:02 +41: D:/Finance/test/ledger_widgets_test.dart: T07/T09 historical month UI defaults Sep 30, saves once and syncs filters
+00:02 +42: D:/Finance/test/ledger_widgets_test.dart: T07/T09 historical month UI defaults Sep 30, saves once and syncs filters
+00:02 +43: D:/Finance/test/ledger_widgets_test.dart: T07/T09 historical month UI defaults Sep 30, saves once and syncs filters
+00:02 +44: D:/Finance/test/ledger_widgets_test.dart: T07/T09 historical month UI defaults Sep 30, saves once and syncs filters
+00:02 +45: D:/Finance/test/asset_widgets_test.dart: invalid amount stays in the form; unsaved Back can continue or discard
+00:03 +46: D:/Finance/test/ledger_widgets_test.dart: T08 switching bill direction requires a new category and never keeps the old category
+00:03 +47: D:/Finance/test/ledger_widgets_test.dart: T08 switching bill direction requires a new category and never keeps the old category
+00:03 +48: D:/Finance/test/ledger_widgets_test.dart: T08 switching bill direction requires a new category and never keeps the old category
+00:03 +49: D:/Finance/test/asset_widgets_test.dart: T06/T10 positive single-point chart, large totals and long legends fit narrow large-text screens
+00:03 +50: D:/Finance/test/ledger_widgets_test.dart: T15 memo editor, combined keyword/tag filter, history and localized user content
+00:04 +51: D:/Finance/test/ledger_widgets_test.dart: new bill, annual and memo pages fit 320dp and 200 percent text in both themes
+00:04 +52: D:/Finance/test/ledger_widgets_test.dart: (tearDownAll)
+00:04 +52: All tests passed!
+Backup schema checks passed (valid sample / rejected fractional minor units).

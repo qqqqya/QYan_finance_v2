@@ -1,0 +1,10 @@
+**********************
+PowerShell transcript start
+Start time: 20261022170228
+**********************
+PS>TerminatingError(): "Native control missing: ^Choose a category|^Category$"
+>> TerminatingError(): "Native control missing: ^Choose a category|^Category$"
+**********************
+PowerShell transcript end
+End time: 20261022170330
+**********************

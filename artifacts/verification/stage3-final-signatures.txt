@@ -1,0 +1,2 @@
+finance-stage3-debug.apk Signer #1 certificate SHA-256 digest: ca5a2b7fbaa1f2dd293687530c624ba50e048255d4efa7169512e25e69ac8b8a
+finance-stage3-ide-debug.apk Signer #1 certificate SHA-256 digest: 62d56913337abab8aa40c5424849b0b0c141db6e72a028d51b89c0000e40a2bb

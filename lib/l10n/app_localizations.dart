@@ -747,6 +747,288 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Red'**
   String get colorRed;
+
+  /// No description provided for @monthlyBills.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly bills'**
+  String get monthlyBills;
+
+  /// No description provided for @memos.
+  ///
+  /// In en, this message translates to:
+  /// **'Finance memos'**
+  String get memos;
+
+  /// No description provided for @income.
+  ///
+  /// In en, this message translates to:
+  /// **'Income'**
+  String get income;
+
+  /// No description provided for @expense.
+  ///
+  /// In en, this message translates to:
+  /// **'Expense'**
+  String get expense;
+
+  /// No description provided for @surplus.
+  ///
+  /// In en, this message translates to:
+  /// **'Surplus'**
+  String get surplus;
+
+  /// No description provided for @billDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Bill details'**
+  String get billDetails;
+
+  /// No description provided for @addBill.
+  ///
+  /// In en, this message translates to:
+  /// **'Add transaction'**
+  String get addBill;
+
+  /// No description provided for @annualSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Annual summary'**
+  String get annualSummary;
+
+  /// No description provided for @year.
+  ///
+  /// In en, this message translates to:
+  /// **'Year'**
+  String get year;
+
+  /// No description provided for @month.
+  ///
+  /// In en, this message translates to:
+  /// **'Month'**
+  String get month;
+
+  /// No description provided for @previousMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous month'**
+  String get previousMonth;
+
+  /// No description provided for @nextMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'Next month'**
+  String get nextMonth;
+
+  /// No description provided for @chooseMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose month'**
+  String get chooseMonth;
+
+  /// No description provided for @all.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get all;
+
+  /// No description provided for @noBills.
+  ///
+  /// In en, this message translates to:
+  /// **'No transactions in this selection.'**
+  String get noBills;
+
+  /// No description provided for @billBasis.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly bills are independent of assets and project entries.'**
+  String get billBasis;
+
+  /// No description provided for @billDistribution.
+  ///
+  /// In en, this message translates to:
+  /// **'Category breakdown'**
+  String get billDistribution;
+
+  /// No description provided for @savedMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved in month:'**
+  String get savedMonth;
+
+  /// No description provided for @viewMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'View month'**
+  String get viewMonth;
+
+  /// No description provided for @categories.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage categories'**
+  String get categories;
+
+  /// No description provided for @newCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'New category'**
+  String get newCategory;
+
+  /// No description provided for @categoryInactive.
+  ///
+  /// In en, this message translates to:
+  /// **'Inactive'**
+  String get categoryInactive;
+
+  /// No description provided for @categoryActive.
+  ///
+  /// In en, this message translates to:
+  /// **'Active for new transactions'**
+  String get categoryActive;
+
+  /// No description provided for @categoryFixed.
+  ///
+  /// In en, this message translates to:
+  /// **'Direction stays fixed after creation.'**
+  String get categoryFixed;
+
+  /// No description provided for @categoryUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose an active category for this direction.'**
+  String get categoryUnavailable;
+
+  /// No description provided for @categoryReferenced.
+  ///
+  /// In en, this message translates to:
+  /// **'This category is in use. Move its transactions before deleting it.'**
+  String get categoryReferenced;
+
+  /// No description provided for @categoryDeleteWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete this category and its edit history?'**
+  String get categoryDeleteWarning;
+
+  /// No description provided for @moveCategoryWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'Move all its transactions to the selected active category, then delete it? Amounts and dates stay unchanged. Each moved transaction gets edit history.'**
+  String get moveCategoryWarning;
+
+  /// No description provided for @moveAndDelete.
+  ///
+  /// In en, this message translates to:
+  /// **'Move and delete'**
+  String get moveAndDelete;
+
+  /// No description provided for @replacementCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Destination category'**
+  String get replacementCategory;
+
+  /// No description provided for @chooseCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a category'**
+  String get chooseCategory;
+
+  /// No description provided for @deleteBillWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete this transaction and its edit history? Monthly and annual totals will update. Assets stay unchanged.'**
+  String get deleteBillWarning;
+
+  /// No description provided for @memoTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Title'**
+  String get memoTitle;
+
+  /// No description provided for @memoBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Text'**
+  String get memoBody;
+
+  /// No description provided for @tags.
+  ///
+  /// In en, this message translates to:
+  /// **'Tags'**
+  String get tags;
+
+  /// No description provided for @tagsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Separate tags with commas; up to 10 tags, 30 characters each.'**
+  String get tagsHint;
+
+  /// No description provided for @newMemo.
+  ///
+  /// In en, this message translates to:
+  /// **'New memo'**
+  String get newMemo;
+
+  /// No description provided for @searchMemos.
+  ///
+  /// In en, this message translates to:
+  /// **'Search title, text or tags'**
+  String get searchMemos;
+
+  /// No description provided for @noMemos.
+  ///
+  /// In en, this message translates to:
+  /// **'No memos match this selection.'**
+  String get noMemos;
+
+  /// No description provided for @deleteMemoWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete this memo and its edit history? Financial amounts stay unchanged.'**
+  String get deleteMemoWarning;
+
+  /// No description provided for @memoTextError.
+  ///
+  /// In en, this message translates to:
+  /// **'Use a title of 1–200 characters and text up to 20,000 characters.'**
+  String get memoTextError;
+
+  /// No description provided for @tagError.
+  ///
+  /// In en, this message translates to:
+  /// **'Use up to 10 tags, with no more than 30 characters each.'**
+  String get tagError;
+
+  /// No description provided for @recordAxis.
+  ///
+  /// In en, this message translates to:
+  /// **'Record order · business date'**
+  String get recordAxis;
+
+  /// No description provided for @trendLineHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Observation points are spaced equally. Straight lines only illustrate change; they do not show elapsed time or balances between records.'**
+  String get trendLineHint;
+
+  /// No description provided for @annualAxis.
+  ///
+  /// In en, this message translates to:
+  /// **'Month · 1–12'**
+  String get annualAxis;
+
+  /// No description provided for @requiredField.
+  ///
+  /// In en, this message translates to:
+  /// **'This field is required.'**
+  String get requiredField;
+
+  /// No description provided for @billCategoryName.
+  ///
+  /// In en, this message translates to:
+  /// **'{key, select, salary{Salary} bonus{Bonus} otherIncome{Other income} food{Food} transport{Transport} shopping{Shopping} housing{Housing} medical{Medical} otherExpense{Other expenses} other{Category}}'**
+  String billCategoryName(String key);
 }
 
 class _AppLocalizationsDelegate

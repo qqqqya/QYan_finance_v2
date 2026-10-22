@@ -1,0 +1,29 @@
+**********************
+PowerShell transcript start
+Start time: 20261022165832
+**********************
+Success
+Performing Streamed Install
+Success
+Starting: Intent { cmp=com.example.finance_app/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.example.finance_app/.MainActivity
+TotalTime: 2639
+WaitTime: 2641
+Complete
+Performing Incremental Install
+Performing Streamed Install
+Success
+Starting: Intent { cmp=com.example.finance_app/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.example.finance_app/.MainActivity
+TotalTime: 2142
+WaitTime: 2145
+Complete
+PASS: old IDE APK -> stage 3 IDE-compatible APK via install -r preserved three real snapshots, current balance and metadata. QA fixture deleted.
+**********************
+PowerShell transcript end
+End time: 20261022170024
+**********************

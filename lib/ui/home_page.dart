@@ -13,6 +13,8 @@ import 'project_detail_page.dart';
 import 'project_editor.dart';
 import 'sort_projects_page.dart';
 import 'finance_widgets.dart';
+import 'bills_page.dart';
+import 'memos_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key, required this.controller});
@@ -144,6 +146,35 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   child: _AssetOverview(controller: controller),
+                ),
+                const SizedBox(height: 16),
+                Wrap(
+                  spacing: 12,
+                  runSpacing: 8,
+                  children: [
+                    OutlinedButton.icon(
+                      key: const Key('open-bills'),
+                      icon: const Icon(Icons.receipt_long_outlined),
+                      label: Text(strings.monthlyBills),
+                      onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => BillsPage(controller: controller),
+                        ),
+                      ),
+                    ),
+                    OutlinedButton.icon(
+                      key: const Key('open-memos'),
+                      icon: const Icon(Icons.edit_note_outlined),
+                      label: Text(strings.memos),
+                      onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => MemosPage(controller: controller),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
                 const SizedBox(height: 28),
                 Row(

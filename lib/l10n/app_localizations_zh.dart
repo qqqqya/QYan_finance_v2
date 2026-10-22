@@ -346,6 +346,161 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get colorRed => '红色';
+
+  @override
+  String get monthlyBills => '月度账单';
+
+  @override
+  String get memos => '理财备忘录';
+
+  @override
+  String get income => '收入';
+
+  @override
+  String get expense => '支出';
+
+  @override
+  String get surplus => '结余';
+
+  @override
+  String get billDetails => '账单明细';
+
+  @override
+  String get addBill => '记一笔';
+
+  @override
+  String get annualSummary => '年度汇总';
+
+  @override
+  String get year => '年份';
+
+  @override
+  String get month => '月份';
+
+  @override
+  String get previousMonth => '上个月';
+
+  @override
+  String get nextMonth => '下个月';
+
+  @override
+  String get chooseMonth => '选择年月';
+
+  @override
+  String get all => '全部';
+
+  @override
+  String get noBills => '当前范围没有账单。';
+
+  @override
+  String get billBasis => '账单与资产、独立收支项目完全独立。';
+
+  @override
+  String get billDistribution => '分类分布';
+
+  @override
+  String get savedMonth => '已记入月份：';
+
+  @override
+  String get viewMonth => '查看该月份';
+
+  @override
+  String get categories => '分类管理';
+
+  @override
+  String get newCategory => '新增分类';
+
+  @override
+  String get categoryInactive => '已停用';
+
+  @override
+  String get categoryActive => '可用于新账单';
+
+  @override
+  String get categoryFixed => '创建后分类方向固定。';
+
+  @override
+  String get categoryUnavailable => '请选择当前收支方向的有效分类。';
+
+  @override
+  String get categoryReferenced => '分类已被引用，请迁移账单后再删除。';
+
+  @override
+  String get categoryDeleteWarning => '删除此分类及其修改历史？';
+
+  @override
+  String get moveCategoryWarning => '将此分类的全部账单迁移到所选有效分类后删除？金额和日期不变，每笔迁移记录修改历史。';
+
+  @override
+  String get moveAndDelete => '迁移并删除';
+
+  @override
+  String get replacementCategory => '迁移至分类';
+
+  @override
+  String get chooseCategory => '请选择分类';
+
+  @override
+  String get deleteBillWarning => '删除此账单及其修改历史？月度和年度统计会更新，资产不变。';
+
+  @override
+  String get memoTitle => '标题';
+
+  @override
+  String get memoBody => '正文';
+
+  @override
+  String get tags => '标签';
+
+  @override
+  String get tagsHint => '用逗号分隔；最多 10 个标签，每个 30 字符。';
+
+  @override
+  String get newMemo => '新增备忘录';
+
+  @override
+  String get searchMemos => '搜索标题、正文或标签';
+
+  @override
+  String get noMemos => '当前范围没有备忘录。';
+
+  @override
+  String get deleteMemoWarning => '删除此备忘录及其修改历史？不影响任何金额。';
+
+  @override
+  String get memoTextError => '标题需 1–200 字符，正文最多 20,000 字符。';
+
+  @override
+  String get tagError => '最多 10 个标签，每个不超过 30 字符。';
+
+  @override
+  String get recordAxis => '记录顺序 · 业务日期';
+
+  @override
+  String get trendLineHint => '记录时点等距排列；直线仅示意变化，不代表时间间隔或记录之间的实际余额。';
+
+  @override
+  String get annualAxis => '月份 · 1–12';
+
+  @override
+  String get requiredField => '此项不能为空。';
+
+  @override
+  String billCategoryName(String key) {
+    String _temp0 = intl.Intl.selectLogic(key, {
+      'salary': '工资',
+      'bonus': '奖金',
+      'otherIncome': '其他收入',
+      'food': '餐饮',
+      'transport': '交通',
+      'shopping': '购物',
+      'housing': '住房',
+      'medical': '医疗',
+      'otherExpense': '其他支出',
+      'other': '分类',
+    });
+    return '$_temp0';
+  }
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hans`).
@@ -689,6 +844,161 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
 
   @override
   String get colorRed => '红色';
+
+  @override
+  String get monthlyBills => '月度账单';
+
+  @override
+  String get memos => '理财备忘录';
+
+  @override
+  String get income => '收入';
+
+  @override
+  String get expense => '支出';
+
+  @override
+  String get surplus => '结余';
+
+  @override
+  String get billDetails => '账单明细';
+
+  @override
+  String get addBill => '记一笔';
+
+  @override
+  String get annualSummary => '年度汇总';
+
+  @override
+  String get year => '年份';
+
+  @override
+  String get month => '月份';
+
+  @override
+  String get previousMonth => '上个月';
+
+  @override
+  String get nextMonth => '下个月';
+
+  @override
+  String get chooseMonth => '选择年月';
+
+  @override
+  String get all => '全部';
+
+  @override
+  String get noBills => '当前范围没有账单。';
+
+  @override
+  String get billBasis => '账单与资产、独立收支项目完全独立。';
+
+  @override
+  String get billDistribution => '分类分布';
+
+  @override
+  String get savedMonth => '已记入月份：';
+
+  @override
+  String get viewMonth => '查看该月份';
+
+  @override
+  String get categories => '分类管理';
+
+  @override
+  String get newCategory => '新增分类';
+
+  @override
+  String get categoryInactive => '已停用';
+
+  @override
+  String get categoryActive => '可用于新账单';
+
+  @override
+  String get categoryFixed => '创建后分类方向固定。';
+
+  @override
+  String get categoryUnavailable => '请选择当前收支方向的有效分类。';
+
+  @override
+  String get categoryReferenced => '分类已被引用，请迁移账单后再删除。';
+
+  @override
+  String get categoryDeleteWarning => '删除此分类及其修改历史？';
+
+  @override
+  String get moveCategoryWarning => '将此分类的全部账单迁移到所选有效分类后删除？金额和日期不变，每笔迁移记录修改历史。';
+
+  @override
+  String get moveAndDelete => '迁移并删除';
+
+  @override
+  String get replacementCategory => '迁移至分类';
+
+  @override
+  String get chooseCategory => '请选择分类';
+
+  @override
+  String get deleteBillWarning => '删除此账单及其修改历史？月度和年度统计会更新，资产不变。';
+
+  @override
+  String get memoTitle => '标题';
+
+  @override
+  String get memoBody => '正文';
+
+  @override
+  String get tags => '标签';
+
+  @override
+  String get tagsHint => '用逗号分隔；最多 10 个标签，每个 30 字符。';
+
+  @override
+  String get newMemo => '新增备忘录';
+
+  @override
+  String get searchMemos => '搜索标题、正文或标签';
+
+  @override
+  String get noMemos => '当前范围没有备忘录。';
+
+  @override
+  String get deleteMemoWarning => '删除此备忘录及其修改历史？不影响任何金额。';
+
+  @override
+  String get memoTextError => '标题需 1–200 字符，正文最多 20,000 字符。';
+
+  @override
+  String get tagError => '最多 10 个标签，每个不超过 30 字符。';
+
+  @override
+  String get recordAxis => '记录顺序 · 业务日期';
+
+  @override
+  String get trendLineHint => '记录时点等距排列；直线仅示意变化，不代表时间间隔或记录之间的实际余额。';
+
+  @override
+  String get annualAxis => '月份 · 1–12';
+
+  @override
+  String get requiredField => '此项不能为空。';
+
+  @override
+  String billCategoryName(String key) {
+    String _temp0 = intl.Intl.selectLogic(key, {
+      'salary': '工资',
+      'bonus': '奖金',
+      'otherIncome': '其他收入',
+      'food': '餐饮',
+      'transport': '交通',
+      'shopping': '购物',
+      'housing': '住房',
+      'medical': '医疗',
+      'otherExpense': '其他支出',
+      'other': '分类',
+    });
+    return '$_temp0';
+  }
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hant`).
@@ -1032,4 +1342,159 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String get colorRed => '紅色';
+
+  @override
+  String get monthlyBills => '月度帳單';
+
+  @override
+  String get memos => '理財備忘錄';
+
+  @override
+  String get income => '收入';
+
+  @override
+  String get expense => '支出';
+
+  @override
+  String get surplus => '結餘';
+
+  @override
+  String get billDetails => '帳單明細';
+
+  @override
+  String get addBill => '記一筆';
+
+  @override
+  String get annualSummary => '年度彙總';
+
+  @override
+  String get year => '年份';
+
+  @override
+  String get month => '月份';
+
+  @override
+  String get previousMonth => '上個月';
+
+  @override
+  String get nextMonth => '下個月';
+
+  @override
+  String get chooseMonth => '選擇年月';
+
+  @override
+  String get all => '全部';
+
+  @override
+  String get noBills => '目前範圍沒有帳單。';
+
+  @override
+  String get billBasis => '帳單與資產、獨立收支項目完全獨立。';
+
+  @override
+  String get billDistribution => '分類分佈';
+
+  @override
+  String get savedMonth => '已記入月份：';
+
+  @override
+  String get viewMonth => '查看該月份';
+
+  @override
+  String get categories => '分類管理';
+
+  @override
+  String get newCategory => '新增分類';
+
+  @override
+  String get categoryInactive => '已停用';
+
+  @override
+  String get categoryActive => '可用於新帳單';
+
+  @override
+  String get categoryFixed => '建立後分類方向固定。';
+
+  @override
+  String get categoryUnavailable => '請選擇目前收支方向的有效分類。';
+
+  @override
+  String get categoryReferenced => '分類已被引用，請遷移帳單後再刪除。';
+
+  @override
+  String get categoryDeleteWarning => '刪除此分類及其修改歷史？';
+
+  @override
+  String get moveCategoryWarning => '將此分類的全部帳單遷移到所選有效分類後刪除？金額和日期不變，每筆遷移記錄修改歷史。';
+
+  @override
+  String get moveAndDelete => '遷移並刪除';
+
+  @override
+  String get replacementCategory => '遷移至分類';
+
+  @override
+  String get chooseCategory => '請選擇分類';
+
+  @override
+  String get deleteBillWarning => '刪除此帳單及其修改歷史？月度和年度統計會更新，資產不變。';
+
+  @override
+  String get memoTitle => '標題';
+
+  @override
+  String get memoBody => '正文';
+
+  @override
+  String get tags => '標籤';
+
+  @override
+  String get tagsHint => '用逗號分隔；最多 10 個標籤，每個 30 字元。';
+
+  @override
+  String get newMemo => '新增備忘錄';
+
+  @override
+  String get searchMemos => '搜尋標題、正文或標籤';
+
+  @override
+  String get noMemos => '目前範圍沒有備忘錄。';
+
+  @override
+  String get deleteMemoWarning => '刪除此備忘錄及其修改歷史？不影響任何金額。';
+
+  @override
+  String get memoTextError => '標題需 1–200 字元，正文最多 20,000 字元。';
+
+  @override
+  String get tagError => '最多 10 個標籤，每個不超過 30 字元。';
+
+  @override
+  String get recordAxis => '記錄順序 · 業務日期';
+
+  @override
+  String get trendLineHint => '記錄時點等距排列；直線僅示意變化，不代表時間間隔或記錄之間的實際餘額。';
+
+  @override
+  String get annualAxis => '月份 · 1–12';
+
+  @override
+  String get requiredField => '此項不能為空。';
+
+  @override
+  String billCategoryName(String key) {
+    String _temp0 = intl.Intl.selectLogic(key, {
+      'salary': '薪資',
+      'bonus': '獎金',
+      'otherIncome': '其他收入',
+      'food': '餐飲',
+      'transport': '交通',
+      'shopping': '購物',
+      'housing': '住房',
+      'medical': '醫療',
+      'otherExpense': '其他支出',
+      'other': '分類',
+    });
+    return '$_temp0';
+  }
 }

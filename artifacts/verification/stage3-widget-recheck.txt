@@ -1,0 +1,9 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/test/ledger_widgets_test.dart
+00:00 +0: (setUpAll)
+00:00 +0: T07/T09 historical month UI defaults Sep 30, saves once and syncs filters
+00:01 +1: T08 switching bill direction requires a new category and never keeps the old category
+00:02 +2: T15 memo editor, combined keyword/tag filter, history and localized user content
+00:02 +3: new bill, annual and memo pages fit 320dp and 200 percent text in both themes
+00:03 +4: (tearDownAll)
+00:03 +4: All tests passed!

@@ -12,6 +12,7 @@ android/key.properties
 *.keystore
 artifacts/*.apk
 artifacts/*.aab
+artifacts/*.idsig
 .idea/
 *.iml
 .DS_Store

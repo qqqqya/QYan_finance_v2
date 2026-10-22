@@ -1,0 +1,9 @@
+**********************
+PowerShell transcript start
+Start time: 20261022164735
+**********************
+PS>TerminatingError(): "ADB failed: Failure [DELETE_FAILED_INTERNAL_ERROR]"
+**********************
+PowerShell transcript end
+End time: 20261022164735
+**********************

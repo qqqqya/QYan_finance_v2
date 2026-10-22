@@ -1,0 +1,28 @@
+{
+  "version": "0.3.0+3",
+  "databaseVersion": 1,
+  "applicationId": "com.example.finance_app",
+  "minSdk": 29,
+  "targetSdk": 36,
+  "entrypoint": "lib/main.dart",
+  "architectures": [
+    "armeabi-v7a",
+    "arm64-v8a",
+    "x86_64"
+  ],
+  "buildType": "debug",
+  "packages": [
+    {
+      "file": "finance-stage3-debug.apk",
+      "bytes": 192980363,
+      "sha256": "c3d07fe84537c11b97531a1a465c19808919f1f80c9c74d37ab401af207a0de6",
+      "signerSha256": "ca5a2b7fbaa1f2dd293687530c624ba50e048255d4efa7169512e25e69ac8b8a"
+    },
+    {
+      "file": "finance-stage3-ide-debug.apk",
+      "bytes": 192997122,
+      "sha256": "3d371583e5390ccf3c0d5c4e4bb288411d83f196798a87cab227a88c42df9426",
+      "signerSha256": "62d56913337abab8aa40c5424849b0b0c141db6e72a028d51b89c0000e40a2bb"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+[√] Flutter (Channel stable, 3.47.7, on Microsoft Windows [版本 10.0.26200.9711], locale zh-CN) [351ms]
+[√] Android toolchain - develop for Android devices (Android SDK version 36.0.0) [1,589ms]
+    • Android SDK at D:\Finance\.tooling\android-sdk
+    • Java version OpenJDK Runtime Environment (build 25.0.3+-15898627-b508.16)
+[X] Visual Studio - develop Windows apps [11ms]
+    X Visual Studio not installed; this is necessary to develop Windows apps.
+[√] Connected device (5 available) [366ms]
+    • Android SDK built for x86 64 (mobile) • emulator-5560 • android-x64    • Android 16 (API 36) (emulator)

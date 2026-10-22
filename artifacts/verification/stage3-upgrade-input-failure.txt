@@ -1,0 +1,20 @@
+**********************
+PowerShell transcript start
+Start time: 20261022165540
+**********************
+Success
+Performing Streamed Install
+Success
+Starting: Intent { cmp=com.example.finance_app/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.example.finance_app/.MainActivity
+TotalTime: 2472
+WaitTime: 2476
+Complete
+PS>TerminatingError(): "Native control missing: ^QA_STAGE3_UPGRADE"
+>> TerminatingError(): "Native control missing: ^QA_STAGE3_UPGRADE"
+**********************
+PowerShell transcript end
+End time: 20261022165651
+**********************

@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 import '../core/money.dart';
 import '../data/finance_repository.dart';
 import '../data/workspace.dart';
+import '../data/ledger_workspace.dart';
 import '../domain/app_settings.dart';
 
 final class FinanceController extends ChangeNotifier {
@@ -13,6 +14,8 @@ final class FinanceController extends ChangeNotifier {
   final FinanceRepository repository;
   StreamSubscription<AppSettings>? _settingsSubscription;
   StreamSubscription<Workspace>? _dashboardSubscription;
+  StreamSubscription<LedgerWorkspace>? _ledgerSubscription;
+  LedgerWorkspace? ledger;
   Workspace? workspace;
   AppSettings? settings;
   List<ProjectSummary> projects = const [];
@@ -37,6 +40,7 @@ final class FinanceController extends ChangeNotifier {
   Future<void> start() async {
     settings = await repository.watchSettings().first;
     workspace = await repository.watchWorkspace().first;
+    ledger = await repository.watchLedger().first;
     projects = workspace!.summaries;
     dashboardLoaded = true;
     _settingsSubscription = repository.watchSettings().listen((value) {
@@ -47,6 +51,10 @@ final class FinanceController extends ChangeNotifier {
       workspace = value;
       projects = value.summaries;
       dashboardLoaded = true;
+      _notify();
+    }, onError: _onError);
+    _ledgerSubscription = repository.watchLedger().listen((value) {
+      ledger = value;
       _notify();
     }, onError: _onError);
   }
@@ -85,6 +93,7 @@ final class FinanceController extends ChangeNotifier {
     _disposed = true;
     unawaited(_settingsSubscription?.cancel());
     unawaited(_dashboardSubscription?.cancel());
+    unawaited(_ledgerSubscription?.cancel());
     super.dispose();
   }
 }
