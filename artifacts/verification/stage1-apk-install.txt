@@ -1,0 +1,11 @@
+Performing Streamed Install
+Success
+Starting: Intent { cmp=com.example.finance_app/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.example.finance_app/.MainActivity
+TotalTime: 2278
+WaitTime: 2300
+Complete
+PASS: final universal APK installed, launched, preserved Simplified Chinese and light appearance.
+PASS: final home is visible after route animation.

@@ -1,0 +1,21 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/integration_test/asset_flow_test.dart
+Running Gradle task 'assembleDebug'...                          
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/D:/Finance/.tooling/gradle/wrapper/dists/gradle-9.3.1-bin/30eg2jcb8eqk5ro0gq9h8x6ef/gradle-9.3.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Running Gradle task 'assembleDebug'...                             12.9s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...          582ms
+00:00 +0: Stage 2 Android projects, snapshots, audit, charts, drag and locales
+STAGE2: T01 initialized zero data.
+STAGE2: T03 earlier backfill, same-minute keys, money/note/date editing passed.
+STAGE2: T04 history clear preserves money; record deletion and clear recompute correctly.
+STAGE2: T05 four project types, totals, independent logs; T21 rapid save passed. Full T02 deferred.
+STAGE2: T10 multi-project legend/trend and T11 native grid long-press/drop passed.
+STAGE2: project metadata, localized forms, custom/default deletion and cascades passed.
+01:35 +1: (tearDownAll)
+01:35 +1: All tests passed!

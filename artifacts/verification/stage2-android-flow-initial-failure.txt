@@ -1,0 +1,115 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/integration_test/asset_flow_test.dart
+Running Gradle task 'assembleDebug'...                          
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/D:/Finance/.tooling/gradle/wrapper/dists/gradle-9.3.1-bin/30eg2jcb8eqk5ro0gq9h8x6ef/gradle-9.3.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Running Gradle task 'assembleDebug'...                             17.1s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...          711ms
+00:00 +0: Stage 2 Android projects, snapshots, audit, charts, drag and locales
+STAGE2: T01 initialized zero data.
+
+Warning: A call to drag() with finder "Found 1 widget with type "Scrollable" (ignoring all but last): [
+  Scrollable-[GlobalKey#d47b9](axisDirection: right, physics: null, restorationId: "editable", dependencies: [InheritedCupertinoTheme, MediaQuery, UnmanagedRestorationScope, _InheritedTheme, _LocalizationsScope-[GlobalKey#18942]], state: ScrollableState#a63c1(position: ScrollPositionWithSingleContext#8b205(offset: 0.0, range: 0.0..0.0, viewport: 339.4, ScrollableState, ClampingScrollPhysics -> RangeMaintainingScrollPhysics -> ClampingScrollPhysics -> RangeMaintainingScrollPhysics, IdleScrollActivity#bb7a3, ScrollDirection.idle), effective physics: ClampingScrollPhysics -> RangeMaintainingScrollPhysics -> ClampingScrollPhysics -> RangeMaintainingScrollPhysics)),
+]" derived an Offset (Offset(205.7, 844.8)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderPointerListener#b8f21 relayoutBoundary=up17
+The hit test result at that offset is: HitTestResult(RenderPointerListener#053e5@Offset(205.7, 740.0), RenderSemanticsGestureHandler#d85f9@Offset(205.7, 740.0), RenderPointerListener#391cd@Offset(205.7, 740.0), _RenderScrollSemantics#f5f5c@Offset(205.7, 740.0), RenderCustomPaint#c54cc@Offset(205.7, 740.0), _ImageFilterRenderObject#ee40f@Offset(205.7, 740.0), RenderClipRect#f86f6@Offset(205.7, 740.0), RenderSemanticsAnnotations#21317@Offset(205.7, 740.0), RenderCustomMultiChildLayoutBox#e4c47@Offset(205.7, 844.8), _RenderInkFeatures#414b6@Offset(205.7, 844.8), RenderPhysicalModel#ebd50@Offset(205.7, 844.8), RenderSemanticsAnnotations#d6fa6@Offset(205.7, 844.8), RenderRepaintBoundary#1bab0@Offset(205.7, 844.8), RenderIgnorePointer#167e5@Offset(205.7, 844.8), RenderAnimatedOpacity#68d73@Offset(205.7, 844.8), RenderAnimatedOpacity#c9ca7@Offset(205.7, 844.8), _RenderColoredBox#87a30@Offset(205.7, 844.8), RenderAnimatedOpacity#b1045@Offset(205.7, 844.8), RenderIgnorePointer#e1510@Offset(205.7, 844.8), RenderAnimatedOpacity#55bf9@Offset(205.7, 844.8), RenderRepaintBoundary#0542a@Offset(205.7, 844.8), RenderSemanticsAnnotations#c2e8b@Offset(205.7, 844.8), RenderOffstage#05006@Offset(205.7, 844.8), RenderSemanticsAnnotations#254d1@Offset(205.7, 844.8), _RenderTheater#03932@Offset(205.7, 844.8), RenderAbsorbPointer#1428d@Offset(205.7, 844.8), RenderPointerListener#494b8@Offset(205.7, 844.8), RenderSemanticsAnnotations#b0e3e@Offset(205.7, 844.8), RenderSemanticsAnnotations#259f1@Offset(205.7, 844.8), RenderSemanticsAnnotations#f8ef1@Offset(205.7, 844.8), RenderSemanticsAnnotations#ea83d@Offset(205.7, 844.8), RenderTapRegionSurface#cfd0a@Offset(205.7, 844.8), RenderSemanticsAnnotations#ba102@Offset(205.7, 844.8), RenderSemanticsAnnotations#70bef@Offset(205.7, 844.8), HitTestEntry<HitTestTarget>#a6837(_ReusableRenderView#f0848), HitTestEntry<HitTestTarget>#1e83c(<IntegrationTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2165:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1947:12)
+#2      WidgetController.drag (package:flutter_test/src/controller.dart:1604:7)
+#3      WidgetController.dragUntilVisible.<anonymous closure> (package:flutter_test/src/controller.dart:2483:17)
+#4      _rootRun (dart:async/zone_root.dart:35:13)
+#5      _CustomZone.run (dart:async/zone.dart:810:35)
+#6      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#7      WidgetController.dragUntilVisible (package:flutter_test/src/controller.dart:2476:27)
+#8      WidgetController.scrollUntilVisible.<anonymous closure> (package:flutter_test/src/controller.dart:2439:13)
+#9      _rootRun (dart:async/zone_root.dart:35:13)
+#10     _CustomZone.run (dart:async/zone.dart:810:35)
+#11     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#12     WidgetController.scrollUntilVisible (package:flutter_test/src/controller.dart:2427:27)
+#13     reveal (file:///D:/Finance/integration_test/asset_flow_test.dart:27:18)
+#14     enter (file:///D:/Finance/integration_test/asset_flow_test.dart:46:9)
+#15     main.<anonymous closure>.create (file:///D:/Finance/integration_test/asset_flow_test.dart:93:17)
+<asynchronous suspension>
+#16     main.<anonymous closure> (file:///D:/Finance/integration_test/asset_flow_test.dart:129:21)
+<asynchronous suspension>
+#17     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#18     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#19     StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "drag()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+
+Warning: A call to drag() with finder "Found 1 widget with type "Scrollable" (ignoring all but last): [
+  Scrollable-[GlobalKey#d47b9](axisDirection: right, physics: null, restorationId: "editable", dependencies: [InheritedCupertinoTheme, MediaQuery, UnmanagedRestorationScope, _InheritedTheme, _LocalizationsScope-[GlobalKey#18942]], state: ScrollableState#a63c1(position: ScrollPositionWithSingleContext#8b205(offset: 0.0, range: 0.0..0.0, viewport: 339.4, ScrollableState, ClampingScrollPhysics -> RangeMaintainingScrollPhysics -> ClampingScrollPhysics -> RangeMaintainingScrollPhysics, IdleScrollActivity#e8afe, ScrollDirection.idle), effective physics: ClampingScrollPhysics -> RangeMaintainingScrollPhysics -> ClampingScrollPhysics -> RangeMaintainingScrollPhysics)),
+]" derived an Offset (Offset(205.7, 831.2)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderPointerListener#b8f21 relayoutBoundary=up17
+The hit test result at that offset is: HitTestResult(RenderPointerListener#053e5@Offset(205.7, 726.5), RenderSemanticsGestureHandler#d85f9@Offset(205.7, 726.5), RenderPointerListener#391cd@Offset(205.7, 726.5), _RenderScrollSemantics#f5f5c@Offset(205.7, 726.5), RenderCustomPaint#c54cc@Offset(205.7, 726.5), _ImageFilterRenderObject#ee40f@Offset(205.7, 726.5), RenderClipRect#f86f6@Offset(205.7, 726.5), RenderSemanticsAnnotations#21317@Offset(205.7, 726.5), RenderCustomMultiChildLayoutBox#e4c47@Offset(205.7, 831.2), _RenderInkFeatures#414b6@Offset(205.7, 831.2), RenderPhysicalModel#ebd50@Offset(205.7, 831.2), RenderSemanticsAnnotations#d6fa6@Offset(205.7, 831.2), RenderRepaintBoundary#1bab0@Offset(205.7, 831.2), RenderIgnorePointer#167e5@Offset(205.7, 831.2), RenderAnimatedOpacity#68d73@Offset(205.7, 831.2), RenderAnimatedOpacity#c9ca7@Offset(205.7, 831.2), _RenderColoredBox#87a30@Offset(205.7, 831.2), RenderAnimatedOpacity#b1045@Offset(205.7, 831.2), RenderIgnorePointer#e1510@Offset(205.7, 831.2), RenderAnimatedOpacity#55bf9@Offset(205.7, 831.2), RenderRepaintBoundary#0542a@Offset(205.7, 831.2), RenderSemanticsAnnotations#c2e8b@Offset(205.7, 831.2), RenderOffstage#05006@Offset(205.7, 831.2), RenderSemanticsAnnotations#254d1@Offset(205.7, 831.2), _RenderTheater#03932@Offset(205.7, 831.2), RenderAbsorbPointer#1428d@Offset(205.7, 831.2), RenderPointerListener#494b8@Offset(205.7, 831.2), RenderSemanticsAnnotations#b0e3e@Offset(205.7, 831.2), RenderSemanticsAnnotations#259f1@Offset(205.7, 831.2), RenderSemanticsAnnotations#f8ef1@Offset(205.7, 831.2), RenderSemanticsAnnotations#ea83d@Offset(205.7, 831.2), RenderTapRegionSurface#cfd0a@Offset(205.7, 831.2), RenderSemanticsAnnotations#ba102@Offset(205.7, 831.2), RenderSemanticsAnnotations#70bef@Offset(205.7, 831.2), HitTestEntry<HitTestTarget>#2db83(_ReusableRenderView#f0848), HitTestEntry<HitTestTarget>#e237b(<IntegrationTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2165:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1947:12)
+#2      WidgetController.drag (package:flutter_test/src/controller.dart:1604:7)
+#3      WidgetController.dragUntilVisible.<anonymous closure> (package:flutter_test/src/controller.dart:2483:17)
+<asynchronous suspension>
+#4      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#5      WidgetController.scrollUntilVisible.<anonymous closure> (package:flutter_test/src/controller.dart:2439:7)
+<asynchronous suspension>
+#6      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#7      reveal (file:///D:/Finance/integration_test/asset_flow_test.dart:27:5)
+<asynchronous suspension>
+#8      enter (file:///D:/Finance/integration_test/asset_flow_test.dart:46:3)
+<asynchronous suspension>
+#9      main.<anonymous closure>.create (file:///D:/Finance/integration_test/asset_flow_test.dart:93:11)
+<asynchronous suspension>
+#10     main.<anonymous closure> (file:///D:/Finance/integration_test/asset_flow_test.dart:129:21)
+<asynchronous suspension>
+#11     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#12     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+#13     StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "drag()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+STAGE2: T03 earlier backfill, same-minute keys, money/note/date editing passed.
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: at least one matching candidate
+  Actual: _TextWidgetFinder:<Found 0 widgets with text "Moved date": []>
+   Which: means none were found but some were expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/Finance/integration_test/asset_flow_test.dart:176:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/Finance/integration_test/asset_flow_test.dart line 176
+The test description was:
+  Stage 2 Android projects, snapshots, audit, charts, drag and locales
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:30 +0 -1: Stage 2 Android projects, snapshots, audit, charts, drag and locales [E]
+  Test failed. See exception logs above.
+  The test description was: Stage 2 Android projects, snapshots, audit, charts, drag and locales
+  
+00:30 +0 -1: (tearDownAll)
+00:30 +0 -1: Some tests failed.
+
+Failing tests:
+  D:/Finance/integration_test/asset_flow_test.dart: Stage 2 Android projects, snapshots, audit, charts, drag and locales

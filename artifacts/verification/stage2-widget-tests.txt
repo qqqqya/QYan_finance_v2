@@ -1,0 +1,10 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/test/asset_widgets_test.dart
+00:00 +0: (setUpAll)
+00:00 +0: T21 two rapid save taps add exactly one entry and immediately refresh the detail
+00:01 +1: invalid amount stays in the form; unsaved Back can continue or discard
+00:01 +2: T11 home long press only drags; drop persists the grid order
+00:01 +3: T10 overview zero state works at 320dp and 200 percent text
+00:01 +4: T06/T10 positive single-point chart, large totals and long legends fit narrow large-text screens
+00:02 +5: (tearDownAll)
+00:02 +5: All tests passed!

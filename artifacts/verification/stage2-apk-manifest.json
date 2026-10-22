@@ -1,0 +1,15 @@
+{
+  "file": "finance-stage2-debug.apk",
+  "bytes": 192898443,
+  "sha256": "fd1ae6fdc839dfc8deba692eb45724f27b2911c3bc82e943b5c98afb7125da38",
+  "version": "0.2.0+2",
+  "databaseVersion": 1,
+  "entrypoint": "lib/main.dart",
+  "minSdk": 29,
+  "targetSdk": 36,
+  "architectures": [
+    "armeabi-v7a",
+    "arm64-v8a",
+    "x86_64"
+  ]
+}

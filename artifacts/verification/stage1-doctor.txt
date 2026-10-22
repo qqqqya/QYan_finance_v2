@@ -1,0 +1,46 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+[√] Flutter (Channel stable, 3.47.7, on Microsoft Windows [版本 10.0.26200.9711], locale zh-CN) [415ms]
+    • Flutter version 3.47.7 on channel stable at D:\Finance\.tooling\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision abaf9c5237 (13 days ago), 2026-10-08 09:51:21 -0700
+    • Engine revision deb287481e
+    • Dart version 3.13.5
+    • DevTools version 2.60.0
+    • Flutter download mirror https://storage.flutter-io.cn
+    • Feature flags: enable-web, enable-linux-desktop, enable-macos-desktop, enable-windows-desktop, enable-android, enable-ios, cli-animations, enable-native-assets, enable-record-use, enable-swift-package-manager, omit-legacy-version-file, enable-lldb-debugging, enable-uiscene-migration
+
+[√] Windows Version (Windows 11 or higher, 25H2, 2009) [3.9s]
+
+[√] Android toolchain - develop for Android devices (Android SDK version 36.0.0) [12.1s]
+    • Android SDK at D:\Finance\.tooling\android-sdk
+    • Emulator version 37.2.12.0 (build_id 16428233) (CL:N/A)
+    • Platform android-36, build-tools 36.0.0
+    • ANDROID_HOME = D:\Finance\.tooling\android-sdk
+    • ANDROID_SDK_ROOT = D:\Finance\.tooling\android-sdk
+    ! Multiple adb binaries found. This can cause conflicts and device detection issues:
+        - D:\Finance\.tooling\android-sdk\platform-tools\adb.exe
+        - D:\Downloads\myir\PlatformTools\adb.exe
+    • Java binary at: D:\andriod studio\jbr\bin\java
+      This is the JDK bundled with the latest Android Studio installation on this machine.
+      To manually set the JDK path, use: `flutter config --jdk-dir="path/to/jdk"`.
+    • Java version OpenJDK Runtime Environment (build 25.0.3+-15898627-b508.16)
+    • All Android licenses accepted.
+
+[√] Chrome - develop for the web [14ms]
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[X] Visual Studio - develop Windows apps [12ms]
+    X Visual Studio not installed; this is necessary to develop Windows apps.
+      Download at https://visualstudio.microsoft.com/downloads/.
+      Please install the "Desktop development with C++" workload, including all of its default components
+
+[√] Connected device (4 available) [340ms]
+    • Android SDK built for x86 64 (mobile) • emulator-5560 • android-x64    • Android 16 (API 36) (emulator)
+    • Windows (desktop)                     • windows       • windows-x64    • Microsoft Windows [版本 10.0.26200.9711]
+    • Chrome (web)                          • chrome        • web-javascript • Google Chrome 155.0.8059.85
+    • Edge (web)                            • edge          • web-javascript • Microsoft Edge 155.0.4283.62
+
+[√] Network resources [2.7s]
+    • All expected network resources are available.
+
+! Doctor found issues in 1 category.

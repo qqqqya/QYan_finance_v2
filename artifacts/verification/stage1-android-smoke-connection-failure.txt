@@ -1,0 +1,31 @@
+00:00 +0: loading D:/Finance/integration_test/app_smoke_test.dart
+Running Gradle task 'assembleDebug'...                          
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/D:/Finance/.tooling/gradle/wrapper/dists/gradle-9.3.1-bin/30eg2jcb8eqk5ro0gq9h8x6ef/gradle-9.3.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Running Gradle task 'assembleDebug'...                             12.9s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...          595ms
+00:00 +0 -1: loading D:/Finance/integration_test/app_smoke_test.dart [E]
+  Failed to load "D:/Finance/integration_test/app_smoke_test.dart": registerService: (-32000) Service connection disposed
+  package:vm_service/src/vm_service.dart 278:34                     new _OutstandingRequest
+  package:vm_service/src/vm_service.dart 1960:25                    VmService._call.<fn>
+  package:vm_service/src/vm_service.dart 1972:8                     VmService._call
+  package:vm_service/src/vm_service.dart 1561:7                     VmService.registerService
+  package:flutter_tools/src/vmservice.dart 231:15                   setUpVmService
+  package:flutter_tools/src/vmservice.dart 402:46                   _connect
+  ===== asynchronous gap ===========================
+  dart:async/future_impl.dart 1061:7                                Future.timeout.<fn>
+  ===== asynchronous gap ===========================
+  package:flutter_tools/src/test/integration_test_device.dart 99:9  IntegrationTestTestDevice.start
+  ===== asynchronous gap ===========================
+  package:flutter_tools/src/test/flutter_platform.dart 679:51       FlutterPlatform._startTest.<fn>
+  ===== asynchronous gap ===========================
+  package:flutter_tools/src/base/async_guard.dart 108:24            asyncGuard.<fn>
+  
+00:00 +0 -1: Some tests failed.
+
+Failing tests:
+  D:/Finance/integration_test/app_smoke_test.dart: loading D:/Finance/integration_test/app_smoke_test.dart

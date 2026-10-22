@@ -1,0 +1,8 @@
+Performing Streamed Install
+Success
+Starting: Intent { cmp=com.example.finance_app/.MainActivity }
+Status: timeout
+LaunchState: UNKNOWN (-1)
+Activity: com.example.finance_app/.MainActivity
+WaitTime: 11741
+Complete

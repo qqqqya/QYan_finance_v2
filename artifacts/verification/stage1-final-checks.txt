@@ -1,0 +1,44 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Because l10n.yaml exists, the options defined there will be used instead.
+To use the command line arguments, delete the l10n.yaml file in the Flutter project.
+
+
+  0s drift_dev on 84 inputs; integration_test/app_smoke_test.dart
+  3s drift_dev on 84 inputs: 1 same; spent 3s analyzing; lib/app/finance_app.dart
+  3s drift_dev on 84 inputs: 54 skipped, 10 output, 10 same, 10 no-op; spent 3s analyzing
+  0s source_gen:combining_builder on 42 inputs; integration_test/app_smoke_test.dart
+  0s source_gen:combining_builder on 42 inputs: 42 skipped
+  Built with build_runner/aot in 4s; wrote 20 outputs.
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Analyzing Finance...                                            
+No issues found! (ran in 17.7s)
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/test/core/business_date_test.dart
+00:00 +0: D:/Finance/test/core/money_test.dart: decimal parsing preserves cents without float rounding
+00:00 +1: D:/Finance/test/core/business_date_test.dart: (setUpAll)
+00:00 +2: D:/Finance/test/core/business_date_test.dart: (setUpAll)
+00:00 +3: D:/Finance/test/core/business_date_test.dart: (setUpAll)
+00:00 +4: D:/Finance/test/core/business_date_test.dart: (setUpAll)
+00:00 +4: D:/Finance/test/core/business_date_test.dart: strict dates reject normalization, malformed dates and invalid leap days
+00:00 +5: D:/Finance/test/core/business_date_test.dart: selected month controls the default, including month ends and cross-year
+00:00 +6: D:/Finance/test/core/business_date_test.dart: book time zone determines the business day independently of device zone
+00:00 +7: D:/Finance/test/core/business_date_test.dart: invalid times and future moments are rejected
+00:00 +8: D:/Finance/test/core/business_date_test.dart: Android GMT identifier can initialize a zero-balance book
+00:00 +9: D:/Finance/test/core/business_date_test.dart: (tearDownAll)
+00:00 +9: D:/Finance/test/data/finance_repository_test.dart: (setUpAll)
+00:00 +9: D:/Finance/test/data/finance_repository_test.dart: in-memory repository fresh initialization seeds only zero snapshots and no fake flows
+00:00 +10: D:/Finance/test/data/finance_repository_test.dart: in-memory repository fresh initialization seeds only zero snapshots and no fake flows
+00:00 +11: D:/Finance/test/data/finance_repository_test.dart: in-memory repository fresh initialization seeds only zero snapshots and no fake flows
+00:00 +12: D:/Finance/test/data/finance_repository_test.dart: in-memory repository fresh initialization seeds only zero snapshots and no fake flows
+00:00 +13: D:/Finance/test/data/finance_repository_test.dart: in-memory repository restarting initialization preserves deletions and saved preferences
+00:00 +14: D:/Finance/test/data/finance_repository_test.dart: in-memory repository a failed transaction rolls back both settings and balance changes
+00:00 +15: D:/Finance/test/data/finance_repository_test.dart: in-memory repository SQL prevents wrong project types and mismatched bill categories
+00:00 +16: D:/Finance/test/data/finance_repository_test.dart: in-memory repository bills do not modify assets, snapshot deletes fall back, and edit-history deletes preserve balances
+00:00 +17: D:/Finance/test/data/finance_repository_test.dart: file database survives close and reopen without reseeding or losing cents
+00:00 +18: D:/Finance/test/widget_test.dart: home, settings, three locales and route back use persisted preferences
+00:01 +19: D:/Finance/test/widget_test.dart: manual theme survives system changes and system mode follows brightness
+00:01 +20: D:/Finance/test/widget_test.dart: 320dp large text and complete large amounts have no layout overflow
+00:01 +21: D:/Finance/test/widget_test.dart: Chinese scripts and unsupported system locales resolve consistently
+00:01 +22: D:/Finance/test/widget_test.dart: (tearDownAll)
+00:01 +22: All tests passed!
+Backup schema checks passed (valid sample / rejected fractional minor units).

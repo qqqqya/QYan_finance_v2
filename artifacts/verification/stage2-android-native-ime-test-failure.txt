@@ -1,0 +1,12 @@
+**********************
+PowerShell transcript start
+Start time: 20261022132239
+**********************
+Process restarted: 2766 -> 3310
+PASS T21: real process restart preserved the initial/latest snapshots and project/record notes.
+PS>TerminatingError(): "Visible native control missing: ^Discard$"
+>> TerminatingError(): "Visible native control missing: ^Discard$"
+**********************
+PowerShell transcript end
+End time: 20261022132447
+**********************

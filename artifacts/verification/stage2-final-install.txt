@@ -1,0 +1,8 @@
+Starting: Intent { cmp=com.example.finance_app/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.example.finance_app/.MainActivity
+TotalTime: 4066
+WaitTime: 4069
+Complete
+PASS: final 0.2.0+2 APK cold-started after AVD reboot; Chinese zero-data home, 9 default projects, no QA fixture.

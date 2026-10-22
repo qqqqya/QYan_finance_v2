@@ -1,0 +1,13 @@
+Device: emulator-5560; package: com.example.finance_app
+PASS: force-stop/restart (3450 -> 3593), language and dark selection persisted.
+PASS: left-edge system gesture returned to home and kept the app foreground.
+PASS: right-edge system gesture returned to home and kept the app foreground.
+PASS: ordinary horizontal swipe did not leave settings.
+PASS: injected edge motion cancellation kept settings visible.
+PASS: Android Back key returned to home.
+PASS: three app languages rendered; final language is Simplified Chinese, manual theme is light.
+Native verification passed. Screenshots require separate visual review.
+**********************
+PowerShell transcript end
+End time: 20261022093117
+**********************

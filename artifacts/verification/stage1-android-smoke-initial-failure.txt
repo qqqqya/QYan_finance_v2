@@ -1,0 +1,42 @@
+00:00 +0: loading D:/Finance/integration_test/app_smoke_test.dart
+Running Gradle task 'assembleDebug'...                          
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/D:/Finance/.tooling/gradle/wrapper/dists/gradle-9.3.1-bin/30eg2jcb8eqk5ro0gq9h8x6ef/gradle-9.3.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+Running Gradle task 'assembleDebug'...                             28.2s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...        1,269ms
+00:00 +0: Android launch, settings persistence, localization and back navigation
+SMOKE: waiting for initialized home
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+The expected app screen did not appear within 30 seconds.
+
+When the exception was thrown, this was the stack:
+#0      fail (package:matcher/src/expect/expect.dart:187:31)
+#1      waitFor (file:///D:/Finance/integration_test/app_smoke_test.dart:12:3)
+<asynchronous suspension>
+#2      main.<anonymous closure> (file:///D:/Finance/integration_test/app_smoke_test.dart:23:7)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  Android launch, settings persistence, localization and back navigation
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:33 +0 -1: Android launch, settings persistence, localization and back navigation [E]
+  Test failed. See exception logs above.
+  The test description was: Android launch, settings persistence, localization and back navigation
+  
+00:33 +0 -1: (tearDownAll)
+00:33 +0 -1: Some tests failed.
+
+Failing tests:
+  D:/Finance/integration_test/app_smoke_test.dart: Android launch, settings persistence, localization and back navigation

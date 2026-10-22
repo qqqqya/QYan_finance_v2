@@ -1,0 +1,22 @@
+**********************
+PowerShell transcript start
+Start time: 20261022133802
+**********************
+PASS: temporary QA project removed; nine default projects retained in original bank order.
+
+
+
+
+
+
+
+
+
+
+
+
+PASS T01: background/foreground restored the Chinese zero-data home; final native cleanup passed.
+**********************
+PowerShell transcript end
+End time: 20261022133812
+**********************

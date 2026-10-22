@@ -1,0 +1,362 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for English (`en`).
+class AppLocalizationsEn extends AppLocalizations {
+  AppLocalizationsEn([String locale = 'en']) : super(locale);
+
+  @override
+  String get appName => 'Finances';
+
+  @override
+  String get settings => 'Settings';
+
+  @override
+  String get totalAssets => 'Total assets';
+
+  @override
+  String get totalLiabilities => 'Total liabilities';
+
+  @override
+  String get netAssets => 'Net assets';
+
+  @override
+  String get myProjects => 'My projects';
+
+  @override
+  String get localOnly => 'Your records are stored only on this device.';
+
+  @override
+  String get includedInAssets => 'Included in total assets';
+
+  @override
+  String get excludedFromAssets => 'Excluded from total assets';
+
+  @override
+  String get liabilityBalance => 'Outstanding balance';
+
+  @override
+  String get independentIncome => 'Independent income · cumulative';
+
+  @override
+  String get independentExpense => 'Independent expense · cumulative';
+
+  @override
+  String get appearanceAndLanguage => 'Appearance & language';
+
+  @override
+  String get themeMode => 'Theme';
+
+  @override
+  String get followSystem => 'Follow system';
+
+  @override
+  String get light => 'Light';
+
+  @override
+  String get dark => 'Dark';
+
+  @override
+  String get language => 'Language';
+
+  @override
+  String get localData => 'Local data';
+
+  @override
+  String get currency => 'Currency';
+
+  @override
+  String get timeZone => 'Book time zone';
+
+  @override
+  String get saveError => 'Your setting could not be saved. Please try again.';
+
+  @override
+  String get dataError =>
+      'Your local data could not be read. Please reopen the app to retry.';
+
+  @override
+  String get startupError =>
+      'The app could not open its local database. Your existing records have been kept.';
+
+  @override
+  String get retry => 'Retry';
+
+  @override
+  String projectName(String key) {
+    String _temp0 = intl.Intl.selectLogic(key, {
+      'cmb': 'China Merchants Bank',
+      'bocom': 'Bank of Communications',
+      'alipay': 'Alipay',
+      'cash': 'Cash',
+      'fund': 'Funds',
+      'investment': 'Investments',
+      'liability': 'Liabilities',
+      'largeIncome': 'Large income',
+      'largeExpense': 'Large expenses',
+      'other': 'Project',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String get newProject => 'New project';
+
+  @override
+  String get editProject => 'Edit project';
+
+  @override
+  String get projectDetails => 'Project details';
+
+  @override
+  String get projectType => 'Project type';
+
+  @override
+  String get typeAsset => 'Asset';
+
+  @override
+  String get typeLiability => 'Liability';
+
+  @override
+  String get typeIncome => 'Independent income';
+
+  @override
+  String get typeExpense => 'Independent expense';
+
+  @override
+  String get name => 'Name';
+
+  @override
+  String get category => 'Category';
+
+  @override
+  String get customCategory => 'Custom category (optional)';
+
+  @override
+  String get icon => 'Icon';
+
+  @override
+  String get color => 'Color';
+
+  @override
+  String get note => 'Note';
+
+  @override
+  String get initialBalance => 'Initial balance';
+
+  @override
+  String get balanceAmount => 'Actual balance after update';
+
+  @override
+  String get entryAmount => 'Amount';
+
+  @override
+  String get businessDate => 'Business date · YYYY-MM-DD';
+
+  @override
+  String get businessTime => 'Business time · HH:mm';
+
+  @override
+  String get save => 'Save';
+
+  @override
+  String get cancel => 'Cancel';
+
+  @override
+  String get delete => 'Delete';
+
+  @override
+  String get edit => 'Edit';
+
+  @override
+  String get deleteProject => 'Delete project';
+
+  @override
+  String get deleteProjectWarning =>
+      'Delete this project, all its records and edit history? Totals and trends will be recalculated. This cannot be undone.';
+
+  @override
+  String get deleteRecordWarning =>
+      'Delete this record and its edit history? Its amount will be removed from calculations.';
+
+  @override
+  String get clearRecords => 'Clear all records';
+
+  @override
+  String get clearRecordsWarning =>
+      'Delete all records and their edit history in this project? Its amount will become zero. The project itself stays.';
+
+  @override
+  String get history => 'Edit history';
+
+  @override
+  String get clearHistory => 'Clear edit history';
+
+  @override
+  String get historyDeleteWarning =>
+      'Clear this object\'s edit history? Current records and amounts will remain unchanged.';
+
+  @override
+  String get deleteHistoryWarning =>
+      'Delete this edit history item? The current record and amount will stay unchanged.';
+
+  @override
+  String get historyEmpty => 'No edits recorded.';
+
+  @override
+  String get before => 'Before';
+
+  @override
+  String get after => 'After';
+
+  @override
+  String get changedAt => 'Edited at';
+
+  @override
+  String get createdAt => 'Created at';
+
+  @override
+  String get updatedAt => 'Last edited';
+
+  @override
+  String get records => 'Records';
+
+  @override
+  String get noRecords => 'No records yet. Amount is zero.';
+
+  @override
+  String get allMonths => 'All months';
+
+  @override
+  String get selectMonth => 'Filter month · YYYY-MM';
+
+  @override
+  String get updateBalance => 'Update balance';
+
+  @override
+  String get addEntry => 'Add entry';
+
+  @override
+  String get typeLocked => 'Projects with records cannot change type.';
+
+  @override
+  String get invalidName => 'Enter a name of 1–80 characters.';
+
+  @override
+  String get invalidAmount =>
+      'Use a valid amount with at most 2 decimals, up to 9,999,999,999.99. Entries must be greater than zero.';
+
+  @override
+  String get invalidDate =>
+      'Use a valid date and time in the displayed format.';
+
+  @override
+  String get futureDate =>
+      'Business time cannot be in the future of the book time zone.';
+
+  @override
+  String get invalidText =>
+      'Check category and note length (note: max 2,000 characters).';
+
+  @override
+  String get operationFailed => 'The change was not saved. Please try again.';
+
+  @override
+  String get staleOrder =>
+      'Projects changed while sorting. Reload and try again.';
+
+  @override
+  String get missingProject => 'This project or record no longer exists.';
+
+  @override
+  String get includeAsset => 'Include in total assets';
+
+  @override
+  String get includeLiability => 'Include in total liabilities';
+
+  @override
+  String get recordedChange => 'Change from previous balance';
+
+  @override
+  String get assetComposition => 'Asset composition';
+
+  @override
+  String get liabilityComposition => 'Liabilities';
+
+  @override
+  String get assetTrend => 'Balance trend';
+
+  @override
+  String get manualBasis =>
+      'Based on manual records of currently included projects.';
+
+  @override
+  String get emptyChart => 'No positive balances to display.';
+
+  @override
+  String get noTrend => 'No balance records in this period.';
+
+  @override
+  String get days30 => '30 days';
+
+  @override
+  String get months12 => '12 months';
+
+  @override
+  String get pointValues => 'Date / time and balance';
+
+  @override
+  String get amountAxis => 'Amount · CNY';
+
+  @override
+  String get dateAxis => 'Business date';
+
+  @override
+  String get unsavedTitle => 'Unsaved changes';
+
+  @override
+  String get unsavedBody => 'Save your changes before leaving?';
+
+  @override
+  String get continueEditing => 'Keep editing';
+
+  @override
+  String get discard => 'Discard';
+
+  @override
+  String get sortHint => 'Long press and drag cards to reorder.';
+
+  @override
+  String get sortProjects => 'Reorder projects';
+
+  @override
+  String get bankCategory => 'Bank account';
+
+  @override
+  String get walletCategory => 'Wallet';
+
+  @override
+  String get otherCategory => 'Other';
+
+  @override
+  String get colorNeutral => 'Neutral';
+
+  @override
+  String get colorBlue => 'Blue';
+
+  @override
+  String get colorGreen => 'Green';
+
+  @override
+  String get colorPurple => 'Purple';
+
+  @override
+  String get colorOrange => 'Orange';
+
+  @override
+  String get colorRed => 'Red';
+}

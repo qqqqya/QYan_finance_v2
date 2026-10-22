@@ -1,0 +1,11 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Analyzing Finance...                                            
+
+   info - Use interpolation to compose strings and values. Try using string interpolation to build the composite string - test\asset_widgets_test.dart:72:40 - prefer_interpolation_to_compose_strings
+   info - Use interpolation to compose strings and values. Try using string interpolation to build the composite string - test\asset_widgets_test.dart:106:40 - prefer_interpolation_to_compose_strings
+   info - Use interpolation to compose strings and values. Try using string interpolation to build the composite string - test\asset_widgets_test.dart:136:52 - prefer_interpolation_to_compose_strings
+   info - Use interpolation to compose strings and values. Try using string interpolation to build the composite string - test\asset_widgets_test.dart:137:52 - prefer_interpolation_to_compose_strings
+warning - Unused import: 'package:drift/drift.dart'. Try removing the import directive - test\data\asset_workflow_test.dart:3:8 - unused_import
+   info - Use interpolation to compose strings and values. Try using string interpolation to build the composite string - test\data\asset_workflow_test.dart:302:25 - prefer_interpolation_to_compose_strings
+
+6 issues found. (ran in 27.0s)

@@ -1,0 +1,6 @@
+Starting: Intent { cmp=com.example.finance_app/.MainActivity }
+Status: timeout
+LaunchState: UNKNOWN (-1)
+Activity: com.example.finance_app/.MainActivity
+WaitTime: 11582
+Complete

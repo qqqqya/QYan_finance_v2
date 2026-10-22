@@ -1,0 +1,12 @@
+**********************
+PowerShell transcript start
+Start time: 20261022132623
+**********************
+Process restarted: 3927 -> 4147
+PASS T21: real process restart preserved the initial/latest snapshots and project/record notes.
+PASS: native Back can keep editing or discard without changing the saved amount.
+PS>TerminatingError(): "Native card drag failed."
+**********************
+PowerShell transcript end
+End time: 20261022132744
+**********************

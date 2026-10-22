@@ -1,0 +1,13 @@
+**********************
+PowerShell transcript start
+Start time: 20261022133233
+**********************
+Process restarted: 4668 -> 4892
+PASS T21: real process restart preserved the initial/latest snapshots and project/record notes.
+PASS: native Back can keep editing or discard without changing the saved amount.
+Process restarted: 4892 -> 5362
+PASS T11/T21: injected Android long press/drop persisted the grid order after force-stop.
+**********************
+PowerShell transcript end
+End time: 20261022133442
+**********************

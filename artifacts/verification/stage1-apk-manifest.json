@@ -1,0 +1,17 @@
+{
+  "file": "finance-stage1-debug.apk",
+  "bytes": 212443945,
+  "sha256": "9171690ffc0ea067f22961e30392af212d162308eb897d849061d57908b848ea",
+  "flutter": "3.47.7",
+  "dart": "3.13.5",
+  "package": "com.example.finance_app",
+  "minSdk": 29,
+  "targetSdk": 36,
+  "build": "debug",
+  "entrypoint": "lib/main.dart",
+  "architectures": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86_64"
+  ]
+}
