@@ -1,0 +1,16 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/test/refinement_widgets_test.dart
+00:00 +0: (setUpAll)
+00:00 +0: red Brightness.light theme provides readable paired colors
+00:00 +1: red Brightness.dark theme provides readable paired colors
+00:00 +2: green Brightness.light theme provides readable paired colors
+00:00 +3: green Brightness.dark theme provides readable paired colors
+00:00 +4: purple Brightness.light theme provides readable paired colors
+00:00 +5: purple Brightness.dark theme provides readable paired colors
+00:00 +6: blue Brightness.light theme provides readable paired colors
+00:00 +7: blue Brightness.dark theme provides readable paired colors
+00:00 +8: entry button is visible immediately and stays visible after scrolling; annual chart has no redundant monthly cards
+00:01 +9: card long press opens menu, cancel preserves everything, confirmed delete cascades only its facts and histories
+00:01 +10: ordinary body scroll never starts sorting or opens the action menu
+00:01 +11: (tearDownAll)
+00:01 +11: All tests passed!

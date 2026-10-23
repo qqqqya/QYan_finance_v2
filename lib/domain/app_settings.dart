@@ -1,5 +1,7 @@
 enum Appearance { system, light, dark }
 
+enum ThemeColor { red, green, purple, blue }
+
 enum AppLanguage {
   system('system'),
   simplifiedChinese('zh-Hans'),
@@ -18,11 +20,13 @@ final class AppSettings {
     required this.appearance,
     required this.language,
     required this.timeZone,
+    this.themeColor = ThemeColor.blue,
   });
 
   final Appearance appearance;
   final AppLanguage language;
   final String timeZone;
+  final ThemeColor themeColor;
 }
 
 final class ProjectSummary {

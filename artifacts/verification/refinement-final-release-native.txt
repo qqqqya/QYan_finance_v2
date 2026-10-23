@@ -1,0 +1,14 @@
+**********************
+PowerShell transcript start
+Start time: 20261023150225
+**********************
+Performing Streamed Install
+Success
+
+
+
+PASS: actual release URI recovery/export, future rejection, cold restart and zero default order. Original user emulator untouched.
+**********************
+PowerShell transcript end
+End time: 20261023150516
+**********************

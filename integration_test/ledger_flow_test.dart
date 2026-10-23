@@ -58,7 +58,6 @@ void main() {
         defaultEntryDate(d.year, d.month, now.date).toString(),
       );
       await enter(tester, 'bill-amount', '100.00');
-      await tap(tester, find.byType(DropdownButtonFormField<String>).last);
       await tap(tester, find.text('Food').last);
       await enter(tester, 'bill-note', 'native_bill_note');
       final save = find.byKey(const Key('save-bill'));
@@ -78,13 +77,11 @@ void main() {
       Navigator.of(tester.element(find.byType(AnnualBillsPage))).pop();
       await tester.pumpAndSettle();
       await tap(tester, find.byKey(Key('bill-$id')));
-      await tap(tester, find.byKey(const Key('bill-type')));
-      await tap(tester, find.text('Income').last);
+      await tap(tester, find.byKey(const Key('bill-type-income')));
       await enter(tester, 'bill-amount', '150.00');
       await enter(tester, 'business-date', '2024-02-29');
       await tap(tester, find.byKey(const Key('save-bill')));
       expect(c.ledger!.bills.single.type, 'expense');
-      await tap(tester, find.byType(DropdownButtonFormField<String>).last);
       await tap(tester, find.text('Salary').last);
       await tap(tester, find.byKey(const Key('save-bill')));
       await ready(tester, () => c.ledger!.bills.single.type == 'income');

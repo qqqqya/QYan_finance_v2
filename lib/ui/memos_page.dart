@@ -19,6 +19,7 @@ class MemosPage extends StatefulWidget {
 class _MemosPageState extends State<MemosPage> {
   String keyword = '';
   String? tag;
+  int visibleRecords = 50;
   void edit([MemoRow? memo]) => Navigator.push(
     context,
     MaterialPageRoute(
@@ -53,7 +54,10 @@ class _MemosPageState extends State<MemosPage> {
                   labelText: s.searchMemos,
                   prefixIcon: const Icon(Icons.search),
                 ),
-                onChanged: (v) => setState(() => keyword = v),
+                onChanged: (v) => setState(() {
+                  keyword = v;
+                  visibleRecords = 50;
+                }),
               ),
               Wrap(
                 spacing: 8,
@@ -61,14 +65,20 @@ class _MemosPageState extends State<MemosPage> {
                   ChoiceChip(
                     label: Text(s.all),
                     selected: selectedTag == null,
-                    onSelected: (_) => setState(() => tag = null),
+                    onSelected: (_) => setState(() {
+                      tag = null;
+                      visibleRecords = 50;
+                    }),
                   ),
                   for (final t in tags)
                     ChoiceChip(
                       key: Key('memo-tag-$t'),
                       label: Text(t),
                       selected: selectedTag == t,
-                      onSelected: (_) => setState(() => tag = t),
+                      onSelected: (_) => setState(() {
+                        tag = t;
+                        visibleRecords = 50;
+                      }),
                     ),
                 ],
               ),
@@ -77,8 +87,9 @@ class _MemosPageState extends State<MemosPage> {
                   padding: const EdgeInsets.all(24),
                   child: Text(s.noMemos),
                 ),
-              for (final m in memos)
+              for (final m in memos.take(visibleRecords))
                 Card(
+                  margin: const EdgeInsets.only(top: 12),
                   child: ListTile(
                     key: Key('memo-${m.id}'),
                     title: Text(m.title),
@@ -102,6 +113,12 @@ class _MemosPageState extends State<MemosPage> {
                     trailing: const Icon(Icons.chevron_right),
                     onTap: () => edit(m),
                   ),
+                ),
+              if (memos.length > visibleRecords)
+                TextButton(
+                  key: const Key('more-memos'),
+                  onPressed: () => setState(() => visibleRecords += 50),
+                  child: Text(s.loadMore),
                 ),
             ],
           ),

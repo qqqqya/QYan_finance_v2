@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'dart:isolate';
 import 'dart:typed_data';
 
-import 'package:crypto/crypto.dart';
 import 'package:timezone/data/latest_all.dart' as tzdata;
 import 'package:timezone/timezone.dart' as tz;
 
@@ -10,8 +9,10 @@ import '../core/business_date.dart';
 import '../core/money.dart';
 import '../data/app_database.dart';
 import '../data/workspace.dart';
+import 'backup_format.dart';
+export 'backup_format.dart';
 
-const backupAppVersion = '0.4.0+4';
+const backupAppVersion = '0.5.1+6';
 const maxBackupBytes = 32 * 1024 * 1024;
 const maxBackupRows = 100000;
 const backupCollections = [
@@ -24,36 +25,22 @@ const backupCollections = [
   'editHistory',
 ];
 
-class BackupFailure implements Exception {
-  const BackupFailure(this.code);
-  final String code;
-  @override
-  String toString() => 'BackupFailure($code)';
-}
-
 Never _bad([String code = 'invalidBackup']) => throw BackupFailure(code);
-Object? canonicalValue(Object? value) {
-  if (value is Map) {
-    final keys = value.keys.cast<String>().toList()..sort();
-    return {for (final k in keys) k: canonicalValue(value[k])};
-  }
-  if (value is List) return value.map(canonicalValue).toList();
-  return value;
-}
-
-String canonicalJson(Object? value) => jsonEncode(canonicalValue(value));
-Map<String, dynamic> signedBackup(Map<String, dynamic> unsigned) => {
-  ...unsigned,
-  'checksum': {
-    'algorithm': 'SHA-256',
-    'value': sha256.convert(utf8.encode(canonicalJson(unsigned))).toString(),
-  },
-};
 
 class BackupDocument {
-  BackupDocument._(this.root, this.bytes);
+  BackupDocument._(
+    this.root,
+    this.bytes,
+    this.sourceFormatVersion,
+    this.integrityVerified,
+    this.converted,
+  );
   final Map<String, dynamic> root;
   final Uint8List bytes;
+  final int sourceFormatVersion;
+  final bool integrityVerified, converted;
+  String get sourceVersionLabel =>
+      sourceFormatVersion == 0 ? 'v0.0' : 'v$sourceFormatVersion';
   Map<String, dynamic> get data => root['data'] as Map<String, dynamic>;
   String get exportedAt => root['exportedAt'] as String;
   int count(String table) => (data[table] as List).length;
@@ -86,11 +73,8 @@ class BackupDocument {
     try {
       final decoded = jsonDecode(utf8.decode(bytes, allowMalformed: false));
       if (decoded is! Map<String, dynamic>) _bad();
-      final root = decoded;
-      if (root['format'] != 'finance-backup') _bad();
-      if (root['schemaVersion'] != 1 || root['schemaVersion'] is! int) {
-        _bad('backupVersion');
-      }
+      final envelope = normalizeBackupEnvelope(decoded);
+      final root = envelope.root;
       _keys(root, {
         'format',
         'schemaVersion',
@@ -101,17 +85,6 @@ class BackupDocument {
         'data',
         'checksum',
       });
-      final checksum = _map(root['checksum']);
-      _keys(checksum, {'algorithm', 'value'});
-      if (checksum['algorithm'] != 'SHA-256' ||
-          checksum['value'] is! String ||
-          !RegExp(r'^[0-9a-f]{64}$').hasMatch(checksum['value'] as String)) {
-        _bad('backupChecksum');
-      }
-      final unsigned = {...root}..remove('checksum');
-      if (signedBackup(unsigned)['checksum']['value'] != checksum['value']) {
-        _bad('backupChecksum');
-      }
       _text(root['appVersion'], 64, empty: false);
       _utc(root['exportedAt']);
       if (root['currency'] != 'CNY') _bad();
@@ -120,8 +93,20 @@ class BackupDocument {
       final data = _map(root['data']);
       _keys(data, {...backupCollections, 'settings'});
       final settings = _map(data['settings']);
-      _keys(settings, {'themeMode', 'languageMode', 'currency', 'timeZone'});
+      _keys(settings, {
+        'themeMode',
+        'languageMode',
+        'currency',
+        'timeZone',
+        'themeColor',
+      });
       if (!{'system', 'light', 'dark'}.contains(settings['themeMode']) ||
+          !{
+            'red',
+            'green',
+            'purple',
+            'blue',
+          }.contains(settings['themeColor']) ||
           !{
             'system',
             'zh-Hans',
@@ -194,7 +179,15 @@ class BackupDocument {
           _historyValue(snapshot, 0);
         }
       }
-      return BackupDocument._(root, Uint8List.fromList(bytes));
+      return BackupDocument._(
+        root,
+        envelope.converted
+            ? Uint8List.fromList(utf8.encode(canonicalJson(root)))
+            : Uint8List.fromList(bytes),
+        envelope.sourceVersion,
+        envelope.integrityVerified,
+        envelope.converted,
+      );
     } on BackupFailure {
       rethrow;
     } catch (_) {

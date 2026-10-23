@@ -61,6 +61,8 @@ final class FinanceController extends ChangeNotifier {
 
   Future<void> setAppearance(Appearance value) =>
       _save(() => repository.setAppearance(value));
+  Future<void> setThemeColor(ThemeColor value) =>
+      _save(() => repository.setThemeColor(value));
   Future<void> refreshAfterRestore() async {
     final values = await Future.wait<Object>([
       repository.watchSettings().first,

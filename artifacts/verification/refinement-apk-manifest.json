@@ -1,0 +1,50 @@
+[
+  {
+    "file": "finance-0.5.1-debug.apk",
+    "versionName": "0.5.1",
+    "versionCode": 6,
+    "bytes": 193127895,
+    "sha256": "4ab930086c3b960d172dfb9bf74213e1d3341defd37ac6b66dcda38c7a097777",
+    "certificateSha256": "ca5a2b7fbaa1f2dd293687530c624ba50e048255d4efa7169512e25e69ac8b8a",
+    "minSdk": 29,
+    "targetSdk": 36,
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86_64"
+    ],
+    "mode": "debug main"
+  },
+  {
+    "file": "finance-0.5.1-ide-debug.apk",
+    "versionName": "0.5.1",
+    "versionCode": 6,
+    "bytes": 193144654,
+    "sha256": "7d45315b10e57666a0e3c94f3d22bea127da2426aa78be107023b2418e5e2fc8",
+    "certificateSha256": "62d56913337abab8aa40c5424849b0b0c141db6e72a028d51b89c0000e40a2bb",
+    "minSdk": 29,
+    "targetSdk": 36,
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86_64"
+    ],
+    "mode": "debug IDE-compatible main"
+  },
+  {
+    "file": "finance-0.5.1-release.apk",
+    "versionName": "0.5.1",
+    "versionCode": 6,
+    "bytes": 65129034,
+    "sha256": "ac6b65d94ccfb74600ce6ca6422f15685f2b82b6341a4bb669226e20d3ac8f7a",
+    "certificateSha256": "cbf4a33e92302376463c60bf4991d62cf007bc3432822e95505b08f9c5d79496",
+    "minSdk": 29,
+    "targetSdk": 36,
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86_64"
+    ],
+    "mode": "release candidate main"
+  }
+]

@@ -26,6 +26,7 @@ class ProjectDetailPage extends StatefulWidget {
 
 class _ProjectDetailPageState extends State<ProjectDetailPage> {
   String? month;
+  int visibleRecords = 50;
   FinanceController get controller => widget.controller;
   Color? entryColor(ProjectRow project) => project.type == 'income_log'
       ? projectColors['green']
@@ -175,7 +176,10 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> {
                     for (final m in months)
                       DropdownMenuItem(value: m, child: Text(m)),
                   ],
-                  onChanged: (v) => setState(() => month = v == '' ? null : v),
+                  onChanged: (v) => setState(() {
+                    month = v == '' ? null : v;
+                    visibleRecords = 50;
+                  }),
                 ),
               ),
             if (!balanceType && selectedMonth != null)
@@ -191,11 +195,18 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> {
                 child: Text(s.noRecords),
               ),
             if (balanceType)
-              for (final r in balances)
+              for (final r in balances.take(visibleRecords))
                 _record(context, project, r, null, changes[r.id]),
             if (!balanceType)
-              for (final r in filtered)
+              for (final r in filtered.take(visibleRecords))
                 _record(context, project, null, r, null),
+            if ((balanceType ? balances.length : filtered.length) >
+                visibleRecords)
+              TextButton(
+                key: const Key('more-records'),
+                onPressed: () => setState(() => visibleRecords += 50),
+                child: Text(s.loadMore),
+              ),
             if (balances.isNotEmpty || entries.isNotEmpty)
               ChangeButton(
                 key: const Key('clear-records'),
@@ -221,19 +232,9 @@ class _ProjectDetailPageState extends State<ProjectDetailPage> {
               label: s.deleteProject,
               danger: true,
               onPressed: () async {
-                if (await confirmChange(
-                      context,
-                      s.deleteProject,
-                      s.deleteProjectWarning,
-                    ) &&
+                if (await confirmDeleteProject(context, controller, project) &&
                     context.mounted) {
-                  if (await performChange(
-                        context,
-                        () => controller.repository.deleteProject(project.id),
-                      ) &&
-                      context.mounted) {
-                    Navigator.pop(context);
-                  }
+                  Navigator.pop(context);
                 }
               },
             ),

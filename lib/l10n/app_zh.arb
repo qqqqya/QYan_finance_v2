@@ -97,7 +97,7 @@
   "unsavedBody": "离开前是否保存修改？",
   "continueEditing": "继续编辑",
   "discard": "放弃修改",
-  "sortHint": "长按拖动卡片可排序。",
+  "sortHint": "按住独立把手排序；长按卡片打开操作菜单。",
   "sortProjects": "项目排序",
   "bankCategory": "银行账户",
   "walletCategory": "电子钱包",
@@ -209,6 +209,10 @@
   "cachePurgeError": "数据已重置，但私有分享缓存待清理。请在此重试，下次启动也会继续清理。",
   "purgeCache": "重试清理私有缓存",
   "backupCancelled": "已取消，财务数据未变更。",
+  "backupFormat": "备份格式",
+  "backupFutureVersionError": "此备份使用更新的格式，请先升级本应用再恢复。当前数据未更改。",
+  "legacyBackupWarning": "此旧备份没有校验和，无法验证文件原始完整性；结构和业务数据已通过检查，请核对预览后再确认覆盖。",
+  "loadMore": "再加载 50 条",
   "backupFilePrefix": "财务备份",
   "backupCountsHint": "包含余额、独立收支、分类、备忘录、修改历史与设置。",
   "billCategoryName": "{key, select, salary{工资} bonus{奖金} otherIncome{其他收入} food{餐饮} transport{交通} shopping{购物} housing{住房} medical{医疗} otherExpense{其他支出} other{分类}}",
@@ -218,5 +222,13 @@
         "type": "String"
       }
     }
-  }
+  },
+  "themeColor": "主题配色",
+  "themeRed": "火红色",
+  "themeGreen": "绿色",
+  "themePurple": "紫色",
+  "themeBlue": "蓝色",
+  "projectActions": "项目操作",
+  "dragProject": "按住把手拖动排序",
+  "deleteProjectImpact": "将删除 {records} 条业务记录和 {histories} 条修改历史。月度账单及其他项目不受影响。"
 }

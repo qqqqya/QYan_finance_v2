@@ -1,0 +1,22 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/integration_test/stage5_acceptance_test.dart
+Running Gradle task 'assembleDebug'...                          
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/D:/Finance/.tooling/gradle/wrapper/dists/gradle-9.3.1-bin/30eg2jcb8eqk5ro0gq9h8x6ef/gradle-9.3.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Running Gradle task 'assembleDebug'...                             31.3s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...          961ms
+Error: ADB exited with exit code 1
+Performing Streamed Install
+
+adb.exe: failed to install D:\Finance\build\app\outputs\flutter-apk\app-debug.apk: Failure [INSTALL_FAILED_UPDATE_INCOMPATIBLE: Existing package com.example.finance_app signatures do not match newer version; ignoring!]
+Uninstalling old version...
+Installing build\app\outputs\flutter-apk\app-debug.apk...        1,003ms
+00:00 +0: Stage 5 real SQLite, 50 projects / 10000 records, paging and roundtrip
+STAGE5_METRICS={"device":"Finance_API_36 / emulator-5560","mode":"debug integration","projects":50,"financialRecords":10000,"memos":100,"homeRefreshMs":391,"monthSwitchMs":[684,650,651,669,668],"backupBytes":2824105,"captureMs":597,"restoreMs":8505,"roundtripEqual":true}
+00:23 +1: (tearDownAll)
+00:23 +1: All tests passed!

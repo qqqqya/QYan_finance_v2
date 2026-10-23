@@ -1,0 +1,10 @@
+**********************
+PowerShell transcript start
+Start time: 20261023113131
+**********************
+PS>TerminatingError(): "QA control missing: ^New project$"
+>> TerminatingError(): "QA control missing: ^New project$"
+**********************
+PowerShell transcript end
+End time: 20261023113237
+**********************

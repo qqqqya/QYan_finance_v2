@@ -1,0 +1,8 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Analyzing Finance...                                            
+
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - integration_test\refinement_flow_test.dart:25:9 - curly_braces_in_flow_control_structures
+  error - The function 'ProjectDraft' isn't defined. Try importing the library that defines 'ProjectDraft', correcting the name to the name of an existing function, or defining a function named 'ProjectDraft' - integration_test\refinement_flow_test.dart:99:9 - undefined_function
+warning - Unused import: 'package:finance_app/ui/bills_page.dart'. Try removing the import directive - test\refinement_widgets_test.dart:9:8 - unused_import
+
+3 issues found. (ran in 4.5s)

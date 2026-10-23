@@ -149,8 +149,10 @@ void main() {
       addTearDown(tester.view.resetPhysicalSize);
       addTearDown(tester.view.resetDevicePixelRatio);
       addTearDown(tester.platformDispatcher.clearTextScaleFactorTestValue);
-      final balance =
-          (await database.select(database.balanceRecords).get()).first;
+      final asset = (await database.select(database.projects).get())
+          .firstWhere((p) => p.type == 'asset');
+      final balance = (await database.select(database.balanceRecords).get())
+          .firstWhere((r) => r.projectId == asset.id);
       await (database.update(
         database.balanceRecords,
       )..where((row) => row.id.equals(balance.id))).write(

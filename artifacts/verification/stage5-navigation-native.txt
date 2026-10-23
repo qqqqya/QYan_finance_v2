@@ -1,0 +1,9 @@
+**********************
+PowerShell transcript start
+Start time: 20261023113905
+**********************
+PASS: ordinary APK native left/right edge Back, interior swipe, canceled edge, IME-only first Back, dirty keep/discard, dialog Back, root launcher, locales/themes and emulator screen/rotation/font variants.
+**********************
+PowerShell transcript end
+End time: 20261023114152
+**********************

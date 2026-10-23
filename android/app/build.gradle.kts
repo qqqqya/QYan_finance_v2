@@ -1,7 +1,16 @@
+import java.util.Properties
+import java.io.FileInputStream
+
 plugins {
     id("com.android.application")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
+}
+
+val releasePropertiesFile = rootProject.file("../.signing/keystore.properties")
+val releaseProperties = Properties()
+if (releasePropertiesFile.exists()) {
+    FileInputStream(releasePropertiesFile).use { releaseProperties.load(it) }
 }
 
 android {
@@ -15,7 +24,7 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        // Keep the existing ID so compatible signing keys can upgrade in place.
         applicationId = "com.example.finance_app"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
@@ -29,11 +38,24 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        create("release") {
+            if (releasePropertiesFile.exists()) {
+                storeFile = rootProject.file("../" + releaseProperties.getProperty("storeFile"))
+                storePassword = releaseProperties.getProperty("storePassword")
+                keyAlias = releaseProperties.getProperty("keyAlias")
+                keyPassword = releaseProperties.getProperty("keyPassword")
+                storeType = "PKCS12"
+            }
+        }
+    }
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName("release")
+            if (!releasePropertiesFile.exists() &&
+                gradle.startParameter.taskNames.any { it.contains("release", ignoreCase = true) }) {
+                throw GradleException("Missing local release key. Run scripts/prepare-release-signing.ps1; never fall back to debug signing.")
+            }
         }
     }
 }

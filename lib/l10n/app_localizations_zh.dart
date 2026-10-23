@@ -315,7 +315,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get discard => '放弃修改';
 
   @override
-  String get sortHint => '长按拖动卡片可排序。';
+  String get sortHint => '按住独立把手排序；长按卡片打开操作菜单。';
 
   @override
   String get sortProjects => '项目排序';
@@ -653,6 +653,19 @@ class AppLocalizationsZh extends AppLocalizations {
   String get backupCancelled => '已取消，财务数据未变更。';
 
   @override
+  String get backupFormat => '备份格式';
+
+  @override
+  String get backupFutureVersionError => '此备份使用更新的格式，请先升级本应用再恢复。当前数据未更改。';
+
+  @override
+  String get legacyBackupWarning =>
+      '此旧备份没有校验和，无法验证文件原始完整性；结构和业务数据已通过检查，请核对预览后再确认覆盖。';
+
+  @override
+  String get loadMore => '再加载 50 条';
+
+  @override
   String get backupFilePrefix => '财务备份';
 
   @override
@@ -673,6 +686,32 @@ class AppLocalizationsZh extends AppLocalizations {
       'other': '分类',
     });
     return '$_temp0';
+  }
+
+  @override
+  String get themeColor => '主题配色';
+
+  @override
+  String get themeRed => '火红色';
+
+  @override
+  String get themeGreen => '绿色';
+
+  @override
+  String get themePurple => '紫色';
+
+  @override
+  String get themeBlue => '蓝色';
+
+  @override
+  String get projectActions => '项目操作';
+
+  @override
+  String get dragProject => '按住把手拖动排序';
+
+  @override
+  String deleteProjectImpact(int records, int histories) {
+    return '将删除 $records 条业务记录和 $histories 条修改历史。月度账单及其他项目不受影响。';
   }
 }
 
@@ -986,7 +1025,7 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
   String get discard => '放弃修改';
 
   @override
-  String get sortHint => '长按拖动卡片可排序。';
+  String get sortHint => '按住独立把手排序；长按卡片打开操作菜单。';
 
   @override
   String get sortProjects => '项目排序';
@@ -1324,6 +1363,19 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
   String get backupCancelled => '已取消，财务数据未变更。';
 
   @override
+  String get backupFormat => '备份格式';
+
+  @override
+  String get backupFutureVersionError => '此备份使用更新的格式，请先升级本应用再恢复。当前数据未更改。';
+
+  @override
+  String get legacyBackupWarning =>
+      '此旧备份没有校验和，无法验证文件原始完整性；结构和业务数据已通过检查，请核对预览后再确认覆盖。';
+
+  @override
+  String get loadMore => '再加载 50 条';
+
+  @override
   String get backupFilePrefix => '财务备份';
 
   @override
@@ -1344,6 +1396,32 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
       'other': '分类',
     });
     return '$_temp0';
+  }
+
+  @override
+  String get themeColor => '主题配色';
+
+  @override
+  String get themeRed => '火红色';
+
+  @override
+  String get themeGreen => '绿色';
+
+  @override
+  String get themePurple => '紫色';
+
+  @override
+  String get themeBlue => '蓝色';
+
+  @override
+  String get projectActions => '项目操作';
+
+  @override
+  String get dragProject => '按住把手拖动排序';
+
+  @override
+  String deleteProjectImpact(int records, int histories) {
+    return '将删除 $records 条业务记录和 $histories 条修改历史。月度账单及其他项目不受影响。';
   }
 }
 
@@ -1657,7 +1735,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get discard => '放棄修改';
 
   @override
-  String get sortHint => '長按拖曳卡片可排序。';
+  String get sortHint => '按住獨立把手排序；長按卡片開啟操作選單。';
 
   @override
   String get sortProjects => '項目排序';
@@ -1995,6 +2073,19 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get backupCancelled => '已取消，財務資料未變更。';
 
   @override
+  String get backupFormat => '備份格式';
+
+  @override
+  String get backupFutureVersionError => '此備份使用更新的格式，請先升級本應用程式再還原。目前資料未變更。';
+
+  @override
+  String get legacyBackupWarning =>
+      '此舊備份沒有校驗和，無法驗證檔案原始完整性；結構和業務資料已通過檢查，請核對預覽後再確認覆蓋。';
+
+  @override
+  String get loadMore => '再載入 50 筆';
+
+  @override
   String get backupFilePrefix => '財務備份';
 
   @override
@@ -2015,5 +2106,31 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
       'other': '分類',
     });
     return '$_temp0';
+  }
+
+  @override
+  String get themeColor => '主題配色';
+
+  @override
+  String get themeRed => '火紅色';
+
+  @override
+  String get themeGreen => '綠色';
+
+  @override
+  String get themePurple => '紫色';
+
+  @override
+  String get themeBlue => '藍色';
+
+  @override
+  String get projectActions => '項目操作';
+
+  @override
+  String get dragProject => '按住把手拖曳排序';
+
+  @override
+  String deleteProjectImpact(int records, int histories) {
+    return '將刪除 $records 筆業務記錄和 $histories 筆修改歷史。月度帳單及其他項目不受影響。';
   }
 }

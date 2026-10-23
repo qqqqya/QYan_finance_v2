@@ -5,6 +5,7 @@ import '../domain/app_settings.dart';
 import '../l10n/app_localizations.dart';
 import 'app_theme.dart';
 import 'data_management_page.dart';
+import 'finance_widgets.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key, required this.controller});
@@ -82,6 +83,41 @@ class SettingsPage extends StatelessWidget {
                                 ),
                             ],
                           ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 16),
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(AppSpacing.large),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          strings.themeColor,
+                          style: theme.textTheme.titleMedium,
+                        ),
+                        const SizedBox(height: 12),
+                        Wrap(
+                          spacing: 12,
+                          runSpacing: 8,
+                          children: [
+                            for (final color in ThemeColor.values)
+                              ChoiceChip(
+                                key: Key('accent-${color.name}'),
+                                avatar: CircleAvatar(
+                                  backgroundColor: themeSeed(color),
+                                  radius: 8,
+                                ),
+                                label: Text(themeColorTitle(strings, color)),
+                                selected: settings.themeColor == color,
+                                onSelected: controller.saving
+                                    ? null
+                                    : (_) => controller.setThemeColor(color),
+                              ),
+                          ],
                         ),
                       ],
                     ),

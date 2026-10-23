@@ -1,0 +1,17 @@
+**********************
+PowerShell transcript start
+Start time: 20261023115119
+**********************
+Performing Streamed Install
+Success
+PASS: unsigned v0.0 -> release SAF restore -> signed v1 export - every business field equal.
+PASS: stage4 v1 remains restorable in stage5 release - every business field equal.
+PASS: future-version rejection and picker cancel leave all data unchanged - every business field equal.
+Performing Streamed Install
+Success
+PASS: same persistent release signing install -r and cold restart retain all data - every business field equal.
+PASS: signed release real files, v0.0/v1 compatibility, future rejection/cancel, sharesheet, install-r persistence and factory reset. QA left with zero defaults.
+**********************
+PowerShell transcript end
+End time: 20261023115502
+**********************

@@ -1,0 +1,10 @@
+**********************
+PowerShell transcript start
+Start time: 20261023113556
+**********************
+PS>TerminatingError(): "QA control missing: ^Discard$"
+>> TerminatingError(): "QA control missing: ^Discard$"
+**********************
+PowerShell transcript end
+End time: 20261023113730
+**********************

@@ -685,7 +685,7 @@ abstract class AppLocalizations {
   /// No description provided for @sortHint.
   ///
   /// In en, this message translates to:
-  /// **'Long press and drag cards to reorder.'**
+  /// **'Hold the separate handle to reorder. Hold a card for actions.'**
   String get sortHint;
 
   /// No description provided for @sortProjects.
@@ -1354,6 +1354,30 @@ abstract class AppLocalizations {
   /// **'Cancelled. Financial data unchanged.'**
   String get backupCancelled;
 
+  /// No description provided for @backupFormat.
+  ///
+  /// In en, this message translates to:
+  /// **'Backup format'**
+  String get backupFormat;
+
+  /// No description provided for @backupFutureVersionError.
+  ///
+  /// In en, this message translates to:
+  /// **'This backup uses a newer format. Update this app before restoring it. Your current data was kept.'**
+  String get backupFutureVersionError;
+
+  /// No description provided for @legacyBackupWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'This older backup has no checksum. Its original integrity cannot be verified; structure and business data have been checked. Review the preview before replacing your data.'**
+  String get legacyBackupWarning;
+
+  /// No description provided for @loadMore.
+  ///
+  /// In en, this message translates to:
+  /// **'Load 50 more'**
+  String get loadMore;
+
   /// No description provided for @backupFilePrefix.
   ///
   /// In en, this message translates to:
@@ -1371,6 +1395,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{key, select, salary{Salary} bonus{Bonus} otherIncome{Other income} food{Food} transport{Transport} shopping{Shopping} housing{Housing} medical{Medical} otherExpense{Other expenses} other{Category}}'**
   String billCategoryName(String key);
+
+  /// No description provided for @themeColor.
+  ///
+  /// In en, this message translates to:
+  /// **'Theme color'**
+  String get themeColor;
+
+  /// No description provided for @themeRed.
+  ///
+  /// In en, this message translates to:
+  /// **'Fiery red'**
+  String get themeRed;
+
+  /// No description provided for @themeGreen.
+  ///
+  /// In en, this message translates to:
+  /// **'Green'**
+  String get themeGreen;
+
+  /// No description provided for @themePurple.
+  ///
+  /// In en, this message translates to:
+  /// **'Purple'**
+  String get themePurple;
+
+  /// No description provided for @themeBlue.
+  ///
+  /// In en, this message translates to:
+  /// **'Blue'**
+  String get themeBlue;
+
+  /// No description provided for @projectActions.
+  ///
+  /// In en, this message translates to:
+  /// **'Project actions'**
+  String get projectActions;
+
+  /// No description provided for @dragProject.
+  ///
+  /// In en, this message translates to:
+  /// **'Hold the handle to reorder'**
+  String get dragProject;
+
+  /// No description provided for @deleteProjectImpact.
+  ///
+  /// In en, this message translates to:
+  /// **'This will remove {records} records and {histories} edit histories. Monthly bills and other projects are unaffected.'**
+  String deleteProjectImpact(int records, int histories);
 }
 
 class _AppLocalizationsDelegate

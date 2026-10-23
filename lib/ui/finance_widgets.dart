@@ -5,6 +5,7 @@ import '../core/business_date.dart';
 import '../core/money.dart';
 import '../data/app_database.dart';
 import '../data/workspace.dart';
+import '../domain/app_settings.dart';
 import '../l10n/app_localizations.dart';
 
 String projectTitle(AppLocalizations s, ProjectRow p) =>
@@ -13,6 +14,37 @@ String billCategoryTitle(AppLocalizations s, CategoryRow c) =>
     c.customName ?? s.billCategoryName(c.nameKey ?? '');
 String directionTitle(AppLocalizations s, String type) =>
     type == 'income' ? s.income : s.expense;
+String themeColorTitle(AppLocalizations s, ThemeColor color) => switch (color) {
+  ThemeColor.red => s.themeRed,
+  ThemeColor.green => s.themeGreen,
+  ThemeColor.purple => s.themePurple,
+  ThemeColor.blue => s.themeBlue,
+};
+
+// Shared by the card menu and detail page; the repository owns the atomic
+// cascade. Count records from the current database snapshot, not demo values.
+Future<bool> confirmDeleteProject(
+  BuildContext context,
+  FinanceController controller,
+  ProjectRow project,
+) async {
+  final s = AppLocalizations.of(context)!;
+  final impact = await controller.repository.projectDeletionImpact(project.id);
+  if (!context.mounted) return false;
+  if (!await confirmChange(
+        context,
+        s.deleteProject,
+        '${projectTitle(s, project)}\n${s.deleteProjectImpact(impact.records, impact.histories)}\n${s.deleteProjectWarning}',
+      ) ||
+      !context.mounted) {
+    return false;
+  }
+  return performChange(
+    context,
+    () => controller.repository.deleteProject(project.id),
+  );
+}
+
 String typeTitle(AppLocalizations s, String type) => switch (type) {
   'asset' => s.typeAsset,
   'liability' => s.typeLiability,
@@ -114,6 +146,7 @@ Future<bool> confirmChange(
   return await showDialog<bool>(
         context: context,
         builder: (context) => AlertDialog(
+          scrollable: true,
           title: Text(title),
           content: Text(body),
           actions: [
@@ -227,6 +260,7 @@ class _UnsavedChangesGuardState extends State<UnsavedChangesGuard> {
       final action = await showDialog<String>(
         context: context,
         builder: (context) => AlertDialog(
+          scrollable: true,
           title: Text(s.unsavedTitle),
           content: Text(s.unsavedBody),
           actions: [

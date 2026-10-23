@@ -1,0 +1,20 @@
+**********************
+PowerShell transcript start
+Start time: 20261023144102
+**********************
+Success
+Performing Streamed Install
+Success
+Performing Streamed Install
+Success
+
+PASS: same persistent certificate stage5 -> 0.5.1 install-r and SQLite 2 -> 3 preserve all existing fields/order/settings; only themeColor=blue is added.
+
+
+
+
+PASS: actual release URI imports/exports for v0.0/v1/v2, future rejection, cold restart and zero default order. Original user emulator untouched.
+**********************
+PowerShell transcript end
+End time: 20261023144539
+**********************

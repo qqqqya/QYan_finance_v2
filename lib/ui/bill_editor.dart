@@ -115,30 +115,28 @@ class _BillEditorState extends State<BillEditor> {
                 children: [
                   Text(s.billBasis),
                   const SizedBox(height: 16),
-                  DropdownButtonFormField<String>(
+                  Wrap(
                     key: const Key('bill-type'),
-                    initialValue: type,
-                    decoration: InputDecoration(
-                      labelText: '${s.income} / ${s.expense}',
-                    ),
-                    items: [
+                    spacing: 12,
+                    runSpacing: 8,
+                    children: [
                       for (final t in ['expense', 'income'])
-                        DropdownMenuItem(
-                          value: t,
-                          child: Text(directionTitle(s, t)),
+                        ChoiceChip(
+                          key: Key('bill-type-$t'),
+                          label: Text(directionTitle(s, t)),
+                          selected: type == t,
+                          onSelected: saving
+                              ? null
+                              : (_) {
+                                  if (t == type) return;
+                                  setState(() {
+                                    type = t;
+                                    category = null;
+                                    dirty = true;
+                                  });
+                                },
                         ),
                     ],
-                    onChanged: saving
-                        ? null
-                        : (v) {
-                            if (v != null && v != type) {
-                              setState(() {
-                                type = v;
-                                category = null;
-                                dirty = true;
-                              });
-                            }
-                          },
                   ),
                   const SizedBox(height: 16),
                   TextFormField(
@@ -162,30 +160,52 @@ class _BillEditorState extends State<BillEditor> {
                     },
                   ),
                   const SizedBox(height: 16),
-                  DropdownButtonFormField<String>(
-                    key: ValueKey('bill-category-$type-${category ?? ''}'),
-                    initialValue: categories.any((c) => c.id == category)
-                        ? category
-                        : null,
-                    isExpanded: true,
-                    decoration: InputDecoration(labelText: s.category),
-                    hint: Text(s.chooseCategory),
-                    items: [
-                      for (final c in categories)
-                        DropdownMenuItem(
-                          value: c.id,
-                          child: Text(
-                            '${billCategoryTitle(s, c)}${c.isActive ? '' : ' (${s.categoryInactive})'}',
-                          ),
-                        ),
-                    ],
-                    validator: (v) => v == null ? s.categoryUnavailable : null,
-                    onChanged: saving
+                  FormField<String>(
+                    key: ValueKey('bill-category-$type'),
+                    initialValue: category,
+                    validator: (_) => categories.any((c) => c.id == category)
                         ? null
-                        : (v) => setState(() {
-                            category = v;
-                            dirty = true;
-                          }),
+                        : s.categoryUnavailable,
+                    builder: (field) => Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          s.category,
+                          style: Theme.of(context).textTheme.titleMedium,
+                        ),
+                        const SizedBox(height: 8),
+                        Wrap(
+                          spacing: 8,
+                          runSpacing: 8,
+                          children: [
+                            for (final c in categories)
+                              ChoiceChip(
+                                key: Key('bill-category-option-${c.id}'),
+                                label: Text(
+                                  '${billCategoryTitle(s, c)}${c.isActive ? '' : ' (${s.categoryInactive})'}',
+                                ),
+                                selected: category == c.id,
+                                onSelected: saving
+                                    ? null
+                                    : (_) {
+                                        setState(() {
+                                          category = c.id;
+                                          dirty = true;
+                                        });
+                                        field.didChange(c.id);
+                                      },
+                              ),
+                          ],
+                        ),
+                        if (field.hasError)
+                          Text(
+                            field.errorText!,
+                            style: TextStyle(
+                              color: Theme.of(context).colorScheme.error,
+                            ),
+                          ),
+                      ],
+                    ),
                   ),
                   const SizedBox(height: 16),
                   MomentFields(

@@ -1,0 +1,9 @@
+**********************
+PowerShell transcript start
+Start time: 20261023112556
+**********************
+PASS: stage4 signed APK seeded through SAF with all types before stage5 upgrade.
+**********************
+PowerShell transcript end
+End time: 20261023112641
+**********************

@@ -257,7 +257,7 @@ void main() {
       await reveal(tester, find.byKey(Key('project-$first')));
       final target = tester.getCenter(find.byKey(Key('project-$second')));
       final gesture = await tester.startGesture(
-        tester.getCenter(find.byKey(Key('project-$first'))),
+        tester.getCenter(find.byKey(Key('drag-project-$first'))),
       );
       await tester.pump(const Duration(milliseconds: 700));
       expect(find.text('Delete project'), findsNothing);

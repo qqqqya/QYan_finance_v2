@@ -1,0 +1,180 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Because l10n.yaml exists, the options defined there will be used instead.
+To use the command line arguments, delete the l10n.yaml file in the Flutter project.
+
+
+  0s drift_dev on 240 inputs; integration_test/app_smoke_test.dart
+  3s drift_dev on 240 inputs: 58 skipped, 1 same; spent 3s analyzing; test/widget_test.dart
+  3s drift_dev on 240 inputs: 237 skipped, 2 same, 1 no-op; spent 3s analyzing
+  0s source_gen:combining_builder on 120 inputs; integration_test/app_smoke_test.dart
+  0s source_gen:combining_builder on 120 inputs: 120 skipped
+  Built with build_runner/aot in 4s; wrote 2 outputs.
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Analyzing Finance...                                            
+No issues found! (ran in 4.2s)
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/test/asset_widgets_test.dart
+00:00 +0: D:/Finance/test/asset_widgets_test.dart: (setUpAll)
+00:00 +0: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +1: D:/Finance/test/asset_widgets_test.dart: T21 two rapid save taps add exactly one entry and immediately refresh the detail
+00:01 +2: D:/Finance/test/asset_widgets_test.dart: invalid amount stays in the form; unsaved Back can continue or discard
+00:02 +3: D:/Finance/test/asset_widgets_test.dart: T11 dedicated home handle drags; drop persists the grid order
+00:02 +4: D:/Finance/test/asset_widgets_test.dart: T10 overview zero state works at 320dp and 200 percent text
+00:02 +5: D:/Finance/test/asset_widgets_test.dart: T06/T10 positive single-point chart, large totals and long legends fit narrow large-text screens
+00:02 +6: D:/Finance/test/asset_widgets_test.dart: (tearDownAll)
+00:02 +6: loading D:/Finance/test/backup_widgets_test.dart
+00:03 +6: D:/Finance/test/backup_widgets_test.dart: (setUpAll)
+00:03 +6: D:/Finance/test/backup_widgets_test.dart: T18 export success uses actual file data, shares directly; failed write never shows success
+00:04 +7: D:/Finance/test/backup_widgets_test.dart: T16 preview cancel keeps data; confirmation restores settings and allows deleting private copy
+00:06 +8: D:/Finance/test/backup_widgets_test.dart: T20 factory reset cancellation preserves data; confirm resets to zero and system settings
+00:06 +9: D:/Finance/test/backup_widgets_test.dart: data management and export dialog fit 320dp and 200 percent text in dark mode
+00:07 +10: D:/Finance/test/backup_widgets_test.dart: (tearDownAll)
+00:07 +10: loading D:/Finance/test/core/business_date_test.dart
+00:07 +10: D:/Finance/test/core/business_date_test.dart: (setUpAll)
+00:07 +10: D:/Finance/test/core/business_date_test.dart: strict dates reject normalization, malformed dates and invalid leap days
+00:07 +11: D:/Finance/test/core/business_date_test.dart: selected month controls the default, including month ends and cross-year
+00:07 +12: D:/Finance/test/core/business_date_test.dart: book time zone determines the business day independently of device zone
+00:07 +13: D:/Finance/test/core/business_date_test.dart: invalid times and future moments are rejected
+00:07 +14: D:/Finance/test/core/business_date_test.dart: Android GMT identifier can initialize a zero-balance book
+00:07 +15: D:/Finance/test/core/business_date_test.dart: (tearDownAll)
+00:07 +15: loading D:/Finance/test/core/money_test.dart
+00:07 +15: D:/Finance/test/core/money_test.dart: decimal parsing preserves cents without float rounding
+00:07 +16: D:/Finance/test/core/money_test.dart: invalid, zero-flow and out-of-range amounts are rejected
+00:07 +17: D:/Finance/test/core/money_test.dart: totals can exceed per-record limit but reject signed-64 overflow
+00:07 +18: D:/Finance/test/core/money_test.dart: formatting keeps full precision and complete large values
+00:07 +19: loading D:/Finance/test/data/asset_workflow_test.dart
+00:08 +19: D:/Finance/test/data/asset_workflow_test.dart: (setUpAll)
+00:08 +19: D:/Finance/test/data/asset_workflow_test.dart: in-memory asset workflow T01/T05 four types start empty or zero; only included balance types enter totals
+00:08 +20: D:/Finance/test/data/asset_workflow_test.dart: in-memory asset workflow T03 old backfill, same-minute order, edited date, deleting latest and clearing
+00:08 +21: D:/Finance/test/data/asset_workflow_test.dart: in-memory asset workflow T04 edit history captures cents, business time and notes; history deletion has no financial effect
+00:08 +22: D:/Finance/test/data/asset_workflow_test.dart: in-memory asset workflow record save and its history roll back together on injected SQLite failure
+00:08 +23: D:/Finance/test/data/asset_workflow_test.dart: in-memory asset workflow T06 invalid amounts, future dates and type changes cannot partially write
+00:08 +24: D:/Finance/test/data/asset_workflow_test.dart: in-memory asset workflow T11 exact reorder is atomic; project deletion cascades and never reseeds
+00:08 +25: D:/Finance/test/data/asset_workflow_test.dart: T21 file reopen preserves IDs, cents, metadata, history and order
+00:08 +26: D:/Finance/test/data/asset_workflow_test.dart: (tearDownAll)
+00:08 +26: loading D:/Finance/test/data/backup_compatibility_test.dart
+00:08 +26: D:/Finance/test/data/backup_compatibility_test.dart: (setUpAll)
+00:08 +26: D:/Finance/test/data/backup_compatibility_test.dart: frozen v0.0-all-types backup -> zero database -> current v2 export preserves every business field
+00:09 +27: D:/Finance/test/data/backup_compatibility_test.dart: frozen v1-stage4-all-types backup -> zero database -> current v2 export preserves every business field
+00:09 +28: D:/Finance/test/data/backup_compatibility_test.dart: frozen v1-pre-checksum-sample backup -> zero database -> current v2 export preserves every business field
+00:09 +29: D:/Finance/test/data/backup_compatibility_test.dart: frozen v2-theme-all-types backup -> zero database -> current v2 export preserves every business field
+00:09 +30: D:/Finance/test/data/backup_compatibility_test.dart: alias v1 is verified before header normalization; conflicting or fractional markers are rejected
+00:09 +31: D:/Finance/test/data/backup_compatibility_test.dart: future format fails with upgrade instruction; missing modern checksum never falls back to legacy
+00:09 +32: D:/Finance/test/data/backup_compatibility_test.dart: v0.0 is not permission to guess missing tables, amounts, IDs or references
+00:09 +33: D:/Finance/test/data/backup_compatibility_test.dart: v2 requires an exact known theme color; v1 never silently accepts new keys
+00:09 +34: D:/Finance/test/data/backup_compatibility_test.dart: (tearDownAll)
+00:09 +34: loading D:/Finance/test/data/backup_resource_test.dart
+00:09 +34: D:/Finance/test/data/backup_resource_test.dart: (setUpAll)
+00:09 +34: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:13 +35: D:/Finance/test/data/backup_resource_test.dart: (tearDownAll)
+00:13 +35: loading D:/Finance/test/data/backup_workflow_test.dart
+00:13 +35: D:/Finance/test/data/backup_workflow_test.dart: (setUpAll)
+00:13 +35: D:/Finance/test/data/backup_workflow_test.dart: real clock microseconds are normalized to protocol millisecond precision on export
+00:13 +36: D:/Finance/test/data/backup_workflow_test.dart: backup workflow protocol minimal sample includes the real canonical checksum
+00:13 +37: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T16 every entity, IDs, cents, histories, ordering and settings round-trip into zero book
+00:14 +38: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T16 restoring the private copy swaps it with the current snapshot, without recursive copies
+00:14 +39: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T17 checksum rejects modified bytes before any database writes
+00:14 +40: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T17 semantic validation rejects bad fields, IDs, references, dates, money and owner types even with valid checksum
+00:14 +41: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T17 bad encoding, JSON and unsupported resources are rejected without partial data
+00:14 +42: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T18 cancel save/open and denied or full storage never record export success or alter business rows
+00:14 +43: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T16/T18 successful export is restorable and records actual verified name, URI and size
+00:14 +44: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T18 private-copy write failure prevents replacement and preserves the previous copy
+00:14 +45: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T19 injected interruption after deletion and partial inserts rolls back all entities and recovery metadata
+00:14 +46: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T19 factory-reset interruption restores original facts, settings and private copy
+00:14 +47: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T20 reset clears all private data and metadata, seeds zero defaults and leaves exported external bytes intact
+00:14 +48: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T20 failed post-reset private-cache cleanup persists a retry flag and does not claim full success
+00:14 +49: D:/Finance/test/data/backup_workflow_test.dart: v1 -> v3 migration preserves all eight business tables, IDs, histories and settings; restart resumes committed cache purge
+00:14 +50: D:/Finance/test/data/backup_workflow_test.dart: (tearDownAll)
+00:14 +50: loading D:/Finance/test/data/finance_repository_test.dart
+00:15 +50: D:/Finance/test/data/finance_repository_test.dart: (setUpAll)
+00:15 +50: D:/Finance/test/data/finance_repository_test.dart: in-memory repository fresh initialization seeds only zero snapshots and no fake flows
+00:15 +51: D:/Finance/test/data/finance_repository_test.dart: in-memory repository restarting initialization preserves deletions and saved preferences
+00:15 +52: D:/Finance/test/data/finance_repository_test.dart: in-memory repository a failed transaction rolls back both settings and balance changes
+00:15 +53: D:/Finance/test/data/finance_repository_test.dart: in-memory repository SQL prevents wrong project types and mismatched bill categories
+00:15 +54: D:/Finance/test/data/finance_repository_test.dart: in-memory repository bills do not modify assets, snapshot deletes fall back, and edit-history deletes preserve balances
+00:15 +55: D:/Finance/test/data/finance_repository_test.dart: file database survives close and reopen without reseeding or losing cents
+00:15 +56: D:/Finance/test/data/finance_repository_test.dart: (tearDownAll)
+00:15 +56: loading D:/Finance/test/data/ledger_workflow_test.dart
+00:15 +56: D:/Finance/test/data/ledger_workflow_test.dart: (setUpAll)
+00:15 +56: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos T02 full bill create/edit/delete and independent entry never write asset snapshots
+00:15 +57: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos T07/T08 historical default, leap year and cross-year grouping use business date
+00:15 +58: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos T04 bill history preserves creation, before/after values and UTC system times; delete traces does not change facts
+00:15 +59: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos T08/T09 distribution filters direction and recomputes after final record removed
+00:15 +60: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos T15 inactive category stays on old bills; wrong direction, inactive selection and direct referenced deletion are rejected
+00:15 +61: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos T15 migration and deletion retain amounts, dates and original category history labels
+00:15 +62: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos T04/T15 memo text, tags and date edit/search/history/delete do not change money
+00:15 +63: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos transaction failure rolls back category migration, deletion and all bill histories
+00:15 +64: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos invalid amounts, future dates, empty memo and tag limits write no partial rows
+00:15 +65: D:/Finance/test/data/ledger_workflow_test.dart: T04/T21 file reopening preserves bill/memo edits and deleted histories stay deleted
+00:16 +66: D:/Finance/test/data/ledger_workflow_test.dart: (tearDownAll)
+00:16 +66: loading D:/Finance/test/data/refinement_persistence_test.dart
+00:16 +66: D:/Finance/test/data/refinement_persistence_test.dart: (setUpAll)
+00:16 +66: D:/Finance/test/data/refinement_persistence_test.dart: v2 SQLite upgrade adds only blue preference, preserving all facts and user order; cold reopen persists color
+00:16 +67: D:/Finance/test/data/refinement_persistence_test.dart: fresh/factory defaults put large expense then debt first without rewriting a saved custom order
+00:16 +68: D:/Finance/test/data/refinement_persistence_test.dart: (tearDownAll)
+00:16 +68: loading D:/Finance/test/domain/asset_trend_test.dart
+00:17 +68: D:/Finance/test/domain/asset_trend_test.dart: T10 no invented leading zero; a single point is held to the end
+00:17 +69: D:/Finance/test/domain/asset_trend_test.dart: T10 carry prior balance; same-time events, exclusions and deleted rows recompute
+00:17 +70: loading D:/Finance/test/domain/balance_snapshot_test.dart
+00:17 +70: D:/Finance/test/domain/balance_snapshot_test.dart: balance snapshots replace, rather than accumulate
+00:17 +71: D:/Finance/test/domain/balance_snapshot_test.dart: editing and deleting history recomputes current balance and deltas
+00:17 +72: D:/Finance/test/domain/balance_snapshot_test.dart: ties use preserved order, other projects and future moments do not leak
+00:17 +73: loading D:/Finance/test/domain/line_chart_test.dart
+00:17 +73: D:/Finance/test/domain/line_chart_test.dart: same-day observations use equal horizontal spacing with a diagonal connecting segment
+00:17 +74: loading D:/Finance/test/ledger_widgets_test.dart
+00:18 +74: D:/Finance/test/ledger_widgets_test.dart: (setUpAll)
+00:18 +74: D:/Finance/test/ledger_widgets_test.dart: T07/T09 historical month UI defaults Sep 30, saves once and syncs filters
+00:19 +75: D:/Finance/test/ledger_widgets_test.dart: T08 switching bill direction requires a new category and never keeps the old category
+00:20 +76: D:/Finance/test/ledger_widgets_test.dart: T15 memo editor, combined keyword/tag filter, history and localized user content
+00:20 +77: D:/Finance/test/ledger_widgets_test.dart: new bill, annual and memo pages fit 320dp and 200 percent text in both themes
+00:21 +78: D:/Finance/test/ledger_widgets_test.dart: (tearDownAll)
+00:21 +78: loading D:/Finance/test/refinement_widgets_test.dart
+00:21 +78: D:/Finance/test/refinement_widgets_test.dart: (setUpAll)
+00:21 +78: D:/Finance/test/refinement_widgets_test.dart: red Brightness.light theme provides readable paired colors
+00:21 +79: D:/Finance/test/refinement_widgets_test.dart: red Brightness.dark theme provides readable paired colors
+00:21 +80: D:/Finance/test/refinement_widgets_test.dart: green Brightness.light theme provides readable paired colors
+00:21 +81: D:/Finance/test/refinement_widgets_test.dart: green Brightness.dark theme provides readable paired colors
+00:21 +82: D:/Finance/test/refinement_widgets_test.dart: purple Brightness.light theme provides readable paired colors
+00:21 +83: D:/Finance/test/refinement_widgets_test.dart: purple Brightness.dark theme provides readable paired colors
+00:21 +84: D:/Finance/test/refinement_widgets_test.dart: blue Brightness.light theme provides readable paired colors
+00:21 +85: D:/Finance/test/refinement_widgets_test.dart: blue Brightness.dark theme provides readable paired colors
+00:21 +86: D:/Finance/test/refinement_widgets_test.dart: entry button is visible immediately and stays visible after scrolling; annual chart has no redundant monthly cards
+00:22 +87: D:/Finance/test/refinement_widgets_test.dart: card long press opens menu, cancel preserves everything, confirmed delete cascades only its facts and histories
+00:23 +88: D:/Finance/test/refinement_widgets_test.dart: ordinary body scroll never starts sorting or opens the action menu
+00:23 +89: D:/Finance/test/refinement_widgets_test.dart: (tearDownAll)
+00:23 +89: loading D:/Finance/test/stage5_layout_test.dart
+00:23 +89: loading D:/Finance/test/widget_test.dart
+00:24 +89: D:/Finance/test/widget_test.dart: (setUpAll)
+00:24 +89: D:/Finance/test/widget_test.dart: home, settings, three locales and route back use persisted preferences
+00:25 +90: D:/Finance/test/widget_test.dart: manual theme survives system changes and system mode follows brightness
+00:25 +91: D:/Finance/test/widget_test.dart: 320dp large text and complete large amounts have no layout overflow
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: null
+  Actual: TimeoutException:<TimeoutException after 0:00:05.000000: Future not completed>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/Finance/test/widget_test.dart:167:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/Finance/test/widget_test.dart line 167
+The test description was:
+  320dp large text and complete large amounts have no layout overflow
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:31 +91 -1: D:/Finance/test/widget_test.dart: 320dp large text and complete large amounts have no layout overflow [E]
+  Test failed. See exception logs above.
+  The test description was: 320dp large text and complete large amounts have no layout overflow
+  
+00:31 +91 -1: D:/Finance/test/widget_test.dart: Chinese scripts and unsupported system locales resolve consistently
+00:31 +92 -1: D:/Finance/test/widget_test.dart: (tearDownAll)
+00:31 +92 -1: Some tests failed.
+
+Failing tests:
+  D:/Finance/test/widget_test.dart: 320dp large text and complete large amounts have no layout overflow

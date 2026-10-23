@@ -1,0 +1,66 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/test/asset_widgets_test.dart
+00:00 +0: (setUpAll)
+00:00 +0: T11 dedicated home handle drags; drop persists the grid order
+QA drag source=Offset(162.0, 80.0) target=Offset(293.0, -52.5) sourceRect=Rect.fromLTRB(20.0, -217.0, 194.0, 112.0) targetRect=Rect.fromLTRB(206.0, -217.0, 380.0, 112.0)
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TimeoutException was thrown while running async test code:
+TimeoutException after 0:00:05.000000: Future not completed
+
+When the exception was thrown, this was the stack:
+<asynchronous suspension>
+#1      updated.<anonymous closure> (file:///D:/Finance/test/asset_widgets_test.dart:31:7)
+<asynchronous suspension>
+<asynchronous suspension>
+#3      updated (file:///D:/Finance/test/asset_widgets_test.dart:22:3)
+<asynchronous suspension>
+#4      main.<anonymous closure> (file:///D:/Finance/test/asset_widgets_test.dart:198:5)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from dart:async and package:stack_trace)
+
+The exception was caught asynchronously.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: 'ec3c6f31-57de-45ce-99ae-c8b098b40f40'
+  Actual: '2b2a105e-a2b7-476d-9679-16885e680466'
+   Which: is different.
+          Expected: ec3c6f31-5 ...
+            Actual: 2b2a105e-a ...
+                    ^
+           Differ at offset 0
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/Finance/test/asset_widgets_test.dart:203:5)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/Finance/test/asset_widgets_test.dart line 203
+The test description was:
+  T11 dedicated home handle drags; drop persists the grid order
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following message was thrown:
+Multiple exceptions (2) were detected during the running of the current test, and at least one was
+unexpected.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:06 +0 -1: T11 dedicated home handle drags; drop persists the grid order [E]
+  Test failed. See exception logs above.
+  The test description was: T11 dedicated home handle drags; drop persists the grid order
+  
+00:06 +0 -1: (tearDownAll)
+00:06 +0 -1: Some tests failed.
+
+Failing tests:
+  D:/Finance/test/asset_widgets_test.dart: T11 dedicated home handle drags; drop persists the grid order

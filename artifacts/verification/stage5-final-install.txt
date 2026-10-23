@@ -1,0 +1,11 @@
+APK: D:\Finance\artifacts\finance-stage5-release.apk
+SHA-256: 7611ADC341F31ECEC191FD4936274AE7D6FB369950CF62D665CBE1C02C45DF16
+Performing Streamed Install
+Success
+Starting: Intent { cmp=com.example.finance_app/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.example.finance_app/.MainActivity
+TotalTime: 900
+WaitTime: 903
+Complete

@@ -1,0 +1,344 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Because l10n.yaml exists, the options defined there will be used instead.
+To use the command line arguments, delete the l10n.yaml file in the Flutter project.
+
+
+  0s drift_dev on 240 inputs; integration_test/app_smoke_test.dart
+  3s drift_dev on 240 inputs: 47 skipped, 1 same; spent 2s analyzing; test/data/backup_resource_test.dart
+  3s drift_dev on 240 inputs: 237 skipped, 2 same, 1 no-op; spent 2s analyzing
+  0s source_gen:combining_builder on 120 inputs; integration_test/app_smoke_test.dart
+  0s source_gen:combining_builder on 120 inputs: 120 skipped
+  Built with build_runner/aot in 4s; wrote 2 outputs.
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Analyzing Finance...                                            
+No issues found! (ran in 4.8s)
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/test/asset_widgets_test.dart
+00:00 +0: D:/Finance/test/asset_widgets_test.dart: (setUpAll)
+00:00 +0: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +1: D:/Finance/test/asset_widgets_test.dart: T21 two rapid save taps add exactly one entry and immediately refresh the detail
+00:01 +2: D:/Finance/test/asset_widgets_test.dart: invalid amount stays in the form; unsaved Back can continue or discard
+00:02 +3: D:/Finance/test/asset_widgets_test.dart: T11 dedicated home handle drags; drop persists the grid order
+00:02 +4: D:/Finance/test/asset_widgets_test.dart: T10 overview zero state works at 320dp and 200 percent text
+00:02 +5: D:/Finance/test/asset_widgets_test.dart: T06/T10 positive single-point chart, large totals and long legends fit narrow large-text screens
+00:02 +6: D:/Finance/test/asset_widgets_test.dart: (tearDownAll)
+00:02 +6: loading D:/Finance/test/backup_widgets_test.dart
+00:03 +6: D:/Finance/test/backup_widgets_test.dart: (setUpAll)
+00:03 +6: D:/Finance/test/backup_widgets_test.dart: T18 export success uses actual file data, shares directly; failed write never shows success
+00:04 +7: D:/Finance/test/backup_widgets_test.dart: T16 preview cancel keeps data; confirmation restores settings and allows deleting private copy
+00:06 +8: D:/Finance/test/backup_widgets_test.dart: T20 factory reset cancellation preserves data; confirm resets to zero and system settings
+00:07 +9: D:/Finance/test/backup_widgets_test.dart: data management and export dialog fit 320dp and 200 percent text in dark mode
+00:07 +10: D:/Finance/test/backup_widgets_test.dart: (tearDownAll)
+00:07 +10: loading D:/Finance/test/core/business_date_test.dart
+00:07 +10: D:/Finance/test/core/business_date_test.dart: (setUpAll)
+00:07 +10: D:/Finance/test/core/business_date_test.dart: strict dates reject normalization, malformed dates and invalid leap days
+00:07 +11: D:/Finance/test/core/business_date_test.dart: selected month controls the default, including month ends and cross-year
+00:07 +12: D:/Finance/test/core/business_date_test.dart: book time zone determines the business day independently of device zone
+00:07 +13: D:/Finance/test/core/business_date_test.dart: invalid times and future moments are rejected
+00:07 +14: D:/Finance/test/core/business_date_test.dart: Android GMT identifier can initialize a zero-balance book
+00:07 +15: D:/Finance/test/core/business_date_test.dart: (tearDownAll)
+00:07 +15: loading D:/Finance/test/core/money_test.dart
+00:08 +15: D:/Finance/test/core/money_test.dart: decimal parsing preserves cents without float rounding
+00:08 +16: D:/Finance/test/core/money_test.dart: invalid, zero-flow and out-of-range amounts are rejected
+00:08 +17: D:/Finance/test/core/money_test.dart: totals can exceed per-record limit but reject signed-64 overflow
+00:08 +18: D:/Finance/test/core/money_test.dart: formatting keeps full precision and complete large values
+00:08 +19: loading D:/Finance/test/data/asset_workflow_test.dart
+00:08 +19: D:/Finance/test/data/asset_workflow_test.dart: (setUpAll)
+00:08 +19: D:/Finance/test/data/asset_workflow_test.dart: in-memory asset workflow T01/T05 four types start empty or zero; only included balance types enter totals
+00:08 +20: D:/Finance/test/data/asset_workflow_test.dart: in-memory asset workflow T03 old backfill, same-minute order, edited date, deleting latest and clearing
+00:08 +21: D:/Finance/test/data/asset_workflow_test.dart: in-memory asset workflow T04 edit history captures cents, business time and notes; history deletion has no financial effect
+00:08 +22: D:/Finance/test/data/asset_workflow_test.dart: in-memory asset workflow record save and its history roll back together on injected SQLite failure
+00:08 +23: D:/Finance/test/data/asset_workflow_test.dart: in-memory asset workflow T06 invalid amounts, future dates and type changes cannot partially write
+00:08 +24: D:/Finance/test/data/asset_workflow_test.dart: in-memory asset workflow T11 exact reorder is atomic; project deletion cascades and never reseeds
+00:08 +25: D:/Finance/test/data/asset_workflow_test.dart: T21 file reopen preserves IDs, cents, metadata, history and order
+00:08 +26: D:/Finance/test/data/asset_workflow_test.dart: (tearDownAll)
+00:08 +26: loading D:/Finance/test/data/backup_compatibility_test.dart
+00:09 +26: D:/Finance/test/data/backup_compatibility_test.dart: (setUpAll)
+00:09 +26: D:/Finance/test/data/backup_compatibility_test.dart: frozen v0.0-all-types backup -> zero database -> current v2 export preserves every business field
+00:09 +27: D:/Finance/test/data/backup_compatibility_test.dart: frozen v1-stage4-all-types backup -> zero database -> current v2 export preserves every business field
+00:09 +28: D:/Finance/test/data/backup_compatibility_test.dart: frozen v1-pre-checksum-sample backup -> zero database -> current v2 export preserves every business field
+00:09 +29: D:/Finance/test/data/backup_compatibility_test.dart: frozen v2-theme-all-types backup -> zero database -> current v2 export preserves every business field
+00:09 +30: D:/Finance/test/data/backup_compatibility_test.dart: alias v1 is verified before header normalization; conflicting or fractional markers are rejected
+00:09 +31: D:/Finance/test/data/backup_compatibility_test.dart: future format fails with upgrade instruction; missing modern checksum never falls back to legacy
+00:09 +32: D:/Finance/test/data/backup_compatibility_test.dart: v0.0 is not permission to guess missing tables, amounts, IDs or references
+00:09 +33: D:/Finance/test/data/backup_compatibility_test.dart: v2 requires an exact known theme color; v1 never silently accepts new keys
+00:09 +34: D:/Finance/test/data/backup_compatibility_test.dart: (tearDownAll)
+00:09 +34: loading D:/Finance/test/data/backup_resource_test.dart
+00:09 +34: D:/Finance/test/data/backup_resource_test.dart: (setUpAll)
+00:09 +34: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:13 +35: D:/Finance/test/data/backup_resource_test.dart: (tearDownAll)
+00:13 +35: loading D:/Finance/test/data/backup_workflow_test.dart
+00:14 +35: D:/Finance/test/data/backup_workflow_test.dart: (setUpAll)
+00:14 +35: D:/Finance/test/data/backup_workflow_test.dart: real clock microseconds are normalized to protocol millisecond precision on export
+00:14 +36: D:/Finance/test/data/backup_workflow_test.dart: backup workflow protocol minimal sample includes the real canonical checksum
+00:14 +37: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T16 every entity, IDs, cents, histories, ordering and settings round-trip into zero book
+00:14 +38: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T16 restoring the private copy swaps it with the current snapshot, without recursive copies
+00:14 +39: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T17 checksum rejects modified bytes before any database writes
+00:14 +40: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T17 semantic validation rejects bad fields, IDs, references, dates, money and owner types even with valid checksum
+00:14 +41: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T17 bad encoding, JSON and unsupported resources are rejected without partial data
+00:14 +42: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T18 cancel save/open and denied or full storage never record export success or alter business rows
+00:14 +43: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T16/T18 successful export is restorable and records actual verified name, URI and size
+00:14 +44: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T18 private-copy write failure prevents replacement and preserves the previous copy
+00:14 +45: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T19 injected interruption after deletion and partial inserts rolls back all entities and recovery metadata
+00:14 +46: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T19 factory-reset interruption restores original facts, settings and private copy
+00:14 +47: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T20 reset clears all private data and metadata, seeds zero defaults and leaves exported external bytes intact
+00:14 +48: D:/Finance/test/data/backup_workflow_test.dart: backup workflow T20 failed post-reset private-cache cleanup persists a retry flag and does not claim full success
+00:14 +49: D:/Finance/test/data/backup_workflow_test.dart: v1 -> v3 migration preserves all eight business tables, IDs, histories and settings; restart resumes committed cache purge
+00:14 +50: D:/Finance/test/data/backup_workflow_test.dart: (tearDownAll)
+00:14 +50: loading D:/Finance/test/data/finance_repository_test.dart
+00:15 +50: D:/Finance/test/data/finance_repository_test.dart: (setUpAll)
+00:15 +50: D:/Finance/test/data/finance_repository_test.dart: in-memory repository fresh initialization seeds only zero snapshots and no fake flows
+00:15 +51: D:/Finance/test/data/finance_repository_test.dart: in-memory repository restarting initialization preserves deletions and saved preferences
+00:15 +52: D:/Finance/test/data/finance_repository_test.dart: in-memory repository a failed transaction rolls back both settings and balance changes
+00:15 +53: D:/Finance/test/data/finance_repository_test.dart: in-memory repository SQL prevents wrong project types and mismatched bill categories
+00:15 +54: D:/Finance/test/data/finance_repository_test.dart: in-memory repository bills do not modify assets, snapshot deletes fall back, and edit-history deletes preserve balances
+00:15 +55: D:/Finance/test/data/finance_repository_test.dart: file database survives close and reopen without reseeding or losing cents
+00:15 +56: D:/Finance/test/data/finance_repository_test.dart: (tearDownAll)
+00:15 +56: loading D:/Finance/test/data/ledger_workflow_test.dart
+00:15 +56: D:/Finance/test/data/ledger_workflow_test.dart: (setUpAll)
+00:15 +56: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos T02 full bill create/edit/delete and independent entry never write asset snapshots
+00:16 +57: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos T07/T08 historical default, leap year and cross-year grouping use business date
+00:16 +58: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos T04 bill history preserves creation, before/after values and UTC system times; delete traces does not change facts
+00:16 +59: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos T08/T09 distribution filters direction and recomputes after final record removed
+00:16 +60: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos T15 inactive category stays on old bills; wrong direction, inactive selection and direct referenced deletion are rejected
+00:16 +61: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos T15 migration and deletion retain amounts, dates and original category history labels
+00:16 +62: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos T04/T15 memo text, tags and date edit/search/history/delete do not change money
+00:16 +63: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos transaction failure rolls back category migration, deletion and all bill histories
+00:16 +64: D:/Finance/test/data/ledger_workflow_test.dart: ledger and memos invalid amounts, future dates, empty memo and tag limits write no partial rows
+00:16 +65: D:/Finance/test/data/ledger_workflow_test.dart: T04/T21 file reopening preserves bill/memo edits and deleted histories stay deleted
+00:16 +66: D:/Finance/test/data/ledger_workflow_test.dart: (tearDownAll)
+00:16 +66: loading D:/Finance/test/data/refinement_persistence_test.dart
+00:16 +66: D:/Finance/test/data/refinement_persistence_test.dart: (setUpAll)
+00:16 +66: D:/Finance/test/data/refinement_persistence_test.dart: v2 SQLite upgrade adds only blue preference, preserving all facts and user order; cold reopen persists color
+00:16 +67: D:/Finance/test/data/refinement_persistence_test.dart: fresh/factory defaults put large expense then debt first without rewriting a saved custom order
+00:16 +68: D:/Finance/test/data/refinement_persistence_test.dart: (tearDownAll)
+00:17 +68: loading D:/Finance/test/domain/asset_trend_test.dart
+00:17 +68: D:/Finance/test/domain/asset_trend_test.dart: T10 no invented leading zero; a single point is held to the end
+00:17 +69: D:/Finance/test/domain/asset_trend_test.dart: T10 carry prior balance; same-time events, exclusions and deleted rows recompute
+00:17 +70: loading D:/Finance/test/domain/balance_snapshot_test.dart
+00:17 +70: D:/Finance/test/domain/balance_snapshot_test.dart: balance snapshots replace, rather than accumulate
+00:17 +71: D:/Finance/test/domain/balance_snapshot_test.dart: editing and deleting history recomputes current balance and deltas
+00:17 +72: D:/Finance/test/domain/balance_snapshot_test.dart: ties use preserved order, other projects and future moments do not leak
+00:17 +73: loading D:/Finance/test/domain/line_chart_test.dart
+00:18 +73: D:/Finance/test/domain/line_chart_test.dart: same-day observations use equal horizontal spacing with a diagonal connecting segment
+00:18 +74: loading D:/Finance/test/ledger_widgets_test.dart
+00:18 +74: D:/Finance/test/ledger_widgets_test.dart: (setUpAll)
+00:18 +74: D:/Finance/test/ledger_widgets_test.dart: T07/T09 historical month UI defaults Sep 30, saves once and syncs filters
+00:19 +75: D:/Finance/test/ledger_widgets_test.dart: T08 switching bill direction requires a new category and never keeps the old category
+00:20 +76: D:/Finance/test/ledger_widgets_test.dart: T15 memo editor, combined keyword/tag filter, history and localized user content
+00:21 +77: D:/Finance/test/ledger_widgets_test.dart: new bill, annual and memo pages fit 320dp and 200 percent text in both themes
+00:21 +78: D:/Finance/test/ledger_widgets_test.dart: (tearDownAll)
+00:21 +78: loading D:/Finance/test/refinement_widgets_test.dart
+00:22 +78: D:/Finance/test/refinement_widgets_test.dart: (setUpAll)
+00:22 +78: D:/Finance/test/refinement_widgets_test.dart: red Brightness.light theme provides readable paired colors
+00:22 +79: D:/Finance/test/refinement_widgets_test.dart: red Brightness.dark theme provides readable paired colors
+00:22 +80: D:/Finance/test/refinement_widgets_test.dart: green Brightness.light theme provides readable paired colors
+00:22 +81: D:/Finance/test/refinement_widgets_test.dart: green Brightness.dark theme provides readable paired colors
+00:22 +82: D:/Finance/test/refinement_widgets_test.dart: purple Brightness.light theme provides readable paired colors
+00:22 +83: D:/Finance/test/refinement_widgets_test.dart: purple Brightness.dark theme provides readable paired colors
+00:22 +84: D:/Finance/test/refinement_widgets_test.dart: blue Brightness.light theme provides readable paired colors
+00:22 +85: D:/Finance/test/refinement_widgets_test.dart: blue Brightness.dark theme provides readable paired colors
+00:22 +86: D:/Finance/test/refinement_widgets_test.dart: entry button is visible immediately and stays visible after scrolling; annual chart has no redundant monthly cards
+00:23 +87: D:/Finance/test/refinement_widgets_test.dart: card long press opens menu, cancel preserves everything, confirmed delete cascades only its facts and histories
+00:23 +88: D:/Finance/test/refinement_widgets_test.dart: ordinary body scroll never starts sorting or opens the action menu
+00:23 +89: D:/Finance/test/refinement_widgets_test.dart: (tearDownAll)
+00:23 +89: loading D:/Finance/test/stage5_layout_test.dart
+00:24 +89: D:/Finance/test/stage5_layout_test.dart: (setUpAll)
+00:24 +89: D:/Finance/test/stage5_layout_test.dart: T22 red en system 320x900@1.0
+00:27 +90: D:/Finance/test/stage5_layout_test.dart: T22 red en system 320x900@1.5
+00:28 +91: D:/Finance/test/stage5_layout_test.dart: T22 red en system 320x900@2.0
+00:29 +92: D:/Finance/test/stage5_layout_test.dart: T22 red en system 360x900@1.0
+00:30 +93: D:/Finance/test/stage5_layout_test.dart: T22 red en system 360x900@1.5
+00:32 +94: D:/Finance/test/stage5_layout_test.dart: T22 red en system 360x900@2.0
+00:33 +95: D:/Finance/test/stage5_layout_test.dart: T22 red en system 480x900@1.0
+00:34 +96: D:/Finance/test/stage5_layout_test.dart: T22 red en system 480x900@1.5
+00:35 +97: D:/Finance/test/stage5_layout_test.dart: T22 red en system 480x900@2.0
+00:36 +98: D:/Finance/test/stage5_layout_test.dart: T22 red en system 720x320@1.0
+00:37 +99: D:/Finance/test/stage5_layout_test.dart: T22 red en system 800x360@1.5
+00:38 +100: D:/Finance/test/stage5_layout_test.dart: T22 red en system 800x360@2.0
+00:39 +101: D:/Finance/test/stage5_layout_test.dart: T22 red en light 320x900@1.0
+00:40 +102: D:/Finance/test/stage5_layout_test.dart: T22 red en light 320x900@1.5
+00:41 +103: D:/Finance/test/stage5_layout_test.dart: T22 red en light 320x900@2.0
+00:42 +104: D:/Finance/test/stage5_layout_test.dart: T22 red en light 360x900@1.0
+00:44 +105: D:/Finance/test/stage5_layout_test.dart: T22 red en light 360x900@1.5
+00:45 +106: D:/Finance/test/stage5_layout_test.dart: T22 red en light 360x900@2.0
+00:46 +107: D:/Finance/test/stage5_layout_test.dart: T22 red en light 480x900@1.0
+00:47 +108: D:/Finance/test/stage5_layout_test.dart: T22 red en light 480x900@1.5
+00:48 +109: D:/Finance/test/stage5_layout_test.dart: T22 red en light 480x900@2.0
+00:49 +110: D:/Finance/test/stage5_layout_test.dart: T22 red en light 720x320@1.0
+00:50 +111: D:/Finance/test/stage5_layout_test.dart: T22 red en light 800x360@1.5
+00:51 +112: D:/Finance/test/stage5_layout_test.dart: T22 red en light 800x360@2.0
+00:52 +113: D:/Finance/test/stage5_layout_test.dart: T22 red en dark 320x900@1.0
+00:53 +114: D:/Finance/test/stage5_layout_test.dart: T22 red en dark 320x900@1.5
+00:54 +115: D:/Finance/test/stage5_layout_test.dart: T22 red en dark 320x900@2.0
+00:55 +116: D:/Finance/test/stage5_layout_test.dart: T22 red en dark 360x900@1.0
+00:56 +117: D:/Finance/test/stage5_layout_test.dart: T22 red en dark 360x900@1.5
+00:57 +118: D:/Finance/test/stage5_layout_test.dart: T22 red en dark 360x900@2.0
+00:58 +119: D:/Finance/test/stage5_layout_test.dart: T22 red en dark 480x900@1.0
+00:59 +120: D:/Finance/test/stage5_layout_test.dart: T22 red en dark 480x900@1.5
+01:00 +121: D:/Finance/test/stage5_layout_test.dart: T22 red en dark 480x900@2.0
+01:01 +122: D:/Finance/test/stage5_layout_test.dart: T22 red en dark 720x320@1.0
+01:02 +123: D:/Finance/test/stage5_layout_test.dart: T22 red en dark 800x360@1.5
+01:03 +124: D:/Finance/test/stage5_layout_test.dart: T22 red en dark 800x360@2.0
+01:03 +125: D:/Finance/test/stage5_layout_test.dart: T22 green en system 320x900@1.0
+01:04 +126: D:/Finance/test/stage5_layout_test.dart: T22 green en system 320x900@1.5
+01:05 +127: D:/Finance/test/stage5_layout_test.dart: T22 green en system 320x900@2.0
+01:06 +128: D:/Finance/test/stage5_layout_test.dart: T22 green en system 360x900@1.0
+01:07 +129: D:/Finance/test/stage5_layout_test.dart: T22 green en system 360x900@1.5
+01:08 +130: D:/Finance/test/stage5_layout_test.dart: T22 green en system 360x900@2.0
+01:09 +131: D:/Finance/test/stage5_layout_test.dart: T22 green en system 480x900@1.0
+01:10 +132: D:/Finance/test/stage5_layout_test.dart: T22 green en system 480x900@1.5
+01:11 +133: D:/Finance/test/stage5_layout_test.dart: T22 green en system 480x900@2.0
+01:12 +134: D:/Finance/test/stage5_layout_test.dart: T22 green en system 720x320@1.0
+01:13 +135: D:/Finance/test/stage5_layout_test.dart: T22 green en system 800x360@1.5
+01:14 +136: D:/Finance/test/stage5_layout_test.dart: T22 green en system 800x360@2.0
+01:15 +137: D:/Finance/test/stage5_layout_test.dart: T22 green en light 320x900@1.0
+01:16 +138: D:/Finance/test/stage5_layout_test.dart: T22 green en light 320x900@1.5
+01:17 +139: D:/Finance/test/stage5_layout_test.dart: T22 green en light 320x900@2.0
+01:18 +140: D:/Finance/test/stage5_layout_test.dart: T22 green en light 360x900@1.0
+01:18 +141: D:/Finance/test/stage5_layout_test.dart: T22 green en light 360x900@1.5
+01:19 +142: D:/Finance/test/stage5_layout_test.dart: T22 green en light 360x900@2.0
+01:20 +143: D:/Finance/test/stage5_layout_test.dart: T22 green en light 480x900@1.0
+01:21 +144: D:/Finance/test/stage5_layout_test.dart: T22 green en light 480x900@1.5
+01:22 +145: D:/Finance/test/stage5_layout_test.dart: T22 green en light 480x900@2.0
+01:23 +146: D:/Finance/test/stage5_layout_test.dart: T22 green en light 720x320@1.0
+01:24 +147: D:/Finance/test/stage5_layout_test.dart: T22 green en light 800x360@1.5
+01:25 +148: D:/Finance/test/stage5_layout_test.dart: T22 green en light 800x360@2.0
+01:26 +149: D:/Finance/test/stage5_layout_test.dart: T22 green en dark 320x900@1.0
+01:27 +150: D:/Finance/test/stage5_layout_test.dart: T22 green en dark 320x900@1.5
+01:28 +151: D:/Finance/test/stage5_layout_test.dart: T22 green en dark 320x900@2.0
+01:29 +152: D:/Finance/test/stage5_layout_test.dart: T22 green en dark 360x900@1.0
+01:30 +153: D:/Finance/test/stage5_layout_test.dart: T22 green en dark 360x900@1.5
+01:30 +154: D:/Finance/test/stage5_layout_test.dart: T22 green en dark 360x900@2.0
+01:31 +155: D:/Finance/test/stage5_layout_test.dart: T22 green en dark 480x900@1.0
+01:32 +156: D:/Finance/test/stage5_layout_test.dart: T22 green en dark 480x900@1.5
+01:33 +157: D:/Finance/test/stage5_layout_test.dart: T22 green en dark 480x900@2.0
+01:34 +158: D:/Finance/test/stage5_layout_test.dart: T22 green en dark 720x320@1.0
+01:35 +159: D:/Finance/test/stage5_layout_test.dart: T22 green en dark 800x360@1.5
+01:36 +160: D:/Finance/test/stage5_layout_test.dart: T22 green en dark 800x360@2.0
+01:37 +161: D:/Finance/test/stage5_layout_test.dart: T22 purple en system 320x900@1.0
+01:38 +162: D:/Finance/test/stage5_layout_test.dart: T22 purple en system 320x900@1.5
+01:39 +163: D:/Finance/test/stage5_layout_test.dart: T22 purple en system 320x900@2.0
+01:40 +164: D:/Finance/test/stage5_layout_test.dart: T22 purple en system 360x900@1.0
+01:41 +165: D:/Finance/test/stage5_layout_test.dart: T22 purple en system 360x900@1.5
+01:41 +166: D:/Finance/test/stage5_layout_test.dart: T22 purple en system 360x900@2.0
+01:42 +167: D:/Finance/test/stage5_layout_test.dart: T22 purple en system 480x900@1.0
+01:43 +168: D:/Finance/test/stage5_layout_test.dart: T22 purple en system 480x900@1.5
+01:44 +169: D:/Finance/test/stage5_layout_test.dart: T22 purple en system 480x900@2.0
+01:45 +170: D:/Finance/test/stage5_layout_test.dart: T22 purple en system 720x320@1.0
+01:46 +171: D:/Finance/test/stage5_layout_test.dart: T22 purple en system 800x360@1.5
+01:47 +172: D:/Finance/test/stage5_layout_test.dart: T22 purple en system 800x360@2.0
+01:48 +173: D:/Finance/test/stage5_layout_test.dart: T22 purple en light 320x900@1.0
+01:49 +174: D:/Finance/test/stage5_layout_test.dart: T22 purple en light 320x900@1.5
+01:50 +175: D:/Finance/test/stage5_layout_test.dart: T22 purple en light 320x900@2.0
+01:51 +176: D:/Finance/test/stage5_layout_test.dart: T22 purple en light 360x900@1.0
+01:52 +177: D:/Finance/test/stage5_layout_test.dart: T22 purple en light 360x900@1.5
+01:53 +178: D:/Finance/test/stage5_layout_test.dart: T22 purple en light 360x900@2.0
+01:53 +179: D:/Finance/test/stage5_layout_test.dart: T22 purple en light 480x900@1.0
+01:54 +180: D:/Finance/test/stage5_layout_test.dart: T22 purple en light 480x900@1.5
+01:55 +181: D:/Finance/test/stage5_layout_test.dart: T22 purple en light 480x900@2.0
+01:56 +182: D:/Finance/test/stage5_layout_test.dart: T22 purple en light 720x320@1.0
+01:57 +183: D:/Finance/test/stage5_layout_test.dart: T22 purple en light 800x360@1.5
+01:58 +184: D:/Finance/test/stage5_layout_test.dart: T22 purple en light 800x360@2.0
+01:59 +185: D:/Finance/test/stage5_layout_test.dart: T22 purple en dark 320x900@1.0
+02:00 +186: D:/Finance/test/stage5_layout_test.dart: T22 purple en dark 320x900@1.5
+02:01 +187: D:/Finance/test/stage5_layout_test.dart: T22 purple en dark 320x900@2.0
+02:02 +188: D:/Finance/test/stage5_layout_test.dart: T22 purple en dark 360x900@1.0
+02:02 +189: D:/Finance/test/stage5_layout_test.dart: T22 purple en dark 360x900@1.5
+02:03 +190: D:/Finance/test/stage5_layout_test.dart: T22 purple en dark 360x900@2.0
+02:04 +191: D:/Finance/test/stage5_layout_test.dart: T22 purple en dark 480x900@1.0
+02:05 +192: D:/Finance/test/stage5_layout_test.dart: T22 purple en dark 480x900@1.5
+02:06 +193: D:/Finance/test/stage5_layout_test.dart: T22 purple en dark 480x900@2.0
+02:07 +194: D:/Finance/test/stage5_layout_test.dart: T22 purple en dark 720x320@1.0
+02:08 +195: D:/Finance/test/stage5_layout_test.dart: T22 purple en dark 800x360@1.5
+02:09 +196: D:/Finance/test/stage5_layout_test.dart: T22 purple en dark 800x360@2.0
+02:10 +197: D:/Finance/test/stage5_layout_test.dart: T22 blue en system 320x900@1.0
+02:11 +198: D:/Finance/test/stage5_layout_test.dart: T22 blue en system 320x900@1.5
+02:12 +199: D:/Finance/test/stage5_layout_test.dart: T22 blue en system 320x900@2.0
+02:12 +200: D:/Finance/test/stage5_layout_test.dart: T22 blue en system 360x900@1.0
+02:13 +201: D:/Finance/test/stage5_layout_test.dart: T22 blue en system 360x900@1.5
+02:14 +202: D:/Finance/test/stage5_layout_test.dart: T22 blue en system 360x900@2.0
+02:15 +203: D:/Finance/test/stage5_layout_test.dart: T22 blue en system 480x900@1.0
+02:16 +204: D:/Finance/test/stage5_layout_test.dart: T22 blue en system 480x900@1.5
+02:17 +205: D:/Finance/test/stage5_layout_test.dart: T22 blue en system 480x900@2.0
+02:18 +206: D:/Finance/test/stage5_layout_test.dart: T22 blue en system 720x320@1.0
+02:19 +207: D:/Finance/test/stage5_layout_test.dart: T22 blue en system 800x360@1.5
+02:20 +208: D:/Finance/test/stage5_layout_test.dart: T22 blue en system 800x360@2.0
+02:21 +209: D:/Finance/test/stage5_layout_test.dart: T22 blue en light 320x900@1.0
+02:21 +210: D:/Finance/test/stage5_layout_test.dart: T22 blue en light 320x900@1.5
+02:22 +211: D:/Finance/test/stage5_layout_test.dart: T22 blue en light 320x900@2.0
+02:23 +212: D:/Finance/test/stage5_layout_test.dart: T22 blue en light 360x900@1.0
+02:24 +213: D:/Finance/test/stage5_layout_test.dart: T22 blue en light 360x900@1.5
+02:25 +214: D:/Finance/test/stage5_layout_test.dart: T22 blue en light 360x900@2.0
+02:26 +215: D:/Finance/test/stage5_layout_test.dart: T22 blue en light 480x900@1.0
+02:27 +216: D:/Finance/test/stage5_layout_test.dart: T22 blue en light 480x900@1.5
+02:28 +217: D:/Finance/test/stage5_layout_test.dart: T22 blue en light 480x900@2.0
+02:29 +218: D:/Finance/test/stage5_layout_test.dart: T22 blue en light 720x320@1.0
+02:29 +219: D:/Finance/test/stage5_layout_test.dart: T22 blue en light 800x360@1.5
+02:30 +220: D:/Finance/test/stage5_layout_test.dart: T22 blue en light 800x360@2.0
+02:31 +221: D:/Finance/test/stage5_layout_test.dart: T22 blue en dark 320x900@1.0
+02:32 +222: D:/Finance/test/stage5_layout_test.dart: T22 blue en dark 320x900@1.5
+02:33 +223: D:/Finance/test/stage5_layout_test.dart: T22 blue en dark 320x900@2.0
+02:33 +224: D:/Finance/test/stage5_layout_test.dart: T22 blue en dark 360x900@1.0
+02:34 +225: D:/Finance/test/stage5_layout_test.dart: T22 blue en dark 360x900@1.5
+02:35 +226: D:/Finance/test/stage5_layout_test.dart: T22 blue en dark 360x900@2.0
+02:36 +227: D:/Finance/test/stage5_layout_test.dart: T22 blue en dark 480x900@1.0
+02:37 +228: D:/Finance/test/stage5_layout_test.dart: T22 blue en dark 480x900@1.5
+02:38 +229: D:/Finance/test/stage5_layout_test.dart: T22 blue en dark 480x900@2.0
+02:39 +230: D:/Finance/test/stage5_layout_test.dart: T22 blue en dark 720x320@1.0
+02:40 +231: D:/Finance/test/stage5_layout_test.dart: T22 blue en dark 800x360@1.5
+02:41 +232: D:/Finance/test/stage5_layout_test.dart: T22 blue en dark 800x360@2.0
+02:41 +233: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans system 320x900@1.0
+02:42 +234: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans system 320x900@1.5
+02:43 +235: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans system 320x900@2.0
+02:44 +236: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans system 360x900@1.0
+02:45 +237: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans system 360x900@1.5
+02:46 +238: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans system 360x900@2.0
+02:47 +239: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans system 480x900@1.0
+02:48 +240: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans system 480x900@1.5
+02:49 +241: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans system 480x900@2.0
+02:50 +242: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans system 720x320@1.0
+02:51 +243: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans system 800x360@1.5
+02:51 +244: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans system 800x360@2.0
+02:52 +245: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans light 320x900@1.0
+02:53 +246: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans light 320x900@1.5
+02:54 +247: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans light 320x900@2.0
+02:55 +248: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans light 360x900@1.0
+02:56 +249: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans light 360x900@1.5
+02:57 +250: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans light 360x900@2.0
+02:58 +251: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans light 480x900@1.0
+02:59 +252: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans light 480x900@1.5
+03:00 +253: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans light 480x900@2.0
+03:01 +254: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans light 720x320@1.0
+03:02 +255: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans light 800x360@1.5
+03:02 +256: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans light 800x360@2.0
+03:03 +257: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans dark 320x900@1.0
+03:04 +258: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans dark 320x900@1.5
+03:05 +259: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans dark 320x900@2.0
+03:06 +260: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans dark 360x900@1.0
+03:07 +261: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans dark 360x900@1.5
+03:08 +262: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans dark 360x900@2.0
+03:09 +263: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans dark 480x900@1.0
+03:10 +264: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans dark 480x900@1.5
+03:11 +265: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans dark 480x900@2.0
+03:12 +266: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans dark 720x320@1.0
+03:12 +267: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans dark 800x360@1.5
+03:13 +268: D:/Finance/test/stage5_layout_test.dart: T22 red zh-Hans dark 800x360@2.0
+03:14 +269: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans system 320x900@1.0
+03:15 +270: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans system 320x900@1.5
+03:16 +271: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans system 320x900@2.0
+03:17 +272: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans system 360x900@1.0
+03:18 +273: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans system 360x900@1.5
+03:19 +274: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans system 360x900@2.0
+03:20 +275: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans system 480x900@1.0
+03:20 +276: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans system 480x900@1.5
+03:21 +277: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans system 480x900@2.0
+03:22 +278: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans system 720x320@1.0
+03:23 +279: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans system 800x360@1.5
+03:24 +280: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans system 800x360@2.0
+03:25 +281: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans light 320x900@1.0
+03:26 +282: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans light 320x900@1.5
+03:26 +283: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans light 320x900@2.0
+03:27 +284: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans light 360x900@1.0
+03:28 +285: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans light 360x900@1.5
+03:29 +286: D:/Finance/test/stage5_layout_test.dart: T22 green zh-Hans light 360x900@2.0

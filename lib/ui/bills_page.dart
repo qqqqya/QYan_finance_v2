@@ -24,6 +24,7 @@ class _BillsPageState extends State<BillsPage> {
   late String month = bookNow(widget.controller).date.yearMonth;
   String direction = 'expense';
   String? filter;
+  int visibleRecords = 50;
   Future<void> edit([BillRow? bill]) async {
     final target = await Navigator.push<String>(
       context,
@@ -51,7 +52,10 @@ class _BillsPageState extends State<BillsPage> {
   void move(int delta) {
     final parts = month.split('-').map(int.parse).toList();
     final d = DateTime.utc(parts[0], parts[1] + delta, 1);
-    setState(() => month = monthKey(d.year, d.month));
+    setState(() {
+      month = monthKey(d.year, d.month);
+      visibleRecords = 50;
+    });
   }
 
   Future<void> chooseMonth() async {
@@ -63,6 +67,7 @@ class _BillsPageState extends State<BillsPage> {
       context: context,
       builder: (context) => StatefulBuilder(
         builder: (context, update) => AlertDialog(
+          scrollable: true,
           title: Text(s.chooseMonth),
           content: Column(
             mainAxisSize: MainAxisSize.min,
@@ -106,7 +111,12 @@ class _BillsPageState extends State<BillsPage> {
         ),
       ),
     );
-    if (chosen != null && mounted) setState(() => month = chosen);
+    if (chosen != null && mounted) {
+      setState(() {
+        month = chosen;
+        visibleRecords = 50;
+      });
+    }
   }
 
   @override
@@ -145,6 +155,15 @@ class _BillsPageState extends State<BillsPage> {
                 ),
               ),
             ],
+          ),
+          bottomNavigationBar: Padding(
+            padding: const EdgeInsets.fromLTRB(20, 8, 20, 12),
+            child: FilledButton.icon(
+              key: const Key('add-bill'),
+              onPressed: edit,
+              icon: const Icon(Icons.add),
+              label: Text(s.addBill),
+            ),
           ),
           body: ListView(
             padding: const EdgeInsets.all(20),
@@ -235,6 +254,7 @@ class _BillsPageState extends State<BillsPage> {
                       onSelected: (_) => setState(() {
                         direction = type;
                         filter = type;
+                        visibleRecords = 50;
                       }),
                     ),
                 ],
@@ -257,12 +277,6 @@ class _BillsPageState extends State<BillsPage> {
                 s.billDetails,
                 style: Theme.of(context).textTheme.titleLarge,
               ),
-              FilledButton.icon(
-                key: const Key('add-bill'),
-                onPressed: edit,
-                icon: const Icon(Icons.add),
-                label: Text(s.addBill),
-              ),
               Wrap(
                 spacing: 8,
                 children: [
@@ -276,6 +290,7 @@ class _BillsPageState extends State<BillsPage> {
                       onSelected: (_) => setState(() {
                         filter = type;
                         if (type != null) direction = type;
+                        visibleRecords = 50;
                       }),
                     ),
                 ],
@@ -285,7 +300,7 @@ class _BillsPageState extends State<BillsPage> {
                   padding: const EdgeInsets.all(24),
                   child: Text(s.noBills),
                 ),
-              for (final b in detail)
+              for (final b in detail.take(visibleRecords))
                 Card(
                   child: ListTile(
                     key: Key('bill-${b.id}'),
@@ -308,6 +323,12 @@ class _BillsPageState extends State<BillsPage> {
                     ),
                     onTap: () => edit(b),
                   ),
+                ),
+              if (detail.length > visibleRecords)
+                TextButton(
+                  key: const Key('more-bills'),
+                  onPressed: () => setState(() => visibleRecords += 50),
+                  child: Text(s.loadMore),
                 ),
             ],
           ),
@@ -370,12 +391,53 @@ class _AnnualBillsPageState extends State<AnnualBillsPage> {
                 onChanged: (v) => setState(() => year = v!),
               ),
               const SizedBox(height: 20),
-              Text(s.income),
-              MoneyText(income, color: const Color(0xFF008C64)),
-              Text(s.expense),
-              MoneyText(expense, color: const Color(0xFFE34C55)),
-              Text(s.surplus),
-              MoneyText(income - expense),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(s.surplus),
+                      MoneyText(
+                        income - expense,
+                        key: const Key('annual-surplus'),
+                        size: 32,
+                      ),
+                      const SizedBox(height: 16),
+                      Wrap(
+                        spacing: 32,
+                        runSpacing: 12,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(s.income),
+                              MoneyText(
+                                income,
+                                key: const Key('annual-income'),
+                                color: const Color(0xFF008C64),
+                                size: 20,
+                              ),
+                            ],
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(s.expense),
+                              MoneyText(
+                                expense,
+                                key: const Key('annual-expense'),
+                                color: const Color(0xFFE34C55),
+                                size: 20,
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
               const SizedBox(height: 20),
               Wrap(
                 spacing: 16,
@@ -399,7 +461,7 @@ class _AnnualBillsPageState extends State<AnnualBillsPage> {
                 Text(s.amountAxis),
                 MoneyText(max, size: 14),
                 SizedBox(
-                  height: 160,
+                  height: 240,
                   child: CustomPaint(
                     key: const Key('annual-plot'),
                     painter: _AnnualPainter(
@@ -427,36 +489,6 @@ class _AnnualBillsPageState extends State<AnnualBillsPage> {
                 ),
                 Center(child: Text(s.annualAxis)),
               ],
-              const SizedBox(height: 16),
-              for (var m = 1; m <= 12; m++)
-                Card(
-                  child: Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          monthKey(year, m),
-                          style: Theme.of(context).textTheme.titleMedium,
-                        ),
-                        Text(s.income),
-                        MoneyText(
-                          incomes[m - 1],
-                          size: 18,
-                          color: const Color(0xFF008C64),
-                        ),
-                        Text(s.expense),
-                        MoneyText(
-                          expenses[m - 1],
-                          size: 18,
-                          color: const Color(0xFFE34C55),
-                        ),
-                        Text(s.surplus),
-                        MoneyText(incomes[m - 1] - expenses[m - 1], size: 18),
-                      ],
-                    ),
-                  ),
-                ),
             ],
           ),
         );

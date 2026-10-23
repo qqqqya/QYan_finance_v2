@@ -1,0 +1,9 @@
+PASS: same-certificate v5 -> v6, SQLite 2 -> 3, all prior fields/order/settings
+PASS: unsigned v0.0 -> v2, all prior fields plus blue
+PASS: v2 full restoration and export, including purple preference
+PASS: future v3 rejection leaves current data unchanged
+PASS: cold process restart preserves all fields and purple preference
+PASS: factory zero template has largeExpense then liability, no user facts/history
+PASS: final aligned release v2 -> real SAF export matches every field
+PASS: final future rejection and cold restart preserve every field
+PASS: final factory reset has zero user records and new default order

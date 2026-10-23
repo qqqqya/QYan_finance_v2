@@ -13,15 +13,15 @@ import 'ledger_workspace.dart';
 part 'ledger_repository.dart';
 
 const defaultProjectSeeds = [
+  ('expense_log', 'largeExpense', 'expense'),
+  ('liability', 'liability', 'liability'),
   ('asset', 'cmb', 'bank'),
   ('asset', 'bocom', 'bank'),
   ('asset', 'alipay', 'wallet'),
   ('asset', 'cash', 'cash'),
   ('asset', 'fund', 'fund'),
   ('asset', 'investment', 'investment'),
-  ('liability', 'liability', 'liability'),
   ('income_log', 'largeIncome', 'income'),
-  ('expense_log', 'largeExpense', 'expense'),
 ];
 
 const defaultCategorySeeds = [
@@ -389,6 +389,29 @@ final class FinanceRepository {
       database.projects,
     )..where((p) => p.id.equals(id))).go();
   });
+  Future<({int records, int histories})> projectDeletionImpact(
+    String id,
+  ) async {
+    final row = await database.customSelect(
+      '''
+      SELECT
+        (SELECT COUNT(*) FROM balance_records WHERE project_id = ?) +
+        (SELECT COUNT(*) FROM project_entries WHERE project_id = ?) AS records,
+        (SELECT COUNT(*) FROM edit_histories WHERE
+          (entity_type = 'project' AND entity_id = ?) OR
+          (entity_type = 'balanceRecord' AND entity_id IN
+            (SELECT id FROM balance_records WHERE project_id = ?)) OR
+          (entity_type = 'projectEntry' AND entity_id IN
+            (SELECT id FROM project_entries WHERE project_id = ?))) AS histories
+    ''',
+      variables: List.generate(5, (_) => Variable.withString(id)),
+    ).getSingle();
+    return (
+      records: row.read<int>('records'),
+      histories: row.read<int>('histories'),
+    );
+  }
+
   Future<void> reorderProjects(List<String> ids) =>
       database.transaction(() async {
         final existing = await database.select(database.projects).get();
@@ -504,6 +527,7 @@ final class FinanceRepository {
           appearance: Appearance.values.byName(row.themeMode),
           language: AppLanguage.fromCode(row.languageMode),
           timeZone: row.timeZone,
+          themeColor: ThemeColor.values.byName(row.themeColor),
         ),
       );
 
@@ -519,6 +543,13 @@ final class FinanceRepository {
         await (database.update(database.appPreferences)
               ..where((row) => row.id.equals(1)))
             .write(AppPreferencesCompanion(languageMode: Value(language.code)));
+      });
+
+  Future<void> setThemeColor(ThemeColor color) =>
+      database.transaction(() async {
+        await (database.update(database.appPreferences)
+              ..where((row) => row.id.equals(1)))
+            .write(AppPreferencesCompanion(themeColor: Value(color.name)));
       });
 
   Stream<List<ProjectSummary>> watchDashboard() {

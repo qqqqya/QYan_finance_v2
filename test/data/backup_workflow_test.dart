@@ -257,7 +257,8 @@ void main() {
       final cases = <String, void Function(Map<String, dynamic>)>{
         'missing collection': (r) => r['data'].remove('bills'),
         'unknown top field': (r) => r['extra'] = 1,
-        'future version': (r) => r['schemaVersion'] = 2,
+        'future version': (r) =>
+            r['schemaVersion'] = currentBackupFormatVersion + 1,
         'fractional cents': (r) => r['data']['bills'][0]['amountMinor'] = 1.5,
         'float cents': (r) => r['data']['bills'][0]['amountMinor'] = 1.0,
         'negative balance': (r) =>
@@ -425,6 +426,7 @@ void main() {
       }
       expect(doc.data['settings'], {
         'themeMode': 'system',
+        'themeColor': 'blue',
         'languageMode': 'system',
         'currency': 'CNY',
         'timeZone': 'GMT',
@@ -451,7 +453,7 @@ void main() {
       expect(await repo.purgePending, isFalse);
     });
   });
-  test('v1 -> v2 migration preserves all eight business tables, IDs, histories and settings; restart resumes committed cache purge', () async {
+  test('v1 -> v3 migration preserves all eight business tables, IDs, histories and settings; restart resumes committed cache purge', () async {
     final dir = await Directory.systemTemp.createTemp('finance-migration-');
     final file = File('${dir.path}/finance.sqlite');
     var db = AppDatabase(NativeDatabase(file));
@@ -461,6 +463,9 @@ void main() {
       await seedEveryType(finance);
       final expected = (await BackupRepository(finance).capture()).data;
       await db.customStatement('DROP TABLE local_data_states');
+      await db.customStatement(
+        'ALTER TABLE app_preferences DROP COLUMN theme_color',
+      );
       await db.customStatement('PRAGMA user_version=1');
       await db.close();
       db = AppDatabase(NativeDatabase(file));
@@ -471,7 +476,7 @@ void main() {
         (await db.customSelect('PRAGMA user_version').getSingle()).read<int>(
           'user_version',
         ),
-        2,
+        3,
       );
       await repo.restore(await repo.capture());
       await repo.reset('GMT');

@@ -1,0 +1,17 @@
+**********************
+PowerShell transcript start
+Start time: 20261023143057
+**********************
+Performing Streamed Install
+Success
+Performing Streamed Install
+Success
+
+PASS: same persistent certificate stage5 -> 0.5.1 install-r and SQLite 2 -> 3 preserve all existing fields/order/settings; only themeColor=blue is added.
+
+PS>TerminatingError(): "SAF file not found: QA_refine_v2.moneybak"
+>> TerminatingError(): "SAF file not found: QA_refine_v2.moneybak"
+**********************
+PowerShell transcript end
+End time: 20261023143329
+**********************

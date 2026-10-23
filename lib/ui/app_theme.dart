@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../domain/app_settings.dart';
+
 abstract final class AppSpacing {
   static const double small = 8;
   static const double medium = 16;
@@ -8,20 +10,28 @@ abstract final class AppSpacing {
   static const double radius = 22;
 }
 
-ThemeData buildAppTheme(Brightness brightness) {
+Color themeSeed(ThemeColor color) => switch (color) {
+  ThemeColor.red => const Color(0xFFB74435),
+  ThemeColor.green => const Color(0xFF28775E),
+  ThemeColor.purple => const Color(0xFF785592),
+  ThemeColor.blue => const Color(0xFF386893),
+};
+
+ThemeData buildAppTheme(
+  Brightness brightness, [
+  ThemeColor color = ThemeColor.blue,
+]) {
   final dark = brightness == Brightness.dark;
   final scheme = ColorScheme.fromSeed(
-    seedColor: const Color(0xFF37383D),
+    seedColor: themeSeed(color),
     brightness: brightness,
-    surface: dark ? const Color(0xFF1D1D21) : Colors.white,
+    dynamicSchemeVariant: DynamicSchemeVariant.tonalSpot,
   );
   return ThemeData(
     useMaterial3: true,
     brightness: brightness,
     colorScheme: scheme,
-    scaffoldBackgroundColor: dark
-        ? const Color(0xFF101012)
-        : const Color(0xFFF5F5F7),
+    scaffoldBackgroundColor: scheme.surface,
     appBarTheme: AppBarTheme(
       backgroundColor: Colors.transparent,
       surfaceTintColor: Colors.transparent,
@@ -43,7 +53,7 @@ ThemeData buildAppTheme(Brightness brightness) {
       ),
     ),
     cardTheme: CardThemeData(
-      color: scheme.surface,
+      color: scheme.surfaceContainerLow,
       elevation: 0,
       margin: EdgeInsets.zero,
       shape: RoundedRectangleBorder(

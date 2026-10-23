@@ -1,0 +1,48 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/test/refinement_widgets_test.dart
+00:00 +0: D:/Finance/test/refinement_widgets_test.dart: (setUpAll)
+00:00 +0: D:/Finance/test/refinement_widgets_test.dart: red Brightness.light theme provides readable paired colors
+00:00 +1: D:/Finance/test/data/refinement_persistence_test.dart: v2 SQLite upgrade adds only blue preference, preserving all facts and user order; cold reopen persists color
+00:00 +2: D:/Finance/test/data/refinement_persistence_test.dart: v2 SQLite upgrade adds only blue preference, preserving all facts and user order; cold reopen persists color
+00:00 +3: D:/Finance/test/data/refinement_persistence_test.dart: v2 SQLite upgrade adds only blue preference, preserving all facts and user order; cold reopen persists color
+00:00 +4: D:/Finance/test/data/refinement_persistence_test.dart: v2 SQLite upgrade adds only blue preference, preserving all facts and user order; cold reopen persists color
+00:00 +5: D:/Finance/test/data/refinement_persistence_test.dart: v2 SQLite upgrade adds only blue preference, preserving all facts and user order; cold reopen persists color
+00:00 +6: D:/Finance/test/data/refinement_persistence_test.dart: v2 SQLite upgrade adds only blue preference, preserving all facts and user order; cold reopen persists color
+00:00 +7: D:/Finance/test/data/refinement_persistence_test.dart: v2 SQLite upgrade adds only blue preference, preserving all facts and user order; cold reopen persists color
+00:00 +8: D:/Finance/test/data/refinement_persistence_test.dart: v2 SQLite upgrade adds only blue preference, preserving all facts and user order; cold reopen persists color
+00:00 +9: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +10: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +10: D:/Finance/test/refinement_widgets_test.dart: entry button is visible immediately and stays visible after scrolling; annual chart has no redundant monthly cards
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _KeyWidgetFinder:<Found 0 widgets with key [<'annual-plot'>]: []>
+   Which: means none were found but one was expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/Finance/test/refinement_widgets_test.dart:78:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/Finance/test/refinement_widgets_test.dart line 78
+The test description was:
+  entry button is visible immediately and stays visible after scrolling; annual chart has no
+  redundant monthly cards
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +10 -1: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +10 -1: D:/Finance/test/refinement_widgets_test.dart: entry button is visible immediately and stays visible after scrolling; annual chart has no redundant monthly cards [E]
+  Test failed. See exception logs above.
+  The test description was: entry button is visible immediately and stays visible after scrolling; annual chart has no redundant monthly cards
+  
+00:01 +11 -1: D:/Finance/test/refinement_widgets_test.dart: card long press opens menu, cancel preserves everything, confirmed delete cascades only its facts and histories
+00:02 +12 -1: D:/Finance/test/refinement_widgets_test.dart: card long press opens menu, cancel preserves everything, confirmed delete cascades only its facts and histories
+00:02 +13 -1: D:/Finance/test/refinement_widgets_test.dart: card long press opens menu, cancel preserves everything, confirmed delete cascades only its facts and histories
+00:02 +14 -1: D:/Finance/test/refinement_widgets_test.dart: card long press opens menu, cancel preserves everything, confirmed delete cascades only its facts and histories
+00:02 +15 -1: D:/Finance/test/refinement_widgets_test.dart: card long press opens menu, cancel preserves everything, confirmed delete cascades only its facts and histories
+00:02 +16 -1: D:/Finance/test/refinement_widgets_test.dart: card long press opens menu, cancel preserves everything, confirmed delete cascades only its facts and histories

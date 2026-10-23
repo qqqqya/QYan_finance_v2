@@ -1,0 +1,622 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Because l10n.yaml exists, the options defined there will be used instead.
+To use the command line arguments, delete the l10n.yaml file in the Flutter project.
+
+
+  0s drift_dev on 240 inputs; integration_test/app_smoke_test.dart
+  3s drift_dev on 240 inputs: 1 same; spent 3s analyzing; integration_test/asset_flow_test.dart
+  4s drift_dev on 240 inputs: 99 skipped, 7 output, 88 same, 46 no-op; spent 3s analyzing
+  0s source_gen:combining_builder on 120 inputs; integration_test/app_smoke_test.dart
+  0s source_gen:combining_builder on 120 inputs: 116 skipped, 1 same, 3 no-op
+  Built with build_runner/aot in 5s; wrote 96 outputs.
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Analyzing Finance...                                            
+No issues found! (ran in 4.2s)
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/test/asset_widgets_test.dart
+00:00 +0: D:/Finance/test/asset_widgets_test.dart: (setUpAll)
+00:00 +0: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +1: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +2: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +3: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +4: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +5: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +6: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +7: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +8: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +9: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +10: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +11: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +12: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +13: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +14: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +15: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +16: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +17: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +18: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +19: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +20: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +21: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +22: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +23: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +24: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +25: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +26: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +27: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +28: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +29: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +30: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +31: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +32: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +33: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +34: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +35: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +36: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +37: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +38: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +39: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +40: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +41: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +42: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +43: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +44: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +45: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +46: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +47: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +48: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +49: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +50: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +51: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +52: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +53: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +54: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +55: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +56: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +57: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +58: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +59: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +60: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +61: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +62: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +63: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +64: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +65: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +66: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +67: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +68: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +69: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +70: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +71: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +72: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:03 +73: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:03 +74: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:04 +75: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:04 +76: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:04 +77: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:04 +78: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+Shell: ../../../flutter/third_party/dart/runtime/vm/zone.cc: 95: error: Out of memory.
+Shell: version=3.13.5 (stable) (Tue Sep 29 01:00:52 2026 -0700) on "windows_x64"
+Shell: pid=46316, thread=15852, isolate_group=main(0000021DAD0066E0), isolate=(nil)(0000000000000000)
+Shell: os=windows, arch=x64, comp=no, sim=no
+Shell: isolate_instructions=7ff7cbe01ac0, vm_instructions=0
+Shell: fp=7be24fdc40, sp=7be24fdc00, pc=7ff7cc0fa538
+Shell: ../../../flutter/third_party/dart/runtime/vm/zone.cc: 95: error: Out of memory.
+Shell: version=3.13.5 (stable) (Tue Sep 29 01:00:52 2026 -0700) on "windows_x64"
+Shell: pid=53276, thread=69484, isolate_group=main(000002059401BF70), isolate=(nil)(0000000000000000)
+Shell: os=windows, arch=x64, comp=no, sim=no
+Shell: isolate_instructions=7ff7cbe01ac0, vm_instructions=0
+Shell: fp=b5b63fdf10, sp=b5b63fded0, pc=7ff7cc0fa538
+Shell:   pc 0x00007ff7cc0fa538 fp 0x0000007be24fdc40 ForceShutdownIsolate+0x357f58
+Shell: -- End of DumpStackTrace
+Shell: === Crash occurred when compiling package:flutter/src/rendering/object.dart__RenderObjectSemantics@415266271__collectChildMergeUpAndSiblingGroup@415266271 in optimizing JIT mode in unknown pass
+Shell: === Flow Graph not available
+Shell:   pc 0x00007ff7cc0fa538 fp 0x000000b5b63fdf10 ForceShutdownIsolate+0x357f58
+Shell: -- End of DumpStackTrace
+Shell: === Crash occurred when compiling package:flutter/src/widgets/framework.dart_Element_updateChildren in optimizing JIT mode in AllocateRegisters pass
+Shell: *** BEGIN CFG
+Shell: AllocateRegisters
+Shell: ==== package:flutter/src/widgets/framework.dart_Element_updateChildren (RegularFunction)
+Shell: B0[graph]:0 {
+Shell:       v0 <- Constant(#null) T{Null?}
+Shell:       v1 <- Constant(#<optimized out>) T{Sentinel~}
+Shell:       v5 <- Constant(#3) [3, 3] T{_Smi}
+Shell:       v10 <- Constant(#0) [0, 0] T{_Smi}
+Shell:       v11 <- Constant(#2) [2, 2] T{_Smi}
+Shell:       v13 <- Constant(#4) [4, 4] T{_Smi}
+Shell:       v16 <- Constant(#forgottenChildren) T{_OneByteString}
+Shell:       v22 <- Constant(#slots) T{_OneByteString}
+Shell:       v31 <- Constant(#true) T{bool}
+Shell:       v32 <- Constant(#182976) [182976, 182976] T{_Smi}
+Shell:       v33 <- Constant(#183026) [183026, 183026] T{_Smi}
+Shell:       v34 <- Constant(#Function 'replaceWithNullIfForgotten':.) T{Function}
+Shell:       v36 <- Constant(#Function 'slotFor':.) T{Function}
+Shell:       v39 <- Constant(#1) [1, 1] T{_Smi}
+Shell:       v43 <- Constant(#TypeArguments: (H5ee7034) [Type: Element]) T{TypeArguments}
+Shell:       v62 <- Constant(#188864) [188864, 188864] T{_Smi}
+Shell:       v63 <- Constant(#188903) [188903, 188903] T{_Smi}
+Shell:       v66 <- Constant(#188918) [188918, 188918] T{_Smi}
+Shell:       v67 <- Constant(#188957) [188957, 188957] T{_Smi}
+Shell:       v73 <- Constant(#188972) [188972, 188972] T{_Smi}
+Shell:       v74 <- Constant(#189045) [189045, 189045] T{_Smi}
+Shell:       v83 <- Constant(#Function '<anonymous closure>':.) T{Function}
+Shell:       v86 <- Constant(#190398) [190398, 190398] T{_Smi}
+Shell:       v87 <- Constant(#190462) [190462, 190462] T{_Smi}
+Shell:       v102 <- Constant(#189355) [189355, 189355] T{_Smi}
+Shell:       v103 <- Constant(#189399) [189399, 189399] T{_Smi}
+Shell:       v105 <- Constant(#Instance of '_ElementLifecycle') T{_ElementLifecycle}
+Shell:       v107 <- Constant(#189416) [189416, 189416] T{_Smi}
+Shell:       v108 <- Constant(#189468) [189468, 189468] T{_Smi}
+Shell:       v112 <- Constant(#189545) [189545, 189545] T{_Smi}
+Shell:       v113 <- Constant(#189589) [189589, 189589] T{_Smi}
+Shell:       v119 <- Constant(#189750) [189750, 189750] T{_Smi}
+Shell:       v120 <- Constant(#189802) [189802, 189802] T{_Smi}
+Shell:       v126 <- Constant(#189819) [189819, 189819] T{_Smi}
+Shell:       v127 <- Constant(#189895) [189895, 189895] T{_Smi}
+Shell:       v135 <- Constant(#188259) [188259, 188259] T{_Smi}
+Shell:       v136 <- Constant(#188323) [188323, 188323] T{_Smi}
+Shell:       v142 <- Constant(#188484) [188484, 188484] T{_Smi}
+Shell:       v143 <- Constant(#188536) [188536, 188536] T{_Smi}
+Shell:       v159 <- Constant(#TypeArguments: (H1e636cda) [Type: Key] [Type: Element]) T{TypeArguments}
+Shell:       v160 <- Constant(#_ImmutableList len:0) T{_ImmutableList}
+Shell:       v170 <- Constant(#187142) [187142, 187142] T{_Smi}
+Shell:       v171 <- Constant(#187214) [187214, 187214] T{_Smi}
+Shell:       v185 <- Constant(#186488) [186488, 186488] T{_Smi}
+Shell:       v186 <- Constant(#186560) [186560, 186560] T{_Smi}
+Shell:       v199 <- Constant(#185649) [185649, 185649] T{_Smi}
+Shell:       v200 <- Constant(#185721) [185721, 185721] T{_Smi}
+Shell:       v208 <- Constant(#185987) [185987, 185987] T{_Smi}
+Shell:       v209 <- Constant(#186039) [186039, 186039] T{_Smi}
+Shell:       v212 <- Constant(#5) [5, 5] T{_Smi}
+Shell:       v306 <- Constant(#92) [92, 92] T{_Smi}
+Shell:       v439 <- Constant(#TypeParameter: X0) T{_TypeParameter}
+Shell:       v596 <- Constant(#Function '<anonymous closure>':.) T{Function}
+Shell:       v597 <- Constant(#179348) [179348, 179348] T{_Smi}
+Shell:       v598 <- Constant(#179643) [179643, 179643] T{_Smi}
+Shell:       v599 <- Constant(#Function '<anonymous closure>':.) T{Function}
+Shell:       v602 <- Constant(#178762) [178762, 178762] T{_Smi}
+Shell:       v603 <- Constant(#178783) [178783, 178783] T{_Smi}
+Shell:       v604 <- Constant(#178526) [178526, 178526] T{_Smi}
+Shell:       v605 <- Constant(#178551) [178551, 178551] T{_Smi}
+Shell:       v606 <- Constant(#Function '<anonymous closure>':.) T{Function}
+Shell:       v609 <- Constant(#Function '<anonymous closure>':.) T{Function}
+Shell:       v610 <- Constant(#178053) [178053, 178053] T{_Smi}
+Shell:       v611 <- Constant(#178275) [178275, 178275] T{_Smi}
+Shell:       v1037 <- Constant(#TypeArguments: (H175b3c45) [Type: Element?]) T{TypeArguments}
+Shell:       v1062 <- Constant(#false) T{bool}
+Shell:       v1214 <- Constant(#Type: IndexedSlot<Element?>) T{_Type}
+Shell:       v1216 <- Constant(#172) [172, 172] T{_Smi}
+Shell:       v1217 <- Constant(#6087) [6087, 6087] T{_Smi}
+Shell:       v2075 <- UnboxedConstant(#6080) [6080, 6080] int64
+Shell:       v2076 <- UnboxedConstant(#6079) [6079, 6079] int64
+Shell:       v2101 <- Constant(#Type: StatefulWidget) T{_Type}
+Shell:       v2102 <- Constant(#Type: StatelessWidget) T{_Type}
+Shell: }
+Shell: B1[function entry]:2 {
+Shell:       v2 <- Parameter(5 @r10) T{<:*?}
+Shell: }
+Shell:     v4 <- LoadField(v2 . ArgumentsDescriptor.count {final}) [0, 4611686018427387903] T{_Smi}
+Shell:     v6 <- BinarySmiOp:4(- [tr], v4, v5) [-3, 4611686018427387900] T{_Smi}
+Shell:     v7 <- LoadIndexedUnsafe(rbp[v6 + 32]) T{<:*?}
+Shell:     v8 <- LoadIndexedUnsafe(rbp[v6 + 24]) T{<:List<Element>}
+Shell:     v9 <- LoadIndexedUnsafe(rbp[v6 + 16]) T{<:List<Widget>}
+Shell:     v15 <- LoadIndexed([_List] v2, v13 T{_Smi}) T{<:*?}
+Shell:     Branch if StrictCompare:16(===, v15, v16) goto (2, 3)
+Shell: B2[target]:20
+Shell:     v219 <- LoadIndexed([_List] v2, v212 T{_Smi}) T{<:*?}
+Shell:     v220 <- BinarySmiOp:10(- [tr], v4, v219) [-4611686018427387903, 4611686018427387903] T{_Smi}
+Shell:     v221 <- LoadIndexedUnsafe(rbp[v220 + 8]) T{<:Set<Element>??}
+Shell:     goto:26 B4
+Shell: B3[target]:22
+Shell:     goto:28 B4
+Shell: B4[join]:24 pred(B2, B3) {
+Shell:       v17 <- phi(v39 T{_Smi}, v10) alive [0, 1] T{_Smi}
+Shell:       v18 <- phi(v221, v0) alive T{<:Set<Element>??}
+Shell: }
+Shell:     v2330 <- BinarySmiOp:30(<< [tr], v17, v39) [0, 2] T{_Smi}
+Shell:     v20 <- BinarySmiOp:38(+ [tr], v2330 T{_Smi}, v13) [4, 6] T{_Smi}
+Shell:     v21 <- LoadIndexed([_List] v2, v20) T{<:*?}
+Shell:     Branch if StrictCompare:40(===, v21, v22) goto (5, 6)
+Shell: B5[target]:44
+Shell:     v213 <- BinarySmiOp:32(+ [tr], v2330 T{_Smi}, v212) [5, 7] T{_Smi}
+Shell:     v214 <- LoadIndexed([_List] v2, v213) T{<:*?}
+Shell:     v215 <- BinarySmiOp:34(- [tr], v4, v214) [-4611686018427387903, 4611686018427387903] T{_Smi}
+Shell:     v216 <- LoadIndexedUnsafe(rbp[v215 + 8]) T{<:List<Object?>??}
+Shell:     goto:50 B8
+Shell: B6[target]:46
+Shell:     goto:52 B8
+Shell: B8[join]:48 pred(B5, B6) {
+Shell:       v23 <- phi(v216, v0) alive T{<:List<Object?>??}
+Shell: }
+Shell:     CheckStackOverflow:58(stack=0, loop=0)
+Shell:     Branch if StrictCompare:68(===, v23 T{<:List<Object?>??}, v0) goto (853, 10)
+Shell: B853[target]:82
+Shell:     goto:90 B12
+Shell: B10[target]:72
+Shell:     RecordCoverage()
+Shell:     MoveArgument(sp[0] <- v9)
+Shell:     v26 <- InstanceCall:74( get:length<0>, v9 IC[0: ]) [-9223372036854775808, 9223372036854775807] T{<:int}
+Shell:     RecordCoverage()
+Shell:     MoveArgument(sp[0] <- v23 T{<:List<Object?>?})
+Shell:     v28 <- InstanceCall:76( get:length<0>, v23 T{<:List<Object?>?} IC[0: ]) [-9223372036854775808, 9223372036854775807] T{<:int}
+Shell:     RecordCoverage()
+Shell:     MoveArgument(sp[1] <- v26)
+Shell:     MoveArgument(sp[0] <- v28)
+Shell:     v29 <- InstanceCall:78( ==<0>, v26, v28 IC[1: _Smi@0150898, _Smi@0150898 cnt:0 trgt:'_IntegerImplementation@0150898.=='] using unchecked entrypoint) T{bool}
+Shell:     Branch if StrictCompare:86(===, v29, v31) goto (851, 13)
+Shell: B851[target]:90
+Shell:     goto:90 B12
+Shell: B12[join]:90 pred(B851, B853)
+Shell:     v408 <- LoadClassId(v9) [1, 1048575] T{_Smi}
+Shell:     Branch if EqualityCompare:108(v408 == v306) goto (188, 193)
+Shell: B188[target]:2
+Shell:     v400 <- LoadField(v9 T{_GrowableList} . GrowableObjectArray.length) [0, 576460752303423487] T{_Smi}
+Shell:     goto:10 B194
+Shell: B193[target]:108
+Shell:     CheckClassId:108(v408 T{_Smi}, cid 90-91 _List-_ImmutableList)
+Shell:     v406 <- LoadField(v9 T{<:List<Widget>} . Array.length {final}) [0, 576460752303423487] T{_Smi}
+Shell:     goto:10 B194
+Shell: B194[join]:109 pred(B188, B193) {
+Shell:       v410 <- phi(v400, v406) alive [0, 576460752303423487] T{_Smi}
+Shell: }
+Shell:     v40 <- BinarySmiOp:110(- [-o], v410 T{_Smi}, v39) [-1, 576460752303423486] T{_Smi}
+Shell:     CheckClass:114(v8 Cids[1: _List@0150898 etc.  cid 90])
+Shell:     v1014 <- LoadField(v8 T{_List} . Array.length {final}) [0, 576460752303423487] T{_Smi}
+Shell:     v42 <- BinarySmiOp:116(- [-o], v1014 T{_Smi}, v39) [v1014-1, v1014-1] T{_Smi}
+Shell:     Branch if EqualityCompare:120(v408 T{_Smi} == v306) goto (195, 200)
+Shell: B195[target]:2
+Shell:     v415 <- LoadField(v9 T{_GrowableList} . GrowableObjectArray.length) [0, 576460752303423487] T{_Smi}
+Shell:     goto:10 B201
+Shell: B200[target]:120
+Shell:     CheckClassId:120(v408 T{_Smi}, cid 90-91 _List-_ImmutableList)
+Shell:     v421 <- LoadField(v9 T{<:List<Widget>} . Array.length {final}) [0, 576460752303423487] T{_Smi}
+Shell:     goto:10 B201
+Shell: B201[join]:121 pred(B195, B200) {
+Shell:       v425 <- phi(v415, v421) alive [0, 576460752303423487] T{_Smi}
+Shell: }
+Shell:     v1017 <- LoadStaticField:4(instance, CallsInitializer) T{_NullElement}
+Shell:     MoveArgument(sp[2] <- v43)
+Shell:     MoveArgument(sp[1] <- v425)
+Shell:     MoveArgument(sp[0] <- v1017 T{_NullElement})
+Shell:     v46 <- StaticCall:124( _List@0150898.filled<1> v43, v425, v1017 T{_NullElement}, result_type = T{_List}) T{_List}
+Shell:     CheckClass:260(v7 Cids[3: MultiChildRenderObjectElement etc.  cid 4745 | _TheaterElement@971319124 etc.  cid 6315 | _ViewportElement@1037166613 etc.  cid 6917])
+Shell:     goto:260 B29
+Shell: B29[join]:254 pred(B26, B201) {
+Shell:       v47 <- phi(v210, v10) alive [0, v40+1] T{_Smi}
+Shell:       v48 <- phi(v211, v10) alive [0, v1014] T{_Smi}
+Shell:       v49 <- phi(v2884 T{<:Element}, v0) alive T{<:Element?}
+Shell: }
+Shell:     CheckStackOverflow:258(stack=0, loop=1)
+Shell:     Branch if RelationalOp:130(<=, v48 T{_Smi}, v42) T{bool} goto (14, 31)
+Shell: B14[target]:142
+Shell:     Branch if RelationalOp:136(<=, v47 T{_Smi}, v40) T{bool} goto (28, 32)
+Shell: B28[target]:252
+Shell:     v225 <- LoadIndexed:144([_List] v8 T{_List}, v48 T{_Smi}) T{<:Element}
+Shell:     Branch if StrictCompare:14(===, v18 T{<:Set<Element>??}, v0 T{Null?}) goto (442, 443)
+Shell: B442[target]:18
+Shell:     goto:26 B444
+Shell: B443[target]:20
+Shell:     CheckClass:22(v18 T{<:Set<Element>?} Cids[1: _HashSet@4220832 etc.  cid 516])
+Shell:     MoveArgument(sp[0] <- v225 T{<:Element})
+Shell:     v2032 <- PolymorphicInstanceCall:12( get:hashCode<0>, v225 T{<:Element} Targets[138: cid 5184-5198 Object cnt:2249 trgt:'Object.get_hashCode' | cid 1123-1133 Object cnt:519 trgt:'Object.get_hashCode' | cid 5200-5202 Object cnt:519 trgt:'Object.get_hashCode' | cid 6052-6056 Object cnt:519 trgt:'Object.get_hashCode' | cid 6079-6082 Object cnt:519 trgt:'Object.get_hashCode' | cid 6164-6166 Object cnt:349 trgt:'Object.get_hashCode' | cid 2320-2321 Object cnt:346 trgt:'Object.get_hashCode' | cid 4224-4226 Object cnt:346 trgt:'Object.get_hashCode' | cid 4523-4527 Object cnt:346 trgt:'Object.get_hashCode' | cid 5006-5011 Object cnt:346 trgt:'Object.get_hashCode' | cid 5135-5141 Object cnt:346 trgt:'Object.get_hashCode' | cid 5171-5172 Object cnt:346 trgt:'Object.get_hashCode' | cid 5720-5722 Object cnt:346 trgt:'Object.get_hashCode' | cid 5799-5800 Object cnt:346 trgt:'Object.get_hashCode' | cid 5837-5838 Object cnt:346 trgt:'Object.get_hashCode' | cid 6001-6012 Object cnt:346 trgt:'Object.get_hashCode' | cid 6302-6306 Object cnt:346 trgt:'Object.get_hashCode' | cid 6315-6321 Object cnt:346 trgt:'Object.get_hashCode' | cid 6515-6518 Object cnt:346 trgt:'Object.get_hashCode' | cid 6587-6588 Object cnt:346 trgt:'Object.get_hashCode' | cid 6676-6678 Object cnt:346 trgt:'Object.get_hashCode' | cid 6970-6972 Object cnt:346 trgt:'Object.get_hashCode' | cid 45-47 Object cnt:173 trgt:'Object.get_hashCode' | cid 49-52 _AbstractType@0150898 cnt:173 trgt:'_AbstractType@0150898.get_hashCode' | cid 54-56 Object cnt:173 trgt:'Object.get_hashCode' | _Closure@0150898 cid 57 cnt:173 trgt:'_Closure@0150898.get_hashCode' | _Smi@0150898 cid 60 cnt:173 trgt:'_Smi@0150898.get_hashCode' | _Double@0150898 cid 62 cnt:173 trgt:'_Double@0150898.get_hashCode' | _Record@0150898 cid 67 cnt:173 trgt:'_Record@0150898.get_hashCode' | cid 77-92 Object cnt:173 trgt:'Object.get_hashCode' | _OneByteString@0150898 cid 94 cnt:173 trgt:'_OneByteString@0150898.get_hashCode' | _TwoByteString@0150898 cid 95 cnt:173 trgt:'_StringBase@0150898.get_hashCode' | cid 301-306 Object cnt:173 trgt:'Object.get_hashCode' | Symbol cid 760 cnt:173 trgt:'Symbol.get_hashCode' | OpacityEngineLayer cid 1137 cnt:173 trgt:'Object.get_hashCode' | PointerDeviceKind cid 1269 cnt:173 trgt:'Object.get_hashCode' | cid 1273-1275 Object cnt:173 trgt:'Object.get_hashCode' | cid 1988-1996 Object cnt:173 trgt:'Object.get_hashCode' | RenderRepaintBoundary cid 2176 cnt:173 trgt:'Object.get_hashCode' | cid 2195-2200 Object cnt:173 trgt:'Object.get_hashCode' | SemanticsNode cid 2248 cnt:173 trgt:'Object.get_hashCode' | RenderClipRect cid 2325 cnt:173 trgt:'Object.get_hashCode' | VerticalDragGestureRecognizer cid 2942 cnt:173 trgt:'Object.get_hashCode' | RenderFlex cid 2968 cnt:173 trgt:'Object.get_hashCode' | RenderPositionedBox cid 3028 cnt:173 trgt:'Object.get_hashCode' | RenderConstrainedBox cid 3171 cnt:173 trgt:'Object.get_hashCode' | cid 3559-3560 Object cnt:173 trgt:'Object.get_hashCode' | _RenderAppBarTitleBox@561187611 cid 3659 cnt:173 trgt:'Object.get_hashCode' | cid 3761-3763 Object cnt:173 trgt:'Object.get_hashCode' | cid 4155-4157 Object cnt:173 trgt:'Object.get_hashCode' | cid 4162-4163 Object cnt:173 trgt:'Object.get_hashCode' | cid 4208-4209 Object cnt:173 trgt:'Object.get_hashCode' | _RenderListTile@647247952 cid 4211 cnt:173 trgt:'Object.get_hashCode' | _MaterialInteriorState@650372823 cid 4231 cnt:173 trgt:'Object.get_hashCode' | DirectionalFocusAction cid 4259 cnt:173 trgt:'Object.get_hashCode' | cid 4428-4430 Object cnt:173 trgt:'Object.get_hashCode' | _CircularProgressIndicatorState@676243954 cid 4432 cnt:173 trgt:'Object.get_hashCode' | _ScaffoldSlot@685420462 cid 4506 cnt:173 trgt:'Object.get_hashCode' | _FloatingActionButtonTransitionState@685420462 cid 4520 cnt:173 trgt:'Object.get_hashCode' | MultiChildRenderObjectElement cid 4745 cnt:173 trgt:'Object.get_hashCode' | cid 4759-4761 Object cnt:173 trgt:'Object.get_hashCode' | _IdentityThemeDataCacheKey@723408314 cid 4765 cnt:173 t
+Shell:     v1741 <- LoadField(v18 T{_HashSet} . _buckets@4220832) T{_List}
+Shell:     v2037 <- LoadField(v1741 T{_List} . Array.length {final}) [0, 576460752303423487] T{_Smi}
+Shell:     v1744 <- BinarySmiOp:18(- [-o], v2037, v39) [v2037-1, v2037-1] T{_Smi}
+Shell:     CheckSmi:20(v2032 T{<:int})
+Shell:     v1745 <- BinarySmiOp:20(&, v2032 T{_Smi}, v1744) [-4611686018427387904, 4611686018427387903] T{_Smi}
+Shell:     CheckArrayBound:26(v2037 T{_Smi}, v1745) [0, 576460752303423487] T{_Smi}
+Shell:     v1757 <- LoadIndexed:26([_List] v1741 T{_List}, v1745 T{_Smi}) T{_HashSetEntry?}
+Shell:     goto:62 B672
+Shell: B672[join]:56 pred(B443, B670) {
+Shell:       v1748 <- phi(v1757, v1753) alive T{_HashSetEntry?}
+Shell: }
+Shell:     CheckStackOverflow:60(stack=0, loop=1)
+Shell:     Branch if StrictCompare:32(!==, v1748, v0 T{Null?}) goto (671, 673)
+Shell: B671[target]:54
+Shell:     v1750 <- LoadField(v1748 T{_HashSetEntry} . key {final}) T{<:X0?}
+Shell:     MoveArgument(sp[2] <- v18 T{_HashSet})
+Shell:     MoveArgument(sp[1] <- v1750 T{<:X0?})
+Shell:     MoveArgument(sp[0] <- v225 T{<:Element})
+Shell:     v1751 <- StaticCall:38( _equals@4220832<0> v18 T{_HashSet}, v1750 T{<:X0?}, v225 T{<:Element}, using unchecked entrypoint) T{bool}
+Shell:     Branch if StrictCompare:40(===, v1751 T{bool}, v31 T{bool}) goto (669, 670)
+Shell: B669[target]:44
+Shell:     goto:48 B675
+Shell: B670[target]:50
+Shell:     v1753 <- LoadField(v1748 T{_HashSetEntry} . next) T{_HashSetEntry?}
+Shell:     goto:58 B672
+Shell: B673[target]:64
+Shell:     goto:68 B675
+Shell: B675[join]:23 pred(B669, B673) {
+Shell:       v1764 <- phi(v31 T{bool}, v1062 T{bool}) alive T{bool}
+Shell: }
+Shell:     goto:28 B444
+Shell: B444[join]:24 pred(B442, B675) {
+Shell:       v1158 <- phi(v0 T{Null?}, v1764) alive T{bool?}
+Shell: }
+Shell:     Branch if StrictCompare:34(===, v1158, v0 T{Null?}) goto (856, 446)
+Shell: B856[target]:38
+Shell:     goto:56 B449
+Shell: B446[target]:40
+Shell:     Branch if StrictCompare:50(===, v1158 T{bool}, v31) goto (448, 858)
+Shell: B448[target]:54
+Shell:     goto:60 B450
+Shell: B858[target]:56
+Shell:     goto:56 B449
+Shell: B449[join]:56 pred(B856, B858)
+Shell:     goto:62 B450
+Shell: B450[join]:58 pred(B448, B449) {
+Shell:       v1161 <- phi(v0 T{Null?}, v225 T{<:Element}) alive T{<:Element?}
+Shell: }
+Shell:     Branch if EqualityCompare:152(v408 T{_Smi} == v306) goto (181, 186)
+Shell: B181[target]:2
+Shell:     v378 <- LoadField(v9 T{_GrowableList} . GrowableObjectArray.length) [0, 576460752303423487] T{_Smi}
+Shell:     v2862 <- UnboxInt64(v47 T{_Smi}) [0, v40] int64
+Shell:     v2863 <- UnboxInt64(v378) [v378, v378] int64
+Shell:     t0 <- GenericCheckBound:10(v2863 T{_Smi}, v2862 T{_Smi}) [0, v40] int64
+Shell:     v380 <- LoadField(v9 T{_GrowableList} . GrowableObjectArray.data) T{_List}
+Shell:     v381 <- LoadIndexed([_List] v380, v2862 T{_Smi}) T{<:Widget}
+Shell:     goto:12 B187
+Shell: B186[target]:152
+Shell:     CheckClassId:152(v408 T{_Smi}, cid 90-91 _List-_ImmutableList)
+Shell:     v389 <- LoadField(v9 T{<:List<Widget>} . Array.length {final}) [0, 576460752303423487] T{_Smi}
+Shell:     v2861 <- UnboxInt64(v47 T{_Smi}) [0, v40] int64
+Shell:     v2864 <- UnboxInt64(v389) [v389, v389] int64
+Shell:     t0 <- GenericCheckBound:10(v2864 T{_Smi}, v2861 T{_Smi}) [0, v40] int64
+Shell:     v391 <- LoadIndexed([_List] v9 T{<:List<Widget>}, v2861 T{_Smi}) T{<:Widget}
+Shell:     goto:12 B187
+Shell: B187[join]:153 pred(B181, B186) {
+Shell:       v395 <- phi(v381, v391) alive T{<:Widget}
+Shell: }
+Shell:     Branch if StrictCompare:160(===, v1161, v0) goto (861, 16)
+Shell: B861[target]:172
+Shell:     goto:180 B18
+Shell: B16[target]:164
+Shell:     CheckClass:166(v1161 T{<:Element} Cids[15: StatelessElement etc.  cid 6079-6082 | _OffstageElement@887167661 etc.  cid 5837-5838 | _UbiquitousInheritedElement@887167661 etc.  cid 5799-5800 | InheritedModelElement etc.  cid 6164-6165 | _LayoutBuilderElement@999188862 etc.  cid 6178 | MultiChildRenderObjectElement etc.  cid 4745 | RootElement etc.  cid 5880 | _NotificationElement@957140401 etc.  cid 6295 | _TheaterElement@971319124 etc.  cid 6315 | _OverlayPortalElement@971319124 etc.  cid 6327 | _SingleChildViewportElement@1055426794 etc.  cid 6676 | SliverMultiBoxAdaptorElement etc.  cid 6689 | SlottedRenderObjectElement etc.  cid 6763 | _RawViewElement@939024595 etc.  cid 6909 | _ViewportElement@1037166613 etc.  cid 6917])
+Shell:     v196 <- LoadField(v1161 T{<:Element} . _lifecycleState@314042623) T{_ElementLifecycle}
+Shell:     Branch if StrictCompare:10(===, v196 T{_ElementLifecycle}, v105 T{_ElementLifecycle}) T{bool} goto (859, 19)
+Shell: B859[target]:180
+Shell:     goto:180 B18
+Shell: B18[join]:180 pred(B859, B861)
+Shell:     Branch if StrictCompare:188(===, v1161, v0) goto (22, 20)
+Shell: B22[target]:204
+Shell:     goto:206 B21
+Shell: B20[target]:200
+Shell:     MoveArgument(sp[0] <- v1161 T{<:Element})
+Shell:     v201 <- PolymorphicInstanceCall:192( get:widget<0>, v1161 T{<:Element} Targets[20: cid 6079-6082 Element cnt:3605 trgt:'Element.get_widget' | cid 5837-5838 Element cnt:2403 trgt:'Element.get_widget' | cid 5799-5800 Element cnt:2400 trgt:'Element.get_widget' | cid 6164-6165 Element cnt:2400 trgt:'Element.get_widget' | _LayoutBuilderElement@999188862 cid 6178 cnt:1201 trgt:'Element.get_widget' | _MaterialInteriorState@650372823 cid 4231 cnt:1200 trgt:'State.get_widget' | MultiChildRenderObjectElement cid 4745 cnt:1200 trgt:'Element.get_widget' | _AnimatedThemeState@722067045 cid 4759 cnt:1200 trgt:'State.get_widget' | RootElement cid 5880 cnt:1200 trgt:'Element.get_widget' | _AnimatedPaddingState@920443363 cid 6131 cnt:1200 trgt:'State.get_widget' | _AnimatedDefaultTextStyleState@920443363 cid 6149 cnt:1200 trgt:'State.get_widget' | _AnimatedPhysicalModelState@920443363 cid 6151 cnt:1200 trgt:'State.get_widget' | _NotificationElement@957140401 cid 6295 cnt:1200 trgt:'Element.get_widget' | _TheaterElement@971319124 cid 6315 cnt:1200 trgt:'Element.get_widget' | _OverlayPortalElement@971319124 cid 6327 cnt:1200 trgt:'Element.get_widget' | _SingleChildViewportElement@1055426794 cid 6676 cnt:1200 trgt:'Element.get_widget' | SliverMultiBoxAdaptorElement cid 6689 cnt:1200 trgt:'Element.get_widget' | SlottedRenderObjectElement cid 6763 cnt:1200 trgt:'Element.get_widget' | _RawViewElement@939024595 cid 6909 cnt:1200 trgt:'Element.get_widget' | _ViewportElement@1037166613 cid 6917 cnt:1200 trgt:'Element.get_widget']) T{<:Widget}
+Shell:     MoveArgument(sp[1] <- v201)
+Shell:     MoveArgument(sp[0] <- v395)
+Shell:     v202 <- StaticCall:194( canUpdate<0> v201, v395) T{bool}
+Shell:     Branch if StrictCompare:196(!==, v202, v31) goto (23, 25)
+Shell: B23[target]:208
+Shell:     goto:210 B21
+Shell: B21[join]:202 pred(B22, B23)
+Shell:     goto:216 B24
+Shell: B25[target]:218
+Shell:     Branch if StrictCompare:14(!==, v23 T{<:List<Object?>??}, v0 T{Null?}) goto (437, 438)
+Shell: B437[target]:18
+Shell:     RecordCoverage()
+Shell:     MoveArgument(sp[1] <- v23 T{<:List<Object?>?})
+Shell:     MoveArgument(sp[0] <- v47 T{_Smi})
+Shell:     v1144 <- InstanceCall:20( []<0>, v23 T{<:List<Object?>?}, v47 T{_Smi} IC[0: ]) T{<:X0?}
+Shell:     goto:30 B342
+Shell: B438[target]:22
+Shell:     v1141 <- AllocateObject:24(cls=IndexedSlot, v1037 T{TypeArguments}) T{IndexedSlot}
+Shell:     StoreField(v1141 T{IndexedSlot} . index = v47 T{_Smi}, NoStoreBarrier)
+Shell:     StoreField(v1141 T{IndexedSlot} . value = v49 T{<:Element?}, NoStoreBarrier)
+Shell:     goto:32 B342
+Shell: B342[join]:28 pred(B437, B438) {
+Shell:       v1142 <- phi(v1144, v1141) alive T{<:*?}
+Shell: }
+Shell:     v856 <- AllocateUninitializedContext:12(num_variables=6) T{Context}
+Shell:     StoreField(v856 . this = v0, NoStoreBarrier)
+Shell:     StoreField(v856 . child = v0, NoStoreBarrier)
+Shell:     StoreField(v856 . newWidget = v0, NoStoreBarrier)
+Shell:     StoreField(v856 . newChild = v0, NoStoreBarrier)
+Shell:     StoreField(v856 . hasSameSuperclass = v0, NoStoreBarrier)
+Shell:     StoreField(v856 . debugTimelineArguments = v0, NoStoreBarrier)
+Shell:     StoreField(v856 . Context.parent = v0, NoStoreBarrier)
+Shell:     StoreField(v856 T{Context} . this = v7 T{<:MultiChildRenderObjectElement}, NoStoreBarrier)
+Shell:     StoreField(v856 T{Context} . child = v1161 T{<:Element}, NoStoreBarrier)
+Shell:     StoreField(v856 T{Context} . newWidget = v395, NoStoreBarrier)
+Shell:     StoreField(v856 T{Context} . hasSameSuperclass = v31 T{bool}, NoStoreBarrier)
+Shell:     v2189 <- LoadClassId(v1161 T{<:Element}) [1, 1048575] int64
+Shell:     Branch if EqualityCompare(v2189 == v2075) T{bool} goto (837, 838)
+Shell: B837[target]:18
+Shell:     goto:40 B842
+Shell: B838[target]:20
+Shell:     Branch if EqualityCompare(v2189 T{_Smi} == v2076) T{bool} goto (839, 840)
+Shell: B839[target]:28
+Shell:     goto:34 B841
+Shell: B840[target]:30
+Shell:     goto:36 B841
+Shell: B841[join]:32 pred(B839, B840) {
+Shell:       v2183 <- phi(v11 T{_Smi}, v10 T{_Smi}) alive [0, 2] T{_Smi}
+Shell: }
+Shell:     goto:42 B842
+Shell: B842[join]:38 pred(B837, B841) {
+Shell:       v2185 <- phi(v39 T{_Smi}, v2183) alive [0, 2] T{_Smi}
+Shell: }
+Shell:     v2202 <- InstanceOf:12(v395 T{<:Widget} IS StatefulWidget, instantiator_type_args(v0), function_type_args(v0)) T{bool}
+Shell:     Branch if StrictCompare:14(===, v2202, v31 T{bool}) goto (845, 849)
+Shell: B845[target]:18
+Shell:     goto:40 B343
+Shell: B849[target]:20
+Shell:     v2205 <- InstanceOf:22(v395 T{<:Widget} IS StatelessWidget, instantiator_type_args(v0), function_type_args(v0)) T{bool}
+Shell:     v2333 <- IfThenElse(===, v2205, v31 ? 2 : 0) [0, 2] T{_Smi}
+Shell:     goto:42 B343
+Shell: B343[join]:38 pred(B845, B849) {
+Shell:       v2209 <- phi(v39 T{_Smi}, v2333 T{_Smi}) alive [0, 2] T{_Smi}
+Shell: }
+Shell:     v1829 <- EqualityCompare:20(v2185 == v2209) T{bool}
+Shell:     StoreField(v856 . hasSameSuperclass = v1829 T{bool}, NoStoreBarrier)
+Shell:     Branch if StrictCompare:76(===, v1829 T{bool}, v31 T{bool}) goto (345, 351)
+Shell: B345[target]:88
+Shell:     MoveArgument(sp[0] <- v1161 T{<:Element})
+Shell:     v923 <- PolymorphicInstanceCall:80( get:widget<0>, v1161 T{<:Element} Targets[20: cid 6079-6082 Element cnt:3603 trgt:'Element.get_widget' | cid 5799-5800 Element cnt:2402 trgt:'Element.get_widget' | cid 6164-6165 Element cnt:2401 trgt:'Element.get_widget' | cid 5837-5838 Element cnt:2400 trgt:'Element.get_widget' | _RawViewElement@939024595 cid 6909 cnt:1201 trgt:'Element.get_widget' | _MaterialInteriorState@650372823 cid 4231 cnt:1200 trgt:'State.get_widget' | MultiChildRenderObjectElement cid 4745 cnt:1200 trgt:'Element.get_widget' | _AnimatedThemeState@722067045 cid 4759 cnt:1200 trgt:'State.get_widget' | RootElement cid 5880 cnt:1200 trgt:'Element.get_widget' | _AnimatedPaddingState@920443363 cid 6131 cnt:1200 trgt:'State.get_widget' | _AnimatedDefaultTextStyleState@920443363 cid 6149 cnt:1200 trgt:'State.get_widget' | _AnimatedPhysicalModelState@920443363 cid 6151 cnt:1200 trgt:'State.get_widget' | _LayoutBuilderElement@999188862 cid 6178 cnt:1200 trgt:'Element.get_widget' | _NotificationElement@957140401 cid 6295 cnt:1200 trgt:'Element.get_widget' | _TheaterElement@971319124 cid 6315 cnt:1200 trgt:'Element.get_widget' | _OverlayPortalElement@971319124 cid 6327 cnt:1200 trgt:'Element.get_widget' | _SingleChildViewportElement@1055426794 cid 6676 cnt:1200 trgt:'Element.get_widget' | SliverMultiBoxAdaptorElement cid 6689 cnt:1200 trgt:'Element.get_widget' | SlottedRenderObjectElement cid 6763 cnt:1200 trgt:'Element.get_widget' | _ViewportElement@1037166613 cid 6917 cnt:1200 trgt:'Element.get_widget']) T{<:Widget}
+Shell:     v924 <- LoadField(v856 T{Context} . newWidget) T{<:Widget??}
+Shell:     MoveArgument(sp[1] <- v923 T{<:Widget})
+Shell:     MoveArgument(sp[0] <- v924)
+Shell:     v925 <- PolymorphicInstanceCall:82( ==<0>, v923 T{<:Widget}, v924 Targets[142: cid 5861-5867 Widget cnt:1470 trgt:'Widget.==' | cid 5821-5829 Widget cnt:965 trgt:'Widget.==' | cid 5869-5873 Widget cnt:656 trgt:'Widget.==' | cid 6808-6813 Widget cnt:511 trgt:'Widget.==' | NotificationListener cid 6294 cnt:348 trgt:'Widget.==' | RichText cid 5857 cnt:252 trgt:'Widget.==' | cid 6021-6022 Widget cnt:227 trgt:'Widget.==' | cid 5851-5855 Widget cnt:217 trgt:'Widget.==' | cid 6092-6093 Widget cnt:185 trgt:'Widget.==' | AnimatedDefaultTextStyle cid 6148 cnt:178 trgt:'Widget.==' | cid 5812-5816 Widget cnt:149 trgt:'Widget.==' | KeepAlive cid 6694 cnt:145 trgt:'Widget.==' | cid 5787-5788 Widget cnt:143 trgt:'Widget.==' | _SelectionKeepAlive@950070758 cid 6543 cnt:143 trgt:'Widget.==' | Material cid 4223 cnt:128 trgt:'Widget.==' | cid 6106-6107 Widget cnt:122 trgt:'Widget.==' | cid 5806-5809 Widget cnt:121 trgt:'Widget.==' | cid 6868-6871 Widget cnt:120 trgt:'Widget.==' | cid 4160-4161 Widget cnt:114 trgt:'Widget.==' | _ShapeBorderPaint@650372823 cid 4233 cnt:112 trgt:'Widget.==' | cid 5818-5819 Widget cnt:111 trgt:'Widget.==' | cid 5904-5906 Widget cnt:110 trgt:'Widget.==' | IconTheme cid 6111 cnt:110 trgt:'Widget.==' | FadeTransition cid 6873 cnt:110 trgt:'Widget.==' | _InkFeatures@650372823 cid 4227 cnt:107 trgt:'Widget.==' | Focus cid 6015 cnt:96 trgt:'Widget.==' | Actions cid 5701 cnt:89 trgt:'Widget.==' | cid 3259-3260 Widget cnt:88 trgt:'Widget.==' | cid 4754-4755 Widget cnt:88 trgt:'Widget.==' | cid 6881-6882 Widget cnt:88 trgt:'Widget.==' | _ActionsScope@893441002 cid 5703 cnt:87 trgt:'Widget.==' | _MaterialInterior@650372823 cid 4229 cnt:86 trgt:'Widget.==' | InkWell cid 4165 cnt:84 trgt:'Widget.==' | MediaQuery cid 6222 cnt:80 trgt:'Widget.==' | cid 6325-6326 Widget cnt:74 trgt:'Widget.==' | cid 7162-7165 Widget cnt:69 trgt:'Widget.==' | Card cid 3785 cnt:65 trgt:'Widget.==' | _OverlayEntryWidget@971319124 cid 6307 cnt:63 trgt:'Widget.==' | cid 3612-3617 Widget cnt:56 trgt:'Widget.==' | TickerMode cid 6858 cnt:53 trgt:'Widget.==' | _EffectiveTickerMode@882311458 cid 6860 cnt:52 trgt:'Widget.==' | AnimatedTheme cid 4758 cnt:49 trgt:'Widget.==' | _InputPadding@579219276 cid 3760 cnt:47 trgt:'Widget.==' | DualTransitionBuilder cid 5947 cnt:46 trgt:'Widget.==' | cid 6235-6236 Widget cnt:46 trgt:'Widget.==' | ColoredBox cid 5876 cnt:45 trgt:'Widget.==' | _GestureSemantics@993132872 cid 6095 cnt:44 trgt:'Widget.==' | Divider cid 3941 cnt:42 trgt:'Widget.==' | cid 6231-6232 Widget cnt:39 trgt:'Widget.==' | cid 4355-4356 Widget cnt:32 trgt:'Widget.==' | cid 5897-5898 Widget cnt:31 trgt:'Widget.==' | Spacer cid 6769 cnt:31 trgt:'Widget.==' | _ExclusiveMouseRegion@959258657 cid 6444 cnt:30 trgt:'Widget.==' | SafeArea cid 6525 cnt:29 trgt:'Widget.==' | cid 6469-6470 Widget cnt:28 trgt:'Widget.==' | Tooltip cid 4827 cnt:25 trgt:'Widget.==' | OverlayPortal cid 6322 cnt:25 trgt:'Widget.==' | RawTooltip cid 6446 cnt:25 trgt:'Widget.==' | IconButtonTheme cid 4144 cnt:24 trgt:'Widget.==' | _FadeForwardsPageTransition@671490068 cid 4374 cnt:22 trgt:'Widget.==' | _PageTransitionsThemeTransitions@671490068 cid 4379 cnt:22 trgt:'Widget.==' | _PredictiveBackGestureDetector@675428833 cid 4416 cnt:22 trgt:'Widget.==' | PrimaryScrollController cid 6417 cnt:22 trgt:'Widget.==' | cid 6018-6019 Widget cnt:21 trgt:'Widget.==' | AnimatedPhysicalModel cid 6150 cnt:21 trgt:'Widget.==' | DragTarget cid 5929 cnt:19 trgt:'Widget.==' | FocusTraversalGroup cid 6048 cnt:17 trgt:'Widget.==' | _ScrollableScope@1008019050 cid 6580 cnt:17 trgt:'Widget.==' | _SelectableIconButton@634331726 cid 4135 cnt:16 trgt:'Widget.==' | _IconButtonM3@634331726 cid 4137 cnt:16 trgt:'Widget.==' | cid 5757-5758 Widget cnt:16 trgt:'Widget.==' | SliverPadding cid 5845 cnt:15 trgt:'Widget.==' | PageStorage cid 6354 cnt:15 trgt:'Widget.==' | cid 6773-6774 Widget cnt:15 trgt:'Widget.==' | _AppBarTitleBox@561187611 cid 3658 cnt:14 trgt:'Widget.==' | Scrollable cid 6194 cnt:14 trgt:'Wid
+Shell:     Branch if StrictCompare:84(===, v925 T{bool}, v31 T{bool}) goto (346, 352)
+Shell: B346[target]:90
+Shell:     v926 <- LoadField(v856 T{Context} . child) T{<:Element??}
+Shell:     CheckClass:92(v926 Cids[14: StatelessElement etc.  cid 6079-6082 | _OffstageElement@887167661 etc.  cid 5837-5838 | _UbiquitousInheritedElement@887167661 etc.  cid 5799-5800 | InheritedModelElement etc.  cid 6164-6165 | _NotificationElement@957140401 etc.  cid 6295 | MultiChildRenderObjectElement etc.  cid 4745 | _LayoutBuilderElement@999188862 etc.  cid 6178 | _TheaterElement@971319124 etc.  cid 6315 | _OverlayPortalElement@971319124 etc.  cid 6327 | _SingleChildViewportElement@1055426794 etc.  cid 6676 | SliverMultiBoxAdaptorElement etc.  cid 6689 | SlottedRenderObjectElement etc.  cid 6763 | _RawViewElement@939024595 etc.  cid 6909 | _ViewportElement@1037166613 etc.  cid 6917])
+Shell:     v1616 <- LoadField(v926 T{<:Element} . _slot@314042623) T{<:Object??}
+Shell:     v1437 <- LoadClassId(v1616) [1, 1048575] T{_Smi}
+Shell:     Branch if EqualityCompare:94(v1437 == v1217) goto (547, 563)
+Shell: B547[target]:2
+Shell:     Branch if StrictCompare:12(===, v1142 T{<:*?}, v0 T{Null?}) goto (863, 550)
+Shell: B863[target]:16
+Shell:     goto:100 B347
+Shell: B550[target]:18
+Shell:     MoveArgument(sp[0] <- v1142 T{<:*})
+Shell:     v1402 <- PolymorphicInstanceCall:24( get:runtimeType<0>, v1142 T{<:*} Targets[1: IndexedSlot cid 6087 cnt:2876 trgt:'Object.get_runtimeType']) T{<:Type}
+Shell:     MoveArgument(sp[0] <- v1616 T{IndexedSlot})
+Shell:     v1403 <- StaticCall:26( get:runtimeType<0> v1616 T{IndexedSlot}, recognized_kind = ObjectRuntimeType) T{<:Type}
+Shell:     CheckClass:28(v1402 Cids[1: _Type@0150898 etc.  cid 49])
+Shell:     MoveArgument(sp[1] <- v1402 T{_Type})
+Shell:     MoveArgument(sp[0] <- v1403 T{<:Type})
+Shell:     v1404 <- StaticCall:28( ==<0> v1402 T{_Type}, v1403 T{<:Type}, using unchecked entrypoint, recognized_kind = Type_equality) T{bool}
+Shell:     Branch if StrictCompare:30(!==, v1404 T{bool}, v31 T{bool}) goto (865, 552)
+Shell: B865[target]:34
+Shell:     RecordCoverage()
+Shell:     goto:100 B347
+Shell: B552[target]:40
+Shell:     v1407 <- InstanceOf:44(v1142 T{<:*} IS IndexedSlot<Element?>, instantiator_type_args(v0), function_type_args(v0)) T{bool}
+Shell:     Branch if StrictCompare:46(===, v1407, v31 T{bool}) goto (554, 557)
+Shell: B554[target]:60
+Shell:     v1410 <- LoadField(v1616 T{<:Object??} . index {final}) [-4611686018427387904, 4611686018427387903] T{_Smi}
+Shell:     v1411 <- LoadField(v1142 T{IndexedSlot} . index {final}) [-4611686018427387904, 4611686018427387903] T{_Smi}
+Shell:     Branch if EqualityCompare:54(v1410 == v1411) T{bool} goto (555, 558)
+Shell: B555[target]:62
+Shell:     v1413 <- LoadField(v1616 T{<:Object??} . value {final}) T{<:X0?}
+Shell:     v1414 <- LoadField(v1142 T{IndexedSlot} . value {final}) T{<:X0?}
+Shell:     v1966 <- LoadClassId(v1413) [1, 1048575] T{_Smi}
+Shell:     Branch if TestRange:68(v1966 in [6079-6082]) goto (759, 761)
+Shell: B759[target]:2
+Shell:     goto:2 B753
+Shell: B761[target]:68
+Shell:     Branch if EqualityCompare:68(v1966 == v1216) goto (757, 762)
+Shell: B757[target]:2
+Shell:     Branch if StrictCompare:10(!==, v1413 T{<:X0?}, v1414 T{<:X0?}) T{bool} goto (881, 882)
+Shell: B881[target]:100
+Shell:     goto:100 B875
+Shell: B882[target]:104
+Shell:     goto:104 B868
+Shell: B762[target]:68
+Shell:     Branch if TestRange:68(v1966 in [5837-5838]) goto (763, 764)
+Shell: B763[target]:2
+Shell:     goto:2 B753
+Shell: B764[target]:68
+Shell:     CheckClassId:68(v1966 T{_Smi}, MultiChildRenderObjectElement)
+Shell:     goto:2 B753
+Shell: B753[join]:2 pred(B759, B763, B764)
+Shell:     Branch if StrictCompare:12(===, v1414 T{<:X0?}, v0 T{Null?}) goto (877, 756)
+Shell: B877[target]:16
+Shell:     goto:100 B875
+Shell: B756[target]:18
+Shell:     Branch if StrictCompare:24(!==, v1413 T{<:X0}, v1414 T{<:X0}, with number check) T{bool} goto (879, 880)
+Shell: B879[target]:100
+Shell:     goto:100 B875
+Shell: B875[join]:100 pred(B877, B879, B881)
+Shell:     goto:100 B867
+Shell: B880[target]:104
+Shell:     goto:104 B868
+Shell: B868[join]:104 pred(B880, B882)
+Shell:     goto:104 B348
+Shell: B558[target]:78
+Shell:     goto:80 B873
+Shell: B557[target]:74
+Shell:     goto:76 B873
+Shell: B873[join]:72 pred(B557, B558)
+Shell:     goto:100 B867
+Shell: B867[join]:100 pred(B873, B875)
+Shell:     goto:100 B347
+Shell: B563[target]:94
+Shell:     Branch if EqualityCompare:94(v1437 == v1216) goto (561, 564)
+Shell: B561[target]:2
+Shell:     goto:2 B559
+Shell: B564[target]:94
+Shell:     Branch if TestRange:94(v1437 in [4208-4209]) goto (565, 566)
+Shell: B565[target]:2
+Shell:     goto:2 B559
+Shell: B559[join]:2 pred(B561, B565)
+Shell:     Branch if StrictCompare:10(!==, v1616 T{<:Object??}, v1142 T{<:*?}) T{bool} goto (869, 870)
+Shell: B869[target]:100
+Shell:     goto:100 B347
+Shell: B870[target]:104
+Shell:     goto:104 B348
+Shell: B566[target]:94
+Shell:     MoveArgument(sp[1] <- v1616 T{<:Object??})
+Shell:     MoveArgument(sp[0] <- v1142 T{<:Object??})
+Shell:     v1438 <- PolymorphicInstanceCall:94( ==<0>, v1616 T{<:Object??}, v1142 T{<:Object??} Targets[1: cid 60-61 _IntegerImplementation@0150898 cnt:2 trgt:'_IntegerImplementation@0150898.=='] using unchecked entrypoint) T{bool}
+Shell:     Branch if StrictCompare:96(!==, v1438, v31) goto (871, 872)
+Shell: B871[target]:100
+Shell:     goto:100 B347
+Shell: B347[join]:100 pred(B863, B865, B867, B869, B871)
+Shell:     RecordCoverage()
+Shell:     v930 <- LoadField(v856 T{Context} . child) T{<:Element??}
+Shell:     RecordCoverage()
+Shell:     MoveArgument(sp[2] <- v7 T{<:MultiChildRenderObjectElement})
+Shell:     MoveArgument(sp[1] <- v930)
+Shell:     MoveArgument(sp[0] <- v1142 T{<:Object??})
+Shell:     InstanceCall:102( updateSlotForChild<0>, v7 T{<:MultiChildRenderObjectElement}, v930, v1142 T{<:Object??} IC[0: ] using unchecked entrypoint)
+Shell:     goto:108 B349
+../../runtime/vm/zone.cc: 95: error: Out of memory.
+version=3.13.5 (stable) (Tue Sep 29 01:00:52 2026 -0700) on "windows_x64"
+pid=13836, thread=68056, isolate_group=main(000002C2EA251130), isolate=(nil)(0000000000000000)
+os=windows, arch=x64, comp=no, sim=no
+isolate_instructions=2c2e9460000, vm_instructions=0
+fp=f07abfd7a0, sp=f07abfd760, pc=7ff7a9402ce8
+Shell: B872[target]:104
+Shell:     goto:104 B348
+Shell: B348[join]:104 pred(B868, B870, B872)
+Shell:     goto:110 B349
+Shell: B349[join]:106 pred(B347, B348)
+Shell:     v929 <- LoadField(v856 T{Context} . child) T{<:Element??}
+Shell:     StoreField(v856 T{Context} . newChild = v929)
+Shell:     goto:310 B381
+Shell: B352[target]:118
+Shell:     goto:120 B350
+Shell: B351[target]:114
+Shell:     goto:116 B350
+Shell: B350[join]:112 pred(B351, B352)
+Shell:     v876 <- LoadField(v856 T{Context} . hasSameSuperclass) T{bool}
+Shell:     Branch if StrictCompare:122(===, v876, v31 T{bool}) goto (353, 374)
+Shell: B353[target]:134
+Shell:     v885 <- LoadField(v856 T{Context} . child) T{<:Element??}
+Shell:     MoveArgument(sp[0] <- v885)
+Shell:     v886 <- PolymorphicInstanceCall:126( get:widget<0>, v885 Targets[20: cid 6079-6082 Element cnt:3603 trgt:'Element.get_widget' | cid 5799-5800 Element cnt:2402 trgt:'Element.get_widget' | cid 6164-6165 Element cnt:2401 trgt:'Element.get_widget' | cid 5837-5838 Element cnt:2400 trgt:'Element.get_widget' | _RawViewElement@939024595 cid 6909 cnt:1201 trgt:'Element.get_widget' | _MaterialInteriorState@650372823 cid 4231 cnt:1200 trgt:'State.get_widget' | MultiChildRenderObjectElement cid 4745 cnt:1200 trgt:'Element.get_widget' | _AnimatedThemeState@722067045 cid 4759 cnt:1200 trgt:'State.get_widget' | RootElement cid 5880 cnt:1200 trgt:'Element.get_widget' | _AnimatedPaddingState@920443363 cid 6131 cnt:1200 trgt:'State.get_widget' | _AnimatedDefaultTextStyleState@920443363 cid 6149 cnt:1200 trgt:'State.get_widget' | _AnimatedPhysicalModelState@920443363 cid 6151 cnt:1200 trgt:'State.get_widget' | _LayoutBuilderElement@999188862 cid 6178 cnt:1200 trgt:'Element.get_widget' | _NotificationElement@957140401 cid 6295 cnt:1200 trgt:'Element.get_widget' | _TheaterElement@971319124 cid 6315 cnt:1200 trgt:'Element.get_widget' | _OverlayPortalElement@971319124 cid 6327 cnt:1200 trgt:'Element.get_widget' | _SingleChildViewportElement@1055426794 cid 6676 cnt:1200 trgt:'Element.get_widget' | SliverMultiBoxAdaptorElement cid 6689 cnt:1200 trgt:'Element.get_widget' | SlottedRenderObjectElement cid 6763 cnt:1200 trgt:'Element.get_widget' | _ViewportElement@1037166613 cid 6917 cnt:1200 trgt:'Element.get_widget']) T{<:Widget}
+Shell:     v887 <- LoadField(v856 T{Context} . newWidget) T{<:Widget??}
+Shell:     MoveArgument(sp[0] <- v886 T{<:Widget})
+  pc 0x00007ff7a9402ce8 fp 0x000000f07abfd7a0 Dart_DetectNullSafety+0x3122b8
+-- End of DumpStackTrace
+Shell:     v1599 <- PolymorphicInstanceCall:14( get:runtimeType<0>, v886 T{<:Widget} Targets[237: _GlobalCupertinoLocalizationsDelegate@431100861 cid 2412 cnt:129 trgt:'Object.get_runtimeType' | _MaterialLocalizationsDelegate@435392079 cid 2773 cnt:129 trgt:'Object.get_runtimeType' | _WidgetsLocalizationsDelegate@436360671 cid 2775 cnt:129 trgt:'Object.get_runtimeType' | VerticalDragGestureRecognizer cid 2942 cnt:129 trgt:'Object.get_runtimeType' | _CupertinoLocalizationsDelegate@438010061 cid 2991 cnt:129 trgt:'Object.get_runtimeType' | CupertinoTheme cid 3259 cnt:129 trgt:'Object.get_runtimeType' | InheritedCupertinoTheme cid 3260 cnt:129 trgt:'Object.get_runtimeType' | LongPressGestureRecognizer cid 3501 cnt:129 trgt:'Object.get_runtimeType' | TapGestureRecognizer cid 3559 cnt:129 trgt:'Object.get_runtimeType' | TapAndHorizontalDragGestureRecognizer cid 3574 cnt:129 trgt:'Object.get_runtimeType' | IconButton cid 3612 cnt:129 trgt:'Object.get_runtimeType' | _ActionIcon@555378963 cid 3613 cnt:129 trgt:'Object.get_runtimeType' | BackButtonIcon cid 3614 cnt:129 trgt:'Object.get_runtimeType' | BackButton cid 3615 cnt:129 trgt:'Object.get_runtimeType' | MaterialApp cid 3645 cnt:129 trgt:'Object.get_runtimeType' | AppBar cid 3652 cnt:129 trgt:'Object.get_runtimeType' | _AppBarTitleBox@561187611 cid 3658 cnt:129 trgt:'Object.get_runtimeType' | _InputPadding@579219276 cid 3760 cnt:129 trgt:'Object.get_runtimeType' | Card cid 3785 cnt:129 trgt:'Object.get_runtimeType' | Dialog cid 3924 cnt:129 trgt:'Object.get_runtimeType' | AlertDialog cid 3925 cnt:129 trgt:'Object.get_runtimeType' | DialogRoute cid 3933 cnt:129 trgt:'Object.get_runtimeType' | Divider cid 3941 cnt:129 trgt:'Object.get_runtimeType' | FilledButton cid 4023 cnt:129 trgt:'Object.get_runtimeType' | FlexibleSpaceBarSettings cid 4037 cnt:129 trgt:'Object.get_runtimeType' | _SelectableIconButton@634331726 cid 4135 cnt:129 trgt:'Object.get_runtimeType' | _IconButtonM3@634331726 cid 4137 cnt:129 trgt:'Object.get_runtimeType' | IconButtonTheme cid 4144 cnt:129 trgt:'Object.get_runtimeType' | Ink cid 4147 cnt:129 trgt:'Object.get_runtimeType' | _ParentInkResponseProvider@642059085 cid 4160 cnt:129 trgt:'Object.get_runtimeType' | _InkResponseStateWidget@642059085 cid 4161 cnt:129 trgt:'Object.get_runtimeType' | InkWell cid 4165 cnt:129 trgt:'Object.get_runtimeType' | ListTile cid 4207 cnt:129 trgt:'Object.get_runtimeType' | _ListTile@647247952 cid 4210 cnt:129 trgt:'Object.get_runtimeType' | Material cid 4223 cnt:129 trgt:'Object.get_runtimeType' | _MaterialState@650372823 cid 4224 cnt:129 trgt:'Object.get_runtimeType' | _InkFeatures@650372823 cid 4227 cnt:129 trgt:'Object.get_runtimeType' | _MaterialInterior@650372823 cid 4229 cnt:129 trgt:'Object.get_runtimeType' | _MaterialInteriorState@650372823 cid 4231 cnt:129 trgt:'Object.get_runtimeType' | _ShapeBorderPaint@650372823 cid 4233 cnt:129 trgt:'Object.get_runtimeType' | _MaterialLocalizationsDelegate@441075540 cid 4236 cnt:129 trgt:'Object.get_runtimeType' | OutlinedButton cid 4355 cnt:129 trgt:'Object.get_runtimeType' | _OutlinedButtonWithIconChild@668109675 cid 4356 cnt:129 trgt:'Object.get_runtimeType' | MaterialPageRoute cid 4361 cnt:129 trgt:'Object.get_runtimeType' | _FadeForwardsPageTransition@671490068 cid 4374 cnt:129 trgt:'Object.get_runtimeType' | _PageTransitionsThemeTransitions@671490068 cid 4379 cnt:129 trgt:'Object.get_runtimeType' | _PredictiveBackGestureDetector@675428833 cid 4416 cnt:129 trgt:'Object.get_runtimeType' | LinearProgressIndicator cid 4427 cnt:129 trgt:'Object.get_runtimeType' | _LinearProgressIndicatorState@676243954 cid 4428 cnt:129 trgt:'Object.get_runtimeType' | _CircularProgressIndicatorState@676243954 cid 4432 cnt:129 trgt:'Object.get_runtimeType' | ScaffoldMessenger cid 4507 cnt:129 trgt:'Object.get_runtimeType' | _ScaffoldMessengerScope@685420462 cid 4510 cnt:129 trgt:'Object.get_runtimeType' | _BodyBuilder@685420462 cid 4517 cnt:129 trgt:'Object.get_runtimeType' | _FloatingActionButtonTransiti
+Shell:     MoveArgument(sp[0] <- v887 T{<:Widget})
+Shell:     v1600 <- PolymorphicInstanceCall:16( get:runtimeType<0>, v887 T{<:Widget} Targets[237: _GlobalCupertinoLocalizationsDelegate@431100861 cid 2412 cnt:129 trgt:'Object.get_runtimeType' | _MaterialLocalizationsDelegate@435392079 cid 2773 cnt:129 trgt:'Object.get_runtimeType' | _WidgetsLocalizationsDelegate@436360671 cid 2775 cnt:129 trgt:'Object.get_runtimeType' | VerticalDragGestureRecognizer cid 2942 cnt:129 trgt:'Object.get_runtimeType' | _CupertinoLocalizationsDelegate@438010061 cid 2991 cnt:129 trgt:'Object.get_runtimeType' | CupertinoTheme cid 3259 cnt:129 trgt:'Object.get_runtimeType' | InheritedCupertinoTheme cid 3260 cnt:129 trgt:'Object.get_runtimeType' | LongPressGestureRecognizer cid 3501 cnt:129 trgt:'Object.get_runtimeType' | TapGestureRecognizer cid 3559 cnt:129 trgt:'Object.get_runtimeType' | TapAndHorizontalDragGestureRecognizer cid 3574 cnt:129 trgt:'Object.get_runtimeType' | IconButton cid 3612 cnt:129 trgt:'Object.get_runtimeType' | _ActionIcon@555378963 cid 3613 cnt:129 trgt:'Object.get_runtimeType' | BackButtonIcon cid 3614 cnt:129 trgt:'Object.get_runtimeType' | BackButton cid 3615 cnt:129 trgt:'Object.get_runtimeType' | MaterialApp cid 3645 cnt:129 trgt:'Object.get_runtimeType' | AppBar cid 3652 cnt:129 trgt:'Object.get_runtimeType' | _AppBarTitleBox@561187611 cid 3658 cnt:129 trgt:'Object.get_runtimeType' | _InputPadding@579219276 cid 3760 cnt:129 trgt:'Object.get_runtimeType' | Card cid 3785 cnt:129 trgt:'Object.get_runtimeType' | Dialog cid 3924 cnt:129 trgt:'Object.get_runtimeType' | AlertDialog cid 3925 cnt:129 trgt:'Object.get_runtimeType' | DialogRoute cid 3933 cnt:129 trgt:'Object.get_runtimeType' | Divider cid 3941 cnt:129 trgt:'Object.get_runtimeType' | FilledButton cid 4023 cnt:129 trgt:'Object.get_runtimeType' | FlexibleSpaceBarSettings cid 4037 cnt:129 trgt:'Object.get_runtimeType' | _SelectableIconButton@634331726 cid 4135 cnt:129 trgt:'Object.get_runtimeType' | _IconButtonM3@634331726 cid 4137 cnt:129 trgt:'Object.get_runtimeType' | IconButtonTheme cid 4144 cnt:129 trgt:'Object.get_runtimeType' | Ink cid 4147 cnt:129 trgt:'Object.get_runtimeType' | _ParentInkResponseProvider@642059085 cid 4160 cnt:129 trgt:'Object.get_runtimeType' | _InkResponseStateWidget@642059085 cid 4161 cnt:129 trgt:'Object.get_runtimeType' | InkWell cid 4165 cnt:129 trgt:'Object.get_runtimeType' | ListTile cid 4207 cnt:129 trgt:'Object.get_runtimeType' | _ListTile@647247952 cid 4210 cnt:129 trgt:'Object.get_runtimeType' | Material cid 4223 cnt:129 trgt:'Object.get_runtimeType' | _MaterialState@650372823 cid 4224 cnt:129 trgt:'Object.get_runtimeType' | _InkFeatures@650372823 cid 4227 cnt:129 trgt:'Object.get_runtimeType' | _MaterialInterior@650372823 cid 4229 cnt:129 trgt:'Object.get_runtimeType' | _MaterialInteriorState@650372823 cid 4231 cnt:129 trgt:'Object.get_runtimeType' | _ShapeBorderPaint@650372823 cid 4233 cnt:129 trgt:'Object.get_runtimeType' | _MaterialLocalizationsDelegate@441075540 cid 4236 cnt:129 trgt:'Object.get_runtimeType' | OutlinedButton cid 4355 cnt:129 trgt:'Object.get_runtimeType' | _OutlinedButtonWithIconChild@668109675 cid 4356 cnt:129 trgt:'Object.get_runtimeType' | MaterialPageRoute cid 4361 cnt:129 trgt:'Object.get_runtimeType' | _FadeForwardsPageTransition@671490068 cid 4374 cnt:129 trgt:'Object.get_runtimeType' | _PageTransitionsThemeTransitions@671490068 cid 4379 cnt:129 trgt:'Object.get_runtimeType' | _PredictiveBackGestureDetector@675428833 cid 4416 cnt:129 trgt:'Object.get_runtimeType' | LinearProgressIndicator cid 4427 cnt:129 trgt:'Object.get_runtimeType' | _LinearProgressIndicatorState@676243954 cid 4428 cnt:129 trgt:'Object.get_runtimeType' | _CircularProgressIndicatorState@676243954 cid 4432 cnt:129 trgt:'Object.get_runtimeType' | ScaffoldMessenger cid 4507 cnt:129 trgt:'Object.get_runtimeType' | _ScaffoldMessengerScope@685420462 cid 4510 cnt:129 trgt:'Object.get_runtimeType' | _BodyBuilder@685420462 cid 4517 cnt:129 trgt:'Object.get_runtimeType' | _FloatingActionButtonTransiti
+Shell:     CheckClass:18(v1599 Cids[1: _Type@0150898 etc.  cid 49])
+Shell:     MoveArgument(sp[1] <- v1599 T{_Type})
+Shell:     MoveArgument(sp[0] <- v1600 T{<:Type})
+Shell:     v1601 <- StaticCall:18( ==<0> v1599 T{_Type}, v1600 T{<:Type}, using unchecked entrypoint, recognized_kind = Type_equality) T{bool}
+Shell:     Branch if StrictCompare:20(===, v1601 T{bool}, v31 T{bool}) goto (627, 886)
+Shell: B627[target]:24
+Shell:     CheckClass:26(v886 T{<:Widget} Cids[147: Padding etc.  cid 5821-5829 | Listener etc.  cid 5861-5867 | Row etc.  cid 5851-5855 | BlockSemantics etc.  cid 5869-5873 | IconButton etc.  cid 3612-3617 | ClipPath etc.  cid 5812-5816 | _AssetOverview@1074031538 etc.  cid 7162-7165 | TextFieldTapRegion etc.  cid 6808-6813 | SlideTransition etc.  cid 6868-6871 | RawView etc.  cid 6907-6908 | _ViewScope@939024595 etc.  cid 6910-6911 | CupertinoTheme etc.  cid 3259-3260 | Dialog etc.  cid 3924-3925 | _ParentInkResponseProvider@642059085 etc.  cid 4160-4161 | OutlinedButton etc.  cid 4355-4356 | TextButton etc.  cid 4713-4714 | Theme etc.  cid 4754-4755 | AnnotatedRegion etc.  cid 5757-5758 | BackdropFilter etc.  cid 5806-5809 | FittedBox etc.  cid 5818-5819 | IntrinsicWidth etc.  cid 5840-5841 | DecoratedBox etc.  cid 5897-5898 | DefaultSelectionStyle etc.  cid 5904-5906 | FocusScope etc.  cid 6018-6019 | GestureDetector etc.  cid 6092-6093 | _LocalizationsScope@439081674 etc.  cid 6205-6206 | ModalBarrier etc.  cid 6231-6232 | _ModalBarrierGestureDetector@1031005443 etc.  cid 6235-6236 | _RenderTheaterMarker@971319124 etc.  cid 6325-6326 | UnmanagedRestorationScope etc.  cid 6469-6470 | _ModalScopeStatus@889188637 etc.  cid 6519-6520 | SingleChildScrollView etc.  cid 6674-6675 | ListenableBuilder etc.  cid 6881-6882 | View etc.  cid 6904 | MaterialApp etc.  cid 3645 | AppBar etc.  cid 3652 | _AppBarTitleBox@561187611 etc.  cid 3658 | _InputPadding@579219276 etc.  cid 3760 | Card etc.  cid 3785 | Divider etc.  cid 3941 | FilledButton etc.  cid 4023 | FlexibleSpaceBarSettings etc.  cid 4037 | _SelectableIconButton@634331726 etc.  cid 4135 | _IconButtonM3@634331726 etc.  cid 4137 | IconButtonTheme etc.  cid 4144 | Ink etc.  cid 4147 | InkWell etc.  cid 4165 | ListTile etc.  cid 4207 | _ListTile@647247952 etc.  cid 4210 | Material etc.  cid 4223 | _InkFeatures@650372823 etc.  cid 4227 | _MaterialInterior@650372823 etc.  cid 4229 | _ShapeBorderPaint@650372823 etc.  cid 4233 | _FadeForwardsPageTransition@671490068 etc.  cid 4374 | _PageTransitionsThemeTransitions@671490068 etc.  cid 4379 | _PredictiveBackGestureDetector@675428833 etc.  cid 4416 | LinearProgressIndicator etc.  cid 4427 | CircularProgressIndicator etc.  cid 4431 | ScaffoldMessenger etc.  cid 4507 | _ScaffoldMessengerScope@685420462 etc.  cid 4510 | _BodyBuilder@685420462 etc.  cid 4517 | _FloatingActionButtonTransition@685420462 etc.  cid 4519 | Scaffold etc.  cid 4522 | _ScaffoldScope@685420462 etc.  cid 4531-4532 | SelectableText etc.  cid 4578 | AnimatedTheme etc.  cid 4758 | Tooltip etc.  cid 4827 | Actions etc.  cid 5701 | _ActionsScope@893441002 etc.  cid 5703 | StreamBuilder etc.  cid 5768 | _AutofillScope@972212999 etc.  cid 5787-5788 | Directionality etc.  cid 5802-5803 | LimitedBox etc.  cid 5833 | Offstage etc.  cid 5836 | SliverPadding etc.  cid 5845 | Stack etc.  cid 5848-5849 | RichText etc.  cid 5857 | ColoredBox etc.  cid 5876 | DisplayFeatureSubScreen etc.  cid 5919 | Draggable etc.  cid 5924-5925 | DragTarget etc.  cid 5929 | DualTransitionBuilder etc.  cid 5947 | _CompositionCallback@923183791 etc.  cid 5949 | EditableText etc.  cid 5955 | _Editable@923183791 etc.  cid 5958 | _ScribbleFocusable@923183791 etc.  cid 5961 | Focus etc.  cid 6015 | _DebugFocusBorder@944492240 etc.  cid 6021-6022 | FocusTraversalGroup etc.  cid 6048 | _GestureSemantics@993132872 etc.  cid 6095 | HeroMode etc.  cid 6106-6107 | IconTheme etc.  cid 6111 | AnimatedPadding etc.  cid 6130 | AnimatedDefaultTextStyle etc.  cid 6148 | AnimatedPhysicalModel etc.  cid 6150 | _CaptureAll@908220367 etc.  cid 6167 | LayoutBuilder etc.  cid 6181 | Scrollable etc.  cid 6194 | MediaQuery etc.  cid 6222 | _MediaQueryFromView@888282825 etc.  cid 6224 | HeroControllerScope etc.  cid 6242 | Navigator etc.  cid 6246 | Viewport etc.  cid 6292 | NotificationListener etc.  cid 6294 | OverflowBar etc.  cid 6301 | _OverlayEntryWidget@971319124 etc.  cid 6307 | Overlay etc.  cid 6309 | _Theater@971319124
+Shell:     v1605 <- LoadField(v886 . key {final}) T{<:Key??}
+Shell:     CheckClass:28(v887 T{<:Widget} Cids[147: Padding etc.  cid 5821-5829 | Listener etc.  cid 5861-5867 | Row etc.  cid 5851-5855 | BlockSemantics etc.  cid 5869-5873 | IconButton etc.  cid 3612-3617 | ClipPath etc.  cid 5812-5816 | _AssetOverview@1074031538 etc.  cid 7162-7165 | TextFieldTapRegion etc.  cid 6808-6813 | SlideTransition etc.  cid 6868-6871 | RawView etc.  cid 6907-6908 | _ViewScope@939024595 etc.  cid 6910-6911 | CupertinoTheme etc.  cid 3259-3260 | Dialog etc.  cid 3924-3925 | _ParentInkResponseProvider@642059085 etc.  cid 4160-4161 | OutlinedButton etc.  cid 4355-4356 | TextButton etc.  cid 4713-4714 | Theme etc.  cid 4754-4755 | AnnotatedRegion etc.  cid 5757-5758 | BackdropFilter etc.  cid 5806-5809 | FittedBox etc.  cid 5818-5819 | IntrinsicWidth etc.  cid 5840-5841 | DecoratedBox etc.  cid 5897-5898 | DefaultSelectionStyle etc.  cid 5904-5906 | FocusScope etc.  cid 6018-6019 | GestureDetector etc.  cid 6092-6093 | _LocalizationsScope@439081674 etc.  cid 6205-6206 | ModalBarrier etc.  cid 6231-6232 | _ModalBarrierGestureDetector@1031005443 etc.  cid 6235-6236 | _RenderTheaterMarker@971319124 etc.  cid 6325-6326 | UnmanagedRestorationScope etc.  cid 6469-6470 | _ModalScopeStatus@889188637 etc.  cid 6519-6520 | SingleChildScrollView etc.  cid 6674-6675 | ListenableBuilder etc.  cid 6881-6882 | View etc.  cid 6904 | MaterialApp etc.  cid 3645 | AppBar etc.  cid 3652 | _AppBarTitleBox@561187611 etc.  cid 3658 | _InputPadding@579219276 etc.  cid 3760 | Card etc.  cid 3785 | Divider etc.  cid 3941 | FilledButton etc.  cid 4023 | FlexibleSpaceBarSettings etc.  cid 4037 | _SelectableIconButton@634331726 etc.  cid 4135 | _IconButtonM3@634331726 etc.  cid 4137 | IconButtonTheme etc.  cid 4144 | Ink etc.  cid 4147 | InkWell etc.  cid 4165 | ListTile etc.  cid 4207 | _ListTile@647247952 etc.  cid 4210 | Material etc.  cid 4223 | _InkFeatures@650372823 etc.  cid 4227 | _MaterialInterior@650372823 etc.  cid 4229 | _ShapeBorderPaint@650372823 etc.  cid 4233 | _FadeForwardsPageTransition@671490068 etc.  cid 4374 | _PageTransitionsThemeTransitions@671490068 etc.  cid 4379 | _PredictiveBackGestureDetector@675428833 etc.  cid 4416 | LinearProgressIndicator etc.  cid 4427 | CircularProgressIndicator etc.  cid 4431 | ScaffoldMessenger etc.  cid 4507 | _ScaffoldMessengerScope@685420462 etc.  cid 4510 | _BodyBuilder@685420462 etc.  cid 4517 | _FloatingActionButtonTransition@685420462 etc.  cid 4519 | Scaffold etc.  cid 4522 | _ScaffoldScope@685420462 etc.  cid 4531-4532 | SelectableText etc.  cid 4578 | AnimatedTheme etc.  cid 4758 | Tooltip etc.  cid 4827 | Actions etc.  cid 5701 | _ActionsScope@893441002 etc.  cid 5703 | StreamBuilder etc.  cid 5768 | _AutofillScope@972212999 etc.  cid 5787-5788 | Directionality etc.  cid 5802-5803 | LimitedBox etc.  cid 5833 | Offstage etc.  cid 5836 | SliverPadding etc.  cid 5845 | Stack etc.  cid 5848-5849 | RichText etc.  cid 5857 | ColoredBox etc.  cid 5876 | DisplayFeatureSubScreen etc.  cid 5919 | Draggable etc.  cid 5924-5925 | DragTarget etc.  cid 5929 | DualTransitionBuilder etc.  cid 5947 | _CompositionCallback@923183791 etc.  cid 5949 | EditableText etc.  cid 5955 | _Editable@923183791 etc.  cid 5958 | _ScribbleFocusable@923183791 etc.  cid 5961 | Focus etc.  cid 6015 | _DebugFocusBorder@944492240 etc.  cid 6021-6022 | FocusTraversalGroup etc.  cid 6048 | _GestureSemantics@993132872 etc.  cid 6095 | HeroMode etc.  cid 6106-6107 | IconTheme etc.  cid 6111 | AnimatedPadding etc.  cid 6130 | AnimatedDefaultTextStyle etc.  cid 6148 | AnimatedPhysicalModel etc.  cid 6150 | _CaptureAll@908220367 etc.  cid 6167 | LayoutBuilder etc.  cid 6181 | Scrollable etc.  cid 6194 | MediaQuery etc.  cid 6222 | _MediaQueryFromView@888282825 etc.  cid 6224 | HeroControllerScope etc.  cid 6242 | Navigator etc.  cid 6246 | Viewport etc.  cid 6292 | NotificationListener etc.  cid 6294 | OverflowBar etc.  cid 6301 | _OverlayEntryWidget@971319124 etc.  cid 6307 | Overlay etc.  cid 6309 | _Theater@971319124
+Shell:     v1606 <- LoadField(v887 T{<:Widget} . key {final}) T{<:Key??}
+Shell:     MoveArgument(sp[1] <- v1605 T{<:Key??})
+Shell:     MoveArgument(sp[0] <- v1606 T{<:Key??})
+Shell:     v1607 <- PolymorphicInstanceCall:30( ==<0>, v1605 T{<:Key??}, v1606 T{<:Key??} Targets[6: Null cid 172 cnt:9536 trgt:'Object.==' | ValueKey cid 3326 cnt:341 trgt:'ValueKey.==' | LabeledGlobalKey cid 6064 cnt:311 trgt:'Object.==' | _SaltedValueKey@950070758 cid 6540 cnt:8 trgt:'ValueKey.==' | GlobalObjectKey cid 4505 cnt:6 trgt:'GlobalObjectKey.==' | _DeprecatedRawViewKey@939024595 cid 6916 cnt:2 trgt:'_DeprecatedRawViewKey@939024595.=='] using unchecked entrypoint) T{bool}
+Shell:     Branch if StrictCompare:130(===, v1607, v31) goto (354, 884)
+Shell: B354[target]:136
+Shell:     v889 <- LoadField(v856 T{Context} . child) T{<:Element??}
+Shell:     CheckClass:138(v889 Cids[14: StatelessElement etc.  cid 6079-6082 | _UbiquitousInheritedElement@887167661 etc.  cid 5799-5800 | InheritedModelElement etc.  cid 6164-6165 | _OffstageElement@887167661 etc.  cid 5837-5838 | _RawViewElement@939024595 etc.  cid 6909 | MultiChildRenderObjectElement etc.  cid 4745 | _LayoutBuilderElement@999188862 etc.  cid 6178 | _NotificationElement@957140401 etc.  cid 6295 | _TheaterElement@971319124 etc.  cid 6315 | _OverlayPortalElement@971319124 etc.  cid 6327 | _SingleChildViewportElement@1055426794 etc.  cid 6676 | SliverMultiBoxAdaptorElement etc.  cid 6689 | SlottedRenderObjectElement etc.  cid 6763 | _ViewportElement@1037166613 etc.  cid 6917])
+Shell:     v1592 <- LoadField(v889 T{<:Element} . _slot@314042623) T{<:Object??}
+Shell:     v1393 <- LoadClassId(v1592) [1, 1048575] T{_Smi}
+Shell:     Branch if EqualityCompare:140(v1393 == v1216) goto (529, 544)
+Shell: B529[target]:2
+Shell:     Branch if StrictCompare:10(!==, v1592 T{<:Object??}, v1142 T{<:*?}) T{bool} goto (887, 888)
+Shell: B887[target]:146
+Shell:     goto:146 B355
+Shell: B888[target]:150
+../../runtime/vm/zone.cc: 95: error: Out of memory.
+Aborting reentrant request for stack trace.

@@ -35,8 +35,8 @@ class FinanceApp extends StatelessWidget {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
         onGenerateTitle: (context) => AppLocalizations.of(context)!.appName,
-        theme: buildAppTheme(Brightness.light),
-        darkTheme: buildAppTheme(Brightness.dark),
+        theme: buildAppTheme(Brightness.light, settings.themeColor),
+        darkTheme: buildAppTheme(Brightness.dark, settings.themeColor),
         themeMode: switch (settings.appearance) {
           Appearance.system => ThemeMode.system,
           Appearance.light => ThemeMode.light,
@@ -57,6 +57,10 @@ class FinanceApp extends StatelessWidget {
         localeListResolutionCallback: resolveAppLocale,
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
+        builder: (context, child) => ColoredBox(
+          color: Theme.of(context).scaffoldBackgroundColor,
+          child: SafeArea(top: false, child: child ?? const SizedBox.shrink()),
+        ),
         home: HomePage(controller: controller),
       );
     },

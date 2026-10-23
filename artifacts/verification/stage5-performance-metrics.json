@@ -1,0 +1,19 @@
+{
+  "device": "Finance_API_36 / emulator-5560",
+  "mode": "debug integration",
+  "projects": 50,
+  "financialRecords": 10000,
+  "memos": 100,
+  "homeRefreshMs": 391,
+  "monthSwitchMs": [
+    684,
+    650,
+    651,
+    669,
+    668
+  ],
+  "backupBytes": 2824105,
+  "captureMs": 597,
+  "restoreMs": 8505,
+  "roundtripEqual": true
+}

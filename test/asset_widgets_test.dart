@@ -173,7 +173,7 @@ void main() {
     },
   );
 
-  testWidgets('T11 home long press only drags; drop persists the grid order', (
+  testWidgets('T11 dedicated home handle drags; drop persists the grid order', (
     tester,
   ) async {
     tester.view.physicalSize = const Size(1000, 2000);
@@ -183,7 +183,9 @@ void main() {
     await tester.pumpWidget(FinanceApp(controller: controller));
     await tester.pumpAndSettle();
     final first = controller.projects[0].id, second = controller.projects[1].id;
-    final source = tester.getCenter(find.byKey(Key('project-$first')));
+    await tester.ensureVisible(find.byKey(Key('project-$first')));
+    await tester.pumpAndSettle();
+    final source = tester.getCenter(find.byKey(Key('drag-project-$first')));
     final target = tester.getCenter(find.byKey(Key('project-$second')));
     final gesture = await tester.startGesture(source);
     await tester.pump(const Duration(milliseconds: 700));

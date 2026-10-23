@@ -104,7 +104,7 @@
   "unsavedBody": "Save your changes before leaving?",
   "continueEditing": "Keep editing",
   "discard": "Discard",
-  "sortHint": "Long press and drag cards to reorder.",
+  "sortHint": "Hold the separate handle to reorder. Hold a card for actions.",
   "sortProjects": "Reorder projects",
   "bankCategory": "Bank account",
   "walletCategory": "Wallet",
@@ -216,6 +216,10 @@
   "cachePurgeError": "Data was reset, but private share-cache cleanup is pending. Retry cleanup here; it also resumes at next launch.",
   "purgeCache": "Retry private-cache cleanup",
   "backupCancelled": "Cancelled. Financial data unchanged.",
+  "backupFormat": "Backup format",
+  "backupFutureVersionError": "This backup uses a newer format. Update this app before restoring it. Your current data was kept.",
+  "legacyBackupWarning": "This older backup has no checksum. Its original integrity cannot be verified; structure and business data have been checked. Review the preview before replacing your data.",
+  "loadMore": "Load 50 more",
   "backupFilePrefix": "Finance_backup",
   "backupCountsHint": "Includes balances, independent entries, categories, memos, edit histories and settings.",
   "billCategoryName": "{key, select, salary{Salary} bonus{Bonus} otherIncome{Other income} food{Food} transport{Transport} shopping{Shopping} housing{Housing} medical{Medical} otherExpense{Other expenses} other{Category}}",
@@ -223,6 +227,24 @@
     "placeholders": {
       "key": {
         "type": "String"
+      }
+    }
+  },
+  "themeColor": "Theme color",
+  "themeRed": "Fiery red",
+  "themeGreen": "Green",
+  "themePurple": "Purple",
+  "themeBlue": "Blue",
+  "projectActions": "Project actions",
+  "dragProject": "Hold the handle to reorder",
+  "deleteProjectImpact": "This will remove {records} records and {histories} edit histories. Monthly bills and other projects are unaffected.",
+  "@deleteProjectImpact": {
+    "placeholders": {
+      "records": {
+        "type": "int"
+      },
+      "histories": {
+        "type": "int"
       }
     }
   }

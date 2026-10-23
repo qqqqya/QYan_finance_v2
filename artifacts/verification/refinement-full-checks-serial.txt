@@ -1,0 +1,16 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Because l10n.yaml exists, the options defined there will be used instead.
+To use the command line arguments, delete the l10n.yaml file in the Flutter project.
+
+
+  0s drift_dev on 240 inputs; integration_test/app_smoke_test.dart
+  0s drift_dev on 240 inputs: 240 skipped
+  0s source_gen:combining_builder on 120 inputs; integration_test/app_smoke_test.dart
+  0s source_gen:combining_builder on 120 inputs: 120 skipped
+  Built with build_runner/aot in 1s; wrote 0 outputs.
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Analyzing Finance...                                            
+No issues found! (ran in 6.0s)
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Flutter failed to delete file at "D:\Finance\build\native_assets\windows\sqlite3.dll". The flutter tool cannot access the file or directory.
+Please ensure that the SDK and/or project is installed in a location that has read/write permissions for the current user.

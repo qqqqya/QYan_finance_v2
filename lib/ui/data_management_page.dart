@@ -20,6 +20,7 @@ String backupErrorText(AppLocalizations s, Object error) {
   return switch (code) {
     'invalidBackup' => s.invalidBackup,
     'backupVersion' => s.backupVersionError,
+    'backupFutureVersion' => s.backupFutureVersionError,
     'backupChecksum' => s.backupChecksumError,
     'backupTooLarge' => s.backupLimitError,
     'fileWrite' => s.fileWriteError,
@@ -61,6 +62,7 @@ class _DataManagementPageState extends State<DataManagementPage> {
     await showDialog<void>(
       context: context,
       builder: (context) => AlertDialog(
+        scrollable: true,
         icon: Icon(
           Icons.error_outline,
           size: 44,
@@ -100,6 +102,7 @@ class _DataManagementPageState extends State<DataManagementPage> {
   Future<void> success(String title, String body) => showDialog<void>(
     context: context,
     builder: (context) => AlertDialog(
+      scrollable: true,
       icon: const Icon(
         Icons.check_circle_outline,
         size: 52,
@@ -203,6 +206,19 @@ class _DataManagementPageState extends State<DataManagementPage> {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              Text(
+                '${s.backupFormat}: ${doc.sourceVersionLabel}${doc.converted ? ' → v$currentBackupFormatVersion' : ''}',
+              ),
+              if (!doc.integrityVerified)
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  child: Text(
+                    s.legacyBackupWarning,
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.error,
+                    ),
+                  ),
+                ),
               Text('${s.backupDate}: ${doc.exportedAt}'),
               const SizedBox(height: 12),
               Text('${s.backupBills}: ${doc.count('bills')}'),
@@ -268,6 +284,7 @@ class _DataManagementPageState extends State<DataManagementPage> {
     final action = await showDialog<String>(
       context: context,
       builder: (context) => AlertDialog(
+        scrollable: true,
         icon: Icon(
           Icons.restart_alt,
           color: Theme.of(context).colorScheme.error,
@@ -391,6 +408,7 @@ class _DataManagementPageState extends State<DataManagementPage> {
                   ),
                 ),
               ),
+              const SizedBox(height: 12),
               if (busy)
                 Padding(
                   padding: const EdgeInsets.all(12),
@@ -409,6 +427,7 @@ class _DataManagementPageState extends State<DataManagementPage> {
                 },
                 green: true,
               ),
+              const SizedBox(height: 12),
               actionCard(
                 s.backupImport,
                 s.backupImportHint,
@@ -425,6 +444,7 @@ class _DataManagementPageState extends State<DataManagementPage> {
               ),
               const SizedBox(height: 16),
               Card(
+                margin: const EdgeInsets.only(bottom: 12),
                 child: Padding(
                   padding: const EdgeInsets.all(20),
                   child: Column(
@@ -466,6 +486,7 @@ class _DataManagementPageState extends State<DataManagementPage> {
                 ),
               ),
               Card(
+                margin: const EdgeInsets.only(bottom: 12),
                 child: Padding(
                   padding: const EdgeInsets.all(20),
                   child: Column(

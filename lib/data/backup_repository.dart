@@ -126,10 +126,11 @@ class BackupRepository {
       'languageMode': prefs.languageMode,
       'currency': prefs.currency,
       'timeZone': prefs.timeZone,
+      'themeColor': prefs.themeColor,
     };
     final root = signedBackup({
       'format': 'finance-backup',
-      'schemaVersion': 1,
+      'schemaVersion': currentBackupFormatVersion,
       'appVersion': backupAppVersion,
       'exportedAt': DateTime.fromMillisecondsSinceEpoch(
         finance.clock().millisecondsSinceEpoch,
@@ -271,6 +272,7 @@ class BackupRepository {
             languageMode: s['languageMode'] as String,
             currency: s['currency'] as String,
             timeZone: s['timeZone'] as String,
+            themeColor: s['themeColor'] as String,
           ),
         );
   }

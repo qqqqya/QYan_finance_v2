@@ -31,14 +31,27 @@ final class Workspace {
         orderKey: r.orderKey,
       ),
   ];
-  int amount(ProjectRow project) => isBalanceType(project.type)
-      ? currentBalanceMinor(project.id, snapshots)
-      : checkedSumMinor(
-          entries
-              .where((r) => r.projectId == project.id)
-              .map((r) => r.amountMinor),
-        );
-  List<ProjectSummary> get summaries => [
+  // One pass per immutable database snapshot, rather than scanning/sorting the
+  // entire record set again for every project and chart.
+  late final Map<String, int> _amounts = () {
+    final latest = <String, BalanceSnapshot>{};
+    for (final r in snapshots) {
+      final previous = latest[r.projectId];
+      if (previous == null || compareSnapshots(previous, r) < 0) {
+        latest[r.projectId] = r;
+      }
+    }
+    final result = {for (final e in latest.entries) e.key: e.value.amountMinor};
+    for (final r in entries) {
+      result[r.projectId] = checkedSumMinor([
+        result[r.projectId] ?? 0,
+        r.amountMinor,
+      ]);
+    }
+    return result;
+  }();
+  int amount(ProjectRow project) => _amounts[project.id] ?? 0;
+  late final List<ProjectSummary> summaries = [
     for (final p in projects)
       ProjectSummary(
         id: p.id,

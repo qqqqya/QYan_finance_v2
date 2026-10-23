@@ -150,6 +150,7 @@ class _CategoryEditorState extends State<CategoryEditor> {
           String selected = targets.first.id;
           return StatefulBuilder(
             builder: (context, update) => AlertDialog(
+              scrollable: true,
               title: Text(s.moveAndDelete),
               content: Column(
                 mainAxisSize: MainAxisSize.min,

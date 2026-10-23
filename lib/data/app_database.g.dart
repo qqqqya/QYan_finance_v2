@@ -3987,6 +3987,19 @@ class $AppPreferencesTable extends AppPreferences
     type: DriftSqlType.string,
     requiredDuringInsert: true,
   );
+  static const VerificationMeta _themeColorMeta = const VerificationMeta(
+    'themeColor',
+  );
+  @override
+  late final GeneratedColumn<String> themeColor = GeneratedColumn<String>(
+    'theme_color',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    $customConstraints: 'NOT NULL DEFAULT \'blue\' CHECK (theme_color IN (\'red\',\'green\',\'purple\',\'blue\'))',
+    defaultValue: const CustomExpression('\'blue\''),
+  );
   @override
   List<GeneratedColumn> get $columns => [
     id,
@@ -3994,6 +4007,7 @@ class $AppPreferencesTable extends AppPreferences
     languageMode,
     currency,
     timeZone,
+    themeColor,
   ];
   @override
   String get aliasedName => _alias ?? actualTableName;
@@ -4045,6 +4059,12 @@ class $AppPreferencesTable extends AppPreferences
     } else if (isInserting) {
       context.missing(_timeZoneMeta);
     }
+    if (data.containsKey('theme_color')) {
+      context.handle(
+        _themeColorMeta,
+        themeColor.isAcceptableOrUnknown(data['theme_color']!, _themeColorMeta),
+      );
+    }
     return context;
   }
 
@@ -4074,6 +4094,10 @@ class $AppPreferencesTable extends AppPreferences
         DriftSqlType.string,
         data['${effectivePrefix}time_zone'],
       )!,
+      themeColor: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}theme_color'],
+      )!,
     );
   }
 
@@ -4089,12 +4113,14 @@ class SettingsRow extends DataClass implements Insertable<SettingsRow> {
   final String languageMode;
   final String currency;
   final String timeZone;
+  final String themeColor;
   const SettingsRow({
     required this.id,
     required this.themeMode,
     required this.languageMode,
     required this.currency,
     required this.timeZone,
+    required this.themeColor,
   });
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
@@ -4104,6 +4130,7 @@ class SettingsRow extends DataClass implements Insertable<SettingsRow> {
     map['language_mode'] = Variable<String>(languageMode);
     map['currency'] = Variable<String>(currency);
     map['time_zone'] = Variable<String>(timeZone);
+    map['theme_color'] = Variable<String>(themeColor);
     return map;
   }
 
@@ -4114,6 +4141,7 @@ class SettingsRow extends DataClass implements Insertable<SettingsRow> {
       languageMode: Value(languageMode),
       currency: Value(currency),
       timeZone: Value(timeZone),
+      themeColor: Value(themeColor),
     );
   }
 
@@ -4128,6 +4156,7 @@ class SettingsRow extends DataClass implements Insertable<SettingsRow> {
       languageMode: serializer.fromJson<String>(json['languageMode']),
       currency: serializer.fromJson<String>(json['currency']),
       timeZone: serializer.fromJson<String>(json['timeZone']),
+      themeColor: serializer.fromJson<String>(json['themeColor']),
     );
   }
   @override
@@ -4139,6 +4168,7 @@ class SettingsRow extends DataClass implements Insertable<SettingsRow> {
       'languageMode': serializer.toJson<String>(languageMode),
       'currency': serializer.toJson<String>(currency),
       'timeZone': serializer.toJson<String>(timeZone),
+      'themeColor': serializer.toJson<String>(themeColor),
     };
   }
 
@@ -4148,12 +4178,14 @@ class SettingsRow extends DataClass implements Insertable<SettingsRow> {
     String? languageMode,
     String? currency,
     String? timeZone,
+    String? themeColor,
   }) => SettingsRow(
     id: id ?? this.id,
     themeMode: themeMode ?? this.themeMode,
     languageMode: languageMode ?? this.languageMode,
     currency: currency ?? this.currency,
     timeZone: timeZone ?? this.timeZone,
+    themeColor: themeColor ?? this.themeColor,
   );
   SettingsRow copyWithCompanion(AppPreferencesCompanion data) {
     return SettingsRow(
@@ -4164,6 +4196,9 @@ class SettingsRow extends DataClass implements Insertable<SettingsRow> {
           : this.languageMode,
       currency: data.currency.present ? data.currency.value : this.currency,
       timeZone: data.timeZone.present ? data.timeZone.value : this.timeZone,
+      themeColor: data.themeColor.present
+          ? data.themeColor.value
+          : this.themeColor,
     );
   }
 
@@ -4174,14 +4209,15 @@ class SettingsRow extends DataClass implements Insertable<SettingsRow> {
           ..write('themeMode: $themeMode, ')
           ..write('languageMode: $languageMode, ')
           ..write('currency: $currency, ')
-          ..write('timeZone: $timeZone')
+          ..write('timeZone: $timeZone, ')
+          ..write('themeColor: $themeColor')
           ..write(')'))
         .toString();
   }
 
   @override
   int get hashCode =>
-      Object.hash(id, themeMode, languageMode, currency, timeZone);
+      Object.hash(id, themeMode, languageMode, currency, timeZone, themeColor);
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
@@ -4190,7 +4226,8 @@ class SettingsRow extends DataClass implements Insertable<SettingsRow> {
           other.themeMode == this.themeMode &&
           other.languageMode == this.languageMode &&
           other.currency == this.currency &&
-          other.timeZone == this.timeZone);
+          other.timeZone == this.timeZone &&
+          other.themeColor == this.themeColor);
 }
 
 class AppPreferencesCompanion extends UpdateCompanion<SettingsRow> {
@@ -4199,12 +4236,14 @@ class AppPreferencesCompanion extends UpdateCompanion<SettingsRow> {
   final Value<String> languageMode;
   final Value<String> currency;
   final Value<String> timeZone;
+  final Value<String> themeColor;
   const AppPreferencesCompanion({
     this.id = const Value.absent(),
     this.themeMode = const Value.absent(),
     this.languageMode = const Value.absent(),
     this.currency = const Value.absent(),
     this.timeZone = const Value.absent(),
+    this.themeColor = const Value.absent(),
   });
   AppPreferencesCompanion.insert({
     this.id = const Value.absent(),
@@ -4212,6 +4251,7 @@ class AppPreferencesCompanion extends UpdateCompanion<SettingsRow> {
     required String languageMode,
     required String currency,
     required String timeZone,
+    this.themeColor = const Value.absent(),
   }) : themeMode = Value(themeMode),
        languageMode = Value(languageMode),
        currency = Value(currency),
@@ -4222,6 +4262,7 @@ class AppPreferencesCompanion extends UpdateCompanion<SettingsRow> {
     Expression<String>? languageMode,
     Expression<String>? currency,
     Expression<String>? timeZone,
+    Expression<String>? themeColor,
   }) {
     return RawValuesInsertable({
       if (id != null) 'id': id,
@@ -4229,6 +4270,7 @@ class AppPreferencesCompanion extends UpdateCompanion<SettingsRow> {
       if (languageMode != null) 'language_mode': languageMode,
       if (currency != null) 'currency': currency,
       if (timeZone != null) 'time_zone': timeZone,
+      if (themeColor != null) 'theme_color': themeColor,
     });
   }
 
@@ -4238,6 +4280,7 @@ class AppPreferencesCompanion extends UpdateCompanion<SettingsRow> {
     Value<String>? languageMode,
     Value<String>? currency,
     Value<String>? timeZone,
+    Value<String>? themeColor,
   }) {
     return AppPreferencesCompanion(
       id: id ?? this.id,
@@ -4245,6 +4288,7 @@ class AppPreferencesCompanion extends UpdateCompanion<SettingsRow> {
       languageMode: languageMode ?? this.languageMode,
       currency: currency ?? this.currency,
       timeZone: timeZone ?? this.timeZone,
+      themeColor: themeColor ?? this.themeColor,
     );
   }
 
@@ -4266,6 +4310,9 @@ class AppPreferencesCompanion extends UpdateCompanion<SettingsRow> {
     if (timeZone.present) {
       map['time_zone'] = Variable<String>(timeZone.value);
     }
+    if (themeColor.present) {
+      map['theme_color'] = Variable<String>(themeColor.value);
+    }
     return map;
   }
 
@@ -4276,7 +4323,8 @@ class AppPreferencesCompanion extends UpdateCompanion<SettingsRow> {
           ..write('themeMode: $themeMode, ')
           ..write('languageMode: $languageMode, ')
           ..write('currency: $currency, ')
-          ..write('timeZone: $timeZone')
+          ..write('timeZone: $timeZone, ')
+          ..write('themeColor: $themeColor')
           ..write(')'))
         .toString();
   }
@@ -7465,6 +7513,7 @@ typedef $$AppPreferencesTableCreateCompanionBuilder =
       required String languageMode,
       required String currency,
       required String timeZone,
+      Value<String> themeColor,
     });
 typedef $$AppPreferencesTableUpdateCompanionBuilder =
     AppPreferencesCompanion Function({
@@ -7473,6 +7522,7 @@ typedef $$AppPreferencesTableUpdateCompanionBuilder =
       Value<String> languageMode,
       Value<String> currency,
       Value<String> timeZone,
+      Value<String> themeColor,
     });
 
 class $$AppPreferencesTableFilterComposer
@@ -7506,6 +7556,11 @@ class $$AppPreferencesTableFilterComposer
 
   ColumnFilters<String> get timeZone => $composableBuilder(
     column: $table.timeZone,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get themeColor => $composableBuilder(
+    column: $table.themeColor,
     builder: (column) => ColumnFilters(column),
   );
 }
@@ -7543,6 +7598,11 @@ class $$AppPreferencesTableOrderingComposer
     column: $table.timeZone,
     builder: (column) => ColumnOrderings(column),
   );
+
+  ColumnOrderings<String> get themeColor => $composableBuilder(
+    column: $table.themeColor,
+    builder: (column) => ColumnOrderings(column),
+  );
 }
 
 class $$AppPreferencesTableAnnotationComposer
@@ -7570,6 +7630,11 @@ class $$AppPreferencesTableAnnotationComposer
 
   GeneratedColumn<String> get timeZone =>
       $composableBuilder(column: $table.timeZone, builder: (column) => column);
+
+  GeneratedColumn<String> get themeColor => $composableBuilder(
+    column: $table.themeColor,
+    builder: (column) => column,
+  );
 }
 
 class $$AppPreferencesTableTableManager
@@ -7610,12 +7675,14 @@ class $$AppPreferencesTableTableManager
                 Value<String> languageMode = const Value.absent(),
                 Value<String> currency = const Value.absent(),
                 Value<String> timeZone = const Value.absent(),
+                Value<String> themeColor = const Value.absent(),
               }) => AppPreferencesCompanion(
                 id: id,
                 themeMode: themeMode,
                 languageMode: languageMode,
                 currency: currency,
                 timeZone: timeZone,
+                themeColor: themeColor,
               ),
           createCompanionCallback:
               ({
@@ -7624,12 +7691,14 @@ class $$AppPreferencesTableTableManager
                 required String languageMode,
                 required String currency,
                 required String timeZone,
+                Value<String> themeColor = const Value.absent(),
               }) => AppPreferencesCompanion.insert(
                 id: id,
                 themeMode: themeMode,
                 languageMode: languageMode,
                 currency: currency,
                 timeZone: timeZone,
+                themeColor: themeColor,
               ),
           withReferenceMapper: (p0) => p0
               .map(

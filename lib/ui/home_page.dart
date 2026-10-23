@@ -43,16 +43,16 @@ class _HomePageState extends State<HomePage> {
     final height = MediaQuery.sizeOf(context).height;
     final y = details.globalPosition.dy;
     final delta = y > height - 110
-        ? 24.0
+        ? 12.0
         : y < 150
-        ? -24.0
+        ? -12.0
         : 0.0;
     scrollDelta = delta;
     if (delta == 0) {
       stopScroll();
       return;
     }
-    dragScroll ??= Timer.periodic(const Duration(milliseconds: 60), (_) {
+    dragScroll ??= Timer.periodic(const Duration(milliseconds: 16), (_) {
       if (!scroll.hasClients) {
         stopScroll();
         return;
@@ -83,6 +83,64 @@ class _HomePageState extends State<HomePage> {
       () => controller.repository.reorderProjects(ids),
     );
     if (mounted) setState(() => sorting = false);
+  }
+
+  Future<void> projectMenu(ProjectSummary summary) async {
+    final project = controller.workspace?.project(summary.id);
+    if (project == null || sorting) return;
+    final s = AppLocalizations.of(context)!;
+    final action = await showModalBottomSheet<String>(
+      context: context,
+      showDragHandle: true,
+      builder: (context) => SafeArea(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                projectTitle(s, project),
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              const SizedBox(height: 16),
+              ListTile(
+                key: const Key('menu-edit-project'),
+                leading: const Icon(Icons.edit_outlined),
+                title: Text(s.editProject),
+                onTap: () => Navigator.pop(context, 'edit'),
+              ),
+              const SizedBox(height: 24),
+              const Divider(),
+              const SizedBox(height: 12),
+              ListTile(
+                key: const Key('menu-delete-project'),
+                leading: Icon(
+                  Icons.delete_outline,
+                  color: Theme.of(context).colorScheme.error,
+                ),
+                title: Text(
+                  s.deleteProject,
+                  style: TextStyle(color: Theme.of(context).colorScheme.error),
+                ),
+                onTap: () => Navigator.pop(context, 'delete'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+    if (!mounted) return;
+    if (action == 'delete') {
+      await confirmDeleteProject(context, controller, project);
+    } else if (action == 'edit') {
+      await Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (_) =>
+              ProjectEditor(controller: controller, project: project),
+        ),
+      );
+    }
   }
 
   @override
@@ -213,58 +271,100 @@ class _HomePageState extends State<HomePage> {
                     final width = singleColumn
                         ? constraints.maxWidth
                         : (constraints.maxWidth - 12) / 2;
-                    return Wrap(
-                      spacing: 12,
-                      runSpacing: 12,
-                      children: [
-                        for (final project in controller.projects)
-                          SizedBox(
-                            width: width,
-                            child: DragTarget<String>(
-                              onWillAcceptWithDetails: (details) =>
-                                  !sorting && details.data != project.id,
-                              onAcceptWithDetails: (details) =>
-                                  reorder(details.data, project.id),
-                              builder: (context, candidates, rejected) =>
-                                  DecoratedBox(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(22),
-                                      border: candidates.isNotEmpty
-                                          ? Border.all(
-                                              color: theme.colorScheme.primary,
-                                              width: 2,
-                                            )
-                                          : null,
-                                    ),
-                                    child: LongPressDraggable<String>(
+                    final cards = <Widget>[
+                      for (final project in controller.projects)
+                        SizedBox(
+                          width: width,
+                          child: DragTarget<String>(
+                            onWillAcceptWithDetails: (details) =>
+                                !sorting && details.data != project.id,
+                            onAcceptWithDetails: (details) =>
+                                reorder(details.data, project.id),
+                            builder: (context, candidates, rejected) =>
+                                DecoratedBox(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(22),
+                                    border: candidates.isNotEmpty
+                                        ? Border.all(
+                                            color: theme.colorScheme.primary,
+                                            width: 2,
+                                          )
+                                        : null,
+                                  ),
+                                  child: _ProjectCard(
+                                    project: project,
+                                    controller: controller,
+                                    onMenu: () => projectMenu(project),
+                                    dragHandle: LongPressDraggable<String>(
+                                      key: Key('drag-project-${project.id}'),
                                       data: project.id,
+                                      delay: const Duration(milliseconds: 220),
                                       maxSimultaneousDrags: sorting ? 0 : 1,
                                       onDragUpdate: autoScroll,
                                       onDragEnd: (_) => stopScroll(),
+                                      onDraggableCanceled: (_, _) =>
+                                          stopScroll(),
                                       feedback: SizedBox(
                                         width: width,
                                         child: Material(
                                           color: Colors.transparent,
+                                          elevation: 8,
+                                          borderRadius: BorderRadius.circular(
+                                            22,
+                                          ),
                                           child: _ProjectCard(
                                             project: project,
                                             controller: controller,
                                           ),
                                         ),
                                       ),
-                                      childWhenDragging: Opacity(
-                                        opacity: 0.25,
-                                        child: _ProjectCard(
-                                          project: project,
-                                          controller: controller,
-                                        ),
+                                      childWhenDragging: const SizedBox(
+                                        width: 48,
+                                        height: 48,
                                       ),
-                                      child: _ProjectCard(
-                                        project: project,
-                                        controller: controller,
+                                      child: Tooltip(
+                                        message: strings.dragProject,
+                                        child: Semantics(
+                                          label: strings.dragProject,
+                                          button: true,
+                                          child: SizedBox(
+                                            width: 48,
+                                            height: 48,
+                                            child: Icon(
+                                              Icons.drag_handle,
+                                              color: theme.colorScheme.primary,
+                                            ),
+                                          ),
+                                        ),
                                       ),
                                     ),
                                   ),
-                            ),
+                                ),
+                          ),
+                        ),
+                    ];
+                    final columns = singleColumn ? 1 : 2;
+                    return Column(
+                      children: [
+                        for (var i = 0; i < cards.length; i += columns)
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 12),
+                            child: singleColumn
+                                ? cards[i]
+                                : IntrinsicHeight(
+                                    child: Row(
+                                      key: Key('project-row-$i'),
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.stretch,
+                                      children: [
+                                        cards[i],
+                                        if (i + 1 < cards.length) ...[
+                                          const SizedBox(width: 12),
+                                          cards[i + 1],
+                                        ],
+                                      ],
+                                    ),
+                                  ),
                           ),
                       ],
                     );
@@ -309,7 +409,7 @@ class _AssetOverview extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: const Color(0xFF202024),
+        color: Theme.of(context).colorScheme.primaryContainer,
         borderRadius: BorderRadius.circular(24),
       ),
       child: Column(
@@ -317,13 +417,16 @@ class _AssetOverview extends StatelessWidget {
         children: [
           Text(
             strings.totalAssets,
-            style: const TextStyle(color: Color(0xFFCCCCD0), fontSize: 15),
+            style: TextStyle(
+              color: Theme.of(context).colorScheme.onPrimaryContainer,
+              fontSize: 15,
+            ),
           ),
           const SizedBox(height: 14),
           _Amount(
             amount: controller.totalAssets,
             size: 34,
-            color: Colors.white,
+            color: Theme.of(context).colorScheme.onPrimaryContainer,
             valueKey: const Key('total-assets'),
           ),
           const SizedBox(height: 24),
@@ -372,10 +475,17 @@ class _OverviewMetric extends StatelessWidget {
     children: [
       Text(
         label,
-        style: const TextStyle(color: Color(0xFFCCCCD0), fontSize: 13),
+        style: TextStyle(
+          color: Theme.of(context).colorScheme.onPrimaryContainer,
+          fontSize: 13,
+        ),
       ),
       const SizedBox(height: 6),
-      _Amount(amount: amount, size: 20, color: Colors.white),
+      _Amount(
+        amount: amount,
+        size: 20,
+        color: Theme.of(context).colorScheme.onPrimaryContainer,
+      ),
     ],
   );
 }
@@ -413,9 +523,16 @@ class _Amount extends StatelessWidget {
 }
 
 class _ProjectCard extends StatelessWidget {
-  const _ProjectCard({required this.project, required this.controller});
+  const _ProjectCard({
+    required this.project,
+    required this.controller,
+    this.onMenu,
+    this.dragHandle,
+  });
   final ProjectSummary project;
   final FinanceController controller;
+  final VoidCallback? onMenu;
+  final Widget? dragHandle;
 
   @override
   Widget build(BuildContext context) {
@@ -438,51 +555,87 @@ class _ProjectCard extends StatelessWidget {
       _ => strings.independentExpense,
     };
     return Card(
-      child: InkWell(
-        key: Key('project-${project.id}'),
-        borderRadius: BorderRadius.circular(22),
-        onTap: () => Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (_) => ProjectDetailPage(
-              controller: controller,
-              projectId: project.id,
+      key: Key('project-${project.id}'),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          InkWell(
+            key: Key('project-body-${project.id}'),
+            onLongPress: onMenu,
+            borderRadius: BorderRadius.circular(22),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => ProjectDetailPage(
+                  controller: controller,
+                  projectId: project.id,
+                ),
+              ),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(AppSpacing.medium),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Icon(
+                        projectIcons[controller.workspace
+                                ?.project(project.id)
+                                ?.iconKey] ??
+                            Icons.account_balance_wallet_outlined,
+                        color:
+                            projectColors[controller.workspace
+                                ?.project(project.id)
+                                ?.colorKey] ??
+                            color,
+                        size: 21,
+                      ),
+                      const Spacer(),
+                      if (onMenu != null)
+                        IconButton(
+                          key: Key('project-menu-${project.id}'),
+                          tooltip: strings.projectActions,
+                          onPressed: onMenu,
+                          icon: const Icon(Icons.more_horiz),
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    project.customName ??
+                        strings.projectName(project.nameKey ?? ''),
+                    style: theme.textTheme.bodyLarge,
+                  ),
+                  const SizedBox(height: 16),
+                  _Amount(amount: project.amountMinor, size: 24, color: color),
+                  const SizedBox(height: 12),
+                  Text(
+                    typeLabel,
+                    style: theme.textTheme.bodyMedium?.copyWith(fontSize: 12),
+                  ),
+                ],
+              ),
             ),
           ),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(AppSpacing.medium),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Icon(
-                projectIcons[controller.workspace
-                        ?.project(project.id)
-                        ?.iconKey] ??
-                    Icons.account_balance_wallet_outlined,
-                color:
-                    projectColors[controller.workspace
-                        ?.project(project.id)
-                        ?.colorKey] ??
-                    color,
-                size: 21,
-              ),
-              const SizedBox(height: 10),
-              Text(
-                project.customName ??
-                    strings.projectName(project.nameKey ?? ''),
-                style: theme.textTheme.bodyLarge,
-              ),
-              const SizedBox(height: 16),
-              _Amount(amount: project.amountMinor, size: 24, color: color),
-              const SizedBox(height: 12),
-              Text(
-                typeLabel,
-                style: theme.textTheme.bodyMedium?.copyWith(fontSize: 12),
-              ),
-            ],
-          ),
-        ),
+          if (dragHandle != null)
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const SizedBox(height: 12),
+                const Divider(),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 8, 8, 8),
+                  child: Align(
+                    alignment: Alignment.centerRight,
+                    child: dragHandle!,
+                  ),
+                ),
+              ],
+            ),
+        ],
       ),
     );
   }

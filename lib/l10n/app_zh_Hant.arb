@@ -97,7 +97,7 @@
   "unsavedBody": "離開前是否儲存修改？",
   "continueEditing": "繼續編輯",
   "discard": "放棄修改",
-  "sortHint": "長按拖曳卡片可排序。",
+  "sortHint": "按住獨立把手排序；長按卡片開啟操作選單。",
   "sortProjects": "項目排序",
   "bankCategory": "銀行帳戶",
   "walletCategory": "電子錢包",
@@ -209,6 +209,10 @@
   "cachePurgeError": "資料已重設，但私有分享快取待清理。請在此重試，下次啟動也會繼續清理。",
   "purgeCache": "重試清理私有快取",
   "backupCancelled": "已取消，財務資料未變更。",
+  "backupFormat": "備份格式",
+  "backupFutureVersionError": "此備份使用更新的格式，請先升級本應用程式再還原。目前資料未變更。",
+  "legacyBackupWarning": "此舊備份沒有校驗和，無法驗證檔案原始完整性；結構和業務資料已通過檢查，請核對預覽後再確認覆蓋。",
+  "loadMore": "再載入 50 筆",
   "backupFilePrefix": "財務備份",
   "backupCountsHint": "包含餘額、獨立收支、分類、備忘錄、修改歷史與設定。",
   "billCategoryName": "{key, select, salary{薪資} bonus{獎金} otherIncome{其他收入} food{餐飲} transport{交通} shopping{購物} housing{住房} medical{醫療} otherExpense{其他支出} other{分類}}",
@@ -218,5 +222,13 @@
         "type": "String"
       }
     }
-  }
+  },
+  "themeColor": "主題配色",
+  "themeRed": "火紅色",
+  "themeGreen": "綠色",
+  "themePurple": "紫色",
+  "themeBlue": "藍色",
+  "projectActions": "項目操作",
+  "dragProject": "按住把手拖曳排序",
+  "deleteProjectImpact": "將刪除 {records} 筆業務記錄和 {histories} 筆修改歷史。月度帳單及其他項目不受影響。"
 }

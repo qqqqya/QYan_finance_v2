@@ -1,0 +1,3 @@
+package: com.example.finance_app
+permission: com.example.finance_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission: name='com.example.finance_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'

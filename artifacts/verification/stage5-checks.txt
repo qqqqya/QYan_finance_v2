@@ -1,0 +1,207 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Because l10n.yaml exists, the options defined there will be used instead.
+To use the command line arguments, delete the l10n.yaml file in the Flutter project.
+
+
+  0s drift_dev on 228 inputs; integration_test/app_smoke_test.dart
+  4s drift_dev on 228 inputs: 1 same; spent 3s analyzing; integration_test/asset_flow_test.dart
+  4s drift_dev on 228 inputs: 93 skipped, 10 output, 80 same, 45 no-op; spent 4s analyzing
+  0s source_gen:combining_builder on 114 inputs; integration_test/app_smoke_test.dart
+  0s source_gen:combining_builder on 114 inputs: 110 skipped, 4 no-op
+  Built with build_runner/aot in 6s; wrote 90 outputs.
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Analyzing Finance...                                            
+No issues found! (ran in 5.9s)
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/test/asset_widgets_test.dart
+00:00 +0: D:/Finance/test/asset_widgets_test.dart: (setUpAll)
+00:00 +0: D:/Finance/test/backup_widgets_test.dart: (setUpAll)
+00:00 +0: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +1: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +2: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +3: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +4: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +5: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +6: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +7: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +8: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +9: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +10: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +11: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +12: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +13: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +14: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +15: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:00 +16: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +17: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +18: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +19: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +20: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +21: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +22: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +23: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +24: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +25: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +26: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +27: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +28: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +29: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +30: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +31: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +32: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +33: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +34: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +35: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +36: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +37: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +38: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +39: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +40: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +41: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +42: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +43: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +44: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +45: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +46: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +47: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +48: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +49: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +50: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +51: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +52: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +53: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:01 +54: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +55: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +56: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +57: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +58: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +59: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +60: D:/Finance/test/asset_widgets_test.dart: custom category matching a built-in key stays literal after language switch
+00:02 +61: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:03 +62: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:04 +63: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:04 +64: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:04 +65: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:04 +66: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:04 +67: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:04 +68: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:04 +69: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:05 +70: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:05 +71: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:05 +72: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:05 +73: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:06 +74: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:06 +75: D:/Finance/test/data/backup_resource_test.dart: near-limit complete backup validates and restores 10,000 entries without field loss
+00:06 +76: D:/Finance/test/stage5_layout_test.dart: T22 en system 320x900@1.0
+00:06 +77: D:/Finance/test/stage5_layout_test.dart: T22 en system 320x900@1.0
+00:06 +78: D:/Finance/test/ledger_widgets_test.dart: new bill, annual and memo pages fit 320dp and 200 percent text in both themes
+00:07 +79: D:/Finance/test/stage5_layout_test.dart: T22 en system 320x900@1.5
+00:08 +80: D:/Finance/test/stage5_layout_test.dart: T22 en system 320x900@2.0
+00:09 +81: D:/Finance/test/stage5_layout_test.dart: T22 en system 360x900@1.0
+00:11 +82: D:/Finance/test/stage5_layout_test.dart: T22 en system 360x900@1.5
+00:12 +83: D:/Finance/test/stage5_layout_test.dart: T22 en system 360x900@2.0
+00:13 +84: D:/Finance/test/stage5_layout_test.dart: T22 en system 480x900@1.0
+00:14 +85: D:/Finance/test/stage5_layout_test.dart: T22 en system 480x900@1.5
+00:16 +86: D:/Finance/test/stage5_layout_test.dart: T22 en system 480x900@2.0
+00:17 +87: D:/Finance/test/stage5_layout_test.dart: T22 en system 720x320@1.0
+00:18 +88: D:/Finance/test/stage5_layout_test.dart: T22 en system 800x360@1.5
+00:19 +89: D:/Finance/test/stage5_layout_test.dart: T22 en system 800x360@2.0
+00:20 +90: D:/Finance/test/stage5_layout_test.dart: T22 en light 320x900@1.0
+00:21 +91: D:/Finance/test/stage5_layout_test.dart: T22 en light 320x900@1.5
+00:22 +92: D:/Finance/test/stage5_layout_test.dart: T22 en light 320x900@2.0
+00:23 +93: D:/Finance/test/stage5_layout_test.dart: T22 en light 360x900@1.0
+00:24 +94: D:/Finance/test/stage5_layout_test.dart: T22 en light 360x900@1.5
+00:25 +95: D:/Finance/test/stage5_layout_test.dart: T22 en light 360x900@2.0
+00:26 +96: D:/Finance/test/stage5_layout_test.dart: T22 en light 480x900@1.0
+00:27 +97: D:/Finance/test/stage5_layout_test.dart: T22 en light 480x900@1.5
+00:28 +98: D:/Finance/test/stage5_layout_test.dart: T22 en light 480x900@2.0
+00:29 +99: D:/Finance/test/stage5_layout_test.dart: T22 en light 720x320@1.0
+00:30 +100: D:/Finance/test/stage5_layout_test.dart: T22 en light 800x360@1.5
+00:31 +101: D:/Finance/test/stage5_layout_test.dart: T22 en light 800x360@2.0
+00:32 +102: D:/Finance/test/stage5_layout_test.dart: T22 en dark 320x900@1.0
+00:33 +103: D:/Finance/test/stage5_layout_test.dart: T22 en dark 320x900@1.5
+00:34 +104: D:/Finance/test/stage5_layout_test.dart: T22 en dark 320x900@2.0
+00:35 +105: D:/Finance/test/stage5_layout_test.dart: T22 en dark 360x900@1.0
+00:36 +106: D:/Finance/test/stage5_layout_test.dart: T22 en dark 360x900@1.5
+00:37 +107: D:/Finance/test/stage5_layout_test.dart: T22 en dark 360x900@2.0
+00:38 +108: D:/Finance/test/stage5_layout_test.dart: T22 en dark 480x900@1.0
+00:39 +109: D:/Finance/test/stage5_layout_test.dart: T22 en dark 480x900@1.5
+00:40 +110: D:/Finance/test/stage5_layout_test.dart: T22 en dark 480x900@2.0
+00:41 +111: D:/Finance/test/stage5_layout_test.dart: T22 en dark 720x320@1.0
+00:42 +112: D:/Finance/test/stage5_layout_test.dart: T22 en dark 800x360@1.5
+00:43 +113: D:/Finance/test/stage5_layout_test.dart: T22 en dark 800x360@2.0
+00:44 +114: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans system 320x900@1.0
+00:45 +115: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans system 320x900@1.5
+00:46 +116: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans system 320x900@2.0
+00:47 +117: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans system 360x900@1.0
+00:48 +118: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans system 360x900@1.5
+00:49 +119: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans system 360x900@2.0
+00:50 +120: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans system 480x900@1.0
+00:51 +121: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans system 480x900@1.5
+00:51 +122: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans system 480x900@2.0
+00:52 +123: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans system 720x320@1.0
+00:53 +124: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans system 800x360@1.5
+00:54 +125: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans system 800x360@2.0
+00:55 +126: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans light 320x900@1.0
+00:56 +127: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans light 320x900@1.5
+00:57 +128: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans light 320x900@2.0
+00:58 +129: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans light 360x900@1.0
+00:59 +130: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans light 360x900@1.5
+01:00 +131: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans light 360x900@2.0
+01:01 +132: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans light 480x900@1.0
+01:02 +133: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans light 480x900@1.5
+01:03 +134: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans light 480x900@2.0
+01:04 +135: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans light 720x320@1.0
+01:05 +136: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans light 800x360@1.5
+01:06 +137: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans light 800x360@2.0
+01:06 +138: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans dark 320x900@1.0
+01:07 +139: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans dark 320x900@1.5
+01:08 +140: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans dark 320x900@2.0
+01:09 +141: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans dark 360x900@1.0
+01:10 +142: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans dark 360x900@1.5
+01:11 +143: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans dark 360x900@2.0
+01:12 +144: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans dark 480x900@1.0
+01:13 +145: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans dark 480x900@1.5
+01:14 +146: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans dark 480x900@2.0
+01:15 +147: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans dark 720x320@1.0
+01:16 +148: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans dark 800x360@1.5
+01:16 +149: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hans dark 800x360@2.0
+01:17 +150: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant system 320x900@1.0
+01:18 +151: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant system 320x900@1.5
+01:19 +152: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant system 320x900@2.0
+01:20 +153: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant system 360x900@1.0
+01:21 +154: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant system 360x900@1.5
+01:22 +155: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant system 360x900@2.0
+01:23 +156: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant system 480x900@1.0
+01:24 +157: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant system 480x900@1.5
+01:25 +158: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant system 480x900@2.0
+01:26 +159: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant system 720x320@1.0
+01:27 +160: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant system 800x360@1.5
+01:28 +161: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant system 800x360@2.0
+01:28 +162: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant light 320x900@1.0
+01:29 +163: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant light 320x900@1.5
+01:30 +164: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant light 320x900@2.0
+01:31 +165: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant light 360x900@1.0
+01:32 +166: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant light 360x900@1.5
+01:33 +167: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant light 360x900@2.0
+01:34 +168: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant light 480x900@1.0
+01:35 +169: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant light 480x900@1.5
+01:36 +170: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant light 480x900@2.0
+01:37 +171: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant light 720x320@1.0
+01:38 +172: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant light 800x360@1.5
+01:39 +173: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant light 800x360@2.0
+01:40 +174: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant dark 320x900@1.0
+01:41 +175: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant dark 320x900@1.5
+01:42 +176: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant dark 320x900@2.0
+01:43 +177: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant dark 360x900@1.0
+01:43 +178: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant dark 360x900@1.5
+01:44 +179: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant dark 360x900@2.0
+01:45 +180: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant dark 480x900@1.0
+01:46 +181: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant dark 480x900@1.5
+01:47 +182: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant dark 480x900@2.0
+01:48 +183: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant dark 720x320@1.0
+01:49 +184: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant dark 800x360@1.5
+01:50 +185: D:/Finance/test/stage5_layout_test.dart: T22 zh-Hant dark 800x360@2.0
+01:51 +186: D:/Finance/test/stage5_layout_test.dart: (tearDownAll)
+01:51 +186: All tests passed!
+Backup schema checks passed (valid sample / rejected fractional minor units).

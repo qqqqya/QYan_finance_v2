@@ -106,7 +106,6 @@ void main() {
         '2026-09-30',
       );
       await enter(tester, 'bill-amount', '12.34');
-      await tap(tester, find.byType(DropdownButtonFormField<String>).last);
       await tap(tester, find.text('Food').last);
       await enter(tester, 'bill-note', 'September note');
       final save = find.byKey(const Key('save-bill'));
@@ -136,17 +135,14 @@ void main() {
       await tap(tester, find.byKey(const Key('open-bills')));
       await tap(tester, find.byKey(const Key('add-bill')));
       await enter(tester, 'bill-amount', '1.00');
-      await tap(tester, find.byType(DropdownButtonFormField<String>).last);
       await tap(tester, find.text('Food').last);
-      await tap(tester, find.byKey(const Key('bill-type')));
-      await tap(tester, find.text('Income').last);
+      await tap(tester, find.byKey(const Key('bill-type-income')));
       await tap(tester, find.byKey(const Key('save-bill')));
       expect(c.ledger!.bills, isEmpty);
       expect(
         find.text('Choose an active category for this direction.'),
         findsOneWidget,
       );
-      await tap(tester, find.byType(DropdownButtonFormField<String>).last);
       expect(find.text('Food'), findsNothing);
       await tap(tester, find.text('Salary').last);
       await tap(tester, find.byKey(const Key('save-bill')));

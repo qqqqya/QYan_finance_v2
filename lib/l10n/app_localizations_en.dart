@@ -328,7 +328,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get discard => 'Discard';
 
   @override
-  String get sortHint => 'Long press and drag cards to reorder.';
+  String get sortHint =>
+      'Hold the separate handle to reorder. Hold a card for actions.';
 
   @override
   String get sortProjects => 'Reorder projects';
@@ -695,6 +696,20 @@ class AppLocalizationsEn extends AppLocalizations {
   String get backupCancelled => 'Cancelled. Financial data unchanged.';
 
   @override
+  String get backupFormat => 'Backup format';
+
+  @override
+  String get backupFutureVersionError =>
+      'This backup uses a newer format. Update this app before restoring it. Your current data was kept.';
+
+  @override
+  String get legacyBackupWarning =>
+      'This older backup has no checksum. Its original integrity cannot be verified; structure and business data have been checked. Review the preview before replacing your data.';
+
+  @override
+  String get loadMore => 'Load 50 more';
+
+  @override
   String get backupFilePrefix => 'Finance_backup';
 
   @override
@@ -716,5 +731,31 @@ class AppLocalizationsEn extends AppLocalizations {
       'other': 'Category',
     });
     return '$_temp0';
+  }
+
+  @override
+  String get themeColor => 'Theme color';
+
+  @override
+  String get themeRed => 'Fiery red';
+
+  @override
+  String get themeGreen => 'Green';
+
+  @override
+  String get themePurple => 'Purple';
+
+  @override
+  String get themeBlue => 'Blue';
+
+  @override
+  String get projectActions => 'Project actions';
+
+  @override
+  String get dragProject => 'Hold the handle to reorder';
+
+  @override
+  String deleteProjectImpact(int records, int histories) {
+    return 'This will remove $records records and $histories edit histories. Monthly bills and other projects are unaffected.';
   }
 }

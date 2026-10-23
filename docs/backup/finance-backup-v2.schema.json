@@ -1,0 +1,571 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:finance-app:backup:v2",
+  "title": "finance-backup v2",
+  "$comment": "Canonical exported v2. v0.0 -> v1 -> v2 adds only themeColor=blue, preserving all financial facts. See backup-format.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schemaVersion",
+    "appVersion",
+    "exportedAt",
+    "currency",
+    "timeZone",
+    "data",
+    "checksum"
+  ],
+  "properties": {
+    "format": {
+      "const": "finance-backup"
+    },
+    "schemaVersion": {
+      "type": "integer",
+      "const": 2,
+      "description": "Independent backup format version; not the app version or SQLite user_version."
+    },
+    "appVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "exportedAt": {
+      "$ref": "#/$defs/utcTime"
+    },
+    "currency": {
+      "const": "CNY"
+    },
+    "timeZone": {
+      "type": "string",
+      "minLength": 1
+    },
+    "checksum": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "algorithm",
+        "value"
+      ],
+      "properties": {
+        "algorithm": {
+          "const": "SHA-256"
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "data": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "projects",
+        "balanceRecords",
+        "projectEntries",
+        "bills",
+        "categories",
+        "memos",
+        "editHistory",
+        "settings"
+      ],
+      "properties": {
+        "projects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/project"
+          }
+        },
+        "balanceRecords": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/balanceRecord"
+          }
+        },
+        "projectEntries": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/projectEntry"
+          }
+        },
+        "bills": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/bill"
+          }
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/category"
+          }
+        },
+        "memos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/memo"
+          }
+        },
+        "editHistory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/history"
+          }
+        },
+        "settings": {
+          "$ref": "#/$defs/settings"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "utcTime": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "time": {
+      "type": "string",
+      "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$"
+    },
+    "name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "balanceMinor": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 999999999999
+    },
+    "amountMinor": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 999999999999
+    },
+    "project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "nameKey",
+        "customName",
+        "categoryKey",
+        "iconKey",
+        "colorKey",
+        "includeInSummary",
+        "sortOrder",
+        "note",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "type": {
+          "enum": [
+            "asset",
+            "liability",
+            "income_log",
+            "expense_log"
+          ]
+        },
+        "nameKey": {
+          "$ref": "#/$defs/name"
+        },
+        "customName": {
+          "$ref": "#/$defs/name"
+        },
+        "categoryKey": {
+          "type": "string",
+          "minLength": 1
+        },
+        "iconKey": {
+          "type": "string",
+          "minLength": 1
+        },
+        "colorKey": {
+          "type": "string",
+          "minLength": 1
+        },
+        "includeInSummary": {
+          "type": "boolean"
+        },
+        "sortOrder": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "note": {
+          "type": "string"
+        },
+        "createdAt": {
+          "$ref": "#/$defs/utcTime"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/utcTime"
+        }
+      },
+      "anyOf": [
+        {
+          "properties": {
+            "nameKey": {
+              "type": "string"
+            }
+          }
+        },
+        {
+          "properties": {
+            "customName": {
+              "type": "string"
+            }
+          }
+        }
+      ],
+      "if": {
+        "properties": {
+          "type": {
+            "enum": [
+              "income_log",
+              "expense_log"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "includeInSummary": {
+            "const": false
+          }
+        }
+      }
+    },
+    "balanceRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "projectId",
+        "balanceMinor",
+        "businessDate",
+        "businessTime",
+        "orderKey",
+        "note",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "projectId": {
+          "$ref": "#/$defs/id"
+        },
+        "balanceMinor": {
+          "$ref": "#/$defs/balanceMinor"
+        },
+        "businessDate": {
+          "$ref": "#/$defs/date"
+        },
+        "businessTime": {
+          "$ref": "#/$defs/time"
+        },
+        "orderKey": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "note": {
+          "type": "string"
+        },
+        "createdAt": {
+          "$ref": "#/$defs/utcTime"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/utcTime"
+        }
+      }
+    },
+    "projectEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "projectId",
+        "amountMinor",
+        "businessDate",
+        "businessTime",
+        "note",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "projectId": {
+          "$ref": "#/$defs/id"
+        },
+        "amountMinor": {
+          "$ref": "#/$defs/amountMinor"
+        },
+        "businessDate": {
+          "$ref": "#/$defs/date"
+        },
+        "businessTime": {
+          "$ref": "#/$defs/time"
+        },
+        "note": {
+          "type": "string"
+        },
+        "createdAt": {
+          "$ref": "#/$defs/utcTime"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/utcTime"
+        }
+      }
+    },
+    "bill": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "amountMinor",
+        "categoryId",
+        "businessDate",
+        "businessTime",
+        "note",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "type": {
+          "enum": [
+            "income",
+            "expense"
+          ]
+        },
+        "amountMinor": {
+          "$ref": "#/$defs/amountMinor"
+        },
+        "categoryId": {
+          "$ref": "#/$defs/id"
+        },
+        "businessDate": {
+          "$ref": "#/$defs/date"
+        },
+        "businessTime": {
+          "$ref": "#/$defs/time"
+        },
+        "note": {
+          "type": "string"
+        },
+        "createdAt": {
+          "$ref": "#/$defs/utcTime"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/utcTime"
+        }
+      }
+    },
+    "category": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "nameKey",
+        "customName",
+        "sortOrder",
+        "isActive",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "type": {
+          "enum": [
+            "income",
+            "expense"
+          ]
+        },
+        "nameKey": {
+          "$ref": "#/$defs/name"
+        },
+        "customName": {
+          "$ref": "#/$defs/name"
+        },
+        "sortOrder": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "createdAt": {
+          "$ref": "#/$defs/utcTime"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/utcTime"
+        }
+      },
+      "anyOf": [
+        {
+          "properties": {
+            "nameKey": {
+              "type": "string"
+            }
+          }
+        },
+        {
+          "properties": {
+            "customName": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "memo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "body",
+        "businessDate",
+        "tags",
+        "createdAt",
+        "updatedAt"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "body": {
+          "type": "string"
+        },
+        "businessDate": {
+          "$ref": "#/$defs/date"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "createdAt": {
+          "$ref": "#/$defs/utcTime"
+        },
+        "updatedAt": {
+          "$ref": "#/$defs/utcTime"
+        }
+      }
+    },
+    "history": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "entityType",
+        "entityId",
+        "changedAt",
+        "before",
+        "after"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "entityType": {
+          "enum": [
+            "project",
+            "balanceRecord",
+            "projectEntry",
+            "bill",
+            "category",
+            "memo"
+          ]
+        },
+        "entityId": {
+          "$ref": "#/$defs/id"
+        },
+        "changedAt": {
+          "$ref": "#/$defs/utcTime"
+        },
+        "before": {
+          "type": "object"
+        },
+        "after": {
+          "type": "object"
+        }
+      }
+    },
+    "settings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "themeMode",
+        "languageMode",
+        "currency",
+        "timeZone",
+        "themeColor"
+      ],
+      "properties": {
+        "themeMode": {
+          "enum": [
+            "system",
+            "light",
+            "dark"
+          ]
+        },
+        "languageMode": {
+          "enum": [
+            "system",
+            "zh-Hans",
+            "zh-Hant",
+            "en"
+          ]
+        },
+        "currency": {
+          "const": "CNY"
+        },
+        "timeZone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "themeColor": {
+          "enum": [
+            "red",
+            "green",
+            "purple",
+            "blue"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Analyzing Finance...                                            
+
+   info - The file name 'create-stage5-fixtures.dart' isn't a lower_case_with_underscores identifier. Try changing the name to follow the lower_case_with_underscores style - scripts\create-stage5-fixtures.dart:1:1 - file_names
+
+1 issue found. (ran in 12.0s)

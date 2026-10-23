@@ -1,0 +1,11 @@
+**********************
+PowerShell transcript start
+Start time: 20261023112925
+**********************
+Performing Streamed Install
+Success
+PASS: stage4 -> stage5 compatible install -r preserves all business fields, IDs, histories, sorting and settings in actual exported files.
+**********************
+PowerShell transcript end
+End time: 20261023112953
+**********************

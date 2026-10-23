@@ -134,6 +134,9 @@ class AppPreferences extends Table {
   TextColumn get currency =>
       text().customConstraint("NOT NULL CHECK (currency = 'CNY')")();
   TextColumn get timeZone => text().withLength(min: 1, max: 100)();
+  TextColumn get themeColor => text().customConstraint(
+    "NOT NULL DEFAULT 'blue' CHECK (theme_color IN ('red','green','purple','blue'))",
+  )();
 
   @override
   Set<Column<Object>> get primaryKey => {id};
@@ -166,7 +169,7 @@ class AppDatabase extends _$AppDatabase {
   );
 
   @override
-  int get schemaVersion => 2;
+  int get schemaVersion => 3;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -175,8 +178,13 @@ class AppDatabase extends _$AppDatabase {
       await _installGuards();
     },
     onUpgrade: (migrator, from, to) async {
-      if (from == 1 && to == 2) {
-        await migrator.createTable(localDataStates);
+      if (from >= 1 && from < to && to == 3) {
+        await transaction(() async {
+          if (from < 2) {
+            await migrator.createTable(localDataStates);
+          }
+          await migrator.addColumn(appPreferences, appPreferences.themeColor);
+        });
         return;
       }
       // Add explicit, tested migrations here before incrementing schemaVersion.
