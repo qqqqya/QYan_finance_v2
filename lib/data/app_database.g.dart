@@ -4282,6 +4282,562 @@ class AppPreferencesCompanion extends UpdateCompanion<SettingsRow> {
   }
 }
 
+class $LocalDataStatesTable extends LocalDataStates
+    with TableInfo<$LocalDataStatesTable, LocalDataStateRow> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  $LocalDataStatesTable(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _idMeta = const VerificationMeta('id');
+  @override
+  late final GeneratedColumn<int> id = GeneratedColumn<int>(
+    'id',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    $customConstraints: 'NOT NULL CHECK (id = 1)',
+  );
+  static const VerificationMeta _recoveryJsonMeta = const VerificationMeta(
+    'recoveryJson',
+  );
+  @override
+  late final GeneratedColumn<String> recoveryJson = GeneratedColumn<String>(
+    'recovery_json',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _lastExportNameMeta = const VerificationMeta(
+    'lastExportName',
+  );
+  @override
+  late final GeneratedColumn<String> lastExportName = GeneratedColumn<String>(
+    'last_export_name',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _lastExportUriMeta = const VerificationMeta(
+    'lastExportUri',
+  );
+  @override
+  late final GeneratedColumn<String> lastExportUri = GeneratedColumn<String>(
+    'last_export_uri',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _lastExportLocationMeta =
+      const VerificationMeta('lastExportLocation');
+  @override
+  late final GeneratedColumn<String> lastExportLocation =
+      GeneratedColumn<String>(
+        'last_export_location',
+        aliasedName,
+        true,
+        type: DriftSqlType.string,
+        requiredDuringInsert: false,
+      );
+  static const VerificationMeta _lastExportBytesMeta = const VerificationMeta(
+    'lastExportBytes',
+  );
+  @override
+  late final GeneratedColumn<int> lastExportBytes = GeneratedColumn<int>(
+    'last_export_bytes',
+    aliasedName,
+    true,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _lastExportAtMsMeta = const VerificationMeta(
+    'lastExportAtMs',
+  );
+  @override
+  late final GeneratedColumn<int> lastExportAtMs = GeneratedColumn<int>(
+    'last_export_at_ms',
+    aliasedName,
+    true,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _pendingCachePurgeMeta = const VerificationMeta(
+    'pendingCachePurge',
+  );
+  @override
+  late final GeneratedColumn<bool> pendingCachePurge = GeneratedColumn<bool>(
+    'pending_cache_purge',
+    aliasedName,
+    false,
+    type: DriftSqlType.bool,
+    requiredDuringInsert: false,
+    defaultConstraints: GeneratedColumn.constraintIsAlways(
+      'CHECK ("pending_cache_purge" IN (0, 1))',
+    ),
+    defaultValue: const Constant(false),
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    id,
+    recoveryJson,
+    lastExportName,
+    lastExportUri,
+    lastExportLocation,
+    lastExportBytes,
+    lastExportAtMs,
+    pendingCachePurge,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'local_data_states';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<LocalDataStateRow> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('id')) {
+      context.handle(_idMeta, id.isAcceptableOrUnknown(data['id']!, _idMeta));
+    }
+    if (data.containsKey('recovery_json')) {
+      context.handle(
+        _recoveryJsonMeta,
+        recoveryJson.isAcceptableOrUnknown(
+          data['recovery_json']!,
+          _recoveryJsonMeta,
+        ),
+      );
+    }
+    if (data.containsKey('last_export_name')) {
+      context.handle(
+        _lastExportNameMeta,
+        lastExportName.isAcceptableOrUnknown(
+          data['last_export_name']!,
+          _lastExportNameMeta,
+        ),
+      );
+    }
+    if (data.containsKey('last_export_uri')) {
+      context.handle(
+        _lastExportUriMeta,
+        lastExportUri.isAcceptableOrUnknown(
+          data['last_export_uri']!,
+          _lastExportUriMeta,
+        ),
+      );
+    }
+    if (data.containsKey('last_export_location')) {
+      context.handle(
+        _lastExportLocationMeta,
+        lastExportLocation.isAcceptableOrUnknown(
+          data['last_export_location']!,
+          _lastExportLocationMeta,
+        ),
+      );
+    }
+    if (data.containsKey('last_export_bytes')) {
+      context.handle(
+        _lastExportBytesMeta,
+        lastExportBytes.isAcceptableOrUnknown(
+          data['last_export_bytes']!,
+          _lastExportBytesMeta,
+        ),
+      );
+    }
+    if (data.containsKey('last_export_at_ms')) {
+      context.handle(
+        _lastExportAtMsMeta,
+        lastExportAtMs.isAcceptableOrUnknown(
+          data['last_export_at_ms']!,
+          _lastExportAtMsMeta,
+        ),
+      );
+    }
+    if (data.containsKey('pending_cache_purge')) {
+      context.handle(
+        _pendingCachePurgeMeta,
+        pendingCachePurge.isAcceptableOrUnknown(
+          data['pending_cache_purge']!,
+          _pendingCachePurgeMeta,
+        ),
+      );
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {id};
+  @override
+  LocalDataStateRow map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return LocalDataStateRow(
+      id: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}id'],
+      )!,
+      recoveryJson: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}recovery_json'],
+      ),
+      lastExportName: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}last_export_name'],
+      ),
+      lastExportUri: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}last_export_uri'],
+      ),
+      lastExportLocation: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}last_export_location'],
+      ),
+      lastExportBytes: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}last_export_bytes'],
+      ),
+      lastExportAtMs: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}last_export_at_ms'],
+      ),
+      pendingCachePurge: attachedDatabase.typeMapping.read(
+        DriftSqlType.bool,
+        data['${effectivePrefix}pending_cache_purge'],
+      )!,
+    );
+  }
+
+  @override
+  $LocalDataStatesTable createAlias(String alias) {
+    return $LocalDataStatesTable(attachedDatabase, alias);
+  }
+}
+
+class LocalDataStateRow extends DataClass
+    implements Insertable<LocalDataStateRow> {
+  final int id;
+  final String? recoveryJson;
+  final String? lastExportName;
+  final String? lastExportUri;
+  final String? lastExportLocation;
+  final int? lastExportBytes;
+  final int? lastExportAtMs;
+  final bool pendingCachePurge;
+  const LocalDataStateRow({
+    required this.id,
+    this.recoveryJson,
+    this.lastExportName,
+    this.lastExportUri,
+    this.lastExportLocation,
+    this.lastExportBytes,
+    this.lastExportAtMs,
+    required this.pendingCachePurge,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['id'] = Variable<int>(id);
+    if (!nullToAbsent || recoveryJson != null) {
+      map['recovery_json'] = Variable<String>(recoveryJson);
+    }
+    if (!nullToAbsent || lastExportName != null) {
+      map['last_export_name'] = Variable<String>(lastExportName);
+    }
+    if (!nullToAbsent || lastExportUri != null) {
+      map['last_export_uri'] = Variable<String>(lastExportUri);
+    }
+    if (!nullToAbsent || lastExportLocation != null) {
+      map['last_export_location'] = Variable<String>(lastExportLocation);
+    }
+    if (!nullToAbsent || lastExportBytes != null) {
+      map['last_export_bytes'] = Variable<int>(lastExportBytes);
+    }
+    if (!nullToAbsent || lastExportAtMs != null) {
+      map['last_export_at_ms'] = Variable<int>(lastExportAtMs);
+    }
+    map['pending_cache_purge'] = Variable<bool>(pendingCachePurge);
+    return map;
+  }
+
+  LocalDataStatesCompanion toCompanion(bool nullToAbsent) {
+    return LocalDataStatesCompanion(
+      id: Value(id),
+      recoveryJson: recoveryJson == null && nullToAbsent
+          ? const Value.absent()
+          : Value(recoveryJson),
+      lastExportName: lastExportName == null && nullToAbsent
+          ? const Value.absent()
+          : Value(lastExportName),
+      lastExportUri: lastExportUri == null && nullToAbsent
+          ? const Value.absent()
+          : Value(lastExportUri),
+      lastExportLocation: lastExportLocation == null && nullToAbsent
+          ? const Value.absent()
+          : Value(lastExportLocation),
+      lastExportBytes: lastExportBytes == null && nullToAbsent
+          ? const Value.absent()
+          : Value(lastExportBytes),
+      lastExportAtMs: lastExportAtMs == null && nullToAbsent
+          ? const Value.absent()
+          : Value(lastExportAtMs),
+      pendingCachePurge: Value(pendingCachePurge),
+    );
+  }
+
+  factory LocalDataStateRow.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return LocalDataStateRow(
+      id: serializer.fromJson<int>(json['id']),
+      recoveryJson: serializer.fromJson<String?>(json['recoveryJson']),
+      lastExportName: serializer.fromJson<String?>(json['lastExportName']),
+      lastExportUri: serializer.fromJson<String?>(json['lastExportUri']),
+      lastExportLocation: serializer.fromJson<String?>(
+        json['lastExportLocation'],
+      ),
+      lastExportBytes: serializer.fromJson<int?>(json['lastExportBytes']),
+      lastExportAtMs: serializer.fromJson<int?>(json['lastExportAtMs']),
+      pendingCachePurge: serializer.fromJson<bool>(json['pendingCachePurge']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'id': serializer.toJson<int>(id),
+      'recoveryJson': serializer.toJson<String?>(recoveryJson),
+      'lastExportName': serializer.toJson<String?>(lastExportName),
+      'lastExportUri': serializer.toJson<String?>(lastExportUri),
+      'lastExportLocation': serializer.toJson<String?>(lastExportLocation),
+      'lastExportBytes': serializer.toJson<int?>(lastExportBytes),
+      'lastExportAtMs': serializer.toJson<int?>(lastExportAtMs),
+      'pendingCachePurge': serializer.toJson<bool>(pendingCachePurge),
+    };
+  }
+
+  LocalDataStateRow copyWith({
+    int? id,
+    Value<String?> recoveryJson = const Value.absent(),
+    Value<String?> lastExportName = const Value.absent(),
+    Value<String?> lastExportUri = const Value.absent(),
+    Value<String?> lastExportLocation = const Value.absent(),
+    Value<int?> lastExportBytes = const Value.absent(),
+    Value<int?> lastExportAtMs = const Value.absent(),
+    bool? pendingCachePurge,
+  }) => LocalDataStateRow(
+    id: id ?? this.id,
+    recoveryJson: recoveryJson.present ? recoveryJson.value : this.recoveryJson,
+    lastExportName: lastExportName.present
+        ? lastExportName.value
+        : this.lastExportName,
+    lastExportUri: lastExportUri.present
+        ? lastExportUri.value
+        : this.lastExportUri,
+    lastExportLocation: lastExportLocation.present
+        ? lastExportLocation.value
+        : this.lastExportLocation,
+    lastExportBytes: lastExportBytes.present
+        ? lastExportBytes.value
+        : this.lastExportBytes,
+    lastExportAtMs: lastExportAtMs.present
+        ? lastExportAtMs.value
+        : this.lastExportAtMs,
+    pendingCachePurge: pendingCachePurge ?? this.pendingCachePurge,
+  );
+  LocalDataStateRow copyWithCompanion(LocalDataStatesCompanion data) {
+    return LocalDataStateRow(
+      id: data.id.present ? data.id.value : this.id,
+      recoveryJson: data.recoveryJson.present
+          ? data.recoveryJson.value
+          : this.recoveryJson,
+      lastExportName: data.lastExportName.present
+          ? data.lastExportName.value
+          : this.lastExportName,
+      lastExportUri: data.lastExportUri.present
+          ? data.lastExportUri.value
+          : this.lastExportUri,
+      lastExportLocation: data.lastExportLocation.present
+          ? data.lastExportLocation.value
+          : this.lastExportLocation,
+      lastExportBytes: data.lastExportBytes.present
+          ? data.lastExportBytes.value
+          : this.lastExportBytes,
+      lastExportAtMs: data.lastExportAtMs.present
+          ? data.lastExportAtMs.value
+          : this.lastExportAtMs,
+      pendingCachePurge: data.pendingCachePurge.present
+          ? data.pendingCachePurge.value
+          : this.pendingCachePurge,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('LocalDataStateRow(')
+          ..write('id: $id, ')
+          ..write('recoveryJson: $recoveryJson, ')
+          ..write('lastExportName: $lastExportName, ')
+          ..write('lastExportUri: $lastExportUri, ')
+          ..write('lastExportLocation: $lastExportLocation, ')
+          ..write('lastExportBytes: $lastExportBytes, ')
+          ..write('lastExportAtMs: $lastExportAtMs, ')
+          ..write('pendingCachePurge: $pendingCachePurge')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(
+    id,
+    recoveryJson,
+    lastExportName,
+    lastExportUri,
+    lastExportLocation,
+    lastExportBytes,
+    lastExportAtMs,
+    pendingCachePurge,
+  );
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is LocalDataStateRow &&
+          other.id == this.id &&
+          other.recoveryJson == this.recoveryJson &&
+          other.lastExportName == this.lastExportName &&
+          other.lastExportUri == this.lastExportUri &&
+          other.lastExportLocation == this.lastExportLocation &&
+          other.lastExportBytes == this.lastExportBytes &&
+          other.lastExportAtMs == this.lastExportAtMs &&
+          other.pendingCachePurge == this.pendingCachePurge);
+}
+
+class LocalDataStatesCompanion extends UpdateCompanion<LocalDataStateRow> {
+  final Value<int> id;
+  final Value<String?> recoveryJson;
+  final Value<String?> lastExportName;
+  final Value<String?> lastExportUri;
+  final Value<String?> lastExportLocation;
+  final Value<int?> lastExportBytes;
+  final Value<int?> lastExportAtMs;
+  final Value<bool> pendingCachePurge;
+  const LocalDataStatesCompanion({
+    this.id = const Value.absent(),
+    this.recoveryJson = const Value.absent(),
+    this.lastExportName = const Value.absent(),
+    this.lastExportUri = const Value.absent(),
+    this.lastExportLocation = const Value.absent(),
+    this.lastExportBytes = const Value.absent(),
+    this.lastExportAtMs = const Value.absent(),
+    this.pendingCachePurge = const Value.absent(),
+  });
+  LocalDataStatesCompanion.insert({
+    this.id = const Value.absent(),
+    this.recoveryJson = const Value.absent(),
+    this.lastExportName = const Value.absent(),
+    this.lastExportUri = const Value.absent(),
+    this.lastExportLocation = const Value.absent(),
+    this.lastExportBytes = const Value.absent(),
+    this.lastExportAtMs = const Value.absent(),
+    this.pendingCachePurge = const Value.absent(),
+  });
+  static Insertable<LocalDataStateRow> custom({
+    Expression<int>? id,
+    Expression<String>? recoveryJson,
+    Expression<String>? lastExportName,
+    Expression<String>? lastExportUri,
+    Expression<String>? lastExportLocation,
+    Expression<int>? lastExportBytes,
+    Expression<int>? lastExportAtMs,
+    Expression<bool>? pendingCachePurge,
+  }) {
+    return RawValuesInsertable({
+      if (id != null) 'id': id,
+      if (recoveryJson != null) 'recovery_json': recoveryJson,
+      if (lastExportName != null) 'last_export_name': lastExportName,
+      if (lastExportUri != null) 'last_export_uri': lastExportUri,
+      if (lastExportLocation != null)
+        'last_export_location': lastExportLocation,
+      if (lastExportBytes != null) 'last_export_bytes': lastExportBytes,
+      if (lastExportAtMs != null) 'last_export_at_ms': lastExportAtMs,
+      if (pendingCachePurge != null) 'pending_cache_purge': pendingCachePurge,
+    });
+  }
+
+  LocalDataStatesCompanion copyWith({
+    Value<int>? id,
+    Value<String?>? recoveryJson,
+    Value<String?>? lastExportName,
+    Value<String?>? lastExportUri,
+    Value<String?>? lastExportLocation,
+    Value<int?>? lastExportBytes,
+    Value<int?>? lastExportAtMs,
+    Value<bool>? pendingCachePurge,
+  }) {
+    return LocalDataStatesCompanion(
+      id: id ?? this.id,
+      recoveryJson: recoveryJson ?? this.recoveryJson,
+      lastExportName: lastExportName ?? this.lastExportName,
+      lastExportUri: lastExportUri ?? this.lastExportUri,
+      lastExportLocation: lastExportLocation ?? this.lastExportLocation,
+      lastExportBytes: lastExportBytes ?? this.lastExportBytes,
+      lastExportAtMs: lastExportAtMs ?? this.lastExportAtMs,
+      pendingCachePurge: pendingCachePurge ?? this.pendingCachePurge,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (id.present) {
+      map['id'] = Variable<int>(id.value);
+    }
+    if (recoveryJson.present) {
+      map['recovery_json'] = Variable<String>(recoveryJson.value);
+    }
+    if (lastExportName.present) {
+      map['last_export_name'] = Variable<String>(lastExportName.value);
+    }
+    if (lastExportUri.present) {
+      map['last_export_uri'] = Variable<String>(lastExportUri.value);
+    }
+    if (lastExportLocation.present) {
+      map['last_export_location'] = Variable<String>(lastExportLocation.value);
+    }
+    if (lastExportBytes.present) {
+      map['last_export_bytes'] = Variable<int>(lastExportBytes.value);
+    }
+    if (lastExportAtMs.present) {
+      map['last_export_at_ms'] = Variable<int>(lastExportAtMs.value);
+    }
+    if (pendingCachePurge.present) {
+      map['pending_cache_purge'] = Variable<bool>(pendingCachePurge.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('LocalDataStatesCompanion(')
+          ..write('id: $id, ')
+          ..write('recoveryJson: $recoveryJson, ')
+          ..write('lastExportName: $lastExportName, ')
+          ..write('lastExportUri: $lastExportUri, ')
+          ..write('lastExportLocation: $lastExportLocation, ')
+          ..write('lastExportBytes: $lastExportBytes, ')
+          ..write('lastExportAtMs: $lastExportAtMs, ')
+          ..write('pendingCachePurge: $pendingCachePurge')
+          ..write(')'))
+        .toString();
+  }
+}
+
 abstract class _$AppDatabase extends GeneratedDatabase {
   _$AppDatabase(QueryExecutor e) : super(e);
   $AppDatabaseManager get managers => $AppDatabaseManager(this);
@@ -4293,6 +4849,9 @@ abstract class _$AppDatabase extends GeneratedDatabase {
   late final $MemosTable memos = $MemosTable(this);
   late final $EditHistoriesTable editHistories = $EditHistoriesTable(this);
   late final $AppPreferencesTable appPreferences = $AppPreferencesTable(this);
+  late final $LocalDataStatesTable localDataStates = $LocalDataStatesTable(
+    this,
+  );
   @override
   Iterable<TableInfo<Table, Object?>> get allTables =>
       allSchemaEntities.whereType<TableInfo<Table, Object?>>();
@@ -4306,6 +4865,7 @@ abstract class _$AppDatabase extends GeneratedDatabase {
     memos,
     editHistories,
     appPreferences,
+    localDataStates,
   ];
   @override
   StreamQueryUpdateRules get streamUpdateRules => const StreamQueryUpdateRules([
@@ -7105,6 +7665,286 @@ typedef $$AppPreferencesTableProcessedTableManager =
       SettingsRow,
       PrefetchHooks Function()
     >;
+typedef $$LocalDataStatesTableCreateCompanionBuilder =
+    LocalDataStatesCompanion Function({
+      Value<int> id,
+      Value<String?> recoveryJson,
+      Value<String?> lastExportName,
+      Value<String?> lastExportUri,
+      Value<String?> lastExportLocation,
+      Value<int?> lastExportBytes,
+      Value<int?> lastExportAtMs,
+      Value<bool> pendingCachePurge,
+    });
+typedef $$LocalDataStatesTableUpdateCompanionBuilder =
+    LocalDataStatesCompanion Function({
+      Value<int> id,
+      Value<String?> recoveryJson,
+      Value<String?> lastExportName,
+      Value<String?> lastExportUri,
+      Value<String?> lastExportLocation,
+      Value<int?> lastExportBytes,
+      Value<int?> lastExportAtMs,
+      Value<bool> pendingCachePurge,
+    });
+
+class $$LocalDataStatesTableFilterComposer
+    extends Composer<_$AppDatabase, $LocalDataStatesTable> {
+  $$LocalDataStatesTableFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<int> get id => $composableBuilder(
+    column: $table.id,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get recoveryJson => $composableBuilder(
+    column: $table.recoveryJson,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get lastExportName => $composableBuilder(
+    column: $table.lastExportName,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get lastExportUri => $composableBuilder(
+    column: $table.lastExportUri,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get lastExportLocation => $composableBuilder(
+    column: $table.lastExportLocation,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get lastExportBytes => $composableBuilder(
+    column: $table.lastExportBytes,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get lastExportAtMs => $composableBuilder(
+    column: $table.lastExportAtMs,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<bool> get pendingCachePurge => $composableBuilder(
+    column: $table.pendingCachePurge,
+    builder: (column) => ColumnFilters(column),
+  );
+}
+
+class $$LocalDataStatesTableOrderingComposer
+    extends Composer<_$AppDatabase, $LocalDataStatesTable> {
+  $$LocalDataStatesTableOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<int> get id => $composableBuilder(
+    column: $table.id,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get recoveryJson => $composableBuilder(
+    column: $table.recoveryJson,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get lastExportName => $composableBuilder(
+    column: $table.lastExportName,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get lastExportUri => $composableBuilder(
+    column: $table.lastExportUri,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get lastExportLocation => $composableBuilder(
+    column: $table.lastExportLocation,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get lastExportBytes => $composableBuilder(
+    column: $table.lastExportBytes,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get lastExportAtMs => $composableBuilder(
+    column: $table.lastExportAtMs,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<bool> get pendingCachePurge => $composableBuilder(
+    column: $table.pendingCachePurge,
+    builder: (column) => ColumnOrderings(column),
+  );
+}
+
+class $$LocalDataStatesTableAnnotationComposer
+    extends Composer<_$AppDatabase, $LocalDataStatesTable> {
+  $$LocalDataStatesTableAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<int> get id =>
+      $composableBuilder(column: $table.id, builder: (column) => column);
+
+  GeneratedColumn<String> get recoveryJson => $composableBuilder(
+    column: $table.recoveryJson,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get lastExportName => $composableBuilder(
+    column: $table.lastExportName,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get lastExportUri => $composableBuilder(
+    column: $table.lastExportUri,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get lastExportLocation => $composableBuilder(
+    column: $table.lastExportLocation,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<int> get lastExportBytes => $composableBuilder(
+    column: $table.lastExportBytes,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<int> get lastExportAtMs => $composableBuilder(
+    column: $table.lastExportAtMs,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<bool> get pendingCachePurge => $composableBuilder(
+    column: $table.pendingCachePurge,
+    builder: (column) => column,
+  );
+}
+
+class $$LocalDataStatesTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $LocalDataStatesTable,
+          LocalDataStateRow,
+          $$LocalDataStatesTableFilterComposer,
+          $$LocalDataStatesTableOrderingComposer,
+          $$LocalDataStatesTableAnnotationComposer,
+          $$LocalDataStatesTableCreateCompanionBuilder,
+          $$LocalDataStatesTableUpdateCompanionBuilder,
+          (
+            LocalDataStateRow,
+            BaseReferences<
+              _$AppDatabase,
+              $LocalDataStatesTable,
+              LocalDataStateRow
+            >,
+          ),
+          LocalDataStateRow,
+          PrefetchHooks Function()
+        > {
+  $$LocalDataStatesTableTableManager(
+    _$AppDatabase db,
+    $LocalDataStatesTable table,
+  ) : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $$LocalDataStatesTableFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $$LocalDataStatesTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $$LocalDataStatesTableAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<int> id = const Value.absent(),
+                Value<String?> recoveryJson = const Value.absent(),
+                Value<String?> lastExportName = const Value.absent(),
+                Value<String?> lastExportUri = const Value.absent(),
+                Value<String?> lastExportLocation = const Value.absent(),
+                Value<int?> lastExportBytes = const Value.absent(),
+                Value<int?> lastExportAtMs = const Value.absent(),
+                Value<bool> pendingCachePurge = const Value.absent(),
+              }) => LocalDataStatesCompanion(
+                id: id,
+                recoveryJson: recoveryJson,
+                lastExportName: lastExportName,
+                lastExportUri: lastExportUri,
+                lastExportLocation: lastExportLocation,
+                lastExportBytes: lastExportBytes,
+                lastExportAtMs: lastExportAtMs,
+                pendingCachePurge: pendingCachePurge,
+              ),
+          createCompanionCallback:
+              ({
+                Value<int> id = const Value.absent(),
+                Value<String?> recoveryJson = const Value.absent(),
+                Value<String?> lastExportName = const Value.absent(),
+                Value<String?> lastExportUri = const Value.absent(),
+                Value<String?> lastExportLocation = const Value.absent(),
+                Value<int?> lastExportBytes = const Value.absent(),
+                Value<int?> lastExportAtMs = const Value.absent(),
+                Value<bool> pendingCachePurge = const Value.absent(),
+              }) => LocalDataStatesCompanion.insert(
+                id: id,
+                recoveryJson: recoveryJson,
+                lastExportName: lastExportName,
+                lastExportUri: lastExportUri,
+                lastExportLocation: lastExportLocation,
+                lastExportBytes: lastExportBytes,
+                lastExportAtMs: lastExportAtMs,
+                pendingCachePurge: pendingCachePurge,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<$LocalDataStatesTable, LocalDataStateRow>(table),
+                  BaseReferences<
+                    _$AppDatabase,
+                    $LocalDataStatesTable,
+                    LocalDataStateRow
+                  >(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: null,
+        ),
+      );
+}
+
+typedef $$LocalDataStatesTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $LocalDataStatesTable,
+      LocalDataStateRow,
+      $$LocalDataStatesTableFilterComposer,
+      $$LocalDataStatesTableOrderingComposer,
+      $$LocalDataStatesTableAnnotationComposer,
+      $$LocalDataStatesTableCreateCompanionBuilder,
+      $$LocalDataStatesTableUpdateCompanionBuilder,
+      (
+        LocalDataStateRow,
+        BaseReferences<_$AppDatabase, $LocalDataStatesTable, LocalDataStateRow>,
+      ),
+      LocalDataStateRow,
+      PrefetchHooks Function()
+    >;
 
 class $AppDatabaseManager {
   final _$AppDatabase _db;
@@ -7125,4 +7965,6 @@ class $AppDatabaseManager {
       $$EditHistoriesTableTableManager(_db, _db.editHistories);
   $$AppPreferencesTableTableManager get appPreferences =>
       $$AppPreferencesTableTableManager(_db, _db.appPreferences);
+  $$LocalDataStatesTableTableManager get localDataStates =>
+      $$LocalDataStatesTableTableManager(_db, _db.localDataStates);
 }

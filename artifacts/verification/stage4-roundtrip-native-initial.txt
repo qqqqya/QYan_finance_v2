@@ -1,0 +1,10 @@
+**********************
+PowerShell transcript start
+Start time: 20261023001628
+**********************
+PS>TerminatingError(): "Native control missing: ^Preview and restore copy$"
+>> TerminatingError(): "Native control missing: ^Preview and restore copy$"
+**********************
+PowerShell transcript end
+End time: 20261023001750
+**********************

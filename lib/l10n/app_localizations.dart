@@ -1024,6 +1024,348 @@ abstract class AppLocalizations {
   /// **'This field is required.'**
   String get requiredField;
 
+  /// No description provided for @dataManagement.
+  ///
+  /// In en, this message translates to:
+  /// **'Data management'**
+  String get dataManagement;
+
+  /// No description provided for @backupIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage all your local financial records'**
+  String get backupIntro;
+
+  /// No description provided for @currentData.
+  ///
+  /// In en, this message translates to:
+  /// **'Current data'**
+  String get currentData;
+
+  /// No description provided for @localSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved on this device'**
+  String get localSaved;
+
+  /// No description provided for @backupBills.
+  ///
+  /// In en, this message translates to:
+  /// **'Transactions'**
+  String get backupBills;
+
+  /// No description provided for @backupAccounts.
+  ///
+  /// In en, this message translates to:
+  /// **'Asset / liability accounts'**
+  String get backupAccounts;
+
+  /// No description provided for @backupProjects.
+  ///
+  /// In en, this message translates to:
+  /// **'All projects'**
+  String get backupProjects;
+
+  /// No description provided for @lastBill.
+  ///
+  /// In en, this message translates to:
+  /// **'Latest transaction'**
+  String get lastBill;
+
+  /// No description provided for @backupExport.
+  ///
+  /// In en, this message translates to:
+  /// **'Export backup'**
+  String get backupExport;
+
+  /// No description provided for @backupExportHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Save all records and settings to a file'**
+  String get backupExportHint;
+
+  /// No description provided for @backupImport.
+  ///
+  /// In en, this message translates to:
+  /// **'Import & restore'**
+  String get backupImport;
+
+  /// No description provided for @backupImportHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Replace all data from a complete backup'**
+  String get backupImportHint;
+
+  /// No description provided for @recentBackup.
+  ///
+  /// In en, this message translates to:
+  /// **'Latest export'**
+  String get recentBackup;
+
+  /// No description provided for @noBackup.
+  ///
+  /// In en, this message translates to:
+  /// **'No successful export on this installation.'**
+  String get noBackup;
+
+  /// No description provided for @backupSafety.
+  ///
+  /// In en, this message translates to:
+  /// **'Your records stay on this device. Export regularly before changing phones or reinstalling. Backups contain your full data in plain text; keep them safe.'**
+  String get backupSafety;
+
+  /// No description provided for @backupSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Backup saved'**
+  String get backupSuccess;
+
+  /// No description provided for @backupSuccessBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your complete backup was written and read back successfully.'**
+  String get backupSuccessBody;
+
+  /// No description provided for @backupFileName.
+  ///
+  /// In en, this message translates to:
+  /// **'File name'**
+  String get backupFileName;
+
+  /// No description provided for @backupFileSize.
+  ///
+  /// In en, this message translates to:
+  /// **'File size'**
+  String get backupFileSize;
+
+  /// No description provided for @backupLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved location'**
+  String get backupLocation;
+
+  /// No description provided for @shareBackup.
+  ///
+  /// In en, this message translates to:
+  /// **'Share file'**
+  String get shareBackup;
+
+  /// No description provided for @done.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get done;
+
+  /// No description provided for @backupPreview.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore preview'**
+  String get backupPreview;
+
+  /// No description provided for @backupDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Backup date'**
+  String get backupDate;
+
+  /// No description provided for @backupReplaceWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'This replaces ALL current financial records, edit histories and appearance/language settings. A private copy of the current data will be kept so you can undo this restore.'**
+  String get backupReplaceWarning;
+
+  /// No description provided for @confirmRestore.
+  ///
+  /// In en, this message translates to:
+  /// **'Replace and restore'**
+  String get confirmRestore;
+
+  /// No description provided for @restoreSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore complete'**
+  String get restoreSuccess;
+
+  /// No description provided for @restoreSuccessBody.
+  ///
+  /// In en, this message translates to:
+  /// **'All records and settings have been restored.'**
+  String get restoreSuccessBody;
+
+  /// No description provided for @recoveryCopy.
+  ///
+  /// In en, this message translates to:
+  /// **'Before-restore copy'**
+  String get recoveryCopy;
+
+  /// No description provided for @recoveryCopyHint.
+  ///
+  /// In en, this message translates to:
+  /// **'One private copy from before the last successful restore. It is not included in exported files and does not survive uninstalling.'**
+  String get recoveryCopyHint;
+
+  /// No description provided for @noRecoveryCopy.
+  ///
+  /// In en, this message translates to:
+  /// **'No before-restore copy.'**
+  String get noRecoveryCopy;
+
+  /// No description provided for @restoreCopy.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview & restore copy'**
+  String get restoreCopy;
+
+  /// No description provided for @deleteCopy.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete private copy'**
+  String get deleteCopy;
+
+  /// No description provided for @deleteCopyWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete only this private restore copy? Your current financial data and exported files stay unchanged.'**
+  String get deleteCopyWarning;
+
+  /// No description provided for @factoryReset.
+  ///
+  /// In en, this message translates to:
+  /// **'Factory reset'**
+  String get factoryReset;
+
+  /// No description provided for @factoryResetWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear all records, edit histories and private restore copies; restore the default zero-balance template and system theme/language. Exported external files will remain.'**
+  String get factoryResetWarning;
+
+  /// No description provided for @exportFirst.
+  ///
+  /// In en, this message translates to:
+  /// **'Export first'**
+  String get exportFirst;
+
+  /// No description provided for @confirmReset.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm clear'**
+  String get confirmReset;
+
+  /// No description provided for @resetSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Factory reset complete'**
+  String get resetSuccess;
+
+  /// No description provided for @resetSuccessBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Default projects have zero balances. External backups were kept.'**
+  String get resetSuccessBody;
+
+  /// No description provided for @backupError.
+  ///
+  /// In en, this message translates to:
+  /// **'Operation not completed'**
+  String get backupError;
+
+  /// No description provided for @invalidBackup.
+  ///
+  /// In en, this message translates to:
+  /// **'This is not a valid finance-backup v1 file, or its records/references are invalid. Your current data was kept.'**
+  String get invalidBackup;
+
+  /// No description provided for @backupVersionError.
+  ///
+  /// In en, this message translates to:
+  /// **'This backup version is not supported. No data was changed.'**
+  String get backupVersionError;
+
+  /// No description provided for @backupChecksumError.
+  ///
+  /// In en, this message translates to:
+  /// **'Backup integrity check failed. No data was changed.'**
+  String get backupChecksumError;
+
+  /// No description provided for @backupLimitError.
+  ///
+  /// In en, this message translates to:
+  /// **'Backup exceeds the supported limit (32 MiB or 100,000 records). No data was replaced.'**
+  String get backupLimitError;
+
+  /// No description provided for @fileWriteError.
+  ///
+  /// In en, this message translates to:
+  /// **'The backup could not be saved and verified. Check storage space and the chosen location. An incomplete new file may need to be removed.'**
+  String get fileWriteError;
+
+  /// No description provided for @fileReadError.
+  ///
+  /// In en, this message translates to:
+  /// **'The file could not be read. Select an accessible backup again. No data was changed.'**
+  String get fileReadError;
+
+  /// No description provided for @filePermissionError.
+  ///
+  /// In en, this message translates to:
+  /// **'Access was denied or expired. Select the file again.'**
+  String get filePermissionError;
+
+  /// No description provided for @noSpaceError.
+  ///
+  /// In en, this message translates to:
+  /// **'Not enough storage. The operation did not complete. Free some space and retry.'**
+  String get noSpaceError;
+
+  /// No description provided for @fileShareError.
+  ///
+  /// In en, this message translates to:
+  /// **'The system share panel could not be opened. The saved backup file is still available.'**
+  String get fileShareError;
+
+  /// No description provided for @restoreError.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore did not complete. The transaction kept your previous data and restore copy.'**
+  String get restoreError;
+
+  /// No description provided for @recentRecordError.
+  ///
+  /// In en, this message translates to:
+  /// **'The file was saved, but its latest-export information could not be recorded.'**
+  String get recentRecordError;
+
+  /// No description provided for @cachePurgeError.
+  ///
+  /// In en, this message translates to:
+  /// **'Data was reset, but private share-cache cleanup is pending. Retry cleanup here; it also resumes at next launch.'**
+  String get cachePurgeError;
+
+  /// No description provided for @purgeCache.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry private-cache cleanup'**
+  String get purgeCache;
+
+  /// No description provided for @backupCancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancelled. Financial data unchanged.'**
+  String get backupCancelled;
+
+  /// No description provided for @backupFilePrefix.
+  ///
+  /// In en, this message translates to:
+  /// **'Finance_backup'**
+  String get backupFilePrefix;
+
+  /// No description provided for @backupCountsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Includes balances, independent entries, categories, memos, edit histories and settings.'**
+  String get backupCountsHint;
+
   /// No description provided for @billCategoryName.
   ///
   /// In en, this message translates to:

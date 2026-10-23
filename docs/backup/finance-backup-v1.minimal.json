@@ -6,21 +6,49 @@
   "currency": "CNY",
   "timeZone": "Asia/Shanghai",
   "data": {
-    "projects": [{
-      "id": "c34814d1-17cf-4b40-a65f-21e80ca40371", "type": "asset",
-      "nameKey": "cash", "customName": null, "categoryKey": "cash",
-      "iconKey": "cash", "colorKey": "neutral", "includeInSummary": true,
-      "sortOrder": 0, "note": "",
-      "createdAt": "2026-10-21T00:00:00.000Z", "updatedAt": "2026-10-21T00:00:00.000Z"
-    }],
-    "balanceRecords": [{
-      "id": "d1d915dc-6521-4d51-a42f-6ca35c850d02",
-      "projectId": "c34814d1-17cf-4b40-a65f-21e80ca40371",
-      "balanceMinor": 0, "businessDate": "2026-10-21", "businessTime": "08:00",
-      "orderKey": 0, "note": "",
-      "createdAt": "2026-10-21T00:00:00.000Z", "updatedAt": "2026-10-21T00:00:00.000Z"
-    }],
-    "projectEntries": [], "bills": [], "categories": [], "memos": [], "editHistory": [],
-    "settings": {"themeMode": "system", "languageMode": "system", "currency": "CNY", "timeZone": "Asia/Shanghai"}
+    "projects": [
+      {
+        "id": "c34814d1-17cf-4b40-a65f-21e80ca40371",
+        "type": "asset",
+        "nameKey": "cash",
+        "customName": null,
+        "categoryKey": "cash",
+        "iconKey": "cash",
+        "colorKey": "neutral",
+        "includeInSummary": true,
+        "sortOrder": 0,
+        "note": "",
+        "createdAt": "2026-10-21T00:00:00.000Z",
+        "updatedAt": "2026-10-21T00:00:00.000Z"
+      }
+    ],
+    "balanceRecords": [
+      {
+        "id": "d1d915dc-6521-4d51-a42f-6ca35c850d02",
+        "projectId": "c34814d1-17cf-4b40-a65f-21e80ca40371",
+        "balanceMinor": 0,
+        "businessDate": "2026-10-21",
+        "businessTime": "08:00",
+        "orderKey": 0,
+        "note": "",
+        "createdAt": "2026-10-21T00:00:00.000Z",
+        "updatedAt": "2026-10-21T00:00:00.000Z"
+      }
+    ],
+    "projectEntries": [],
+    "bills": [],
+    "categories": [],
+    "memos": [],
+    "editHistory": [],
+    "settings": {
+      "themeMode": "system",
+      "languageMode": "system",
+      "currency": "CNY",
+      "timeZone": "Asia/Shanghai"
+    }
+  },
+  "checksum": {
+    "algorithm": "SHA-256",
+    "value": "0339af67e5838ecd362fbc6fe2ad05e5886abf22d5c738ac9cfff8a4c02b8ef4"
   }
 }

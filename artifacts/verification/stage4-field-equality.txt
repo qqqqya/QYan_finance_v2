@@ -1,0 +1,6 @@
+PASS: physical export A -> empty book -> restore twice -> physical export B - all business fields, IDs, history, array order and settings equal.
+PASS: all-entity fixture -> actual SAF restore/export - all business fields, IDs, history, array order and settings equal.
+PASS: private copy restores pre-import upgraded data - all business fields, IDs, history, array order and settings equal.
+PASS: actual post-reset file contains 9 default projects, zero balances, no user records/history and default settings.
+PASS: SQLite write-journal interruption -> restart -> physical export - all business fields, IDs, history, array order and settings equal.
+PASS: 30.59 MB fixture -> actual Android restore -> physical export - all business fields, IDs, history, array order and settings equal.

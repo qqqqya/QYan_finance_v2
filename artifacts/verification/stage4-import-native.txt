@@ -1,0 +1,9 @@
+**********************
+PowerShell transcript start
+Start time: 20261023001519
+**********************
+PASS: corrupt JSON rejected, preview canceled without overwrite, full restore succeeded with Hant/dark settings.
+**********************
+PowerShell transcript end
+End time: 20261023001557
+**********************

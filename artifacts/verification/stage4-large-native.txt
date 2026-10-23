@@ -1,0 +1,10 @@
+**********************
+PowerShell transcript start
+Start time: 20261023002820
+**********************
+/sdcard/Download/QA_stage4_large_full_20261022_1626.moneybak: 1 file pulled, 0 skipped. 101.5 MB/s (30592893 bytes in 0.287s)
+PASS: complete large backup restored and physically exported through SAF.
+**********************
+PowerShell transcript end
+End time: 20261023002833
+**********************

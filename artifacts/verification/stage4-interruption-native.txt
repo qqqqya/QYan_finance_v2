@@ -1,0 +1,10 @@
+**********************
+PowerShell transcript start
+Start time: 20261023002501
+**********************
+KILLED_WITH_SQLITE_WRITE_JOURNAL
+PASS: app stopped during observed SQLite write; cold restart and actual backup export succeeded. Field equality checked separately.
+**********************
+PowerShell transcript end
+End time: 20261023002529
+**********************

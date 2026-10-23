@@ -26,7 +26,7 @@ void main() {
     test(
       'fresh initialization seeds only zero snapshots and no fake flows',
       () async {
-        expect(database.allTables.length, 8);
+        expect(database.allTables.length, 9);
         expect(await database.select(database.projects).get(), hasLength(9));
         final balances = await database.select(database.balanceRecords).get();
         expect(balances, hasLength(7));
@@ -40,7 +40,7 @@ void main() {
         final version = await database
             .customSelect('PRAGMA user_version')
             .getSingle();
-        expect(version.read<int>('user_version'), 1);
+        expect(version.read<int>('user_version'), 2);
       },
     );
 

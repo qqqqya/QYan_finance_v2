@@ -1,0 +1,14 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/.tooling/temp/qa_db_test.dart
+00:00 +0: QA database export
+00:00 +0 -1: QA database export [E]
+  BackupFailure(invalidBackup)
+  package:finance_app/domain/backup_document.dart 34:48   _bad
+  package:finance_app/domain/backup_document.dart 268:5   _utc
+  package:finance_app/domain/backup_document.dart 116:7   BackupDocument.decode
+  package:finance_app/data/backup_repository.dart 141:27  BackupRepository._capture
+  
+00:00 +0 -1: Some tests failed.
+
+Failing tests:
+  D:/Finance/.tooling/temp/qa_db_test.dart: QA database export

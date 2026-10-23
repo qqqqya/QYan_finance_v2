@@ -1,0 +1,59 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/test/backup_widgets_test.dart
+00:00 +0: (setUpAll)
+00:00 +0: T18 export success uses actual file data, shares directly; failed write never shows success
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _TextContainingWidgetFinder:<Found 4 widgets with text containing .moneybak: [
+            EditableText-[LabeledGlobalKey<EditableTextState>#b7277](controller:
+_TextSpanEditingController#b803e(TextEditingValue(text: ┤Finance_backup_2026-10-22_123456.moneybak├,
+selection: TextSelection.invalid, composing: TextRange(start: -1, end: -1))), focusNode:
+FocusNode#8d440, readOnly: true, autocorrect: true, debugLabel: (englishLike bodyMedium
+2021).merge(((blackMountainView bodyMedium).apply).merge(unknown)), inherit: false, color:
+Color(alpha: 1.0000, red: 0.2667, green: 0.2745, blue: 0.3098, colorSpace: ColorSpace.sRGB), family:
+Roboto, size: 14.0, weight: 400, letterSpacing: 0.3, baseline: alphabetic, height: 1.4x,
+leadingDistribution: even, decoration: Color(alpha: 1.0000, red: 0.1020, green: 0.1059, blue:
+0.1255, colorSpace: ColorSpace.sRGB) TextDecoration.none, textAlign: start, maxLines: null,
+keyboardType: TextInputType(name: TextInputType.multiline, signed: null, decimal: null),
+dependencies: [Directionality, MediaQuery, _EffectiveTickerMode], state:
+EditableTextState#b1ed8(tickers: tracking 1 ticker)),
+            Text("Downloads/Finance_backup_2026-10-22_123456.moneybak", dependencies:
+[DefaultSelectionStyle, DefaultTextStyle, MediaQuery]),
+            EditableText-[LabeledGlobalKey<EditableTextState>#9590b](controller:
+_TextSpanEditingController#25571(TextEditingValue(text: ┤Finance_backup_2026-10-22_123456.moneybak├,
+selection: TextSelection.invalid, composing: TextRange(start: -1, end: -1))), focusNode:
+FocusNode#c57c0, readOnly: true, autocorrect: true, debugLabel: (englishLike bodyMedium
+2021).merge(((blackMountainView bodyMedium).apply).merge(unknown)), inherit: false, color:
+Color(alpha: 1.0000, red: 0.2667, green: 0.2745, blue: 0.3098, colorSpace: ColorSpace.sRGB), family:
+Roboto, size: 14.0, weight: 400, letterSpacing: 0.3, baseline: alphabetic, height: 1.4x,
+leadingDistribution: even, decoration: Color(alpha: 1.0000, red: 0.1020, green: 0.1059, blue:
+0.1255, colorSpace: ColorSpace.sRGB) TextDecoration.none, textAlign: start, maxLines: null,
+keyboardType: TextInputType(name: TextInputType.multiline, signed: null, decimal: null),
+dependencies: [Directionality, MediaQuery, _EffectiveTickerMode], state:
+EditableTextState#7175d(tickers: tracking 1 ticker)),
+            Text("Saved location: Downloads/Finance_backup_2026-10-22_123456.moneybak",
+dependencies: [DefaultSelectionStyle, DefaultTextStyle, MediaQuery]),
+          ]>
+   Which: is too many
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/Finance/test/backup_widgets_test.dart:94:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/Finance/test/backup_widgets_test.dart line 94
+The test description was:
+  T18 export success uses actual file data, shares directly; failed write never shows success
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +0 -1: T18 export success uses actual file data, shares directly; failed write never shows success [E]
+  Test failed. See exception logs above.
+  The test description was: T18 export success uses actual file data, shares directly; failed write never shows success
+  
+00:01 +0 -1: T16 preview cancel keeps data; confirmation restores settings and allows deleting private copy

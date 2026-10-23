@@ -4,7 +4,7 @@
   "title": "finance-backup v1",
   "type": "object",
   "additionalProperties": false,
-  "required": ["format", "schemaVersion", "appVersion", "exportedAt", "currency", "timeZone", "data"],
+  "required": ["format", "schemaVersion", "appVersion", "exportedAt", "currency", "timeZone", "data", "checksum"],
   "properties": {
     "format": {"const": "finance-backup"},
     "schemaVersion": {"const": 1},
@@ -12,6 +12,13 @@
     "exportedAt": {"$ref": "#/$defs/utcTime"},
     "currency": {"const": "CNY"},
     "timeZone": {"type": "string", "minLength": 1},
+    "checksum": {
+      "type": "object", "additionalProperties": false, "required": ["algorithm", "value"],
+      "properties": {
+        "algorithm": {"const": "SHA-256"},
+        "value": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
     "data": {
       "type": "object",
       "additionalProperties": false,

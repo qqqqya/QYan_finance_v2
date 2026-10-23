@@ -1,0 +1,34 @@
+[
+  {
+    "file": "finance-stage4-debug.apk",
+    "versionName": "0.4.0",
+    "versionCode": 4,
+    "bytes": 170168494,
+    "sha256": "5ea5d78fb44623b1787b134560fb0a620f5b04419bdc51d06effbb6de32dc4b3",
+    "certificateSha256": "ca5a2b7fbaa1f2dd293687530c624ba50e048255d4efa7169512e25e69ac8b8a",
+    "minSdk": 29,
+    "targetSdk": 36,
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86_64"
+    ],
+    "type": "debug"
+  },
+  {
+    "file": "finance-stage4-ide-debug.apk",
+    "versionName": "0.4.0",
+    "versionCode": 4,
+    "bytes": 170186574,
+    "sha256": "0e9331fb83db73fe088e4068a415069da86788f0dbe830a4528cda898ade857c",
+    "certificateSha256": "62d56913337abab8aa40c5424849b0b0c141db6e72a028d51b89c0000e40a2bb",
+    "minSdk": 29,
+    "targetSdk": 36,
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86_64"
+    ],
+    "type": "debug"
+  }
+]

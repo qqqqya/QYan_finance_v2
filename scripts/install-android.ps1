@@ -1,6 +1,6 @@
 param(
     [Parameter(Mandatory = $true)][string]$Device,
-    [string]$Apk = 'artifacts\finance-stage3-debug.apk',
+    [string]$Apk = 'artifacts\finance-stage4-ide-debug.apk',
     [switch]$Launch
 )
 . "$PSScriptRoot\environment.ps1"

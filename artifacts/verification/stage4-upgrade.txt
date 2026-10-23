@@ -1,0 +1,22 @@
+**********************
+PowerShell transcript start
+Start time: 20261023000333
+**********************
+Performing Streamed Install
+Success
+Starting: Intent { cmp=com.example.finance_app/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.example.finance_app/.MainActivity
+TotalTime: 2443
+WaitTime: 2444
+Complete
+PASS: install -r v3 -> v4 preserved v1 snapshots, current 500.02, project note, English/light settings.
+ |  | Operation not completed | [168,1079][912,1155]
+ |  | This is not a valid finance-backup v1 file, or its records/references are invalid. Your current data was kept. | [168,1197][912,1355]
+ |  | Done | [744,1418][912,1544]
+ |  | Dismiss | [0,0][1080,2400]
+**********************
+PowerShell transcript end
+End time: 20261023000359
+**********************

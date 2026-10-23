@@ -1,0 +1,27 @@
+**********************
+PowerShell transcript start
+Start time: 20261023002939
+**********************
+Cold restart PID 6897 -> 7737
+返回
+系统设置
+数据管理
+外观与语言
+主题模式
+跟随系统
+浅色
+深色
+语言
+跟随系统
+简体中文
+繁體中文
+English
+本地数据
+财务记录仅保存在此设备。
+币种: CNY
+账本时区: GMT
+PASS: final factory reset and restart; zero default data, private copy cleared, large external file preserved; Simplified Chinese data page checked.
+**********************
+PowerShell transcript end
+End time: 20261023003037
+**********************

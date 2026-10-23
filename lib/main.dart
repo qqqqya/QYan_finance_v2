@@ -9,6 +9,9 @@ import 'app/finance_app.dart';
 import 'app/finance_controller.dart';
 import 'data/app_database.dart';
 import 'data/finance_repository.dart';
+import 'data/backup_repository.dart';
+import 'services/backup_manager.dart';
+import 'services/backup_files.dart';
 import 'l10n/app_localizations.dart';
 import 'ui/app_theme.dart';
 
@@ -43,6 +46,16 @@ class _FinanceBootstrapState extends State<FinanceBootstrap> {
           (await FlutterTimezone.getLocalTimezone()).identifier;
       final repository = FinanceRepository(database);
       await repository.initialize(zone);
+      // A reset can commit just before Android kills the process. Finish any
+      // pending private share-cache cleanup at the next launch.
+      try {
+        await BackupManager(
+          BackupRepository(repository),
+          AndroidBackupFiles(),
+        ).purgePending();
+      } catch (_) {
+        /* Keep the persisted retry flag; data management exposes it. */
+      }
       controller = FinanceController(repository);
       await controller.start();
       _controller = controller;

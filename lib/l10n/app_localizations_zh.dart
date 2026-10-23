@@ -486,6 +486,179 @@ class AppLocalizationsZh extends AppLocalizations {
   String get requiredField => '此项不能为空。';
 
   @override
+  String get dataManagement => '数据管理';
+
+  @override
+  String get backupIntro => '管理本机的完整财务数据';
+
+  @override
+  String get currentData => '当前数据';
+
+  @override
+  String get localSaved => '本机保存';
+
+  @override
+  String get backupBills => '账单';
+
+  @override
+  String get backupAccounts => '资产 / 负债账户';
+
+  @override
+  String get backupProjects => '全部项目';
+
+  @override
+  String get lastBill => '最近记账';
+
+  @override
+  String get backupExport => '导出备份';
+
+  @override
+  String get backupExportHint => '将全部数据与设置保存为文件';
+
+  @override
+  String get backupImport => '导入恢复';
+
+  @override
+  String get backupImportHint => '从完整备份覆盖恢复全部数据';
+
+  @override
+  String get recentBackup => '最近备份';
+
+  @override
+  String get noBackup => '本次安装尚无成功导出记录。';
+
+  @override
+  String get backupSafety => '数据只保存在本机。换机或重装前请导出备份。备份为明文，包含完整财务数据，请妥善保存。';
+
+  @override
+  String get backupSuccess => '备份成功';
+
+  @override
+  String get backupSuccessBody => '完整备份已写入，并通过回读校验。';
+
+  @override
+  String get backupFileName => '文件名称';
+
+  @override
+  String get backupFileSize => '文件大小';
+
+  @override
+  String get backupLocation => '保存位置';
+
+  @override
+  String get shareBackup => '分享文件';
+
+  @override
+  String get done => '完成';
+
+  @override
+  String get backupPreview => '恢复预览';
+
+  @override
+  String get backupDate => '备份日期';
+
+  @override
+  String get backupReplaceWarning =>
+      '将覆盖当前全部财务数据、修改历史和主题/语言设置。恢复前会保留一份当前数据的私有恢复副本。';
+
+  @override
+  String get confirmRestore => '确认覆盖恢复';
+
+  @override
+  String get restoreSuccess => '恢复完成';
+
+  @override
+  String get restoreSuccessBody => '全部记录和设置已恢复。';
+
+  @override
+  String get recoveryCopy => '导入前恢复副本';
+
+  @override
+  String get recoveryCopyHint => '只保留上次成功恢复之前的一份数据，不包含在导出文件中，卸载后不保留。';
+
+  @override
+  String get noRecoveryCopy => '暂无恢复副本。';
+
+  @override
+  String get restoreCopy => '预览并恢复副本';
+
+  @override
+  String get deleteCopy => '删除私有副本';
+
+  @override
+  String get deleteCopyWarning => '仅删除这份私有恢复副本？当前财务数据和外部备份文件不变。';
+
+  @override
+  String get factoryReset => '恢复出厂设置';
+
+  @override
+  String get factoryResetWarning =>
+      '清除全部记录、修改历史及私有恢复副本，恢复默认零金额模板，主题和语言跟随系统。已经导出的外部文件会保留。';
+
+  @override
+  String get exportFirst => '先导出备份';
+
+  @override
+  String get confirmReset => '确认清空';
+
+  @override
+  String get resetSuccess => '已恢复出厂设置';
+
+  @override
+  String get resetSuccessBody => '默认项目金额全部归零，外部备份文件已保留。';
+
+  @override
+  String get backupError => '操作未完成';
+
+  @override
+  String get invalidBackup => '不是有效的 finance-backup v1 文件，或数据字段/关联无效。当前数据未被替换。';
+
+  @override
+  String get backupVersionError => '不支持此备份版本，数据未变更。';
+
+  @override
+  String get backupChecksumError => '备份完整性校验失败，数据未变更。';
+
+  @override
+  String get backupLimitError => '备份超过当前支持范围（32 MiB 或 100,000 条记录），未替换数据。';
+
+  @override
+  String get fileWriteError => '备份未能保存并校验，请检查剩余空间和保存位置。可能需要删除未完成的新文件。';
+
+  @override
+  String get fileReadError => '无法读取文件，请重新选择可访问的备份。数据未变更。';
+
+  @override
+  String get filePermissionError => '文件访问权限被拒绝或已失效，请重新选择文件。';
+
+  @override
+  String get noSpaceError => '存储空间不足，操作未完成。请释放空间后重试。';
+
+  @override
+  String get fileShareError => '无法打开系统分享面板，已保存的备份文件仍可使用。';
+
+  @override
+  String get restoreError => '恢复未完成，事务已保留原数据和原恢复副本。';
+
+  @override
+  String get recentRecordError => '文件已保存，但最近备份信息未能记录。';
+
+  @override
+  String get cachePurgeError => '数据已重置，但私有分享缓存待清理。请在此重试，下次启动也会继续清理。';
+
+  @override
+  String get purgeCache => '重试清理私有缓存';
+
+  @override
+  String get backupCancelled => '已取消，财务数据未变更。';
+
+  @override
+  String get backupFilePrefix => '财务备份';
+
+  @override
+  String get backupCountsHint => '包含余额、独立收支、分类、备忘录、修改历史与设置。';
+
+  @override
   String billCategoryName(String key) {
     String _temp0 = intl.Intl.selectLogic(key, {
       'salary': '工资',
@@ -984,6 +1157,179 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
   String get requiredField => '此项不能为空。';
 
   @override
+  String get dataManagement => '数据管理';
+
+  @override
+  String get backupIntro => '管理本机的完整财务数据';
+
+  @override
+  String get currentData => '当前数据';
+
+  @override
+  String get localSaved => '本机保存';
+
+  @override
+  String get backupBills => '账单';
+
+  @override
+  String get backupAccounts => '资产 / 负债账户';
+
+  @override
+  String get backupProjects => '全部项目';
+
+  @override
+  String get lastBill => '最近记账';
+
+  @override
+  String get backupExport => '导出备份';
+
+  @override
+  String get backupExportHint => '将全部数据与设置保存为文件';
+
+  @override
+  String get backupImport => '导入恢复';
+
+  @override
+  String get backupImportHint => '从完整备份覆盖恢复全部数据';
+
+  @override
+  String get recentBackup => '最近备份';
+
+  @override
+  String get noBackup => '本次安装尚无成功导出记录。';
+
+  @override
+  String get backupSafety => '数据只保存在本机。换机或重装前请导出备份。备份为明文，包含完整财务数据，请妥善保存。';
+
+  @override
+  String get backupSuccess => '备份成功';
+
+  @override
+  String get backupSuccessBody => '完整备份已写入，并通过回读校验。';
+
+  @override
+  String get backupFileName => '文件名称';
+
+  @override
+  String get backupFileSize => '文件大小';
+
+  @override
+  String get backupLocation => '保存位置';
+
+  @override
+  String get shareBackup => '分享文件';
+
+  @override
+  String get done => '完成';
+
+  @override
+  String get backupPreview => '恢复预览';
+
+  @override
+  String get backupDate => '备份日期';
+
+  @override
+  String get backupReplaceWarning =>
+      '将覆盖当前全部财务数据、修改历史和主题/语言设置。恢复前会保留一份当前数据的私有恢复副本。';
+
+  @override
+  String get confirmRestore => '确认覆盖恢复';
+
+  @override
+  String get restoreSuccess => '恢复完成';
+
+  @override
+  String get restoreSuccessBody => '全部记录和设置已恢复。';
+
+  @override
+  String get recoveryCopy => '导入前恢复副本';
+
+  @override
+  String get recoveryCopyHint => '只保留上次成功恢复之前的一份数据，不包含在导出文件中，卸载后不保留。';
+
+  @override
+  String get noRecoveryCopy => '暂无恢复副本。';
+
+  @override
+  String get restoreCopy => '预览并恢复副本';
+
+  @override
+  String get deleteCopy => '删除私有副本';
+
+  @override
+  String get deleteCopyWarning => '仅删除这份私有恢复副本？当前财务数据和外部备份文件不变。';
+
+  @override
+  String get factoryReset => '恢复出厂设置';
+
+  @override
+  String get factoryResetWarning =>
+      '清除全部记录、修改历史及私有恢复副本，恢复默认零金额模板，主题和语言跟随系统。已经导出的外部文件会保留。';
+
+  @override
+  String get exportFirst => '先导出备份';
+
+  @override
+  String get confirmReset => '确认清空';
+
+  @override
+  String get resetSuccess => '已恢复出厂设置';
+
+  @override
+  String get resetSuccessBody => '默认项目金额全部归零，外部备份文件已保留。';
+
+  @override
+  String get backupError => '操作未完成';
+
+  @override
+  String get invalidBackup => '不是有效的 finance-backup v1 文件，或数据字段/关联无效。当前数据未被替换。';
+
+  @override
+  String get backupVersionError => '不支持此备份版本，数据未变更。';
+
+  @override
+  String get backupChecksumError => '备份完整性校验失败，数据未变更。';
+
+  @override
+  String get backupLimitError => '备份超过当前支持范围（32 MiB 或 100,000 条记录），未替换数据。';
+
+  @override
+  String get fileWriteError => '备份未能保存并校验，请检查剩余空间和保存位置。可能需要删除未完成的新文件。';
+
+  @override
+  String get fileReadError => '无法读取文件，请重新选择可访问的备份。数据未变更。';
+
+  @override
+  String get filePermissionError => '文件访问权限被拒绝或已失效，请重新选择文件。';
+
+  @override
+  String get noSpaceError => '存储空间不足，操作未完成。请释放空间后重试。';
+
+  @override
+  String get fileShareError => '无法打开系统分享面板，已保存的备份文件仍可使用。';
+
+  @override
+  String get restoreError => '恢复未完成，事务已保留原数据和原恢复副本。';
+
+  @override
+  String get recentRecordError => '文件已保存，但最近备份信息未能记录。';
+
+  @override
+  String get cachePurgeError => '数据已重置，但私有分享缓存待清理。请在此重试，下次启动也会继续清理。';
+
+  @override
+  String get purgeCache => '重试清理私有缓存';
+
+  @override
+  String get backupCancelled => '已取消，财务数据未变更。';
+
+  @override
+  String get backupFilePrefix => '财务备份';
+
+  @override
+  String get backupCountsHint => '包含余额、独立收支、分类、备忘录、修改历史与设置。';
+
+  @override
   String billCategoryName(String key) {
     String _temp0 = intl.Intl.selectLogic(key, {
       'salary': '工资',
@@ -1480,6 +1826,179 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String get requiredField => '此項不能為空。';
+
+  @override
+  String get dataManagement => '資料管理';
+
+  @override
+  String get backupIntro => '管理本機的完整財務資料';
+
+  @override
+  String get currentData => '目前資料';
+
+  @override
+  String get localSaved => '本機儲存';
+
+  @override
+  String get backupBills => '帳單';
+
+  @override
+  String get backupAccounts => '資產 / 負債帳戶';
+
+  @override
+  String get backupProjects => '全部項目';
+
+  @override
+  String get lastBill => '最近記帳';
+
+  @override
+  String get backupExport => '匯出備份';
+
+  @override
+  String get backupExportHint => '將全部資料與設定儲存為檔案';
+
+  @override
+  String get backupImport => '匯入還原';
+
+  @override
+  String get backupImportHint => '從完整備份覆蓋還原全部資料';
+
+  @override
+  String get recentBackup => '最近備份';
+
+  @override
+  String get noBackup => '本次安裝尚無成功匯出記錄。';
+
+  @override
+  String get backupSafety => '資料只儲存在本機。換機或重新安裝前請匯出備份。備份為明文，包含完整財務資料，請妥善保存。';
+
+  @override
+  String get backupSuccess => '備份成功';
+
+  @override
+  String get backupSuccessBody => '完整備份已寫入，並通過回讀校驗。';
+
+  @override
+  String get backupFileName => '檔案名稱';
+
+  @override
+  String get backupFileSize => '檔案大小';
+
+  @override
+  String get backupLocation => '儲存位置';
+
+  @override
+  String get shareBackup => '分享檔案';
+
+  @override
+  String get done => '完成';
+
+  @override
+  String get backupPreview => '還原預覽';
+
+  @override
+  String get backupDate => '備份日期';
+
+  @override
+  String get backupReplaceWarning =>
+      '將覆蓋目前全部財務資料、修改歷史和主題/語言設定。還原前會保留一份目前資料的私有還原副本。';
+
+  @override
+  String get confirmRestore => '確認覆蓋還原';
+
+  @override
+  String get restoreSuccess => '還原完成';
+
+  @override
+  String get restoreSuccessBody => '全部記錄和設定已還原。';
+
+  @override
+  String get recoveryCopy => '匯入前還原副本';
+
+  @override
+  String get recoveryCopyHint => '只保留上次成功還原之前的一份資料，不包含在匯出檔案中，解除安裝後不保留。';
+
+  @override
+  String get noRecoveryCopy => '暫無還原副本。';
+
+  @override
+  String get restoreCopy => '預覽並還原副本';
+
+  @override
+  String get deleteCopy => '刪除私有副本';
+
+  @override
+  String get deleteCopyWarning => '僅刪除這份私有還原副本？目前財務資料和外部備份檔案不變。';
+
+  @override
+  String get factoryReset => '恢復原廠設定';
+
+  @override
+  String get factoryResetWarning =>
+      '清除全部記錄、修改歷史及私有還原副本，恢復預設零金額範本，主題和語言跟隨系統。已匯出的外部檔案會保留。';
+
+  @override
+  String get exportFirst => '先匯出備份';
+
+  @override
+  String get confirmReset => '確認清空';
+
+  @override
+  String get resetSuccess => '已恢復原廠設定';
+
+  @override
+  String get resetSuccessBody => '預設項目金額全部歸零，外部備份檔案已保留。';
+
+  @override
+  String get backupError => '操作未完成';
+
+  @override
+  String get invalidBackup => '不是有效的 finance-backup v1 檔案，或資料欄位/關聯無效。目前資料未被替換。';
+
+  @override
+  String get backupVersionError => '不支援此備份版本，資料未變更。';
+
+  @override
+  String get backupChecksumError => '備份完整性校驗失敗，資料未變更。';
+
+  @override
+  String get backupLimitError => '備份超過目前支援範圍（32 MiB 或 100,000 筆記錄），未替換資料。';
+
+  @override
+  String get fileWriteError => '備份未能儲存並校驗，請檢查剩餘空間和儲存位置。可能需要刪除未完成的新檔案。';
+
+  @override
+  String get fileReadError => '無法讀取檔案，請重新選擇可存取的備份。資料未變更。';
+
+  @override
+  String get filePermissionError => '檔案存取權限被拒絕或已失效，請重新選擇檔案。';
+
+  @override
+  String get noSpaceError => '儲存空間不足，操作未完成。請釋放空間後重試。';
+
+  @override
+  String get fileShareError => '無法開啟系統分享面板，已儲存的備份檔案仍可使用。';
+
+  @override
+  String get restoreError => '還原未完成，交易已保留原資料和原還原副本。';
+
+  @override
+  String get recentRecordError => '檔案已儲存，但最近備份資訊未能記錄。';
+
+  @override
+  String get cachePurgeError => '資料已重設，但私有分享快取待清理。請在此重試，下次啟動也會繼續清理。';
+
+  @override
+  String get purgeCache => '重試清理私有快取';
+
+  @override
+  String get backupCancelled => '已取消，財務資料未變更。';
+
+  @override
+  String get backupFilePrefix => '財務備份';
+
+  @override
+  String get backupCountsHint => '包含餘額、獨立收支、分類、備忘錄、修改歷史與設定。';
 
   @override
   String billCategoryName(String key) {

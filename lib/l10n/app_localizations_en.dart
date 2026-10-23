@@ -510,6 +510,198 @@ class AppLocalizationsEn extends AppLocalizations {
   String get requiredField => 'This field is required.';
 
   @override
+  String get dataManagement => 'Data management';
+
+  @override
+  String get backupIntro => 'Manage all your local financial records';
+
+  @override
+  String get currentData => 'Current data';
+
+  @override
+  String get localSaved => 'Saved on this device';
+
+  @override
+  String get backupBills => 'Transactions';
+
+  @override
+  String get backupAccounts => 'Asset / liability accounts';
+
+  @override
+  String get backupProjects => 'All projects';
+
+  @override
+  String get lastBill => 'Latest transaction';
+
+  @override
+  String get backupExport => 'Export backup';
+
+  @override
+  String get backupExportHint => 'Save all records and settings to a file';
+
+  @override
+  String get backupImport => 'Import & restore';
+
+  @override
+  String get backupImportHint => 'Replace all data from a complete backup';
+
+  @override
+  String get recentBackup => 'Latest export';
+
+  @override
+  String get noBackup => 'No successful export on this installation.';
+
+  @override
+  String get backupSafety =>
+      'Your records stay on this device. Export regularly before changing phones or reinstalling. Backups contain your full data in plain text; keep them safe.';
+
+  @override
+  String get backupSuccess => 'Backup saved';
+
+  @override
+  String get backupSuccessBody =>
+      'Your complete backup was written and read back successfully.';
+
+  @override
+  String get backupFileName => 'File name';
+
+  @override
+  String get backupFileSize => 'File size';
+
+  @override
+  String get backupLocation => 'Saved location';
+
+  @override
+  String get shareBackup => 'Share file';
+
+  @override
+  String get done => 'Done';
+
+  @override
+  String get backupPreview => 'Restore preview';
+
+  @override
+  String get backupDate => 'Backup date';
+
+  @override
+  String get backupReplaceWarning =>
+      'This replaces ALL current financial records, edit histories and appearance/language settings. A private copy of the current data will be kept so you can undo this restore.';
+
+  @override
+  String get confirmRestore => 'Replace and restore';
+
+  @override
+  String get restoreSuccess => 'Restore complete';
+
+  @override
+  String get restoreSuccessBody =>
+      'All records and settings have been restored.';
+
+  @override
+  String get recoveryCopy => 'Before-restore copy';
+
+  @override
+  String get recoveryCopyHint =>
+      'One private copy from before the last successful restore. It is not included in exported files and does not survive uninstalling.';
+
+  @override
+  String get noRecoveryCopy => 'No before-restore copy.';
+
+  @override
+  String get restoreCopy => 'Preview & restore copy';
+
+  @override
+  String get deleteCopy => 'Delete private copy';
+
+  @override
+  String get deleteCopyWarning =>
+      'Delete only this private restore copy? Your current financial data and exported files stay unchanged.';
+
+  @override
+  String get factoryReset => 'Factory reset';
+
+  @override
+  String get factoryResetWarning =>
+      'Clear all records, edit histories and private restore copies; restore the default zero-balance template and system theme/language. Exported external files will remain.';
+
+  @override
+  String get exportFirst => 'Export first';
+
+  @override
+  String get confirmReset => 'Confirm clear';
+
+  @override
+  String get resetSuccess => 'Factory reset complete';
+
+  @override
+  String get resetSuccessBody =>
+      'Default projects have zero balances. External backups were kept.';
+
+  @override
+  String get backupError => 'Operation not completed';
+
+  @override
+  String get invalidBackup =>
+      'This is not a valid finance-backup v1 file, or its records/references are invalid. Your current data was kept.';
+
+  @override
+  String get backupVersionError =>
+      'This backup version is not supported. No data was changed.';
+
+  @override
+  String get backupChecksumError =>
+      'Backup integrity check failed. No data was changed.';
+
+  @override
+  String get backupLimitError =>
+      'Backup exceeds the supported limit (32 MiB or 100,000 records). No data was replaced.';
+
+  @override
+  String get fileWriteError =>
+      'The backup could not be saved and verified. Check storage space and the chosen location. An incomplete new file may need to be removed.';
+
+  @override
+  String get fileReadError =>
+      'The file could not be read. Select an accessible backup again. No data was changed.';
+
+  @override
+  String get filePermissionError =>
+      'Access was denied or expired. Select the file again.';
+
+  @override
+  String get noSpaceError =>
+      'Not enough storage. The operation did not complete. Free some space and retry.';
+
+  @override
+  String get fileShareError =>
+      'The system share panel could not be opened. The saved backup file is still available.';
+
+  @override
+  String get restoreError =>
+      'Restore did not complete. The transaction kept your previous data and restore copy.';
+
+  @override
+  String get recentRecordError =>
+      'The file was saved, but its latest-export information could not be recorded.';
+
+  @override
+  String get cachePurgeError =>
+      'Data was reset, but private share-cache cleanup is pending. Retry cleanup here; it also resumes at next launch.';
+
+  @override
+  String get purgeCache => 'Retry private-cache cleanup';
+
+  @override
+  String get backupCancelled => 'Cancelled. Financial data unchanged.';
+
+  @override
+  String get backupFilePrefix => 'Finance_backup';
+
+  @override
+  String get backupCountsHint =>
+      'Includes balances, independent entries, categories, memos, edit histories and settings.';
+
+  @override
   String billCategoryName(String key) {
     String _temp0 = intl.Intl.selectLogic(key, {
       'salary': 'Salary',

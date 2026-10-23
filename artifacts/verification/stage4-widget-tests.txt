@@ -1,0 +1,9 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Finance/test/backup_widgets_test.dart
+00:00 +0: (setUpAll)
+00:00 +0: T18 export success uses actual file data, shares directly; failed write never shows success
+00:01 +1: T16 preview cancel keeps data; confirmation restores settings and allows deleting private copy
+00:03 +2: T20 factory reset cancellation preserves data; confirm resets to zero and system settings
+00:03 +3: data management and export dialog fit 320dp and 200 percent text in dark mode
+00:03 +4: (tearDownAll)
+00:03 +4: All tests passed!

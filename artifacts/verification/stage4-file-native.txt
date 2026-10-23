@@ -1,0 +1,40 @@
+**********************
+PowerShell transcript start
+Start time: 20261023000829
+**********************
+/sdcard/Download/QA_stage4_upgrade.moneybak: 1 file pulled, 0 skipped. 5.8 MB/s (7674 bytes in 0.001s)
+
+    topResumedActivity=ActivityRecord{211172050 u0 com.android.intentresolver/.ChooserActivityLauncher t57}
+    * Hist  #1: ActivityRecord{211172050 u0 com.android.intentresolver/.ChooserActivityLauncher t57}
+      Intent { act=android.intent.action.CHOOSER flg=0x800001 xflg=0x4 cmp=com.android.intentresolver/.ChooserActivityL
+auncher clip={application/octet-stream hasLabel(26) {U(content)}} (has extras) }
+      mActivityComponent=com.android.intentresolver/.ChooserActivity
+      readUriPermissions={UriPermission{8f7f659 content://com.example.finance_app.backup_files/backup_shares/4fc669cc-b
+e30-45c6-99ab-0dd3890523f5_QA_stage4_upgrade.moneybak [user 0]}}
+      windows=[Window{7ab5c2e u0 com.android.intentresolver/com.android.intentresolver.ChooserActivityLauncher}]
+      Intent { flg=0x10000000 xflg=0x5 cmp=com.example.finance_app/.MainActivity }
+        Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.android.launc
+her3/.uioverrides.QuickstepLauncher (has extras) }
+    Resumed: ActivityRecord{211172050 u0 com.android.intentresolver/.ChooserActivityLauncher t57}
+  ResumedActivity: ActivityRecord{211172050 u0 com.android.intentresolver/.ChooserActivityLauncher t57}
+  mCurrentFocus=Window{7ab5c2e u0 com.android.intentresolver/com.android.intentresolver.ChooserActivityLauncher}
+  mFocusedApp=ActivityRecord{211172050 u0 com.android.intentresolver/.ChooserActivityLauncher t57}
+        * ActivityRecord{211172050 u0 com.android.intentresolver/.ChooserActivityLauncher t57}
+    mFocusedWindow=Window{7ab5c2e u0 com.android.intentresolver/com.android.intentresolver.ChooserActivityLauncher}
+    mTopFullscreenOpaqueWindowState=Window{7ab5c2e u0 com.android.intentresolver/com.android.intentresolver.ChooserActi
+vityLauncher}
+    mSystemBarColorApps={ActivityRecord{211172050 u0 com.android.intentresolver/.ChooserActivityLauncher t57}}
+    mNavBarColorWindowCandidate=Window{7ab5c2e u0 com.android.intentresolver/com.android.intentresolver.ChooserActivity
+Launcher}
+    mNavBarBackgroundWindowCandidate=Window{7ab5c2e u0 com.android.intentresolver/com.android.intentresolver.ChooserAct
+ivityLauncher}
+      Window{7ab5c2e u0 com.android.intentresolver/com.android.intentresolver.ChooserActivityLauncher}
+      Window{7ab5c2e u0 com.android.intentresolver/com.android.intentresolver.ChooserActivityLauncher}:
+        mControlTarget=Window{7ab5c2e u0 com.android.intentresolver/com.android.intentresolver.ChooserActivityLauncher}
+        mControlTarget=Window{7ab5c2e u0 com.android.intentresolver/com.android.intentresolver.ChooserActivityLauncher}
+        mControlTarget=Window{7ab5c2e u0 com.android.intentresolver/com.android.intentresolver.ChooserActivityLauncher}
+PASS: SAF content URI save, physical file pulled, readback verified, real sharesheet opened.
+**********************
+PowerShell transcript end
+End time: 20261023000847
+**********************

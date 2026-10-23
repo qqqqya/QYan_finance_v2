@@ -1,0 +1,10 @@
+**********************
+PowerShell transcript start
+Start time: 20261023001939
+**********************
+Cold restart PID 5161 -> 6415
+PASS: actual file round-trip, private-copy restore/swap, duplicate imports, cancellation, export-first reset, private cache cleanup, external file preservation and cold restart.
+**********************
+PowerShell transcript end
+End time: 20261023002204
+**********************

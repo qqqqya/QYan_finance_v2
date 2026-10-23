@@ -13,6 +13,7 @@ android/key.properties
 artifacts/*.apk
 artifacts/*.aab
 artifacts/*.idsig
+artifacts/verification/*.moneybak
 .idea/
 *.iml
 .DS_Store

@@ -4,6 +4,7 @@ import '../app/finance_controller.dart';
 import '../domain/app_settings.dart';
 import '../l10n/app_localizations.dart';
 import 'app_theme.dart';
+import 'data_management_page.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key, required this.controller});
@@ -26,6 +27,22 @@ class SettingsPage extends StatelessWidget {
             return ListView(
               padding: const EdgeInsets.all(20),
               children: [
+                Card(
+                  child: ListTile(
+                    key: const Key('open-data-management'),
+                    leading: const Icon(Icons.storage_outlined),
+                    title: Text(strings.dataManagement),
+                    trailing: const Icon(Icons.chevron_right),
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) =>
+                            DataManagementPage(controller: controller),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 16),
                 Text(
                   strings.appearanceAndLanguage,
                   style: theme.textTheme.bodyMedium,

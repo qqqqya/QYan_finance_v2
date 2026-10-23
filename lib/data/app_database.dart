@@ -149,6 +149,7 @@ class AppPreferences extends Table {
     Memos,
     EditHistories,
     AppPreferences,
+    LocalDataStates,
   ],
 )
 class AppDatabase extends _$AppDatabase {
@@ -165,7 +166,7 @@ class AppDatabase extends _$AppDatabase {
   );
 
   @override
-  int get schemaVersion => 1;
+  int get schemaVersion => 2;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -174,6 +175,10 @@ class AppDatabase extends _$AppDatabase {
       await _installGuards();
     },
     onUpgrade: (migrator, from, to) async {
+      if (from == 1 && to == 2) {
+        await migrator.createTable(localDataStates);
+        return;
+      }
       // Add explicit, tested migrations here before incrementing schemaVersion.
       // Unknown upgrades must never destroy or reseed a user's database.
       throw UnsupportedError(
@@ -243,4 +248,20 @@ class AppDatabase extends _$AppDatabase {
       ''');
     }
   }
+}
+
+/// Local operational metadata, deliberately excluded from portable backups.
+@DataClassName('LocalDataStateRow')
+class LocalDataStates extends Table {
+  IntColumn get id => integer().customConstraint('NOT NULL CHECK (id = 1)')();
+  TextColumn get recoveryJson => text().nullable()();
+  TextColumn get lastExportName => text().nullable()();
+  TextColumn get lastExportUri => text().nullable()();
+  TextColumn get lastExportLocation => text().nullable()();
+  IntColumn get lastExportBytes => integer().nullable()();
+  IntColumn get lastExportAtMs => integer().nullable()();
+  BoolColumn get pendingCachePurge =>
+      boolean().withDefault(const Constant(false))();
+  @override
+  Set<Column<Object>> get primaryKey => {id};
 }

@@ -61,6 +61,20 @@ final class FinanceController extends ChangeNotifier {
 
   Future<void> setAppearance(Appearance value) =>
       _save(() => repository.setAppearance(value));
+  Future<void> refreshAfterRestore() async {
+    final values = await Future.wait<Object>([
+      repository.watchSettings().first,
+      repository.watchWorkspace().first,
+      repository.watchLedger().first,
+    ]);
+    settings = values[0] as AppSettings;
+    workspace = values[1] as Workspace;
+    ledger = values[2] as LedgerWorkspace;
+    projects = workspace!.summaries;
+    hasError = false;
+    _notify();
+  }
+
   Future<void> setLanguage(AppLanguage value) =>
       _save(() => repository.setLanguage(value));
 
